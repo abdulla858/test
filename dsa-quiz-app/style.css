@@ -674,6 +674,37 @@ body[dir="rtl"] .bank-q-num {
     line-height: 1.6;
 }
 
+.bank-options-container {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 0.8rem;
+}
+
+.bank-options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 1rem;
+}
+
+body[dir="rtl"] .bank-options-list {
+    margin: 0.5rem 1rem 0 0;
+}
+
+.bank-options-list li {
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem 0;
+    border-radius: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.bank-options-list li.correct-option {
+    color: var(--success);
+    background: rgba(16, 185, 129, 0.05);
+    font-weight: 600;
+}
+
 .bank-answer {
     background: rgba(16, 185, 129, 0.1);
     border-radius: 0.8rem;
