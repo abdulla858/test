@@ -398,14 +398,24 @@ const quizData = [
                 explanation_ar: "تستخدم مصفوفات اللاحقة للبحث ومطابقة السلاسل بكفاءة."
             },
             {
-                id: "arr-40",
-                text: "Which data structure is the building block of a Hash Table?",
-                text_ar: "ما هي بنية البيانات التي تشكل اللبنة الأساسية لجدول التجزئة (Hash Table)؟",
-                options: ["Array", "Tree", "Graph", "Heap"],
-                options_ar: ["المصفوفة", "الشجرة", "الرسم البياني", "الكومة (Heap)"],
+                id: "arr-tf-1",
+                text: "Arrays are non-linear data structures.",
+                text_ar: "المصفوفات هي هياكل بيانات خطية.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "Arrays are linear data structures where elements are stored in contiguous memory.",
+                explanation_ar: "المصفوفات هي هياكل بيانات خطية حيث يتم تخزين العناصر في ذاكرة متجاورة."
+            },
+            {
+                id: "arr-tf-2",
+                text: "In a dynamic array, the size can increase during runtime.",
+                text_ar: "في المصفوفة الديناميكية، يمكن أن يزداد الحجم أثناء وقت التشغيل.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
                 correct: 0,
-                explanation: "Hash tables typically use an array to store buckets of key-value pairs.",
-                explanation_ar: "تستخدم جداول التجزئة عادةً مصفوفة لتخزين مجموعات أزواج المفتاح والقيمة."
+                explanation: "Dynamic arrays can resize themselves as needed.",
+                explanation_ar: "المصفوفات الديناميكية يمكنها تغيير حجمها حسب الحاجة."
             }
         ]
     },
@@ -816,6 +826,26 @@ const quizData = [
                 correct: 1,
                 explanation: "Using a stack, we can eliminate non-celebrities in O(n) time.",
                 explanation_ar: "باستخدام المكدس، يمكننا استبعاد غير المشاهير في وقت O(n)."
+            },
+            {
+                id: "stk-tf-1",
+                text: "Stack follows the FIFO (First In First Out) principle.",
+                text_ar: "يتبع المكدس مبدأ (FIFO) - ما يدخل أولاً يخرج أولاً.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "Stack follows the LIFO (Last In First Out) principle.",
+                explanation_ar: "يتبع المكدس مبدأ (LIFO) - ما يدخل أخيراً يخرج أولاً."
+            },
+            {
+                id: "stk-tf-2",
+                text: "Pop operation on an empty stack leads to underflow.",
+                text_ar: "عملية السحب (Pop) من مكدس فارغ تؤدي إلى حدوث Underflow.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "Attempting to remove an element from an empty stack is called stack underflow.",
+                explanation_ar: "محاولة إزالة عنصر من مكدس فارغ تسمى stack underflow."
             }
         ]
     },
@@ -1226,6 +1256,26 @@ const quizData = [
                 correct: 2,
                 explanation: "While conceptually buffers, the swapping mechanism is key. Queues manage the flow of frames.",
                 explanation_ar: "بينما هي مخازن مؤقتة من الناحية المفاهيمية، فإن آلية التبديل هي المفتاح. تدير الطوابير تدفق الإطارات."
+            },
+            {
+                id: "que-tf-1",
+                text: "Queue follows the LIFO principle.",
+                text_ar: "يتبع الطابور مبدأ LIFO.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "Queue follows the FIFO (First In First Out) principle.",
+                explanation_ar: "يتبع الطابور مبدأ FIFO (ما يدخل أولاً يخرج أولاً)."
+            },
+            {
+                id: "que-tf-2",
+                text: "A circular queue can reuse vacated spaces in the array.",
+                text_ar: "يمكن للطابور الدائري إعادة استخدام المساحات الفارغة في المصفوفة.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "Circular queues overcome the limitation of linear queues by connecting the end back to the front.",
+                explanation_ar: "تتغلب الطوابير الدائرية على قيود الطوابير الخطية من خلال ربط النهاية بالبداية."
             }
         ]
     },
@@ -1233,10 +1283,30 @@ const quizData = [
         id: "linkedlist",
         title: "Linked Lists",
         title_ar: "القوائم المتصلة (Linked Lists)",
-        description: "Singly, Doubly, and implemented stacks/queues.",
-        description_ar: "القوائم الأحادية، المزدوجة، والمكدسات/الطوابير المنفذة بها.",
+        description: "Singly, Doubly, and Circular linked lists.",
+        description_ar: "القوائم المتصلة المفردة، المزدوجة، والدائرية.",
         icon: "🔗",
         questions: [
+            {
+                id: "ll-tf-1",
+                text: "Linked list elements are stored in contiguous memory locations.",
+                text_ar: "يتم تخزين عناصر القائمة المتصلة في مواقع ذاكرة متجاورة.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "Nodes can be scattered anywhere in the heap memory.",
+                explanation_ar: "يمكن أن تكون العقد مبعثرة في أي مكان في ذاكرة الكومة."
+            },
+            {
+                id: "ll-tf-2",
+                text: "A doubly linked list allows traversal in both directions.",
+                text_ar: "تسمح القائمة المتصلة المزدوجة بالاجتياز في كلا الاتجاهين.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "Each node contains pointers to both the next and previous nodes.",
+                explanation_ar: "تحتوي كل عقدة على مؤشرات لكل من العقدتين التالية والسابقة."
+            },
             {
                 id: "ll-1",
                 text: "What does each node in a singly linked list contain?",
@@ -2031,13 +2101,6 @@ const quizData = [
                 id: "tr-39",
                 text: "Top View of a Binary Tree requires:",
                 text_ar: "العرض العلوي (Top View) لشجرة ثنائية يتطلب:",
-                options: ["Horizontal distance tracking", "Height tracking", "Inorder traversal", "Postorder"],
-                options_ar: ["تتبع المسافة الأفقية", "تتبع الارتفاع", "اجتياز Inorder", "اجتياز Postorder"],
-                correct: 0,
-                explanation: "Map horizontal distance to node values (first visited at that distance).",
-                explanation_ar: "تعيين المسافة الأفقية لقيم العقد (أول عقدة تمت زيارتها عند تلك المسافة)."
-            },
-            {
                 id: "tr-40",
                 text: "ZigZag traversal uses:",
                 text_ar: "اجتياز ZigZag يستخدم:",
@@ -2046,15 +2109,35 @@ const quizData = [
                 correct: 0,
                 explanation: "You need to alternate direction level by level.",
                 explanation_ar: "تحتاج إلى تبديل الاتجاه مستوى تلو الآخر."
+            },
+            {
+                id: "tr-tf-1",
+                text: "In a binary search tree, the left child's value is always greater than the parent's value.",
+                text_ar: "في شجرة البحث الثنائية، تكون قيمة الابن الأيسر دائماً أكبر من قيمة الأب.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "In a BST, the left child is always less than or equal to the parent.",
+                explanation_ar: "في شجرة البحث الثنائية (BST)، يكون الابن الأيسر دائماً أصغر من أو يساوي الأب."
+            },
+            {
+                id: "tr-tf-2",
+                text: "A binary tree with N nodes has exactly N-1 edges.",
+                text_ar: "الشجرة الثنائية التي تحتوي على N من العقد لها بالضبط N-1 من الحواف.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "In any tree, the number of edges is one less than the number of nodes.",
+                explanation_ar: "في أي شجرة، عدد الحواف أقل بواحد من عدد العقد."
             }
         ]
     },
     {
         id: "searching",
         title: "Searching Algos",
-        title_ar: "خوارزميات البحث (Searching Algos)",
-        description: "Linear and Binary Search complexities.",
-        description_ar: "تعقيدات البحث الخطي والثنائي.",
+        title_ar: "خوارزميات البحث",
+        description: "Linear search, Binary search, and optimized search techniques.",
+        description_ar: "البحث الخطي، البحث الثنائي، وتقنيات البحث المحسنة.",
         icon: "🔍",
         questions: [
             {
@@ -2321,7 +2404,7 @@ const quizData = [
                 id: "sr-27",
                 text: "Given an array where difference between neighbors is 1, search for X can be optimized to:",
                 text_ar: "بإعطاء مصفوفة حيث الفرق بين الجيران هو 1، يمكن تحسين البحث عن X إلى:",
-                options: ["O(n)", "O(n) but with jumps", "O(log n)", "O(1)"],
+                options: ["O(n)", "O(n) ولكن مع قفزات", "O(log n)", "O(1)"],
                 options_ar: ["O(n)", "O(n) ولكن مع قفزات", "O(log n)", "O(1)"],
                 correct: 1,
                 explanation: "You can jump by abs(current - target).",
@@ -2339,8 +2422,8 @@ const quizData = [
             },
             {
                 id: "sr-29",
-                text: "To count occurrences of a number in sorted array using Binary Search:",
-                text_ar: "لعد تكرارات رقم في مصفوفة مرتبة باستخدام البحث الثنائي:",
+                text: "To count occurrences of a number in sorted array with duplicates using Binary Search:",
+                text_ar: "لعد تكرارات رقم في مصفوفة مرتبة تحتوي على تكرارات، باستخدام البحث الثنائي:",
                 options: ["Find first and last occurrence", "Find one and scan neighbors", "Impossible", "Use Hash map"],
                 options_ar: ["البحث عن أول وآخر ظهور", "البحث عن واحد ومسح الجيران", "مستحيل", "استخدام جدول التجزئة"],
                 correct: 0,
@@ -2456,16 +2539,36 @@ const quizData = [
                 correct: 1,
                 explanation: "It can return false positives, but never false negatives.",
                 explanation_ar: "يمكن أن يعطي نتائج إيجابية خاطئة، ولكن لا يعطي نتائج سلبية خاطئة أبداً."
+            },
+            {
+                id: "sr-tf-1",
+                text: "Binary search can be applied to an unsorted array.",
+                text_ar: "يمكن تطبيق البحث الثنائي على مصفوفة غير مرتبة.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "Binary search requires the data to be sorted to work correctly.",
+                explanation_ar: "يتطلب البحث الثنائي أن تكون البيانات مرتبة ليعمل بشكل صحيح."
+            },
+            {
+                id: "sr-tf-2",
+                text: "Linear search has a time complexity of O(n) in the worst case.",
+                text_ar: "البحث الخطي له تعقيد زمني قدره O(n) في أسوأ الحالات.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "In the worst case, you might need to check every element in the array.",
+                explanation_ar: "في أسوأ الحالات، قد تحتاج إلى فحص كل عنصر في المصفوفة."
             }
         ]
     },
     {
         id: "complexity",
         title: "Time Complexity",
-        title_ar: "التعقيد الزمني (Time Complexity)",
-        description: "Big O notation and code analysis.",
-        description_ar: "ترميز Big O وتحليل الكود.",
-        icon: "⏳",
+        title_ar: "التعقيد الزمني (Big O)",
+        description: "Analyze algorithm efficiency and Big O notation.",
+        description_ar: "تحليل كفاءة الخوارزميات وترميز Big O.",
+        icon: "📈",
         questions: [
             {
                 id: "tc-1",
@@ -2866,15 +2969,35 @@ const quizData = [
                 correct: 1,
                 explanation: "It must check the status of files in the working directory.",
                 explanation_ar: "يجب عليه التحقق من حالة الملفات في دليل العمل."
+            },
+            {
+                id: "tc-tf-1",
+                text: "O(n log n) is more efficient than O(n²).",
+                text_ar: "O(n log n) أكثر كفاءة من O(n²).",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "Log-linear time grows much slower than quadratic time as N increases.",
+                explanation_ar: "الوقت اللوغاريتمي الخطي ينمو بشكل أبطأ بكثير من الوقت التربيعي مع زيادة N."
+            },
+            {
+                id: "tc-tf-2",
+                text: "Constant time O(1) means execution time depends on input size.",
+                text_ar: "الوقت الثابت O(1) يعني أن وقت التنفيذ يعتمد على حجم المدخلات.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "O(1) means execution time is independent of input size.",
+                explanation_ar: "O(1) يعني أن وقت التنفيذ مستقل عن حجم المدخلات."
             }
         ]
     },
     {
         id: "code-analysis",
         title: "Code Analysis",
-        title_ar: "تحليل الأكواد البرمجية",
-        description: "Analyze code snippets to determine time complexity and behavior.",
-        description_ar: "حلل مقاطع الأكواد لتحديد التعقيد الزمني والسلوك.",
+        title_ar: "تحليل الأكواد",
+        description: "Analyze code snippets for time and space complexity.",
+        description_ar: "تحليل مقاطع الأكواد للتعقيد الزمني والمكاني.",
         icon: "💻",
         questions: [
             {
@@ -3168,14 +3291,254 @@ const quizData = [
                 explanation_ar: "يزور كل عقدة مرة واحدة بالضبط: O(n)."
             },
             {
-                id: "ca-30",
-                text: "Complexity of standard Matrix Multiplication of two N × N matrices?\n<pre><code>for(i) for(j) for(k) C[i][j] += A[i][k] * B[k][j];</code></pre>",
-                text_ar: "تعقيد ضرب المصفوفات القياسي لمصفوفتين N × N؟\n<pre><code>for(i) for(j) for(k) C[i][j] += A[i][k] * B[k][j];</code></pre>",
-                options: ["O(n²)", "O(n³)", "O(n log n)", "O(n)"],
-                options_ar: ["O(n²)", "O(n³)", "O(n log n)", "O(n)"],
+                id: "ca-tf-1",
+                text: "A loop from 1 to N with a nested loop from 1 to N results in O(n²).",
+                text_ar: "حلقة من 1 إلى N بداخلها حلقة أخرى من 1 إلى N تؤدي إلى تعقيد O(n²).",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "Nested loops result in multiplication of complexities: N * N = N².",
+                explanation_ar: "تؤدي الحلقات المتداخلة إلى ضرب التعقيدات: N * N = N²."
+            },
+            {
+                id: "ca-tf-2",
+                text: "Logarithmic time complexity O(log n) grows faster than linear O(n).",
+                text_ar: "التعقيد الزمني اللوغاريتمي O(log n) ينمو أسرع من التعقيد الخطي O(n).",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
                 correct: 1,
-                explanation: "Three nested loops from 1 to N: تعقيدها O(n³).",
-                explanation_ar: "ثلاث حلقات متداخلة من 1 إلى N: تعقيدها O(n³)."
+                explanation: "O(log n) is much slower/more efficient than O(n).",
+                explanation_ar: "O(log n) أبطأ بكثير/أكثر كفاءة من O(n)."
+            }
+        ]
+    },
+    {
+        id: "stack-apps",
+        title: "Stack Applications (Infix/Prefix/Postfix)",
+        title_ar: "تطبيقات المكدس (Infix/Prefix/Postfix)",
+        description: "Master expression conversion and evaluation: Infix, Prefix, and Postfix.",
+        description_ar: "أتقن تحويل وتقييم التعبيرات: Infix و Prefix و Postfix.",
+        icon: "⚙️",
+        questions: [
+            {
+                id: "sa-1",
+                text: "Which data structure is primarily used for converting an Infix expression to Postfix?",
+                text_ar: "ما هي بنية البيانات المستخدمة بشكل أساسي لتحويل التعبير من Infix إلى Postfix؟",
+                options: ["Queue", "Stack", "Linked List", "Tree"],
+                options_ar: ["طابور (Queue)", "مكدس (Stack)", "قائمة متصلة", "شجرة"],
+                correct: 1,
+                explanation: "The Shunting-yard algorithm uses a Stack to hold operators until they can be added to the Postfix output.",
+                explanation_ar: "تستخدم خوارزمية Shunting-yard المكدس (Stack) للاحتفاظ بالعمليات حتى يحين وقت إضافتها للمخرجات."
+            },
+            {
+                id: "sa-2",
+                text: "What is the Postfix form of the Infix expression: (A + B) * C?",
+                text_ar: "ما هو شكل الـ Postfix للتعبير التالي: (A + B) * C؟",
+                options: ["AB+C*", "ABC+*", "A+BC*", "AB*C+"],
+                options_ar: ["AB+C*", "ABC+*", "A+BC*", "AB*C+"],
+                correct: 0,
+                explanation: "(A + B) becomes AB+, then multiplying by C results in AB+C*.",
+                explanation_ar: "(A + B) تصبح AB+، ثم الضرب في C ينتج عنه AB+C*."
+            },
+            {
+                id: "sa-3",
+                text: "In Postfix notation, where are the operators placed?",
+                text_ar: "في تدوين Postfix، أين يتم وضع العمليات؟",
+                options: ["Before operands", "In between operands", "After operands", "At the beginning"],
+                options_ar: ["قبل المعاملات", "بين المعاملات", "بعد المعاملات", "في البداية"],
+                correct: 2,
+                explanation: "Postfix notation (Reverse Polish Notation) places operators after their operands.",
+                explanation_ar: "تدوين Postfix يضع العمليات بعد المعاملات الخاصة بها."
+            },
+            {
+                id: "sa-4",
+                text: "What is the value of the Postfix expression: 5 3 + 2 * ?",
+                text_ar: "ما هي قيمة تعبير الـ Postfix التالي: 5 3 + 2 * ؟",
+                options: ["11", "16", "25", "10"],
+                options_ar: ["11", "16", "25", "10"],
+                correct: 1,
+                explanation: "5+3=8, then 8*2=16.",
+                explanation_ar: "5+3=8، ثم 8*2=16."
+            },
+            {
+                id: "sa-5",
+                text: "Which of the following is the Prefix form of: A + B * C?",
+                text_ar: "أي مما يلي هو شكل الـ Prefix للتعبير: A + B * C؟",
+                options: ["+A*BC", "+*ABC", "ABC*+", "A+BC*"],
+                options_ar: ["+A*BC", "+*ABC", "ABC*+", "A+BC*"],
+                correct: 0,
+                explanation: "Operator precedence: B*C is *BC, then A + (*BC) is +A*BC.",
+                explanation_ar: "أولوية العمليات: B*C تصبح *BC، ثم A + (*BC) تصبح +A*BC."
+            },
+            {
+                id: "sa-6",
+                text: "When evaluating a Postfix expression, what do you do when you encounter an operand?",
+                text_ar: "عند تقييم تعبير Postfix، ماذا تفعل عندما تواجه معاملاً (رقماً)؟",
+                options: ["Pop from stack", "Push to stack", "Discard it", "Multiply it"],
+                options_ar: ["سحب من المكدس", "دفع إلى المكدس", "تجاهله", "ضربه"],
+                correct: 1,
+                explanation: "During Postfix evaluation, all operands are pushed onto the stack until an operator is met.",
+                explanation_ar: "أثناء تقييم Postfix، يتم دفع جميع المعاملات إلى المكدس حتى يتم العثور على عملية."
+            },
+            {
+                id: "sa-7",
+                text: "What is the Postfix expression for: A * (B + C) / D?",
+                text_ar: "ما هو تعبير الـ Postfix لـ: A * (B + C) / D؟",
+                options: ["ABC+*D/", "AB*C+D/", "ABCD+*/", "ABC+D*/"],
+                options_ar: ["ABC+*D/", "AB*C+D/", "ABCD+*/", "ABC+D*/"],
+                correct: 0,
+                explanation: "B+C is BC+, then A*BC+ is ABC+*, then ABC+*/D is ABC+*D/.",
+                explanation_ar: "B+C تصبح BC+، ثم A*BC+ تصبح ABC+*، ثم قسمة الناتج على D تصبح ABC+*D/."
+            },
+            {
+                id: "sa-8",
+                text: "The expression +AB is called:",
+                text_ar: "التعبير +AB يسمى تدوين:",
+                options: ["Infix", "Postfix", "Prefix", "None of the above"],
+                options_ar: ["Infix", "Postfix", "Prefix", "لا شيء مما سبق"],
+                correct: 2,
+                explanation: "Prefix notation (Polish Notation) places operators before operands.",
+                explanation_ar: "تدوين الـ Prefix يضع العمليات قبل المعاملات."
+            },
+            {
+                id: "sa-9",
+                text: "What is the value of the Postfix expression: 10 2 / 5 + ?",
+                text_ar: "ما هي قيمة تعبير الـ Postfix التالي: 10 2 / 5 + ؟",
+                options: ["10", "15", "5", "7"],
+                options_ar: ["10", "15", "5", "7"],
+                correct: 0,
+                explanation: "10/2=5, then 5+5=10.",
+                explanation_ar: "10/2=5، ثم 5+5=10."
+            },
+            {
+                id: "sa-10",
+                text: "Which operator has the highest precedence in expression evaluation?",
+                text_ar: "أي عملية لها الأولوية القصوى في تقييم التعبيرات؟",
+                options: ["+", "-", "*", "^ (Power)"],
+                options_ar: ["+", "-", "*", "^ (الأس)"],
+                correct: 3,
+                explanation: "The exponentiation operator (^) usually has higher precedence than multiplication or addition.",
+                explanation_ar: "عملية الأس (^) عادة ما يكون لها أولوية أعلى من الضرب أو الجمع."
+            },
+            {
+                id: "sa-11",
+                text: "To convert Infix to Postfix, if we encounter an opening parenthesis '(', we:",
+                text_ar: "لتحويل Infix إلى Postfix، إذا واجهنا قوس فتح '('، نقوم بـ:",
+                options: ["Pop all elements", "Push it onto stack", "Append to output", "Ignore it"],
+                options_ar: ["سحب جميع العناصر", "دفعه إلى المكدس", "إضافته للمخرجات", "تجاهله"],
+                correct: 1,
+                explanation: "Parentheses are pushed into the stack to mark the beginning of a sub-expression.",
+                explanation_ar: "يتم دفع الأقواس إلى المكدس لتمييز بداية تعبير فرعي."
+            },
+            {
+                id: "sa-12",
+                text: "What is the Infix equivalent of the Postfix: AB-C* ?",
+                text_ar: "ما هو ما يعادل Infix للـ Postfix التالي: AB-C* ؟",
+                options: ["A - B * C", "(A - B) * C", "A * (B - C)", "A - (B * C)"],
+                options_ar: ["A - B * C", "(A - B) * C", "A * (B - C)", "A - (B * C)"],
+                correct: 1,
+                explanation: "AB- is (A-B), then (A-B)C* is (A-B)*C.",
+                explanation_ar: "AB- تقابل (A-B)، ثم (A-B)C* تقابل (A-B)*C."
+            },
+            {
+                id: "sa-13",
+                text: "Evaluating Postfix: 2 3 ^ 4 +",
+                text_ar: "تقييم Postfix التالي: 2 3 ^ 4 +",
+                options: ["10", "12", "14", "24"],
+                options_ar: ["10", "12", "14", "24"],
+                correct: 1,
+                explanation: "2^3 = 8, then 8+4 = 12.",
+                explanation_ar: "2^3 = 8، ثم 8+4 = 12."
+            },
+            {
+                id: "sa-14",
+                text: "Prefix form of: (A-B/C)*(D*E-F)",
+                text_ar: "شكل الـ Prefix لـ: (A-B/C)*(D*E-F)",
+                options: ["*-A/BC-DE F", "*-/ABC-*DEF", "*-A/BC-*DEF", "None"],
+                options_ar: ["*-A/BC-DE F", "*-/ABC-*DEF", "*-A/BC-*DEF", "لا شيء"],
+                correct: 2,
+                explanation: "After step-by-step conversion, the prefix is *-A/BC-*DEF.",
+                explanation_ar: "بعد التحويل خطوة بخطوة، يكون الـ prefix هو *-A/BC-*DEF."
+            },
+            {
+                id: "sa-15",
+                text: "Stack is useful for 'Parenthesis Balancing' because of its property:",
+                text_ar: "المكدس مفيد لـ 'موازنة الأقواس' بسبب خاصية:",
+                options: ["FIFO", "LIFO", "Linear access", "Random access"],
+                options_ar: ["FIFO", "LIFO", "الوصول الخطي", "الوصول العشوائي"],
+                correct: 1,
+                explanation: "Last-In, First-Out allows matching the most recently opened parenthesis with its closing partner.",
+                explanation_ar: "خاصية 'آخر من يدخل، أول من يخرج' تسمح بمطابقة آخر قوس تم فتحه مع قوس الإغلاق الخاص به."
+            },
+            {
+                id: "sa-16",
+                text: "Conversion of Infix to Prefix requires:",
+                text_ar: "تحويل Infix إلى Prefix يتطلب:",
+                options: ["Reversing input", "Doubling stack", "Sorting", "None"],
+                options_ar: ["عكس المدخلات", "مضاعفة المكدس", "الفرز", "لا شيء"],
+                correct: 0,
+                explanation: "A common method involves reversing the infix string, converting it to postfix-like, then reversing again.",
+                explanation_ar: "تتضمن إحدى الطرق الشائعة عكس سلسلة infix، وتحويلها لترميز يشبه postfix، ثم عكسها مرة أخرى."
+            },
+            {
+                id: "sa-17",
+                text: "Evaluating Postfix: 6 2 3 * /",
+                text_ar: "تقييم Postfix التالي: 6 2 3 * /",
+                options: ["9", "1", "0", "12"],
+                options_ar: ["9", "1", "0", "12"],
+                correct: 1,
+                explanation: "2*3=6, then 6/6=1.",
+                explanation_ar: "2*3=6، ثم 6/6=1."
+            },
+            {
+                id: "sa-18",
+                text: "If stack is [+, (], and we encounter ')', what do we do?",
+                text_ar: "إذا كان المكدس يحتوي على [+, (] وواجهنا ')'، ماذا نفعل؟",
+                options: ["Push it", "Pop until '('", "Clear stack", "Wait"],
+                options_ar: ["دفعه", "سحب حتى '('", "مسح المكدس", "انتظار"],
+                correct: 1,
+                explanation: "When a closing parenthesis is found, pop and display elements until an opening parenthesis is encountered.",
+                explanation_ar: "عند العثور على قوس إغلاق، نسحب ونعرض العناصر حتى نصل إلى قوس الفتح."
+            },
+            {
+                id: "sa-19",
+                text: "Postfix of A+B*C+D:",
+                text_ar: "الـ Postfix لـ A+B*C+D:",
+                options: ["ABC*+D+", "ABC*D++", "ABCD+*+", "None"],
+                options_ar: ["ABC*+D+", "ABC*D++", "ABCD+*+", "لا شيء"],
+                correct: 0,
+                explanation: "B*C is BC*, then A+BC* is ABC*+, then ABC*+D+.",
+                explanation_ar: "B*C تصبح BC*، ثم A+BC* تصبح ABC*+، ثم إضافة D تصبح ABC*+D+."
+            },
+            {
+                id: "sa-20",
+                text: "Which operation is performed first for Postfix: 8 2 / 2 ^ ?",
+                text_ar: "أي عملية يتم تنفيذها أولاً في الـ Postfix: 8 2 / 2 ^ ؟",
+                options: ["^", "/", "*", "-"],
+                options_ar: ["^", "/", "*", "-"],
+                correct: 1,
+                explanation: "In Postfix, operations are performed in the order they appear from left to right.",
+                explanation_ar: "في الـ Postfix، يتم تنفيذ العمليات بالترتيب الذي تظهر به من اليسار إلى اليمين."
+            },
+            {
+                id: "sa-tf-1",
+                text: "Postfix expressions require parentheses to define operation priority.",
+                text_ar: "تعبيرات Postfix تتطلب أقواساً لتحديد أولوية العمليات.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "Postfix notation is unambiguous and does not need parentheses.",
+                explanation_ar: "تدوين Postfix لا يحتاج إلى أقواس لأنه واضح وغير غامض."
+            },
+            {
+                id: "sa-tf-2",
+                text: "The Shunting-yard algorithm is used to convert Infix to Postfix.",
+                text_ar: "تُستخدم خوارزمية Shunting-yard لتحويل Infix إلى Postfix.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "Developed by Edsger Dijkstra, this algorithm uses a stack for operator priority.",
+                explanation_ar: "تم تطوير هذه الخوارزمية بواسطة إيدجر ديكسترا، وهي تستخدم مكدساً لأولويات العمليات."
             }
         ]
     }
