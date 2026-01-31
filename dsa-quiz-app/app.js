@@ -51,7 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
             confirm_exit: "Exit quiz? Progress will be lost.",
             res_trees: "Trees (Tutorialspoint)",
             res_dsa: "1000 DSA Questions (Sanfoundry)",
-            res_complexity: "Time Complexity (GFG)"
+            res_complexity: "Time Complexity (GFG)",
+            random_quiz: "Random Quiz",
+            random_quiz_desc: "Test yourself with random questions from all topics",
+            select_questions: "Select Number of Questions",
+            start_quiz: "Start Quiz",
+            cancel: "Cancel",
+            questions_label: "Questions:"
         },
         ar: {
             app_title: "أستاذ الخوارزميات",
@@ -73,7 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
             confirm_exit: "هل تريد الخروج؟ سيتم فقدان التقدم.",
             res_trees: "الأشجار (Tutorialspoint)",
             res_dsa: "1000 سؤال في هياكل البيانات (Sanfoundry)",
-            res_complexity: "التعقيد الزمني (GFG)"
+            res_complexity: "التعقيد الزمني (GFG)",
+            random_quiz: "اختبار عشوائي",
+            random_quiz_desc: "اختبر نفسك بأسئلة عشوائية من جميع المواضيع",
+            select_questions: "اختر عدد الأسئلة",
+            start_quiz: "ابدأ الاختبار",
+            cancel: "إلغاء",
+            questions_label: "الأسئلة:"
         }
     };
 
@@ -136,6 +148,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Landing Page
     const initLanding = () => {
         topicGrid.innerHTML = '';
+
+        // Add Random Quiz Card First
+        const randomCard = document.createElement('div');
+        randomCard.className = 'topic-card random-quiz-card';
+        const randomTitle = translations[currentLang].random_quiz;
+        const randomDesc = translations[currentLang].random_quiz_desc;
+
+        randomCard.innerHTML = `
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🎲</div>
+            <h3>${randomTitle}</h3>
+            <p>${randomDesc}</p>
+        `;
+        randomCard.addEventListener('click', () => showQuestionSelector());
+        topicGrid.appendChild(randomCard);
+
+        // Add Topic Cards
         quizData.forEach(topic => {
             const card = document.createElement('div');
             card.className = 'topic-card';
@@ -168,6 +196,87 @@ document.addEventListener('DOMContentLoaded', () => {
     const startQuiz = (topic) => {
         currentTopic = topic;
         currentQuestions = [...topic.questions].sort(() => 0.5 - Math.random());
+        currentQuestionIndex = 0;
+        score = 0;
+
+        switchSection(quizSection);
+        loadQuestion();
+    };
+
+    // Show Question Selector Modal
+    const showQuestionSelector = () => {
+        // Calculate total questions
+        const totalQuestions = quizData.reduce((sum, topic) => sum + topic.questions.length, 0);
+
+        // Create modal
+        const modal = document.createElement('div');
+        modal.className = 'modal-overlay';
+        modal.innerHTML = `
+            <div class="modal-content glass-card">
+                <h2 data-i18n="select_questions">${translations[currentLang].select_questions}</h2>
+                <div class="question-selector">
+                    <label for="question-count">${translations[currentLang].questions_label}</label>
+                    <input type="range" id="question-count" min="5" max="${Math.min(totalQuestions, 50)}" value="10" step="5">
+                    <span id="question-count-display">10</span>
+                </div>
+                <div class="modal-actions">
+                    <button class="secondary-btn" id="cancel-btn">${translations[currentLang].cancel}</button>
+                    <button class="primary-btn" id="start-random-btn">${translations[currentLang].start_quiz}</button>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        // Update display on slider change
+        const slider = modal.querySelector('#question-count');
+        const display = modal.querySelector('#question-count-display');
+        slider.addEventListener('input', (e) => {
+            display.textContent = e.target.value;
+        });
+
+        // Cancel button
+        modal.querySelector('#cancel-btn').addEventListener('click', () => {
+            document.body.removeChild(modal);
+        });
+
+        // Start button
+        modal.querySelector('#start-random-btn').addEventListener('click', () => {
+            const count = parseInt(slider.value);
+            document.body.removeChild(modal);
+            startRandomQuiz(count);
+        });
+
+        // Close on overlay click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                document.body.removeChild(modal);
+            }
+        });
+    };
+
+    // Start Random Quiz
+    const startRandomQuiz = (questionCount) => {
+        // Collect all questions from all topics
+        const allQuestions = [];
+        quizData.forEach(topic => {
+            topic.questions.forEach(q => {
+                allQuestions.push(q);
+            });
+        });
+
+        // Shuffle and select
+        const shuffled = allQuestions.sort(() => 0.5 - Math.random());
+        currentQuestions = shuffled.slice(0, questionCount);
+
+        // Create a virtual topic for random quiz
+        currentTopic = {
+            id: 'random',
+            title: translations[currentLang].random_quiz,
+            title_ar: translations[currentLang].random_quiz,
+            icon: '🎲'
+        };
+
         currentQuestionIndex = 0;
         score = 0;
 
