@@ -2572,8 +2572,8 @@ const quizData = [
         questions: [
             {
                 id: "tc-1",
-                text: "What is the time complexity of the following code?\n<pre><code>for(i=0; i<N; i++) { \n  a = a + 5;\n}\nfor(j=0; j<M; j++) { \n  b = b + 10;\n}</code></pre>",
-                text_ar: "ما هو التعقيد الزمني للكود التالي؟\n<pre><code>for(i=0; i<N; i++) { \n  a = a + 5;\n}\nfor(j=0; j<M; j++) { \n  b = b + 10;\n}</code></pre>",
+                text: "What is the time complexity of the following code?\n<pre><code>for(i=0; i&lt;N; i++) { \n  a = a + 5;\n}\nfor(j=0; j&lt;M; j++) { \n  b = b + 10;\n}</code></pre>",
+                text_ar: "ما هو التعقيد الزمني للكود التالي؟\n<pre><code>for(i=0; i&lt;N; i++) { \n  a = a + 5;\n}\nfor(j=0; j&lt;M; j++) { \n  b = b + 10;\n}</code></pre>",
                 options: ["O(N * M)", "O(N + M)", "O(N)", "O(M)"],
                 options_ar: ["O(N * M)", "O(N + M)", "O(N)", "O(M)"],
                 correct: 1,
@@ -2582,8 +2582,8 @@ const quizData = [
             },
             {
                 id: "tc-2",
-                text: "What is the time complexity analysis?\n<pre><code>for(i=0; i<N; i++) {\n  for(j=N; j>i; j--) {\n     a = a + i + j;\n  }\n}</code></pre>",
-                text_ar: "ما هو تحليل التعقيد الزمني؟\n<pre><code>for(i=0; i<N; i++) {\n  for(j=N; j>i; j--) {\n     a = a + i + j;\n  }\n}</code></pre>",
+                text: "What is the time complexity analysis?\n<pre><code>for(i=0; i&lt;N; i++) {\n  for(j=N; j&gt;i; j--) {\n     a = a + i + j;\n  }\n}</code></pre>",
+                text_ar: "ما هو تحليل التعقيد الزمني؟\n<pre><code>for(i=0; i&lt;N; i++) {\n  for(j=N; j&gt;i; j--) {\n     a = a + i + j;\n  }\n}</code></pre>",
                 options: ["O(N)", "O(N log N)", "O(N^2)", "O(1)"],
                 options_ar: ["O(N)", "O(N log N)", "O(N^2)", "O(1)"],
                 correct: 2,
@@ -2592,8 +2592,8 @@ const quizData = [
             },
             {
                 id: "tc-3",
-                text: "What is the time complexity?\n<pre><code>for(i=1; i<n; i=i*2) {\n  print(i);\n}</code></pre>",
-                text_ar: "ما هو التعقيد الزمني؟\n<pre><code>for(i=1; i<n; i=i*2) {\n  print(i);\n}</code></pre>",
+                text: "What is the time complexity?\n<pre><code>for(i=1; i&lt;n; i=i*2) {\n  print(i);\n}</code></pre>",
+                text_ar: "ما هو التعقيد الزمني؟\n<pre><code>for(i=1; i&lt;n; i=i*2) {\n  print(i);\n}</code></pre>",
                 options: ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
                 options_ar: ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
                 correct: 2,
@@ -2642,8 +2642,8 @@ const quizData = [
             },
             {
                 id: "tc-8",
-                text: "What is the complexity of: <pre><code>function(n) { \n  if (n <= 1) return; \n  function(n-1); \n  function(n-1); \n}</code></pre>",
-                text_ar: "ما هو تعقيد: <pre><code>function(n) { \n  if (n <= 1) return; \n  function(n-1); \n  function(n-1); \n}</code></pre>",
+                text: "What is the complexity of: <pre><code>function(n) { \n  if (n &lt;= 1) return; \n  function(n-1); \n  function(n-1); \n}</code></pre>",
+                text_ar: "ما هو تعقيد: <pre><code>function(n) { \n  if (n &lt;= 1) return; \n  function(n-1); \n  function(n-1); \n}</code></pre>",
                 options: ["O(n)", "O(2^n)", "O(n^2)", "O(log n)"],
                 options_ar: ["O(n)", "O(2^n)", "O(n^2)", "O(log n)"],
                 correct: 1,
@@ -2712,8 +2712,8 @@ const quizData = [
             },
             {
                 id: "tc-15",
-                text: "Complexity of: <pre><code>for(i=1; i<=n; i++) {\n for(j=1; j<=i; j=j*2) { ... } \n}</code></pre>",
-                text_ar: "تعقيد الكود التالي: <pre><code>for(i=1; i<=n; i++) {\n for(j=1; j<=i; j=j*2) { ... } \n}</code></pre>",
+                text: "Complexity of: <pre><code>for(i=1; i&lt;=n; i++) {\n for(j=1; j&lt;=i; j=j*2) { ... } \n}</code></pre>",
+                text_ar: "تعقيد الكود التالي: <pre><code>for(i=1; i&lt;=n; i++) {\n for(j=1; j&lt;=i; j=j*2) { ... } \n}</code></pre>",
                 options: ["O(n^2)", "O(n)", "O(n log n)", "O(log n)"],
                 options_ar: ["O(n^2)", "O(n)", "O(n log n)", "O(log n)"],
                 correct: 2,

@@ -43,6 +43,10 @@
                 <h2 data-i18n="hero_title">Master Data Structures</h2>
                 <p data-i18n="hero_subtitle">Select a topic to test your knowledge with curated questions from top
                     resources.</p>
+                <div class="hero-actions">
+                    <button id="browse-all-btn" class="glass-btn secondary-btn" data-i18n="btn_browse_all">📖 Browse
+                        Questions Bank</button>
+                </div>
             </div>
 
             <div class="topic-grid" id="topic-grid">
@@ -88,9 +92,20 @@
                 <h2 data-i18n="quiz_completed">Quiz Completed!</h2>
                 <p id="result-message" data-i18n="result_msg">Great job!</p>
                 <div class="result-actions">
-                    <button id="restart-btn" class="primary-btn" data-i18n="btn_restart">Try Another Topic</button>
-                    <button id="home-btn" class="secondary-btn" data-i18n="btn_home">Back to Home</button>
+                    <button id="restart-btn" class="primary-btn">Restart Quiz</button>
+                    <button id="home-btn" class="secondary-btn">Back to Home</button>
                 </div>
+            </div>
+        </section>
+
+        <!-- Study Bank Section -->
+        <section id="study-bank-section" class="hidden-section">
+            <div class="section-header">
+                <button id="bank-back-btn" class="secondary-btn" data-i18n="btn_back">← Back</button>
+                <h2 data-i18n="browse_all_title">Questions Bank</h2>
+            </div>
+            <div id="bank-container" class="bank-container">
+                <!-- All questions will be injected here -->
             </div>
         </section>
 
