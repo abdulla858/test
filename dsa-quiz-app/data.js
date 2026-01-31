@@ -2780,65 +2780,92 @@ const quizData = [
             {
                 id: "tc-32",
                 text: "Complexity of calculating Nth Fibonacci number using DP (Memoization):",
+                text_ar: "تعقيد حساب رقم فيبوناتشي رقم N باستخدام البرمجة الديناميكية (Memoization):",
                 options: ["O(2^n)", "O(n)", "O(log n)", "O(1)"],
+                options_ar: ["O(2^n)", "O(n)", "O(log n)", "O(1)"],
                 correct: 1,
-                explanation: "You compute each state once."
+                explanation: "You compute each state once.",
+                explanation_ar: "تقوم بحساب كل حالة مرة واحدة فقط."
             },
             {
                 id: "tc-33",
                 text: "Master Theorem helps solve:",
+                text_ar: "تساعد نظرية السيد (Master Theorem) في حل:",
                 options: ["Graph problems", "Greedy problems", "Recurrence relations", "Sorting"],
+                options_ar: ["مشكلات الرسوم البيانية", "الخوارزميات الجشعة", "علاقات التكرار (Recurrence relations)", "الفرز"],
                 correct: 2,
-                explanation: "Used for analyzing divide-and-conquer recurrences."
+                explanation: "Used for analyzing divide-and-conquer recurrences.",
+                explanation_ar: "تستخدم لتحليل علاقات التكرار في خوارزميات فرق تسد."
             },
             {
                 id: "tc-34",
                 text: "Space complexity of Merge Sort (arrays):",
+                text_ar: "التعقيد المكاني للفرز بالدمج (Merge Sort) للمصفوفات:",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
                 correct: 1,
-                explanation: "Requires O(n) auxiliary space for merging."
+                explanation: "Requires O(n) auxiliary space for merging.",
+                explanation_ar: "يتطلب O(n) من المساحة الإضافية للدمج."
             },
             {
                 id: "tc-35",
                 text: "Complexity of reversing a string of length N:",
+                text_ar: "تعقيد عكس سلسلة نصية بطول N:",
                 options: ["O(1)", "O(N)", "O(N^2)", "O(log N)"],
+                options_ar: ["O(1)", "O(N)", "O(N^2)", "O(log N)"],
                 correct: 1,
-                explanation: "Iterate through half the string."
+                explanation: "Iterate through half the string.",
+                explanation_ar: "المرور عبر نصف السلسلة النصية."
             },
             {
                 id: "tc-36",
                 text: "Best Algorithm for Topological Sort:",
+                text_ar: "أفضل خوارزمية للفرز الموضعي (Topological Sort):",
                 options: ["O(V+E)", "O(V*E)", "O(V^2)", "O(E log V)"],
+                options_ar: ["O(V+E)", "O(V*E)", "O(V^2)", "O(E log V)"],
                 correct: 0,
-                explanation: "DFS or Kahn's algorithm (BFS) are linear in graph size."
+                explanation: "DFS or Kahn's algorithm (BFS) are linear in graph size.",
+                explanation_ar: "خوارزمية DFS أو خوارزمية كاهن (BFS) هما خطيان بالنسبة لحجم الرسم البياني."
             },
             {
                 id: "tc-37",
                 text: "Sliding Window Maximum (Deque method):",
+                text_ar: "الحد الأقصى للنافذة المنزلقة (طريقة Deque):",
                 options: ["O(n)", "O(nk)", "O(n log k)", "O(n log n)"],
+                options_ar: ["O(n)", "O(nk)", "O(n log k)", "O(n log n)"],
                 correct: 0,
-                explanation: "Each element is added and removed at most once."
+                explanation: "Each element is added and removed at most once.",
+                explanation_ar: "تتم إضافة وإزالة كل عنصر مرة واحدة على الأكثر."
             },
             {
                 id: "tc-38",
                 text: "Convex Hull (Graham Scan):",
+                text_ar: "الغلاف المحدب (Convex Hull) (طريقة Graham Scan):",
                 options: ["O(n)", "O(n log n)", "O(n^2)", "O(n^3)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n^2)", "O(n^3)"],
                 correct: 1,
-                explanation: "Dominated by sorting points by angle."
+                explanation: "Dominated by sorting points by angle.",
+                explanation_ar: "تهيمن عليها عملية فرز النقاط حسب الزاوية."
             },
             {
                 id: "tc-39",
                 text: "Traveling Salesperson Problem (Dynamic Programming):",
+                text_ar: "مشكلة البائع المتجول (Traveling Salesperson) بالبرمجة الديناميكية:",
                 options: ["O(n!)", "O(n^2 * 2^n)", "O(n^2)", "O(2^n)"],
+                options_ar: ["O(n!)", "O(n^2 * 2^n)", "O(n^2)", "O(2^n)"],
                 correct: 1,
-                explanation: "Uses bitmask DP."
+                explanation: "Uses bitmask DP.",
+                explanation_ar: "يستخدم البرمجة الديناميكية مع الأقنعة الثنائية (bitmask DP)."
             },
             {
                 id: "tc-40",
                 text: "Complexity of `git status` (conceptually):",
+                text_ar: "تعقيد أمر `git status` (من الناحية النظرية):",
                 options: ["O(1)", "O(Number of files)", "O(Number of commits)", "O(Size of repo)"],
+                options_ar: ["O(1)", "O(عدد الملفات)", "O(عدد الالتزامات)", "O(حجم المستودع)"],
                 correct: 1,
-                explanation: "It must check the status of files in the working directory."
+                explanation: "It must check the status of files in the working directory.",
+                explanation_ar: "يجب عليه التحقق من حالة الملفات في دليل العمل."
             }
         ]
     }

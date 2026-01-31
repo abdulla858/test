@@ -48,7 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
             score_great: "Great job! You know your stuff. 🚀",
             score_good: "Good effort! Keep practicing. 📚",
             score_retry: "Don't give up! Review the concepts and try again. 💪",
-            confirm_exit: "Exit quiz? Progress will be lost."
+            confirm_exit: "Exit quiz? Progress will be lost.",
+            res_trees: "Trees (Tutorialspoint)",
+            res_dsa: "1000 DSA Questions (Sanfoundry)",
+            res_complexity: "Time Complexity (GFG)"
         },
         ar: {
             app_title: "أستاذ الخوارزميات",
@@ -67,7 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
             score_great: "عمل رائع! أنت تعرف مجالك جيداً. 🚀",
             score_good: "جهد جيد! استمر في التدريب. 📚",
             score_retry: "لا تستسلم! راجع المفاهيم وحاول مرة أخرى. 💪",
-            confirm_exit: "هل تريد الخروج؟ سيتم فقدان التقدم."
+            confirm_exit: "هل تريد الخروج؟ سيتم فقدان التقدم.",
+            res_trees: "الأشجار (Tutorialspoint)",
+            res_dsa: "1000 سؤال في هياكل البيانات (Sanfoundry)",
+            res_complexity: "التعقيد الزمني (GFG)"
         }
     };
 
