@@ -1150,1147 +1150,1632 @@ const quizData = [
             {
                 id: "q-33",
                 text: "Deleting from a Priority Queue (Max Heap) takes:",
+                text_ar: "يستغرق الحذف من طابور الأولويات (Max Heap):",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
                 correct: 2,
-                explanation: "Removing the root requires reheapifying, which is O(log n)."
+                explanation: "Removing the root requires reheapifying, which is O(log n).",
+                explanation_ar: "تتطلب إزالة الجذر إعادة ترتيب الكومة (reheapifying)، وهو ما يستغرق O(log n)."
             },
             {
                 id: "q-34",
                 text: "Inserting into a Priority Queue (Max Heap) takes:",
+                text_ar: "يستغرق الإدراج في طابور الأولويات (Max Heap):",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
                 correct: 2,
-                explanation: "Insertion requires bubbling up, taking O(log n) time."
+                explanation: "Insertion requires bubbling up, taking O(log n) time.",
+                explanation_ar: "يتطلب الإدراج التصعيد لأعلى (bubbling up)، مما يستغرق وقت O(log n)."
             },
             {
                 id: "q-35",
                 text: "A blocking queue is commonly used in:",
+                text_ar: "يستخدم طابور الحظر (Blocking Queue) عادةً في:",
                 options: ["Single-threaded apps", "Multi-threaded Producer-Consumer", "Static websites", "Recursion"],
+                options_ar: ["التطبيقات أحادية الخيط", "المنتج-المستهلك متعدد الخيوط", "المواقع الثابتة", "العودية"],
                 correct: 1,
-                explanation: "It blocks threads if valid operations (enqueue/dequeue) cannot be performed immediately."
+                explanation: "It blocks threads if valid operations (enqueue/dequeue) cannot be performed immediately.",
+                explanation_ar: "يقوم بحظر الخيوط إذا لم يكن من الممكن تنفيذ العمليات الصالحة (الإدراج/الإزالة) على الفور."
             },
             {
                 id: "q-36",
                 text: "Rotten Oranges problem on a grid is solved using:",
+                text_ar: "يتم حل مشكلة البرتقال الفاسد على شبكة باستخدام:",
                 options: ["DFS", "BFS", "Backtracking", "Greedy"],
+                options_ar: ["DFS", "BFS", "Backtracking", "Greedy"],
                 correct: 1,
-                explanation: "Rotting spreads layer by layer, suitable for BFS with a Queue."
+                explanation: "Rotting spreads layer by layer, suitable for BFS with a Queue.",
+                explanation_ar: "ينتشر التعفن طبقة تلو الأخرى، مما يجعله مناسباً لـ BFS باستخدام طابور."
             },
             {
                 id: "q-37",
                 text: "Which queue variation allows insertion at both ends but deletion at only one?",
+                text_ar: "أي نوع من الطوابير يسمح بالإدراج في كلا الطرفين ولكن الحذف من طرف واحد فقط؟",
                 options: ["Input Restricted Deque", "Output Restricted Deque", "Priority Queue", "Simple Queue"],
+                options_ar: ["Input Restricted Deque", "Output Restricted Deque", "Priority Queue", "Simple Queue"],
                 correct: 1,
-                explanation: "Output Restricted Deque restricts deletion to one end."
+                explanation: "Output Restricted Deque restricts deletion to one end.",
+                explanation_ar: "Output Restricted Deque يقيد الحذف بنهاية واحدة."
             },
             {
                 id: "q-38",
                 text: "Call center phone systems use queues to:",
+                text_ar: "تستخدم أنظمة هواتف مراكز الاتصال الطوابير لـ:",
                 options: ["Hold calls for agents", "Reject calls", "Stack calls", "Sort calls alphabetically"],
+                options_ar: ["حجز المكالمات للوكلاء", "رفض المكالمات", "تكديس المكالمات", "فرز المكالمات أبجدياً"],
                 correct: 0,
-                explanation: "Waiting calls are held in a FIFO queue until an agent is free."
+                explanation: "Waiting calls are held in a FIFO queue until an agent is free.",
+                explanation_ar: "يتم الاحتفاظ بالمكالمات المنتظرة في طابور FIFO حتى يفرغ الوكيل."
             },
             {
                 id: "q-39",
                 text: "When implementing a queue with an array, we shift elements on dequeue to avoid wasted space. Time complexity becomes:",
+                text_ar: "عند تنفيذ طابور باستخدام مصفوفة، نقوم بإزاحة العناصر عند الإزالة لتجنب إهدار المساحة. يصبح التعقيد الزمني:",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
                 correct: 1,
-                explanation: "Shifting all remaining elements takes O(n) time."
+                explanation: "Shifting all remaining elements takes O(n) time.",
+                explanation_ar: "تستغرق إزاحة جميع العناصر المتبقية وقتاً O(n)."
             },
             {
                 id: "q-40",
                 text: "Double buffering in graphics uses:",
+                text_ar: "يستخدم التخزين المؤقت المزدوج (Double Buffering) في الرسومات:",
                 options: ["Two queues", "Two stacks", "Two buffers (often swapped)", "Linked List"],
+                options_ar: ["طابورين", "مكدسين", "مخزنين مؤقتين (غالباً يتم تبديلهما)", "قائمة متصلة"],
                 correct: 2,
-                explanation: "While conceptually buffers, the swapping mechanism is key. Queues manage the flow of frames."
+                explanation: "While conceptually buffers, the swapping mechanism is key. Queues manage the flow of frames.",
+                explanation_ar: "بينما هي مخازن مؤقتة من الناحية المفاهيمية، فإن آلية التبديل هي المفتاح. تدير الطوابير تدفق الإطارات."
             }
         ]
     },
     {
         id: "linkedlist",
         title: "Linked Lists",
+        title_ar: "القوائم المتصلة (Linked Lists)",
         description: "Singly, Doubly, and implemented stacks/queues.",
+        description_ar: "القوائم الأحادية، المزدوجة، والمكدسات/الطوابير المنفذة بها.",
         icon: "🔗",
         questions: [
             {
                 id: "ll-1",
                 text: "What does each node in a singly linked list contain?",
+                text_ar: "ماذا تحتوي كل عقدة في القائمة المتصلة الأحادية؟",
                 options: ["Data only", "Data and Pointer to next", "Data and Pointer to previous", "Pointer to head"],
+                options_ar: ["البيانات فقط", "البيانات ومؤشر للتالي", "البيانات ومؤشر للسابق", "مؤشر للرأس"],
                 correct: 1,
-                explanation: "A singly linked list node typically holds the data and a reference (pointer) to the next node."
+                explanation: "A singly linked list node typically holds the data and a reference (pointer) to the next node.",
+                explanation_ar: "تحتوي عقدة القائمة المتصلة الأحادية عادةً على البيانات ومرجع (مؤشر) للعقدة التالية."
             },
             {
                 id: "ll-2",
                 text: "What is the time complexity to insert a node at the beginning of a linked list?",
+                text_ar: "ما هو التعقيد الزمني لإدراج عقدة في بداية قائمة متصلة؟",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
                 correct: 0,
-                explanation: "Updating the head pointer is a constant time operation."
+                explanation: "Updating the head pointer is a constant time operation.",
+                explanation_ar: "تحديث مؤشر الرأس هو عملية تستغرق وقتاً ثابتاً."
             },
             {
                 id: "ll-3",
                 text: "In a Doubly Linked List, how many pointers does each node typically have?",
+                text_ar: "في القائمة المتصلة المزدوجة، كم عدد المؤشرات التي تمتلكها كل عقدة عادةً؟",
                 options: ["1", "2", "3", "0"],
+                options_ar: ["1", "2", "3", "0"],
                 correct: 1,
-                explanation: "One pointer for the next node and one for the previous node."
+                explanation: "One pointer for the next node and one for the previous node.",
+                explanation_ar: "مؤشر واحد للعقدة التالية وآخر للعقدة السابقة."
             },
             {
                 id: "ll-4",
                 text: "When implementing a Stack using a Linked List, which end is best for push/pop?",
+                text_ar: "عند تنفيذ مكدس باستخدام قائمة متصلة، أي طرف هو الأفضل لعمليات الدفع/السحب؟",
                 options: ["Wait for user input", "Head (Start)", "Tail (End)", "Random"],
+                options_ar: ["انتظار إدخال المستخدم", "الرأس (Start)", "الذيل (End)", "عشوائي"],
                 correct: 1,
-                explanation: "Operations at the head are O(1) without needing to traverse the list."
+                explanation: "Operations at the head are O(1) without needing to traverse the list.",
+                explanation_ar: "العمليات عند الرأس تكون O(1) دون الحاجة لاجتياز القائمة."
             },
             {
                 id: "ll-5",
                 text: "To delete the last node of a Singly Linked List (without a tail pointer), time complexity is:",
+                text_ar: "لحذف العقدة الأخيرة من قائمة متصلة أحادية (بدون مؤشر ذيل)، يكون التعقيد الزمني:",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
                 correct: 1,
-                explanation: "You must traverse to the second-to-last node to update its next pointer to null."
+                explanation: "You must traverse to the second-to-last node to update its next pointer to null.",
+                explanation_ar: "يجب عليك الانتقال إلى العقدة ما قبل الأخيرة لتحديث مؤشرها التالي إلى null."
             },
             {
                 id: "ll-6",
                 text: "What is the main advantage of a Linked List over an Array?",
+                text_ar: "ما هي الميزة الرئيسية للقائمة المتصلة مقارنة بالمصفوفة؟",
                 options: ["Random Access", "Dynamic Size", "Cache Locality", "Memory Efficiency"],
+                options_ar: ["الوصول العشوائي", "حجم ديناميكي", "محلية التخزين المؤقت", "كفاءة الذاكرة"],
                 correct: 1,
-                explanation: "Linked Lists grow and shrink dynamically without needing contiguous memory reallocation."
+                explanation: "Linked Lists grow and shrink dynamically without needing contiguous memory reallocation.",
+                explanation_ar: "تنمو القوائم المتصلة وتتقلص ديناميكياً دون الحاجة إلى إعادة تخصيص ذاكرة متجاورة."
             },
             {
                 id: "ll-7",
                 text: "Floyd's Cycle Finding Algorithm uses:",
+                text_ar: "تستخدم خوارزمية فلويد للكشف عن الدورة (Floyd's Cycle Finding):",
                 options: ["Two pointers moving at same speed", "Two pointers moving at different speeds", "Stack", "Queue"],
+                options_ar: ["مؤشرين يتحركان بنفس السرعة", "مؤشرين يتحركان بسرعات مختلفة", "Stack", "Queue"],
                 correct: 1,
-                explanation: "It uses a slow pointer (1 step) and a fast pointer (2 steps) to detect cycles."
+                explanation: "It uses a slow pointer (1 step) and a fast pointer (2 steps) to detect cycles.",
+                explanation_ar: "تستخدم مؤشراً بطيئاً (خطوة واحدة) ومؤشراً سريعاً (خطوتين) للكشف عن الدورات."
             },
             {
                 id: "ll-8",
                 text: "In a Circular Linked List, the next pointer of the last node points to:",
+                text_ar: "في القائمة المتصلة الدائرية، يشير المؤشر التالي للعقدة الأخيرة إلى:",
                 options: ["Null", "Head", "Previous node", "Random"],
+                options_ar: ["Null", "Head", "العقدة السابقة", "عشوائي"],
                 correct: 1,
-                explanation: "It points back to the Head, forming a circle."
+                explanation: "It points back to the Head, forming a circle.",
+                explanation_ar: "يشير مرة أخرى إلى الرأس، مشكلاً دائرة."
             },
             {
                 id: "ll-9",
                 text: "Which pointer is sufficient to traverse a Circular Singly Linked List completely?",
+                text_ar: "أي مؤشر يكفي لاجتياز قائمة متصلة دائرية أحادية بالكامل؟",
                 options: ["Head", "Tail", "Any node", "None"],
+                options_ar: ["Head", "Tail", "أي عقدة", "لا شيء"],
                 correct: 2,
-                explanation: "Start at any node and follow next pointers until you reach the start node again."
+                explanation: "Start at any node and follow next pointers until you reach the start node again.",
+                explanation_ar: "ابدأ عند أي عقدة واتبع المؤشرات التالية حتى تصل إلى عقدة البداية مرة أخرى."
             },
             {
                 id: "ll-10",
                 text: "Random access in a Linked List takes:",
+                text_ar: "يستغرق الوصول العشوائي في القائمة المتصلة:",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
                 correct: 1,
-                explanation: "You must traverse from the head to reach the k-th element."
+                explanation: "You must traverse from the head to reach the k-th element.",
+                explanation_ar: "يجب عليك الاجتياز من الرأس للوصول إلى العنصر k."
             },
             {
                 id: "ll-11",
                 text: "An XOR Linked List uses bitwise XOR to store:",
+                text_ar: "تستخدم القائمة المتصلة XOR الـ bitwise XOR لتخزين:",
                 options: ["Data", "Next and Previous addresses combined", "Head and Tail", "None"],
+                options_ar: ["البيانات", "عناوين التالي والسابق مدمجة", "الرأس والذيل", "لا شيء"],
                 correct: 1,
-                explanation: "It stores `prev ^ next` in a single field to save memory (doubly linked functionality with one pointer space)."
+                explanation: "It stores `prev ^ next` in a single field to save memory (doubly linked functionality with one pointer space).",
+                explanation_ar: "تقوم بتخزين `prev ^ next` في حقل واحد لتوفير الذاكرة (وظيفة الربط المزدوج بمساحة مؤشر واحد)."
             },
             {
                 id: "ll-12",
                 text: "To reverse a Singly Linked List, how many pointers are typically used in the iterative method?",
+                text_ar: "لعكس قائمة متصلة أحادية، كم عدد المؤشرات المستخدمة عادةً في الطريقة التكرارية؟",
                 options: ["1", "2", "3", "4"],
+                options_ar: ["1", "2", "3", "4"],
                 correct: 2,
-                explanation: "Typically Prev, Current, and Next pointers are used."
+                explanation: "Typically Prev, Current, and Next pointers are used.",
+                explanation_ar: "عادة ما تستخدم مؤشرات Prev و Current و Next."
             },
             {
                 id: "ll-13",
                 text: "Merging two sorted linked lists of size N and M takes:",
+                text_ar: "يستغرق دمج قائمتين متصلتين مفروزتين بحجم N و M:",
                 options: ["O(1)", "O(min(N,M))", "O(N+M)", "O(N*M)"],
+                options_ar: ["O(1)", "O(min(N,M))", "O(N+M)", "O(N*M)"],
                 correct: 2,
-                explanation: "You traverse both lists once."
+                explanation: "You traverse both lists once.",
+                explanation_ar: "تقوم باجتياز كلا القائمتين مرة واحدة."
             },
             {
                 id: "ll-14",
                 text: "Which sorting algorithm is well-suited for Linked Lists?",
+                text_ar: "أي خوارزمية فرز مناسبة تماماً للقوائم المتصلة؟",
                 options: ["Merge Sort", "Binary Search", "Heap Sort", "Quick Sort"],
+                options_ar: ["Merge Sort", "Binary Search", "Heap Sort", "Quick Sort"],
                 correct: 0,
-                explanation: "Merge Sort works well as it doesn't require random access."
+                explanation: "Merge Sort works well as it doesn't require random access.",
+                explanation_ar: "يعمل Merge Sort بشكل جيد لأنه لا يتطلب وصولاً عشوائياً."
             },
             {
                 id: "ll-15",
                 text: "A Skip List allows fast search in a Linked List hierarchy with complexity:",
+                text_ar: "تسمح قائمة التخطي (Skip List) بالبحث السريع في التسلسل الهرمي للقائمة المتصلة بتعقيد:",
                 options: ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+                options_ar: ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
                 correct: 1,
-                explanation: "It provides probabilistic O(log n) search, insertion, and deletion."
+                explanation: "It provides probabilistic O(log n) search, insertion, and deletion.",
+                explanation_ar: "توفر بحثاً وإدراجاً وحذفاً احتمالياً بـ O(log n)."
             },
             {
                 id: "ll-16",
                 text: "Intersection point of two Linked Lists can be found by:",
+                text_ar: "يمكن العثور على نقطة تقاطع قائمتين متصلتين عن طريق:",
                 options: ["Difference in counts", "Hash Map", "Two pointer trick", "All of the above"],
+                options_ar: ["الفرق في الأعداد", "خريطة التجزئة (Hash Map)", "خدعة المؤشرين", "كل ما سبق"],
                 correct: 3,
-                explanation: "All these methods can effectively find the intersection node."
+                explanation: "All these methods can effectively find the intersection node.",
+                explanation_ar: "يمكن لجميع هذه الطرق العثور بفعالية على عقدة التقاطع."
             },
             {
                 id: "ll-17",
                 text: "Linked Lists are stored in memory as:",
+                text_ar: "يتم تخزين القوائم المتصلة في الذاكرة على شكل:",
                 options: ["Contiguous blocks", "Non-contiguous nodes", "Stack frames", "Binary trees"],
+                options_ar: ["كتل متجاورة", "عقد غير متجاورة", "إطارات Stack", "أشجار ثنائية"],
                 correct: 1,
-                explanation: "Nodes can be scattered anywhere in the heap memory."
+                explanation: "Nodes can be scattered anywhere in the heap memory.",
+                explanation_ar: "يمكن أن تكون العقد مبعثرة في أي مكان في ذاكرة الكومة."
             },
             {
                 id: "ll-18",
                 text: "Deleting a node given only the pointer to that node (and it's not the last one) can be done in:",
+                text_ar: "حذف عقدة مع العلم فقط بالمؤشر لتلك العقدة (وهي ليست الأخيرة) يمكن القيام به في:",
                 options: ["O(1)", "O(n)", "Impossible", "O(log n)"],
+                options_ar: ["O(1)", "O(n)", "مستحيل", "O(log n)"],
                 correct: 0,
-                explanation: "Copy the data from the next node to the current node and delete the next node."
+                explanation: "Copy the data from the next node to the current node and delete the next node.",
+                explanation_ar: "انسخ البيانات من العقدة التالية إلى العقدة الحالية واحذف العقدة التالية."
             },
             {
                 id: "ll-19",
                 text: "Which type of Linked List allows traversal in both directions?",
+                text_ar: "أي نوع من القوائم المتصلة يسمح بالاجتياز في كلا الاتجاهين؟",
                 options: ["Singly", "Doubly", "Circular Singly", "Skip List"],
+                options_ar: ["Singly", "Doubly", "Circular Singly", "Skip List"],
                 correct: 1,
-                explanation: "Doubly Linked Lists have Next and Prev pointers."
+                explanation: "Doubly Linked Lists have Next and Prev pointers.",
+                explanation_ar: "تحتوي القوائم المتصلة المزدوجة على مؤشرات Next و Prev."
             },
             {
                 id: "ll-20",
                 text: "A dummy or sentinel node is used to:",
+                text_ar: "يتم استخدام عقدة وهمية أو حارسة (Sentinel Node) لـ:",
                 options: ["Store extra data", "Simplify boundary conditions", "Mark ends", "Increase speed"],
+                options_ar: ["تخزين بيانات إضافية", "تبسيط شروط الحدود", "تحديد النهايات", "زيادة السرعة"],
                 correct: 1,
-                explanation: "It eliminates special handling for head/tail operations."
+                explanation: "It eliminates special handling for head/tail operations.",
+                explanation_ar: "فهي تلغي المعالجة الخاصة لعمليات الرأس/الذيل."
             },
             {
                 id: "ll-21",
                 text: "Memory waste in a Doubly Linked List is due to:",
+                text_ar: "يعود إهدار الذاكرة في القائمة المتصلة المزدوجة إلى:",
                 options: ["Data fragmentation", "Extra pointer per node", "Padding", "None"],
+                options_ar: ["تجزئة البيانات", "مؤشر إضافي لكل عقدة", "الحشو (Padding)", "لا شيء"],
                 correct: 1,
-                explanation: "Storing the 'previous' pointer consumes extra memory per node compared to SLL."
+                explanation: "Storing the 'previous' pointer consumes extra memory per node compared to SLL.",
+                explanation_ar: "يستهلك تخزين المؤشر 'السابق' ذاكرة إضافية لكل عقدة مقارنة بـ SLL."
             },
             {
                 id: "ll-22",
                 text: "Finding the middle of a Linked List in one pass requires:",
+                text_ar: "يتطلب العثور على منتصف قائمة متصلة في تمريرة واحدة:",
                 options: ["Counting elements", "Two pointers (Slow/Fast)", "Recursion", "Stack"],
+                options_ar: ["عد العناصر", "مؤشرين (بطيء/سريع)", "العودية", "Stack"],
                 correct: 1,
-                explanation: "Move fast pointer 2 steps and slow pointer 1 step; when fast ends, slow is at middle."
+                explanation: "Move fast pointer 2 steps and slow pointer 1 step; when fast ends, slow is at middle.",
+                explanation_ar: "حرك المؤشر السريع خطوتين والبطيء خطوة واحدة؛ عندما ينتهي السريع، يكون البطيء في المنتصف."
             },
             {
                 id: "ll-23",
                 text: "A Linked List is a:",
+                text_ar: "القائمة المتصلة هي:",
                 options: ["Linear Data Structure", "Non-linear Data Structure", "Technically both", "Neither"],
+                options_ar: ["بنية بيانات خطية", "بنية بيانات غير خطية", "كلاهما تقنياً", "لا شيء"],
                 correct: 0,
-                explanation: "Elements are arranged sequentially."
+                explanation: "Elements are arranged sequentially.",
+                explanation_ar: "يتم ترتيب العناصر بالتسلسل."
             },
             {
                 id: "ll-24",
                 text: "Removing duplicates from an unsorted Linked List using hashing takes:",
+                text_ar: "تستغرق إزالة التكرارات من قائمة متصلة غير مفروزة باستخدام التجزئة (Hashing):",
                 options: ["O(n)", "O(n^2)", "O(1)", "O(log n)"],
+                options_ar: ["O(n)", "O(n^2)", "O(1)", "O(log n)"],
                 correct: 0,
-                explanation: "One pass with a Hash Set to track seen values."
+                explanation: "One pass with a Hash Set to track seen values.",
+                explanation_ar: "تمريرة واحدة مع مجموعة تجزئة (Hash Set) لتتبع القيم التي تمت رؤيتها."
             },
             {
                 id: "ll-25",
                 text: "To check if a Linked List is a palindrome, one common approach involves:",
+                text_ar: "للتحقق مما إذا كانت القائمة المتصلة متناظرة (Palindrome)، يتضمن أحد الأساليب الشائعة:",
                 options: ["Reversing second half", "Sorting", "Hashing", "Deleting nodes"],
+                options_ar: ["عكس النصف الثاني", "الفرز", "التجزئة", "حذف العقد"],
                 correct: 0,
-                explanation: "Reverse the second half and compare with the first half."
+                explanation: "Reverse the second half and compare with the first half.",
+                explanation_ar: "اعكس النصف الثاني وقارنه بالنصف الأول."
             },
             {
                 id: "ll-26",
                 text: "Insertion Sort on a Linked List is:",
+                text_ar: "فرز الإدراج (Insertion Sort) على القائمة المتصلة هو:",
                 options: ["Impossible", "Possible but inefficient", "Possible and stable", "O(n)"],
+                options_ar: ["مستحيل", "ممكن ولكنه غير فعال", "ممكن ومستقر", "O(n)"],
                 correct: 2,
-                explanation: "It is possible and stable, though O(n^2)."
+                explanation: "It is possible and stable, though O(n^2).",
+                explanation_ar: "إنه ممكن ومستقر، على الرغم من أنه O(n^2)."
             },
             {
                 id: "ll-27",
                 text: "Which problem is Josephus problem related to?",
+                text_ar: "بأي مشكلة تتعلق مشكلة جوزيفوس (Josephus problem)؟",
                 options: ["Stack", "Queue", "Circular Linked List", "Tree"],
+                options_ar: ["Stack", "Queue", "Circular Linked List", "Tree"],
                 correct: 2,
-                explanation: "Circular Linked Lists naturally model the circle."
+                explanation: "Circular Linked Lists naturally model the circle.",
+                explanation_ar: "القوائم المتصلة الدائرية تمثل الدائرة بشكل طبيعي."
             },
             {
                 id: "ll-28",
                 text: "Cache performance of Linked Lists is generally:",
+                text_ar: "أداء التخزين المؤقت (Cache) للقوائم المتصلة بشكل عام:",
                 options: ["Better than Arrays", "Worse than Arrays", "Same as Arrays", "Optimal"],
+                options_ar: ["أفضل من المصفوفات", "أسوأ من المصفوفات", "نفس المصفوفات", "أمثل"],
                 correct: 1,
-                explanation: "Non-contiguous memory leads to poor spatial locality and more cache misses."
+                explanation: "Non-contiguous memory leads to poor spatial locality and more cache misses.",
+                explanation_ar: "تؤدي الذاكرة غير المتجاورة إلى ضعف المكانية المكانية والمزيد من فقدان التخزين المؤقت."
             },
             {
                 id: "ll-29",
                 text: "Adding two numbers represented by Linked Lists (reverse order) involves:",
+                text_ar: "تتضمن إضافة رقمين ممثلين بقوائم متصلة (ترتيب عكسي):",
                 options: ["Traversing and carrying over", "Converting to int", "Reversing first", "Using stacks"],
+                options_ar: ["الاجتياز والحمل (carry)", "التحويل إلى int", "العكس أولاً", "استخدام المكدسات"],
                 correct: 0,
-                explanation: "Traverse both lists, sum nodes + carry, and create new result node."
+                explanation: "Traverse both lists, sum nodes + carry, and create new result node.",
+                explanation_ar: "اجتياز القائمتين، جمع العقد + الحمل، وإنشاء عقدة نتيجة جديدة."
             },
             {
                 id: "ll-30",
                 text: "If Head is null, the Linked List is:",
+                text_ar: "إذا كان Head يساوي null، فإن القائمة المتصلة تكون:",
                 options: ["Full", "Empty", "One node", "Invalid"],
+                options_ar: ["ممتلئة", "فارغة", "عقدة واحدة", "غير صالحة"],
                 correct: 1,
-                explanation: "A null head pointer signifies an empty list."
+                explanation: "A null head pointer signifies an empty list.",
+                explanation_ar: "يشير مؤشر الرأس الفارغ إلى قائمة فارغة."
             },
             {
                 id: "ll-31",
                 text: "Inserting at the end of a Singly Linked List with only Head pointer takes:",
+                text_ar: "يتطلب الإدراج في نهاية قائمة متصلة أحادية مع وجود مؤشر الرأس فقط:",
                 options: ["O(1)", "O(n)", "O(n^2)", "O(log n)"],
+                options_ar: ["O(1)", "O(n)", "O(n^2)", "O(log n)"],
                 correct: 1,
-                explanation: "You must traverse the entire list to find the last node."
+                explanation: "You must traverse the entire list to find the last node.",
+                explanation_ar: "يجب عليك اجتياز القائمة بأكملها للعثور على العقدة الأخيرة."
             },
             {
                 id: "ll-32",
                 text: "Polynomial addition is an application of:",
+                text_ar: "جمع كثيرات الحدود هو تطبيق لـ:",
                 options: ["Arrays", "Linked Lists", "Stacks", "Heaps"],
+                options_ar: ["Arrays", "Linked Lists", "Stacks", "Heaps"],
                 correct: 1,
-                explanation: "Linked lists can represent terms of a polynomial efficiently, especially if sparse."
+                explanation: "Linked lists can represent terms of a polynomial efficiently, especially if sparse.",
+                explanation_ar: "يمكن للقوائم المتصلة تمثيل حدود كثيرة الحدود بكفاءة، خاصة إذا كانت متناثرة."
             },
             {
                 id: "ll-33",
                 text: "The 'Runner' technique refers to:",
+                text_ar: "تشير تقنية 'العداء' (Runner technique) إلى:",
                 options: ["Using two pointers", "Running code fast", "Skipping nodes", "Deleting nodes"],
+                options_ar: ["استخدام مؤشرين", "تشغيل الكود بسرعة", "تخطي العقد", "حذف العقد"],
                 correct: 0,
-                explanation: "Also known as the Fast/Slow pointer or Tortoise/Hare technique."
+                explanation: "Also known as the Fast/Slow pointer or Tortoise/Hare technique.",
+                explanation_ar: "تُعرف أيضاً بتقنية المؤشر السريع/البطيء أو السلحفاة/الأرنب."
             },
             {
                 id: "ll-34",
                 text: "What happens if you free a node without updating the previous node's next pointer?",
+                text_ar: "ماذا يحدث إذا قمت بتحرير عقدة دون تحديث المؤشر التالي للعقدة السابقة؟",
                 options: ["Dangling Pointer", "Memory Leak", "Correct deletion", "Stack Overflow"],
+                options_ar: ["مؤشر معلق (Dangling Pointer)", "تسرب الذاكرة", "حذف صحيح", "طفح المكدس"],
                 correct: 0,
-                explanation: "The previous node still points to the deallocated memory location."
+                explanation: "The previous node still points to the deallocated memory location.",
+                explanation_ar: "لا تزال العقدة السابقة تشير إلى موقع الذاكرة الذي تم إلغاء تخصيصه."
             },
             {
                 id: "ll-35",
                 text: "Swapping nodes in a Linked List without swapping data requires changing:",
+                text_ar: "يتطلب تبديل العقد في قائمة متصلة دون تبديل البيانات تغيير:",
                 options: ["Values", "Links (Pointers)", "Head only", "Tail only"],
+                options_ar: ["القيم", "الروابط (المؤشرات)", "الرأس فقط", "الذيل فقط"],
                 correct: 1,
-                explanation: "You adjust the next (and prev) pointers to reorder the nodes."
+                explanation: "You adjust the next (and prev) pointers to reorder the nodes.",
+                explanation_ar: "تقوم بضبط المؤشرات التالية (والسابقة) لإعادة ترتيب العقد."
             },
             {
                 id: "ll-36",
                 text: "Segregating even and odd nodes in a Linked List can be done in:",
+                text_ar: "يمكن فصل العقد الزوجية والفردية في قائمة متصلة في:",
                 options: ["O(n)", "O(n^2)", "O(1)", "O(log n)"],
+                options_ar: ["O(n)", "O(n^2)", "O(1)", "O(log n)"],
                 correct: 0,
-                explanation: "One pass is sufficient to split and reconnect them."
+                explanation: "One pass is sufficient to split and reconnect them.",
+                explanation_ar: "تمريرة واحدة كافية لفصلها وإعادة توصيلها."
             },
             {
                 id: "ll-37",
                 text: "The address of the first node is aka:",
+                text_ar: "يُعرف عنوان العقدة الأولى بـ:",
                 options: ["Base address", "Head", "Top", "Root"],
+                options_ar: ["العنوان الأساسي", "الرأس (Head)", "الأعلى (Top)", "الجذر (Root)"],
                 correct: 1,
-                explanation: "The pointer to the first node is called the Head."
+                explanation: "The pointer to the first node is called the Head.",
+                explanation_ar: "يسمى المؤشر إلى العقدة الأولى بالرأس (Head)."
             },
             {
                 id: "ll-38",
                 text: "Implementing a Queue with a Circular Linked List requires how many pointers?",
+                text_ar: "كم عدد المؤشرات المطلوبة لتنفيذ طابور باستخدام قائمة متصلة دائرية؟",
                 options: ["Two (Front, Rear)", "One (Rear only)", "Three", "Zero"],
+                options_ar: ["اثنان (مقدمة، خلفية)", "واحد (خلفي فقط)", "ثلاثة", "صفر"],
                 correct: 1,
-                explanation: "A single 'Rear' pointer is sufficient; Rear->Next is Front."
+                explanation: "A single 'Rear' pointer is sufficient; Rear->Next is Front.",
+                explanation_ar: "يكفي مؤشر 'خلفي' واحد؛ حيث يشير Rear->Next إلى المقدمة."
             },
             {
                 id: "ll-39",
                 text: "Find the Nth node from the end of a linked list requires:",
+                text_ar: "يتطلب العثور على العقدة N من نهاية قائمة متصلة:",
                 options: ["Two passes or Two pointers", "Sorting", "Hashing", "Binary Search"],
+                options_ar: ["تمريرتين أو مؤشرين", "فرز", "تجزئة", "بحث ثنائي"],
                 correct: 0,
-                explanation: "Move fast pointer N steps, then move both until fast reaches end."
+                explanation: "Move fast pointer N steps, then move both until fast reaches end.",
+                explanation_ar: "حرك المؤشر السريع N خطوات، ثم حرك كليهما حتى يصل السريع للنهاية."
             },
             {
                 id: "ll-40",
                 text: "Can a Linked List contain a cycle?",
+                text_ar: "هل يمكن أن تحتوي القائمة المتصلة على دورة؟",
                 options: ["No", "Yes", "Only Doubly Linked List", "Only if size > 10"],
+                options_ar: ["لا", "نعم", "فقط القائمة المتصلة المزدوجة", "فقط إذا كان الحجم > 10"],
                 correct: 1,
-                explanation: "Yes, if a node points back to a previous node in the list."
+                explanation: "Yes, if a node points back to a previous node in the list.",
+                explanation_ar: "نعم، إذا كانت العقدة تشير مرة أخرى إلى عقدة سابقة في القائمة."
             }
         ]
     },
     {
         id: "tree",
         title: "Trees",
+        title_ar: "الأشجار (Trees)",
         description: "Binary Trees, Traversals (Inorder, Preorder, Postorder).",
+        description_ar: "الأشجار الثنائية، الاجتياز (Inorder, Preorder, Postorder).",
         icon: "🌳",
         questions: [
             {
                 id: "tr-1",
                 text: "What is the maximum number of nodes in a binary tree of height 'h' (root at height 0)?",
+                text_ar: "ما هو أقصى عدد من العقد في شجرة ثنائية ارتفاعها 'h' (الجذر عند الارتفاع 0)؟",
                 options: ["2^h", "2^(h+1) - 1", "2^h - 1", "h^2"],
+                options_ar: ["2^h", "2^(h+1) - 1", "2^h - 1", "h^2"],
                 correct: 1,
-                explanation: "Geometric series sum: 1 + 2 + 4 + ... + 2^h = 2^(h+1) - 1."
+                explanation: "Geometric series sum: 1 + 2 + 4 + ... + 2^h = 2^(h+1) - 1.",
+                explanation_ar: "مجموع المتسلسلة الهندسية: 1 + 2 + 4 + ... + 2^h = 2^(h+1) - 1."
             },
             {
                 id: "tr-2",
                 text: "Which traversal visits the root node LAST?",
+                text_ar: "أي اجتياز يزور عقدة الجذر أخيراً؟",
                 options: ["Preorder", "Inorder", "Postorder", "Level Order"],
+                options_ar: ["Preorder", "Inorder", "Postorder", "Level Order"],
                 correct: 2,
-                explanation: "Postorder traversal: Left -> Right -> Root."
+                explanation: "Postorder traversal: Left -> Right -> Root.",
+                explanation_ar: "Postorder traversal: يسار -> يمين -> جذر."
             },
             {
                 id: "tr-3",
                 text: "In a Binary Search Tree (BST), the left child is always:",
+                text_ar: "في شجرة البحث الثنائية (BST)، يكون الابن الأيسر دائماً:",
                 options: ["Greater than root", "Smaller than root", "Equal to root", "Any value"],
+                options_ar: ["أكبر من الجذر", "أصغر من الجذر", "مساوياً للجذر", "أي قيمة"],
                 correct: 1,
-                explanation: "BST property: Left < Root < Right."
+                explanation: "BST property: Left < Root < Right.",
+                explanation_ar: "خاصية BST: يسار < جذر < يمين."
             },
             {
                 id: "tr-4",
                 text: "For the tree: Root(A) -> Left(B), Right(C). What is the Preorder traversal?",
+                text_ar: "للشجرة: Root(A) -> Left(B), Right(C). ما هو اجتياز Preorder؟",
                 options: ["B A C", "A B C", "B C A", "C B A"],
+                options_ar: ["B A C", "A B C", "B C A", "C B A"],
                 correct: 1,
-                explanation: "Preorder: Root -> Left -> Right (A -> B -> C)."
+                explanation: "Preorder: Root -> Left -> Right (A -> B -> C).",
+                explanation_ar: "Preorder: جذر -> يسار -> يمين (A -> B -> C)."
             },
             {
                 id: "tr-5",
                 text: "Which traversal is natural for processing a BST in sorted order?",
+                text_ar: "أي اجتياز يعتبر طبيعياً لمعالجة BST بترتيب مفروز؟",
                 options: ["Preorder", "Inorder", "Postorder", "Level Order"],
+                options_ar: ["Preorder", "Inorder", "Postorder", "Level Order"],
                 correct: 1,
-                explanation: "Inorder traversal of a BST visits nodes in non-decreasing order."
+                explanation: "Inorder traversal of a BST visits nodes in non-decreasing order.",
+                explanation_ar: "يزور اجتياز Inorder لشجرة BST العقد بترتيب غير متناقص."
             },
             {
                 id: "tr-6",
                 text: "What is the worst-case time complexity for searching in a BST?",
+                text_ar: "ما هو أسوأ تعقيد زمني للبحث في BST؟",
                 options: ["O(log n)", "O(n)", "O(1)", "O(n log n)"],
+                options_ar: ["O(log n)", "O(n)", "O(1)", "O(n log n)"],
                 correct: 1,
-                explanation: "In a skewed tree (like a linked list), searching takes O(n)."
+                explanation: "In a skewed tree (like a linked list), searching takes O(n).",
+                explanation_ar: "في شجرة مائلة (مثل القائمة المتصلة)، يستغرق البحث O(n)."
             },
             {
                 id: "tr-7",
                 text: "AVL Tree is a type of:",
+                text_ar: "شجرة AVL هي نوع من:",
                 options: ["Binary Search Tree", "Heap", "Hash Table", "Graph"],
+                options_ar: ["Binary Search Tree", "Heap", "Hash Table", "Graph"],
                 correct: 0,
-                explanation: "AVL trees are self-balancing Binary Search Trees."
+                explanation: "AVL trees are self-balancing Binary Search Trees.",
+                explanation_ar: "أشجار AVL هي أشجار بحث ثنائية ذاتية التوازن."
             },
             {
                 id: "tr-8",
                 text: "In a min-heap, the root node contains the:",
+                text_ar: "في min-heap، تحتوي عقدة الجذر على:",
                 options: ["Maximum element", "Minimum element", "Median element", "Random element"],
+                options_ar: ["العنصر الأقصى", "العنصر الأدنى", "العنصر الوسيط", "عنصر عشوائي"],
                 correct: 1,
-                explanation: "In a min-heap, every parent is smaller than its children."
+                explanation: "In a min-heap, every parent is smaller than its children.",
+                explanation_ar: "في min-heap، يكون كل أب أصغر من أبنائه."
             },
             {
                 id: "tr-9",
                 text: "What is the height of a complete binary tree with N nodes?",
+                text_ar: "ما هو ارتفاع شجرة ثنائية كاملة باحتواء N عقدة؟",
                 options: ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+                options_ar: ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
                 correct: 1,
-                explanation: "A complete binary tree is balanced, so height is log2(N)."
+                explanation: "A complete binary tree is balanced, so height is log2(N).",
+                explanation_ar: "الشجرة الثنائية الكاملة متوازنة، لذا الارتفاع هو log2(N)."
             },
             {
                 id: "tr-10",
                 text: "The number of edges in a tree with N nodes is always:",
+                text_ar: "عدد الحواف في شجرة تحتوي على N عقدة هو دائماً:",
                 options: ["N", "N - 1", "N + 1", "2N"],
+                options_ar: ["N", "N - 1", "N + 1", "2N"],
                 correct: 1,
-                explanation: "A tree is a connected acyclic graph with N-1 edges."
+                explanation: "A tree is a connected acyclic graph with N-1 edges.",
+                explanation_ar: "الشجرة عبارة عن رسم بياني متصل غير دوري بـ N-1 حافة."
             },
             {
                 id: "tr-11",
                 text: "Which data structure is used for Level Order Traversal?",
+                text_ar: "أي بنية بيانات تستخدم لاجتياز ترتيب المستوى؟",
                 options: ["Stack", "Queue", "Set", "Map"],
+                options_ar: ["Stack", "Queue", "Set", "Map"],
                 correct: 1,
-                explanation: "BFS (Level Order) uses a queue to track nodes at the current level."
+                explanation: "BFS (Level Order) uses a queue to track nodes at the current level.",
+                explanation_ar: "يستخدم BFS (ترتيب المستوى) طابوراً لتتبع العقد في المستوى الحالي."
             },
             {
                 id: "tr-12",
                 text: "A Full Binary Tree is one where:",
+                text_ar: "الشجرة الثنائية الممتلئة (Full Binary Tree) هي التي:",
                 options: ["Every node has 0 or 2 children", "Every level is completely filled", "Left child is always smaller", "Height is minimal"],
+                options_ar: ["كل عقدة لها 0 أو 2 أبناء", "كل مستوى مملوء بالكامل", "الابن الأيسر أصغر دائماً", "الارتفاع هو الحد الأدنى"],
                 correct: 0,
-                explanation: "Also known as a proper binary tree, every node has either 0 or 2 children."
+                explanation: "Also known as a proper binary tree, every node has either 0 or 2 children.",
+                explanation_ar: "تُعرف أيضاً بالشجرة الثنائية السليمة، حيث تحتوي كل عقدة إما على 0 أو 2 أبناء."
             },
             {
                 id: "tr-13",
                 text: "What is the maximum number of nodes at level 'L' in a binary tree?",
+                text_ar: "ما هو الحد الأقصى لعدد العقد في المستوى 'L' في شجرة ثنائية؟",
                 options: ["2*L", "2^L", "L^2", "2^(L-1)"],
+                options_ar: ["2*L", "2^L", "L^2", "2^(L-1)"],
                 correct: 1,
-                explanation: "At level 0: 1 node (2^0). At level L: 2^L nodes."
+                explanation: "At level 0: 1 node (2^0). At level L: 2^L nodes.",
+                explanation_ar: "في المستوى 0: عقدة واحدة (2^0). في المستوى L: 2^L عقدة."
             },
             {
                 id: "tr-14",
                 text: "Which of these is NOT a self-balancing BST?",
+                text_ar: "أي مما يلي ليست شجرة بحث ثنائية (BST) ذاتية التوازن؟",
                 options: ["AVL Tree", "Red-Black Tree", "Splay Tree", "Standard BST"],
+                options_ar: ["AVL Tree", "Red-Black Tree", "Splay Tree", "Standard BST"],
                 correct: 3,
-                explanation: "Standard BST does not guarantee balance explicitly."
+                explanation: "Standard BST does not guarantee balance explicitly.",
+                explanation_ar: "لا تضمن BST القياسية التوازن بشكل صريح."
             },
             {
                 id: "tr-15",
                 text: "Huffman coding uses which type of tree?",
+                text_ar: "يستخدم ترميز هوفمان (Huffman coding) أي نوع من الأشجار؟",
                 options: ["Binary Tree", "Trie", "B-Tree", "AVL Tree"],
+                options_ar: ["Binary Tree", "Trie", "B-Tree", "AVL Tree"],
                 correct: 0,
-                explanation: "It constructs a binary tree based on character frequencies."
+                explanation: "It constructs a binary tree based on character frequencies.",
+                explanation_ar: "يقوم ببناء شجرة ثنائية بناءً على تكرار الأحرف."
             },
             {
                 id: "tr-16",
                 text: "Threaded Binary Trees main advantage is:",
+                text_ar: "الميزة الرئيسية للأشجار الثنائية المترابطة (Threaded Binary Trees) هي:",
                 options: ["Faster search", "Less memory", "Traversals without stack/recursion", "Self-balancing"],
+                options_ar: ["بحث أسرع", "ذاكرة أقل", "الاجتياز بدون مكدس/عودية", "التوازن الذاتي"],
                 correct: 2,
-                explanation: "Threads (pointers to predecessor/successor) allow traversal without extra space."
+                explanation: "Threads (pointers to predecessor/successor) allow traversal without extra space.",
+                explanation_ar: "تسمح الخيوط (مؤشرات إلى السلف/الخلف) بالاجتياز دون مساحة إضافية."
             },
             {
                 id: "tr-17",
                 text: "Deleting a leaf node in a BST takes:",
+                text_ar: "حذف عقدة ورقية في BST يستغرق:",
                 options: ["O(1)", "O(log n)", "O(n)", "O(Height)"],
+                options_ar: ["O(1)", "O(log n)", "O(n)", "O(Height)"],
                 correct: 3,
-                explanation: "It depends on the height of the tree to find the node."
+                explanation: "It depends on the height of the tree to find the node.",
+                explanation_ar: "يعتمد ذلك على ارتفاع الشجرة للعثور على العقدة."
             },
             {
                 id: "tr-18",
                 text: "Postorder traversal is used for:",
+                text_ar: "يستخدم اجتياز Postorder لـ:",
                 options: ["Deleting the tree", "Copying the tree", "Calculating height", "All of the above"],
+                options_ar: ["حذف الشجرة", "نسخ الشجرة", "حساب الارتفاع", "كل ما سبق"],
                 correct: 3,
-                explanation: "Postorder visits children before the parent, useful for deletion and bottom-up calculations."
+                explanation: "Postorder visits children before the parent, useful for deletion and bottom-up calculations.",
+                explanation_ar: "يزور Postorder الأبناء قبل الأب، وهو مفيد للحذف والحسابات من الأسفل إلى الأعلى."
             },
             {
                 id: "tr-19",
                 text: "To construct a unique binary tree, which pair of traversals is sufficient?",
+                text_ar: "لبناء شجرة ثنائية فريدة، أي زوج من الاجتيازات كافٍ؟",
                 options: ["Inorder and Preorder", "Preorder and Postorder", "Level Order and Postorder", "None"],
+                options_ar: ["Inorder و Preorder", "Preorder و Postorder", "Level Order و Postorder", "لا شيء مما سبق"],
                 correct: 0,
-                explanation: "Inorder plus Preorder (or Postorder) uniquely identifies a binary tree."
+                explanation: "Inorder plus Preorder (or Postorder) uniquely identifies a binary tree.",
+                explanation_ar: "Inorder مع Preorder (أو Postorder) يحدد شجرة ثنائية بشكل فريد."
             },
             {
                 id: "tr-20",
                 text: "The conceptual structure of a Directory (FileSystem) is:",
+                text_ar: "الهيكل المفاهيمي للدليل (نظام الملفات) هو:",
                 options: ["Graph", "Tree", "Queue", "Stack"],
+                options_ar: ["رسم بياني (Graph)", "شجرة (Tree)", "طابور (Queue)", "مكدس (Stack)"],
                 correct: 1,
-                explanation: "Hierarchical file systems are structured as trees."
+                explanation: "Hierarchical file systems are structured as trees.",
+                explanation_ar: "يتم تنظيم أنظمة الملفات الهرمية كأشجار."
             },
             {
                 id: "tr-21",
                 text: "Finding the Lowest Common Ancestor (LCA) in a BST takes:",
+                text_ar: "العثور على السلف المشترك الأدنى (LCA) في BST يستغرق:",
                 options: ["O(n)", "O(Height)", "O(n^2)", "O(1)"],
+                options_ar: ["O(n)", "O(Height)", "O(n^2)", "O(1)"],
                 correct: 1,
-                explanation: "You traverse down from the root based on values."
+                explanation: "You traverse down from the root based on values.",
+                explanation_ar: "أنت تجتاز للأسفل من الجذر بناءً على القيم."
             },
             {
                 id: "tr-22",
                 text: "Mirroring a binary tree involves:",
+                text_ar: "عكس (Mirroring) شجرة ثنائية يتضمن:",
                 options: ["Swapping left and right children recursively", "Rotating left", "Rotating right", "Sorting"],
+                options_ar: ["تبديل الأبناء الأيسر والأيمن بشكل متكرر (recursively)", "التدوير لليسار", "التدوير لليمين", "الفرز"],
                 correct: 0,
-                explanation: "Recursively swap left and right pointers at every node."
+                explanation: "Recursively swap left and right pointers at every node.",
+                explanation_ar: "تبديل المؤشرات اليسرى واليمنى بشكل متكرر عند كل عقدة."
             },
             {
                 id: "tr-23",
                 text: "Diameter of a tree is:",
+                text_ar: "قطر الشجرة هو:",
                 options: ["Length of longest path between any two nodes", "Height of tree", "Number of leaf nodes", "Sum of all nodes"],
+                options_ar: ["طول أطول مسار بين أي عقدتين", "ارتفاع الشجرة", "عدد العقد الورقية", "مجموع كل العقد"],
                 correct: 0,
-                explanation: "The diameter (or width) is the number of edges on the longest path between two leaf nodes."
+                explanation: "The diameter (or width) is the number of edges on the longest path between two leaf nodes.",
+                explanation_ar: "القطر (أو العرض) هو عدد الحواف في أطول مسار بين عقدتين ورقيتين."
             },
             {
                 id: "tr-24",
                 text: "Serialization of a Binary Tree means:",
+                text_ar: "تسلسل (Serialization) شجرة ثنائية يعني:",
                 options: ["Converting to a string/array representation", "Sorting", "Balancing", "Deleting"],
+                options_ar: ["التحويل إلى تمثيل نصي أو مصفوفة", "الفرز", "الموازنة", "الحذف"],
                 correct: 0,
-                explanation: "Storing the tree structure in a file or buffer to reconstruct it later."
+                explanation: "Storing the tree structure in a file or buffer to reconstruct it later.",
+                explanation_ar: "تخزين هيكل الشجرة في ملف أو مخزن مؤقت لإعادة بنائها لاحقاً."
             },
             {
                 id: "tr-25",
                 text: "A Perfect Binary Tree of height h has how many leaf nodes?",
+                text_ar: "شجرة ثنائية مثالية بارتفاع h تحتوي على كم عدد من العقد الورقية؟",
                 options: ["2^h", "2^(h-1)", "h", "2h"],
+                options_ar: ["2^h", "2^(h-1)", "h", "2h"],
                 correct: 0,
-                explanation: "At height h (assuming root at 0), there are 2^h leaves."
+                explanation: "At height h (assuming root at 0), there are 2^h leaves.",
+                explanation_ar: "عند ارتفاع h (بافتراض أن الجذر عند الارتفاع 0)، يوجد 2^h ورقة."
             },
             {
                 id: "tr-26",
                 text: "Which tree structure is used in database indexing?",
+                text_ar: "أي هيكل شجرة يستخدم في فهرسة قواعد البيانات؟",
                 options: ["B-Tree", "Binary Tree", "Heap", "Stack"],
+                options_ar: ["B-Tree", "شجرة ثنائية (Binary Tree)", "كومة (Heap)", "مكدس (Stack)"],
                 correct: 0,
-                explanation: "B-Trees (and B+ Trees) are optimized for disk storage and indexing."
+                explanation: "B-Trees (and B+ Trees) are optimized for disk storage and indexing.",
+                explanation_ar: "تعد أشجار B (وأشجار +B) محسنة لتخزين القرص والفهرسة."
             },
             {
                 id: "tr-27",
                 text: "Trie data structure is efficient for:",
+                text_ar: "بنية بيانات Trie فعالة لـ:",
                 options: ["Dictionary/Prefix search", "Sorting numbers", "Shortest path", "MST"],
+                options_ar: ["البحث في القاموس أو البادئة", "فرز الأرقام", "أقصر مسار", "الحد الأدنى لشجرة الامتداد (MST)"],
                 correct: 0,
-                explanation: "Tries (Prefix Trees) store strings character by character."
+                explanation: "Tries (Prefix Trees) store strings character by character.",
+                explanation_ar: "تخزن Tries (أشجار البادئة) السلاسل حرفاً بحرف."
             },
             {
                 id: "tr-28",
                 text: "Evaluating an expression tree is typically done using:",
+                text_ar: "يتم تقييم شجرة التعبير عادةً باستخدام:",
                 options: ["Postorder Traversal", "Inorder Traversal", "Preorder Traversal", "BFS"],
+                options_ar: ["اجتياز Postorder", "اجتياز Inorder", "اجتياز Preorder", "البحث بالعرض أولاً (BFS)"],
                 correct: 0,
-                explanation: "Postorder corresponds to evaluating sub-expressions first (like RPN)."
+                explanation: "Postorder corresponds to evaluating sub-expressions first (like RPN).",
+                explanation_ar: "يتوافق Postorder مع تقييم التعبيرات الفرعية أولاً (مثل تدوين RPN)."
             },
             {
                 id: "tr-29",
                 text: "Left-Skewed Binary Tree is equivalent to:",
+                text_ar: "الشجرة الثنائية المائلة لليسار تعادل:",
                 options: ["Linked List", "Array", "Stack", "Queue"],
+                options_ar: ["قائمة متصلة (Linked List)", "مصفوفة (Array)", "مكدس (Stack)", "طابور (Queue)"],
                 correct: 0,
-                explanation: "Every node has only a left child, forming a linear chain."
+                explanation: "Every node has only a left child, forming a linear chain.",
+                explanation_ar: "كل عقدة لها ابن أيسر فقط، مما يشكل سلسلة خطية."
             },
             {
                 id: "tr-30",
                 text: "Successor of a node in BST is:",
+                text_ar: "خليفة (Successor) العقدة في BST هو:",
                 options: ["Smallest node in right subtree", "Largest node in left subtree", "Parent", "Root"],
+                options_ar: ["أصغر عقدة في الشجرة الفرعية اليمنى", "أكبر عقدة في الشجرة الفرعية اليسرى", "الأب", "الجذر"],
                 correct: 0,
-                explanation: "The in-order successor is the minimum value in the right subtree."
+                explanation: "The in-order successor is the minimum value in the right subtree.",
+                explanation_ar: "الخليفة في الترتيب (in-order successor) هو القيمة الصغرى في الشجرة الفرعية اليمنى."
             },
             {
                 id: "tr-31",
                 text: "Checking if a binary tree is a BST requires checking:",
+                text_ar: "التحقق مما إذا كانت الشجرة الثنائية هي BST يتطلب التحقق من:",
                 options: ["Every node respects min/max constraints", "Root > Left", "Root < Right", "Height balance"],
+                options_ar: ["كل عقدة تحترم قيود الحد الأدنى والحد الأقصى", "الجذر > اليسار", "الجذر < اليمين", "توازن الارتفاع"],
                 correct: 0,
-                explanation: "Simply checking immediate children is insufficient; range constraints must propagate."
+                explanation: "Simply checking immediate children is insufficient; range constraints must propagate.",
+                explanation_ar: "مجرد التحقق من الأبناء المباشرين غير كافٍ؛ يجب أن تنتشر قيود النطاق."
             },
             {
                 id: "tr-32",
                 text: "What traversal prints nodes level by level?",
+                text_ar: "أي اجتياز يطبع العقد مستوى بمستوى؟",
                 options: ["Level Order (BFS)", "Preorder", "Inorder", "Postorder"],
+                options_ar: ["ترتيب المستوى (BFS)", "Preorder", "Inorder", "Postorder"],
                 correct: 0,
-                explanation: "Standard Level Order Traversal."
+                explanation: "Standard Level Order Traversal.",
+                explanation_ar: "اجتياز ترتيب المستوى القياسي."
             },
             {
                 id: "tr-33",
                 text: "Morris Traversal achieves inorder traversal with space complexity:",
+                text_ar: "يحقق اجتياز موريس (Morris Traversal) اجتيازاً مرتباً (inorder) بتعقيد مساحة:",
                 options: ["O(1)", "O(n)", "O(log n)", "O(h)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(h)"],
                 correct: 0,
-                explanation: "It modifies the tree temporarily (threading) to avoid using recursion or a stack."
+                explanation: "It modifies the tree temporarily (threading) to avoid using recursion or a stack.",
+                explanation_ar: "يقوم بتعديل الشجرة مؤقتاً (threading) لتجنب استخدام العودية أو المكدس."
             },
             {
                 id: "tr-34",
                 text: "Given Preorder and Inorder, the root is:",
+                text_ar: "بمعطيات Preorder و Inorder، الجذر هو:",
                 options: ["First element of Preorder", "Last element of Preorder", "First element of Inorder", "Middle of Inorder"],
+                options_ar: ["العنصر الأول في Preorder", "العنصر الأخير في Preorder", "العنصر الأول في Inorder", "منتصف Inorder"],
                 correct: 0,
-                explanation: "Preorder always visits root first."
+                explanation: "Preorder always visits root first.",
+                explanation_ar: "اجتياز Preorder يزور الجذر دائماً أولاً."
             },
             {
                 id: "tr-35",
                 text: "Complexity to insert in a Binary Heap?",
+                text_ar: "تعقيد الإدراج في الكومة الثنائية (Binary Heap) هو:",
                 options: ["O(log n)", "O(1)", "O(n)", "O(n log n)"],
+                options_ar: ["O(log n)", "O(1)", "O(n)", "O(n log n)"],
                 correct: 0,
-                explanation: "You insert at the end and bubble up."
+                explanation: "You insert at the end and bubble up.",
+                explanation_ar: "تقوم بالإدراج في النهاية ثم الصعود للأعلى (bubble up)."
             },
             {
                 id: "tr-36",
                 text: "Sum of leaf nodes algorithm typically uses:",
+                text_ar: "خوارزمية مجموع العقد الورقية تستخدم عادةً:",
                 options: ["DFS/Recursion", "Binary Search", "Sorting", "Greedy"],
+                options_ar: ["البحث بالعمق (DFS) / العودية", "البحث الثنائي", "الفرز", "الخوارزمية الجشعة (Greedy)"],
                 correct: 0,
-                explanation: "Traverse the tree, if leaf, add value, else recurse."
+                explanation: "Traverse the tree, if leaf, add value, else recurse.",
+                explanation_ar: "اجتياز الشجرة، إذا كانت العقدة ورقة، أضف قيمتها، وإلا استمر بالاجتياز بشكل عودي."
             },
             {
                 id: "tr-37",
                 text: "What is an internal node?",
+                text_ar: "ما هي العقدة الداخلية (Internal Node)؟",
                 options: ["Node with at least one child", "Leak node", "Root only", "Null node"],
+                options_ar: ["عقدة لها ابن واحد على الأقل", "عقدة ورقية", "الجذر فقط", "عقدة فارغة (Null)"],
                 correct: 0,
-                explanation: "Any node that is not a leaf is an internal node."
+                explanation: "Any node that is not a leaf is an internal node.",
+                explanation_ar: "أي عقدة ليست ورقة تعتبر عقدة داخلية."
             },
             {
                 id: "tr-38",
                 text: "Segment Tree is used for:",
+                text_ar: "تستخدم شجرة القطع (Segment Tree) لـ:",
                 options: ["Range queries", "String matching", "Sorting", "Pathfinding"],
+                options_ar: ["استعلامات النطاق (Range queries)", "مطابقة السلاسل", "الفرز", "إيجاد المسارات"],
                 correct: 0,
-                explanation: "Efficiently answers range sum/min/max queries."
+                explanation: "Efficiently answers range sum/min/max queries.",
+                explanation_ar: "تجيب بكفاءة على استعلامات المجموع أو الحد الأدنى أو الأقصى للنطاق."
             },
             {
                 id: "tr-39",
                 text: "Top View of a Binary Tree requires:",
+                text_ar: "العرض العلوي (Top View) لشجرة ثنائية يتطلب:",
                 options: ["Horizontal distance tracking", "Height tracking", "Inorder traversal", "Postorder"],
+                options_ar: ["تتبع المسافة الأفقية", "تتبع الارتفاع", "اجتياز Inorder", "اجتياز Postorder"],
                 correct: 0,
-                explanation: "Map horizontal distance to node values (first visited at that distance)."
+                explanation: "Map horizontal distance to node values (first visited at that distance).",
+                explanation_ar: "تعيين المسافة الأفقية لقيم العقد (أول عقدة تمت زيارتها عند تلك المسافة)."
             },
             {
                 id: "tr-40",
                 text: "ZigZag traversal uses:",
+                text_ar: "اجتياز ZigZag يستخدم:",
                 options: ["Two stacks or Deque", "One queue", "Recursion only", "Array"],
+                options_ar: ["مكدسين أو Deque", "طابور واحد", "العودية فقط", "مصفوفة"],
                 correct: 0,
-                explanation: "You need to alternate direction level by level."
+                explanation: "You need to alternate direction level by level.",
+                explanation_ar: "تحتاج إلى تبديل الاتجاه مستوى تلو الآخر."
             }
         ]
     },
     {
         id: "searching",
         title: "Searching Algos",
+        title_ar: "خوارزميات البحث (Searching Algos)",
         description: "Linear and Binary Search complexities.",
+        description_ar: "تعقيدات البحث الخطي والثنائي.",
         icon: "🔍",
         questions: [
             {
                 id: "sr-1",
                 text: "What is the precondition for Binary Search?",
+                text_ar: "ما هو الشرط المسبق للبحث الثنائي (Binary Search)؟",
                 options: ["Array must be sorted", "Array must be unsorted", "Array size must be even", "No precondition"],
+                options_ar: ["يجب أن تكون المصفوفة مرتبة", "يجب أن تكون المصفوفة غير مرتبة", "يجب أن يكون حجم المصفوفة زوجياً", "لا يوجد شرط مسبق"],
                 correct: 0,
-                explanation: "Binary search relies on the sorted property to eliminate half the search space."
+                explanation: "Binary search relies on the sorted property to eliminate half the search space.",
+                explanation_ar: "يعتمد البحث الثنائي على خاصية الترتيب لاستبعاد نصف مساحة البحث في كل خطوة."
             },
             {
                 id: "sr-2",
                 text: "What is the worst-case time complexity of Linear Search?",
+                text_ar: "ما هو أسوأ تعقيد زمني للبحث الخطي (Linear Search)؟",
                 options: ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+                options_ar: ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
                 correct: 2,
-                explanation: "In the worst case (element not present or at the end), it checks all n elements."
+                explanation: "In the worst case (element not present or at the end), it checks all n elements.",
+                explanation_ar: "في أسوأ الحالات (العنصر غير موجود أو في النهاية)، يتم فحص جميع عناصر المصفوفة (n عنصر)."
             },
             {
                 id: "sr-3",
                 text: "What is the best-case time complexity of Binary Search?",
+                text_ar: "ما هو أفضل تعقيد زمني للبحث الثنائي؟",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
                 correct: 0,
-                explanation: "Best case is when the middle element is the target: O(1)."
+                explanation: "Best case is when the middle element is the target: O(1).",
+                explanation_ar: "أفضل حالة هي عندما يكون العنصر الأوسط هو الهدف مباشرة: O(1)."
             },
             {
                 id: "sr-4",
                 text: "Binary Search is applicable to which data structure?",
+                text_ar: "على أي بنية بيانات يمكن تطبيق البحث الثنائي؟",
                 options: ["Sorted Array", "Linked List (Standard)", "Stack", "Queue"],
+                options_ar: ["مصفوفة مرتبة", "قائمة متصلة (قياسية)", "مكدس", "طابور"],
                 correct: 0,
-                explanation: "Direct access is required for efficient Binary Search, making standard Linked Lists unsuitable (O(n) to find middle)."
+                explanation: "Direct access is required for efficient Binary Search, making standard Linked Lists unsuitable (O(n) to find middle).",
+                explanation_ar: "الوصول المباشر مطلوب للبحث الثنائي الفعال، مما يجعل القوائم المتصلة القياسية غير مناسبة (تستغرق O(n) للعثور على الوسط)."
             },
             {
                 id: "sr-5",
                 text: "Jump Search moves ahead by fixed steps. What is the optimal step size?",
+                text_ar: "يتحقق البحث بالقفز (Jump Search) عبر خطوات ثابتة. ما هو حجم الخطوة الأمثل؟",
                 options: ["n/2", "sqrt(n)", "log n", "1"],
+                options_ar: ["n/2", "sqrt(n)", "log n", "1"],
                 correct: 1,
-                explanation: "The optimal step size is the square root of n."
+                explanation: "The optimal step size is the square root of n.",
+                explanation_ar: "حجم الخطوة الأمثل هو الجذر التربيعي لـ n."
             },
             {
                 id: "sr-6",
                 text: "Interpolation Search works best on:",
+                text_ar: "يعمل بحث الاستكمال (Interpolation Search) بشكل أفضل على:",
                 options: ["Randomly distributed data", "Uniformly distributed data", "Clustered data", "Any sorted data"],
+                options_ar: ["البيانات الموزعة عشوائياً", "البيانات الموزعة بانتظام", "البيانات المتكتلة", "أي بيانات مرتبة"],
                 correct: 1,
-                explanation: "It estimates the position based on the value distribution."
+                explanation: "It estimates the position based on the value distribution.",
+                explanation_ar: "يقوم بتخمين الموضع بناءً على توزيع القيم."
             },
             {
                 id: "sr-7",
                 text: "Ternary Search cuts the search space into:",
+                text_ar: "البحث الثلاثي (Ternary Search) يقسم مساحة البحث إلى:",
                 options: ["2 parts", "3 parts", "4 parts", "Random parts"],
+                options_ar: ["جزأين", "3 أجزاء", "4 أجزاء", "أجزاء عشوائية"],
                 correct: 1,
-                explanation: "It divides the array into three parts using two midpoints."
+                explanation: "It divides the array into three parts using two midpoints.",
+                explanation_ar: "يقوم بتقسيم المصفوفة إلى ثلاثة أجزاء باستخدام نقطتي منتصف."
             },
             {
                 id: "sr-8",
                 text: "Which search algorithm is preferred for unbounded arrays (infinite size)?",
+                text_ar: "أي خوارزمية بحث تفضل للمصفوفات غير المحدودة (ذات الحجم اللانهائي)؟",
                 options: ["Binary Search", "Exponential Search", "Linear Search", "Jump Search"],
+                options_ar: ["البحث الثنائي", "البحث الأسي (Exponential Search)", "البحث الخطي", "البحث بالقفز"],
                 correct: 1,
-                explanation: "Exponential search finds the range where the element exists, then does binary search."
+                explanation: "Exponential search finds the range where the element exists, then does binary search.",
+                explanation_ar: "البحث الأسي يجد النطاق الذي يوجد فيه العنصر، ثم يقوم ببحث ثنائي."
             },
             {
                 id: "sr-9",
                 text: "What is the average case complexity of Linear Search?",
+                text_ar: "ما هو تعقيد البحث الخطي في الحالة المتوسطة؟",
                 options: ["O(n)", "O(n/2)", "O(log n)", "O(1)"],
+                options_ar: ["O(n)", "O(n/2)", "O(log n)", "O(1)"],
                 correct: 0,
-                explanation: "On average, you scan half the elements, which is still O(n)."
+                explanation: "On average, you scan half the elements, which is still O(n).",
+                explanation_ar: "في المتوسط، تقوم بمسح نصف العناصر، وهو ما يظل O(n)."
             },
             {
                 id: "sr-10",
                 text: "In Binary Search, if element is smaller than mid, we search in:",
+                text_ar: "في البحث الثنائي، إذا كان العنصر أصغر من المنتصف، نبحث في:",
                 options: ["Right half", "Left half", "Current position", "Whole array"],
+                options_ar: ["النصف الأيمن", "النصف الأيسر", "الموضع الحالي", "المصفوفة بأكملها"],
                 correct: 1,
-                explanation: "Since the array is sorted ascendingly, smaller elements are to the left."
+                explanation: "Since the array is sorted ascendingly, smaller elements are to the left.",
+                explanation_ar: "بما أن المصفوفة مرتبة تصاعدياً، فإن العناصر الأصغر تكون على اليسار."
             },
             {
                 id: "sr-11",
                 text: "The recurence relation for Binary Search is:",
+                text_ar: "علاقة التكرار (Recurrence notation) للبحث الثنائي هي:",
                 options: ["T(n) = T(n-1) + 1", "T(n) = 2T(n/2) + 1", "T(n) = T(n/2) + 1", "T(n) = T(n/3) + 1"],
+                options_ar: ["T(n) = T(n-1) + 1", "T(n) = 2T(n/2) + 1", "T(n) = T(n/2) + 1", "T(n) = T(n/3) + 1"],
                 correct: 2,
-                explanation: "Problem size reduces by half in each step."
+                explanation: "Problem size reduces by half in each step.",
+                explanation_ar: "يتقلص حجم المشكلة إلى النصف في كل خطوة."
             },
             {
                 id: "sr-12",
                 text: "Search in a Row-wise and Column-wise sorted matrix takes:",
+                text_ar: "البحث في مصفوفة مرتبة حسب الصفوف والأعمدة يستغرق:",
                 options: ["O(n^2)", "O(n + m)", "O(log nm)", "O(1)"],
+                options_ar: ["O(n^2)", "O(n + m)", "O(log nm)", "O(1)"],
                 correct: 1,
-                explanation: "You can start from the top-right corner and move left or down."
+                explanation: "You can start from the top-right corner and move left or down.",
+                explanation_ar: "يمكنك البدء من الزاوية العلوية اليمنى والتحرك يساراً أو لأسفل."
             },
             {
                 id: "sr-13",
                 text: "Complexity of searching in a Hash Table (Average case)?",
+                text_ar: "تعقيد البحث في جدول التجزئة (Hash Table) في الحالة المتوسطة؟",
                 options: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+                options_ar: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
                 correct: 2,
-                explanation: "Hash tables provide constant time access on average."
+                explanation: "Hash tables provide constant time access on average.",
+                explanation_ar: "توفر جداول التجزئة وصولاً في زمن ثابت في المتوسط."
             },
             {
                 id: "sr-14",
                 text: "To find the first occurrence of a number in a sorted array with duplicates, you using Binary Search?",
+                text_ar: "للعثور على أول ظهور لرقم في مصفوفة مرتبة تحتوي على تكرارات، باستخدام البحث الثنائي؟",
                 options: ["Stop at first match", "If match, move left", "If match, move right", "Use Linear Search"],
+                options_ar: ["التوقف عند أول تطابق", "إذا تطابق، تحرك يساراً", "إذا تطابق، تحرك يميناً", "استخدام البحث الخطي"],
                 correct: 1,
-                explanation: "If you find the target, continue searching in the left half."
+                explanation: "If you find the target, continue searching in the left half.",
+                explanation_ar: "إذا وجدت الهدف، استمر في البحث في النصف الأيسر."
             },
             {
                 id: "sr-15",
                 text: "Linear Search can be used on:",
+                text_ar: "يمكن استخدام البحث الخطي على:",
                 options: ["Array", "Linked List", "Both", "None"],
+                options_ar: ["المصفوفة", "القائمة المتصلة", "كلاهما", "لا شيء منهما"],
                 correct: 2,
-                explanation: "It works on any iterable data structure."
+                explanation: "It works on any iterable data structure.",
+                explanation_ar: "يعمل على أي بنية بيانات قابلة للتكرار."
             },
             {
                 id: "sr-16",
                 text: "What is the complexity of Depth First Search (DFS) on a graph/tree?",
+                text_ar: "ما هو تعقيد البحث بالعمق أولاً (DFS) على رسم بياني أو شجرة؟",
                 options: ["O(V)", "O(E)", "O(V + E)", "O(V*E)"],
+                options_ar: ["O(V)", "O(E)", "O(V + E)", "O(V*E)"],
                 correct: 2,
-                explanation: "DFS visits every vertex and edge once."
+                explanation: "DFS visits every vertex and edge once.",
+                explanation_ar: "يزور DFS كل رأس وحافة مرة واحدة."
             },
             {
                 id: "sr-17",
                 text: "Breadth First Search uses which data structure?",
+                text_ar: "أي بنية بيانات يستخدمها البحث بالعرض أولاً (BFS)؟",
                 options: ["Stack", "Queue", "Heap", "Tree"],
+                options_ar: ["مكدس (Stack)", "طابور (Queue)", "كومة (Heap)", "شجرة"],
                 correct: 1,
-                explanation: "To process nodes in arrival order (FIFO)."
+                explanation: "To process nodes in arrival order (FIFO).",
+                explanation_ar: "لمعالجة العقد بترتيب الوصول (FIFO)."
             },
             {
                 id: "sr-18",
                 text: "Binary Search is an example of:",
+                text_ar: "البحث الثنائي هو مثال على:",
                 options: ["Greedy Algo", "Dynamic Programming", "Divide and Conquer", "Backtracking"],
+                options_ar: ["خوارزمية جشعة", "البرمجة الديناميكية", "فرق تسد (Divide and Conquer)", "التعقب الخلفي (Backtracking)"],
                 correct: 2,
-                explanation: "It recursively divides the problem into smaller subproblems."
+                explanation: "It recursively divides the problem into smaller subproblems.",
+                explanation_ar: "يقوم بتقسيم المشكلة بشكل متكرر إلى مشكلات فرعية أصغر."
             },
             {
                 id: "sr-19",
                 text: "Searching in a Red-Black tree takes:",
+                text_ar: "البحث في شجرة Red-Black يستغرق:",
                 options: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+                options_ar: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
                 correct: 1,
-                explanation: "Since it is a balanced BST, height is logarithmic."
+                explanation: "Since it is a balanced BST, height is logarithmic.",
+                explanation_ar: "بما أنها شجرة بحث ثنائية متوازنة، فإن الارتفاع يكون لوغاريتمياً."
             },
             {
                 id: "sr-20",
                 text: "Which searching algorithm requires the least comparisons on average for uniform data?",
+                text_ar: "أي خوارزمية بحث تتطلب أقل عدد من المقارنات في المتوسط للبيانات الموزعة بانتظام؟",
                 options: ["Binary Search", "Linear Search", "Interpolation Search", "Jump Search"],
+                options_ar: ["البحث الثنائي", "البحث الخطي", "بحث الاستكمال (Interpolation Search)", "البحث بالقفز"],
                 correct: 2,
-                explanation: "Interpolation search can achieve O(log log n) on uniform data."
+                explanation: "Interpolation search can achieve O(log log n) on uniform data.",
+                explanation_ar: "بحث الاستكمال يمكن أن يحقق O(log log n) على البيانات الموزعة بانتظام."
             },
             {
                 id: "sr-21",
                 text: "In exponential search, how many steps does finding the range take?",
+                text_ar: "في البحث الأسي، كم عدد الخطوات التي يستغرقها العثور على النطاق؟",
                 options: ["O(n)", "O(log i)", "O(1)", "O(i)"],
+                options_ar: ["O(n)", "O(log i)", "O(1)", "O(i)"],
                 correct: 1,
-                explanation: "Where i is the position of the element."
+                explanation: "Where i is the position of the element.",
+                explanation_ar: "حيث i هو موضع العنصر."
             },
             {
                 id: "sr-22",
                 text: "Fibonacci Search divides the array using:",
+                text_ar: "يقسم بحث فيبوناتشي (Fibonacci Search) المصفوفة باستخدام:",
                 options: ["Midpoint", "Golden Ratio / Fibonacci numbers", "Random pivot", "Thirds"],
+                options_ar: ["نقطة المنتصف", "النسبة الذهبية / أرقام فيبوناتشي", "محور عشوائي", "أثلاث"],
                 correct: 1,
-                explanation: "It uses Fibonacci numbers to determine split points."
+                explanation: "It uses Fibonacci numbers to determine split points.",
+                explanation_ar: "يستخدم أرقام فيبوناتشي لتحديد نقاط التقسيم."
             },
             {
                 id: "sr-23",
                 text: "If an array is rotated sorted, finding an element takes:",
+                text_ar: "إذا كانت المصفوفة مرتبة ومدورة، فإن العثور على عنصر يستغرق:",
                 options: ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+                options_ar: ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
                 correct: 1,
-                explanation: "Modified binary search handles the rotation."
+                explanation: "Modified binary search handles the rotation.",
+                explanation_ar: "البحث الثنائي المعدل يتعامل مع التدوير."
             },
             {
                 id: "sr-24",
                 text: "Searching for a pattern in a string is efficiently done by:",
+                text_ar: "يتم البحث عن نمط في سلسلة نصية بكفاءة عن طريق:",
                 options: ["Linear Search", "KMP Algorithm", "Binary Search", "Bubble Sort"],
+                options_ar: ["البحث الخطي", "خوارزمية KMP", "البحث الثنائي", "الفرز الفقاعي (Bubble Sort)"],
                 correct: 1,
-                explanation: "Knuth-Morris-Pratt avoids re-checking characters."
+                explanation: "Knuth-Morris-Pratt avoids re-checking characters.",
+                explanation_ar: "تتجنب خوارزمية Knuth-Morris-Pratt إعادة فحص الأحرف."
             },
             {
                 id: "sr-25",
                 text: "Rabin-Karp algorithm uses:",
+                text_ar: "تستخدم خوارزمية Rabin-Karp:",
                 options: ["Hashing", "Sorting", "Stack", "Queue"],
+                options_ar: ["التجزئة (Hashing)", "الفرز", "مكدس", "طابور"],
                 correct: 0,
-                explanation: "It uses rolling hash values to compare substrings."
+                explanation: "It uses rolling hash values to compare substrings.",
+                explanation_ar: "تستخدم قيم التجزئة المتدرجة (rolling hash) لمقارنة السلاسل الفرعية."
             },
             {
                 id: "sr-26",
                 text: "Searching in a Skip List is probabilistic:",
+                text_ar: "البحث في القائمة المتخطية (Skip List) احتمالي:",
                 options: ["O(n)", "O(log n)", "O(1)", "O(sqrt n)"],
+                options_ar: ["O(n)", "O(log n)", "O(1)", "O(sqrt n)"],
                 correct: 1,
-                explanation: "With high probability, search complexity is logarithmic."
+                explanation: "With high probability, search complexity is logarithmic.",
+                explanation_ar: "باحتمالية عالية، يكون تعقيد البحث لوغاريتمياً."
             },
             {
                 id: "sr-27",
                 text: "Given an array where difference between neighbors is 1, search for X can be optimized to:",
+                text_ar: "بإعطاء مصفوفة حيث الفرق بين الجيران هو 1، يمكن تحسين البحث عن X إلى:",
                 options: ["O(n)", "O(n) but with jumps", "O(log n)", "O(1)"],
+                options_ar: ["O(n)", "O(n) ولكن مع قفزات", "O(log n)", "O(1)"],
                 correct: 1,
-                explanation: "You can jump by abs(current - target)."
+                explanation: "You can jump by abs(current - target).",
+                explanation_ar: "يمكنك القفز بمقدار abs(العنصر الحالي - الهدف)."
             },
             {
                 id: "sr-28",
                 text: "Binary Search Tree worst case occurs when tree is:",
+                text_ar: "تحدث أسوأ حالة لشجرة البحث الثنائية عندما تكون الشجرة:",
                 options: ["Complete", "Balanced", "Skewed", "Perfect"],
+                options_ar: ["كاملة (Complete)", "متوازنة", "مائلة (Skewed)", "مثالية (Perfect)"],
                 correct: 2,
-                explanation: "It behaves like a linked list with O(n) search."
+                explanation: "It behaves like a linked list with O(n) search.",
+                explanation_ar: "إنها تتصرف مثل القائمة المتصلة مع بحث O(n)."
             },
             {
                 id: "sr-29",
                 text: "To count occurrences of a number in sorted array using Binary Search:",
+                text_ar: "لعد تكرارات رقم في مصفوفة مرتبة باستخدام البحث الثنائي:",
                 options: ["Find first and last occurrence", "Find one and scan neighbors", "Impossible", "Use Hash map"],
+                options_ar: ["البحث عن أول وآخر ظهور", "البحث عن واحد ومسح الجيران", "مستحيل", "استخدام جدول التجزئة"],
                 correct: 0,
-                explanation: "Difference between indices of last and first occurrence + 1."
+                explanation: "Difference between indices of last and first occurrence + 1.",
+                explanation_ar: "الفرق بين فهارس آخر ظهور وأول ظهور + 1."
             },
             {
                 id: "sr-30",
                 text: "Searching in a Singly Linked List is always:",
+                text_ar: "البحث في القائمة المتصلة الأحادية يكون دائماً:",
                 options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+                options_ar: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
                 correct: 2,
-                explanation: "Sequential access prevents binary search."
+                explanation: "Sequential access prevents binary search.",
+                explanation_ar: "الوصول التسلسلي يمنع البحث الثنائي."
             },
             {
                 id: "sr-31",
                 text: "Ubiquitous Binary Search is a variant that:",
+                text_ar: "البحث الثنائي واسع الانتشار (Ubiquitous Binary Search) هو نوع يـ:",
                 options: ["Always returns index", "Always works on unsorted", "Uses lower_bound concept", "Is slower"],
+                options_ar: ["يرجع الفهرس دائماً", "يعمل دائماً على مصفوفة غير مرتبة", "يستخدم مفهوم lower_bound", "أبطأ"],
                 correct: 2,
-                explanation: "It focuses on finding the first element >= target."
+                explanation: "It focuses on finding the first element >= target.",
+                explanation_ar: "يركز على إيجاد أول عنصر أكبر من أو يساوي الهدف."
             },
             {
                 id: "sr-32",
                 text: "Complexity of searching in a B-Tree of order m with N keys?",
+                text_ar: "تعقيد البحث في شجرة B من الرتبة m مع N مفاتيح؟",
                 options: ["O(log_m N)", "O(N)", "O(m log N)", "O(1)"],
+                options_ar: ["O(log_m N)", "O(N)", "O(m log N)", "O(1)"],
                 correct: 0,
-                explanation: "Height is log base m of N."
+                explanation: "Height is log base m of N.",
+                explanation_ar: "الارتفاع هو لوغاريتم N للأساس m."
             },
             {
                 id: "sr-33",
                 text: "Searching for a cycle in a Linked List uses:",
+                text_ar: "البحث عن دورة في قائمة متصلة يستخدم:",
                 options: ["Binary Search", "Two Pointer (Floyd's)", "Linear Search", "Sorting"],
+                options_ar: ["البحث الثنائي", "مؤشرين (Floyd's)", "البحث الخطي", "الفرز"],
                 correct: 1,
-                explanation: "Tortoise and Hare algorithm."
+                explanation: "Tortoise and Hare algorithm.",
+                explanation_ar: "خوارزمية السلحفاة والأرنب."
             },
             {
                 id: "sr-34",
                 text: "Sublist Search (checking if one list is inside another) takes:",
+                text_ar: "يستغرق البحث عن قائمة فرعية (التحقق مما إذا كانت قائمة داخل أخرى):",
                 options: ["O(N*M)", "O(N)", "O(M)", "O(log N)"],
+                options_ar: ["O(N*M)", "O(N)", "O(M)", "O(log N)"],
                 correct: 0,
-                explanation: "Comparing each node of larger list with head of smaller list."
+                explanation: "Comparing each node of larger list with head of smaller list.",
+                explanation_ar: "مقارنة كل عقدة في القائمة الكبيرة مع رأس القائمة الصغيرة."
             },
             {
                 id: "sr-35",
                 text: "Find peak element in an array (neighbors are smaller) takes:",
+                text_ar: "إيجاد عنصر الذروة في مصفوفة (الجيران أصغر) يستغرق:",
                 options: ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+                options_ar: ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
                 correct: 1,
-                explanation: "Binary search can identify a peak by checking slope."
+                explanation: "Binary search can identify a peak by checking slope.",
+                explanation_ar: "يمكن للبحث الثنائي تحديد الذروة من خلال التحقق من الميل."
             },
             {
                 id: "sr-36",
                 text: "Finding the majority element (appears > n/2 times) can be done in O(n) using:",
+                text_ar: "إيجاد عنصر الأغلبية (يظهر أكثر من n/2 مرة) يمكن القيام به في O(n) باستخدام:",
                 options: ["Lineary Search", "Moore's Voting Algo", "Binary Search", "Sorting"],
+                options_ar: ["البحث الخطي", "خوارزمية مور للتصويت (Moore's Voting)", "البحث الثنائي", "الفرز"],
                 correct: 1,
-                explanation: "Cancel out different elements to leave the majority."
+                explanation: "Cancel out different elements to leave the majority.",
+                explanation_ar: "إلغاء العناصر المختلفة لترك عنصر الأغلبية."
             },
             {
                 id: "sr-37",
                 text: "Search a word in a 2D grid of characters (Word Search) uses:",
+                text_ar: "البحث عن كلمة في شبكة ثنائية الأبعاد من الأحرف يستخدم:",
                 options: ["DFS/Backtracking", "Binary Search", "Queue", "Heap"],
+                options_ar: ["البحث بالعمق (DFS) / التعقب الخلفي", "البحث الثنائي", "طابور", "كومة"],
                 correct: 0,
-                explanation: "Explore all 8 directions recursively."
+                explanation: "Explore all 8 directions recursively.",
+                explanation_ar: "استكشاف جميع الاتجاهات الثمانية بشكل تكراري."
             },
             {
                 id: "sr-38",
                 text: "A* Search Algorithm is used for:",
+                text_ar: "تستخدم خوارزمية البحث *A لـ:",
                 options: ["Sorting", "Pathfinding in graphs", "Database Query", "Compression"],
+                options_ar: ["الفرز", "إيجاد المسارات في الرسوم البيانية", "استعلام قواعد البيانات", "الضغط"],
                 correct: 1,
-                explanation: "It uses heuristics to find the shortest path efficiently."
+                explanation: "It uses heuristics to find the shortest path efficiently.",
+                explanation_ar: "تستخدم المقاييس التجريبية (heuristics) لإيجاد أقصر مسار بكفاءة."
             },
             {
                 id: "sr-39",
                 text: "To search if a sum of two elements equals K in a sorted array:",
+                text_ar: "للبحث عما إذا كان مجموع عنصرين يساوي K في مصفوفة مرتبة:",
                 options: ["Two Pointers", "Binary Search for complement", "Both", "None"],
+                options_ar: ["مؤشرين (Two Pointers)", "البحث الثنائي عن المكمل", "كلاهما", "لا شيء منهما"],
                 correct: 2,
-                explanation: "Both two pointers (O(n)) and binary search (O(n log n)) work."
+                explanation: "Both two pointers (O(n)) and binary search (O(n log n)) work.",
+                explanation_ar: "كلا من المؤشرين (O(n)) والبحث الثنائي (O(n log n)) يعملان."
             },
             {
                 id: "sr-40",
                 text: "Bloom Filter is a probabilistic structure to check:",
+                text_ar: "فلتر بلوم هو بنية احتمالية للتحقق من:",
                 options: ["If element is definitely present", "If element is possibly present or definitely not", "Sorting order", "Range count"],
+                options_ar: ["إذا كان العنصر موجوداً بالتأكيد", "إذا كان العنصر موجوداً بشكل محتمل أو غير موجود بالتأكيد", "ترتيب الفرز", "عد النطاق"],
                 correct: 1,
-                explanation: "It can return false positives, but never false negatives."
+                explanation: "It can return false positives, but never false negatives.",
+                explanation_ar: "يمكن أن يعطي نتائج إيجابية خاطئة، ولكن لا يعطي نتائج سلبية خاطئة أبداً."
             }
         ]
     },
     {
         id: "complexity",
         title: "Time Complexity",
+        title_ar: "التعقيد الزمني (Time Complexity)",
         description: "Big O notation and code analysis.",
+        description_ar: "ترميز Big O وتحليل الكود.",
         icon: "⏳",
         questions: [
             {
                 id: "tc-1",
                 text: "What is the time complexity of the following code?\n<pre><code>for(i=0; i<N; i++) { \n  a = a + 5;\n}\nfor(j=0; j<M; j++) { \n  b = b + 10;\n}</code></pre>",
+                text_ar: "ما هو التعقيد الزمني للكود التالي؟\n<pre><code>for(i=0; i<N; i++) { \n  a = a + 5;\n}\nfor(j=0; j<M; j++) { \n  b = b + 10;\n}</code></pre>",
                 options: ["O(N * M)", "O(N + M)", "O(N)", "O(M)"],
+                options_ar: ["O(N * M)", "O(N + M)", "O(N)", "O(M)"],
                 correct: 1,
-                explanation: "The loops are sequential, not nested. Total time is proportional to N + M."
+                explanation: "The loops are sequential, not nested. Total time is proportional to N + M.",
+                explanation_ar: "الحلقات متتالية وليست متداخلة. الوقت الإجمالي يتناسب مع N + M."
             },
             {
                 id: "tc-2",
                 text: "What is the time complexity analysis?\n<pre><code>for(i=0; i<N; i++) {\n  for(j=N; j>i; j--) {\n     a = a + i + j;\n  }\n}</code></pre>",
+                text_ar: "ما هو تحليل التعقيد الزمني؟\n<pre><code>for(i=0; i<N; i++) {\n  for(j=N; j>i; j--) {\n     a = a + i + j;\n  }\n}</code></pre>",
                 options: ["O(N)", "O(N log N)", "O(N^2)", "O(1)"],
+                options_ar: ["O(N)", "O(N log N)", "O(N^2)", "O(1)"],
                 correct: 2,
-                explanation: "This is a standard nested loop structure where the inner loop runs proportional to N, resulting in O(N^2)."
+                explanation: "This is a standard nested loop structure where the inner loop runs proportional to N, resulting in O(N^2).",
+                explanation_ar: "هيكل حلقة متداخلة قياسي حيث تعمل الحلقة الداخلية بشكل يتناسب مع N، مما يؤدي إلى O(N^2)."
             },
             {
                 id: "tc-3",
                 text: "What is the time complexity?\n<pre><code>for(i=1; i<n; i=i*2) {\n  print(i);\n}</code></pre>",
+                text_ar: "ما هو التعقيد الزمني؟\n<pre><code>for(i=1; i<n; i=i*2) {\n  print(i);\n}</code></pre>",
                 options: ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
+                options_ar: ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
                 correct: 2,
-                explanation: "The variable i doubles each time, so the loop runs log2(n) times."
+                explanation: "The variable i doubles each time, so the loop runs log2(n) times.",
+                explanation_ar: "تتضاعف قيمة المتغير i في كل مرة، لذا تعمل الحلقة log2(n) مرة."
             },
             {
                 id: "tc-4",
                 text: "Time complexity of Merge Sort is:",
+                text_ar: "التعقيد الزمني للفرز بالدمج (Merge Sort) هو:",
                 options: ["O(n^2)", "O(n log n)", "O(n)", "O(log n)"],
+                options_ar: ["O(n^2)", "O(n log n)", "O(n)", "O(log n)"],
                 correct: 1,
-                explanation: "Merge sort divides the array in half and merges, taking linearithmic time consistently."
+                explanation: "Merge sort divides the array in half and merges, taking linearithmic time consistently.",
+                explanation_ar: "يقوم الفرز بالدمج بتقسيم المصفوفة إلى النصف ودمجها، مما يستغرق وقتاً لوغاريتمياً خطياً بشكل ثابت."
             },
             {
                 id: "tc-5",
                 text: "Assuming P != NP, which problem complexity class is hardest?",
+                text_ar: "بافتراض أن P != NP، أي فئة من تعقيد المشكلات هي الأصعب؟",
                 options: ["P", "NP", "NP-Complete", "NP-Hard"],
+                options_ar: ["P", "NP", "NP-Complete", "NP-Hard"],
                 correct: 3,
-                explanation: "NP-Hard problems are at least as hard as the hardest problems in NP."
+                explanation: "NP-Hard problems are at least as hard as the hardest problems in NP.",
+                explanation_ar: "مشكلات NP-Hard هي على الأقل بصعوبة أصعب المشكلات في NP."
             },
             {
                 id: "tc-6",
                 text: "Accessing an element in a Hash Table (Average case):",
+                text_ar: "الوصول إلى عنصر في جدول تجزئة (الحالة المتوسطة):",
                 options: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                options_ar: ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
                 correct: 0,
-                explanation: "Good hashing provides constant time access on average."
+                explanation: "Good hashing provides constant time access on average.",
+                explanation_ar: "توفر التجزئة الجيدة وصولاً في زمن ثابت في المتوسط."
             },
             {
                 id: "tc-7",
                 text: "Adding an edge to an Adjacency Matrix representation of a graph:",
+                text_ar: "إضافة حافة إلى تمثيل مصفوفة الجوار (Adjacency Matrix) للرسم البياني:",
                 options: ["O(V)", "O(E)", "O(1)", "O(V^2)"],
+                options_ar: ["O(V)", "O(E)", "O(1)", "O(V^2)"],
                 correct: 2,
-                explanation: "You simply update the cell at (u, v)."
+                explanation: "You simply update the cell at (u, v).",
+                explanation_ar: "ببساطة تقوم بتحديث الخلية عند (u, v)."
             },
             {
                 id: "tc-8",
                 text: "What is the complexity of: <pre><code>function(n) { \n  if (n <= 1) return; \n  function(n-1); \n  function(n-1); \n}</code></pre>",
+                text_ar: "ما هو تعقيد: <pre><code>function(n) { \n  if (n <= 1) return; \n  function(n-1); \n  function(n-1); \n}</code></pre>",
                 options: ["O(n)", "O(2^n)", "O(n^2)", "O(log n)"],
+                options_ar: ["O(n)", "O(2^n)", "O(n^2)", "O(log n)"],
                 correct: 1,
-                explanation: "Each call branches into two, creating a binary tree of calls with height n."
+                explanation: "Each call branches into two, creating a binary tree of calls with height n.",
+                explanation_ar: "كل استدعاء يتفرع إلى اثنين، مما ينشئ شجرة ثنائية من الاستدعاءات بارتفاع n."
             },
             {
                 id: "tc-9",
                 text: "Worst-case complexity of Quick Sort:",
+                text_ar: "أسوأ تعقيد زمني للفرز السريع (Quick Sort):",
                 options: ["O(n log n)", "O(n^2)", "O(n)", "O(log n)"],
+                options_ar: ["O(n log n)", "O(n^2)", "O(n)", "O(log n)"],
                 correct: 1,
-                explanation: "Occurs when the pivot is always the smallest or largest element."
+                explanation: "Occurs when the pivot is always the smallest or largest element.",
+                explanation_ar: "يحدث عندما يكون المحور (pivot) دائماً هو العنصر الأصغر أو الأكبر."
             },
             {
                 id: "tc-10",
                 text: "Finding all subsets of a set of size N (Power Set):",
+                text_ar: "إيجاد جميع المجموعات الجزئية لمجموعة بحجم N (مجموعة القوى):",
                 options: ["O(n^2)", "O(2^n)", "O(n!)", "O(n)"],
+                options_ar: ["O(n^2)", "O(2^n)", "O(n!)", "O(n)"],
                 correct: 1,
-                explanation: "There are 2^n possible subsets."
+                explanation: "There are 2^n possible subsets.",
+                explanation_ar: "يوجد 2^n مجموعة جزئية ممكنة."
             },
             {
                 id: "tc-11",
                 text: "Amortized complexity of appending to a dynamic array:",
+                text_ar: "التعقيد المستهلك (Amortized complexity) لإضافة عنصر إلى مصفوفة ديناميكية:",
                 options: ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
+                options_ar: ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
                 correct: 1,
-                explanation: "While resizing is O(n), it happens rarely, making the average operation O(1)."
+                explanation: "While resizing is O(n), it happens rarely, making the average operation O(1).",
+                explanation_ar: "بينما تكون إعادة الحجم O(n)، إلا أنها تحدث نادراً، مما يجعل متوسط العملية O(1)."
             },
             {
                 id: "tc-12",
                 text: "Dijkstra's Algorithm with a Binary Heap:",
+                text_ar: "خوارزمية ديكسترا (Dijkstra) مع كومة ثنائية (Binary Heap):",
                 options: ["O(E + V log V)", "O(E log V)", "O(V^2)", "O(E + V)"],
+                options_ar: ["O(E + V log V)", "O(E log V)", "O(V^2)", "O(E + V)"],
                 correct: 1,
-                explanation: "Extract min is O(log V) and decrease key (traversing edges) contributes to O(E log V)."
+                explanation: "Extract min is O(log V) and decrease key (traversing edges) contributes to O(E log V).",
+                explanation_ar: "استخراج الحد الأدنى هو O(log V) وتقليل المفتاح (عبور الحواف) يساهم في O(E log V)."
             },
             {
                 id: "tc-13",
                 text: "Kruskal's Algorithm for MST complexity:",
+                text_ar: "تعقيد خوارزمية كروسكال (Kruskal) لإيجاد شجرة الامتداد الدنيا (MST):",
                 options: ["O(E log E)", "O(E^2)", "O(V^2)", "O(E + V)"],
+                options_ar: ["O(E log E)", "O(E^2)", "O(V^2)", "O(E + V)"],
                 correct: 0,
-                explanation: "Dominated by sorting the edges."
+                explanation: "Dominated by sorting the edges.",
+                explanation_ar: "تهيمن عليها عملية فرز الحواف."
             },
             {
                 id: "tc-14",
                 text: "Floyd-Warshall Algorithm complexity:",
+                text_ar: "تعقيد خوارزمية فلويد-وارشال (Floyd-Warshall):",
                 options: ["O(V^3)", "O(V^2)", "O(E log V)", "O(E + V)"],
+                options_ar: ["O(V^3)", "O(V^2)", "O(E log V)", "O(E + V)"],
                 correct: 0,
-                explanation: "Three nested loops iterating over vertices."
+                explanation: "Three nested loops iterating over vertices.",
+                explanation_ar: "ثلاث حلقات متداخلة تمر عبر الرؤوس (vertices)."
             },
             {
                 id: "tc-15",
                 text: "Complexity of: <pre><code>for(i=1; i<=n; i++) {\n for(j=1; j<=i; j=j*2) { ... } \n}</code></pre>",
+                text_ar: "تعقيد الكود التالي: <pre><code>for(i=1; i<=n; i++) {\n for(j=1; j<=i; j=j*2) { ... } \n}</code></pre>",
                 options: ["O(n^2)", "O(n)", "O(n log n)", "O(log n)"],
+                options_ar: ["O(n^2)", "O(n)", "O(n log n)", "O(log n)"],
                 correct: 2,
-                explanation: "The inner loop runs log(i) times. Sum of log(i) for i=1 to n is log(n!) = O(n log n)."
+                explanation: "The inner loop runs log(i) times. Sum of log(i) for i=1 to n is log(n!) = O(n log n).",
+                explanation_ar: "الحلقة الداخلية تعمل log(i) مرة. مجموع log(i) من i=1 إلى n هو log(n!) = O(n log n)."
             },
             {
                 id: "tc-16",
                 text: "Which complexity is faster?",
+                text_ar: "أي تعقيد هو الأسرع؟",
                 options: ["O(n)", "O(log n)", "O(sqrt n)", "O(n log n)"],
+                options_ar: ["O(n)", "O(log n)", "O(sqrt n)", "O(n log n)"],
                 correct: 1,
-                explanation: "Logarithmic growth is much slower than square root or linear."
+                explanation: "Logarithmic growth is much slower than square root or linear.",
+                explanation_ar: "النمو اللوغاريتمي أبطأ بكثير من الجذر التربيعي أو الخطي."
             },
             {
                 id: "tc-17",
                 text: "Complexity of generating all permutations of string length N:",
+                text_ar: "تعقيد توليد جميع التباديل (permutations) لسلسلة نصية بطول N:",
                 options: ["O(n)", "O(2^n)", "O(n!)", "O(n^n)"],
+                options_ar: ["O(n)", "O(2^n)", "O(n!)", "O(n^n)"],
                 correct: 2,
-                explanation: "There are n! permutations."
+                explanation: "There are n! permutations.",
+                explanation_ar: "يوجد n! من التباديل."
             },
             {
                 id: "tc-18",
                 text: "Bellman-Ford Algorithm complexity:",
+                text_ar: "تعقيد خوارزمية بلمان-فورد (Bellman-Ford):",
                 options: ["O(VE)", "O(V^2)", "O(E log V)", "O(V + E)"],
+                options_ar: ["O(VE)", "O(V^2)", "O(E log V)", "O(V + E)"],
                 correct: 0,
-                explanation: "Relaxes all E edges V-1 times."
+                explanation: "Relaxes all E edges V-1 times.",
+                explanation_ar: "تقوم بإرخاء جميع الحواف (E) لعدد V-1 من المرات."
             },
             {
                 id: "tc-19",
                 text: "Build a Heap from an array of N elements:",
+                text_ar: "بناء كومة (Heap) من مصفوفة مكونة من N عناصر:",
                 options: ["O(n log n)", "O(n)", "O(log n)", "O(n^2)"],
+                options_ar: ["O(n log n)", "O(n)", "O(log n)", "O(n^2)"],
                 correct: 1,
-                explanation: "Using the linear time build-heap algorithm."
+                explanation: "Using the linear time build-heap algorithm.",
+                explanation_ar: "باستخدام خوارزمية بناء الكومة في زمن خطي."
             },
             {
                 id: "tc-20",
                 text: "Space complexity of DFS (recursive) implementation?",
+                text_ar: "التعقيد المكاني لتنفيذ البحث بالعمق (DFS) بشكل عودي؟",
                 options: ["O(1)", "O(V)", "O(E)", "O(log V)"],
+                options_ar: ["O(1)", "O(V)", "O(E)", "O(log V)"],
                 correct: 1,
-                explanation: "Stack depth can go up to V in the worst case."
+                explanation: "Stack depth can go up to V in the worst case.",
+                explanation_ar: "يمكن أن يصل عمق المكدس إلى V في أسوأ الحالات."
             },
             {
                 id: "tc-21",
                 text: "Deleting from a Singly Linked List given a pointer to the node (not tail):",
+                text_ar: "حذف عقدة من قائمة متصلة أحادية بمعلومية مؤشر العقدة (ليست الأخيرة):",
                 options: ["O(n)", "O(1)", "O(log n)", "O(V)"],
+                options_ar: ["O(n)", "O(1)", "O(log n)", "O(V)"],
                 correct: 1,
-                explanation: "Copy next node's data and delete next node."
+                explanation: "Copy next node's data and delete next node.",
+                explanation_ar: "نسخ بيانات العقدة التالية وحذف العقدة التالية."
             },
             {
                 id: "tc-22",
                 text: "Radix Sort time complexity:",
+                text_ar: "التعقيد الزمني للفرز الأساسي (Radix Sort):",
                 options: ["O(n^2)", "O(nk)", "O(n log n)", "O(k log n)"],
+                options_ar: ["O(n^2)", "O(nk)", "O(n log n)", "O(k log n)"],
                 correct: 1,
-                explanation: "O(d * (n + b)) where d is digits (k), n is elements, b is base."
+                explanation: "O(d * (n + b)) where d is digits (k), n is elements, b is base.",
+                explanation_ar: "O(d * (n + b)) حيث d هي عدد الأرقام (k)، n هي عدد العناصر، b هو الأساس."
             },
             {
                 id: "tc-23",
                 text: "Checking if a number is prime (naive trial division up to sqrt(n)):",
+                text_ar: "التحقق مما إذا كان الرقم أولياً (القسمة التجريبية حتى جذر n):",
                 options: ["O(n)", "O(sqrt n)", "O(log n)", "O(1)"],
+                options_ar: ["O(n)", "O(sqrt n)", "O(log n)", "O(1)"],
                 correct: 1,
-                explanation: "You only need to check divisors up to the square root."
+                explanation: "You only need to check divisors up to the square root.",
+                explanation_ar: "تحتاج فقط للتحقق من القواسم حتى الجذر التربيعي."
             },
             {
                 id: "tc-24",
                 text: "Euclidean algorithm for GCD(a, b):",
+                text_ar: "خوارزمية إقليدس للقاسم المشترك الأكبر (GCD):",
                 options: ["O(log(min(a,b)))", "O(a+b)", "O(min(a,b))", "O(1)"],
+                options_ar: ["O(log(min(a,b)))", "O(a+b)", "O(min(a,b))", "O(1)"],
                 correct: 0,
-                explanation: "It is logarithmic in the size of the smaller number."
+                explanation: "It is logarithmic in the size of the smaller number.",
+                explanation_ar: "إنه لوغاريتمي بالنسبة لحجم الرقم الأصغر."
             },
             {
                 id: "tc-25",
                 text: "Strassen's Matrix Multiplication complexity:",
+                text_ar: "تعقيد خوارزمية ستراسن لضرب المصفوفات:",
                 options: ["O(n^3)", "O(n^2.81)", "O(n^2)", "O(n log n)"],
+                options_ar: ["O(n^3)", "O(n^2.81)", "O(n^2)", "O(n log n)"],
                 correct: 1,
-                explanation: "Better than the standard O(n^3) algorithm."
+                explanation: "Better than the standard O(n^3) algorithm.",
+                explanation_ar: "أفضل من خوارزمية O(n^3) القياسية."
             },
             {
                 id: "tc-26",
                 text: "Deleting min from a Fibonacci Heap:",
+                text_ar: "حذف الحد الأدنى من كومة فيبوناتشي (Fibonacci Heap):",
                 options: ["O(1)", "O(log n)", "O(n)", "O(1) amortized"],
+                options_ar: ["O(1)", "O(log n)", "O(n)", "O(1) amortized"],
                 correct: 1,
-                explanation: "Amortized cost is O(log n)."
+                explanation: "Amortized cost is O(log n).",
+                explanation_ar: "التكلفة المستهلكة (Amortized) هي O(log n)."
             },
             {
                 id: "tc-27",
                 text: "Searching in a 2D sorted matrix (stepwise):",
+                text_ar: "البحث في مصفوفة مرتبة ثنائية الأبعاد (بشكل تدريجي):",
                 options: ["O(Rows * Cols)", "O(Rows + Cols)", "O(log(Rows * Cols))", "O(1)"],
+                options_ar: ["O(Rows * Cols)", "O(Rows + Cols)", "O(log(Rows * Cols))", "O(1)"],
                 correct: 1,
-                explanation: "Start from top-right, move left or down."
+                explanation: "Start from top-right, move left or down.",
+                explanation_ar: "ابدأ من الزاوية اليمنى العليا، وتحرك يساراً أو لأسفل."
             },
             {
                 id: "tc-28",
                 text: "Complexity of Sieve of Eratosthenes up to N:",
+                text_ar: "تعقيد غربال إراتوستينس لإيجاد الأعداد الأولية حتى N:",
                 options: ["O(N)", "O(N log N)", "O(N log log N)", "O(N^2)"],
+                options_ar: ["O(N)", "O(N log N)", "O(N log log N)", "O(N^2)"],
                 correct: 2,
-                explanation: "It is nearly linear, specifically N log log N."
+                explanation: "It is nearly linear, specifically N log log N.",
+                explanation_ar: "إنه خطي تقريباً، وبالتحديد N log log N."
             },
             {
                 id: "tc-29",
                 text: "What is the worst-case time for Insert in a Red-Black Tree?",
+                text_ar: "ما هو أسوأ تعقيد زمني للإدراج في شجرة Red-Black؟",
                 options: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+                options_ar: ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
                 correct: 1,
-                explanation: "Self-balancing ensures logarithmic height."
+                explanation: "Self-balancing ensures logarithmic height.",
+                explanation_ar: "تعديل التوازن الذاتي يضمن ارتفاعاً لوغاريتمياً."
             },
             {
                 id: "tc-30",
                 text: "Finding the median of an unsorted array using QuickSelect:",
+                text_ar: "إيجاد الوسيط (median) لمصفوفة غير مرتبة باستخدام QuickSelect:",
                 options: ["O(n log n)", "O(n) average", "O(1)", "O(n^2) always"],
+                options_ar: ["O(n log n)", "O(n) average", "O(1)", "O(n^2) always"],
                 correct: 1,
-                explanation: "Average case is linear, though worst case is O(n^2)."
+                explanation: "Average case is linear, though worst case is O(n^2).",
+                explanation_ar: "الحالة المتوسطة خطية، على الرغم من أن أسوأ حالة هي O(n^2)."
             },
             {
                 id: "tc-31",
                 text: "Union-Find with Path Compression and Union by Rank:",
+                text_ar: " Union-Find مع ضغط المسار (Path Compression) والاتحاد حسب الرتبة:",
                 options: ["O(log n)", "O(1)", "O(alpha(n))", "O(n)"],
+                options_ar: ["O(log n)", "O(1)", "O(alpha(n))", "O(n)"],
                 correct: 2,
-                explanation: "Inverse Ackermann function, which is nearly constant."
+                explanation: "Inverse Ackermann function, which is nearly constant.",
+                explanation_ar: "دالة عكس أكرمان (Inverse Ackermann)، وهي ثابتة تقريباً."
             },
             {
                 id: "tc-32",
