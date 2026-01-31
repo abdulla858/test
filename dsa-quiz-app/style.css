@@ -619,6 +619,97 @@ body {
     }
 }
 
+/* Study Bank Styles */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.bank-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+
+.bank-topic-header {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid var(--glass-border);
+    color: var(--accent);
+}
+
+.bank-q-card {
+    position: relative;
+    padding: 2rem;
+    text-align: left;
+}
+
+body[dir="rtl"] .bank-q-card {
+    text-align: right;
+}
+
+.bank-q-num {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    opacity: 0.5;
+}
+
+body[dir="rtl"] .bank-q-num {
+    right: auto;
+    left: 1.5rem;
+}
+
+.bank-q-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.bank-answer {
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--success);
+}
+
+body[dir="rtl"] .bank-answer {
+    border-left: none;
+    border-right: 4px solid var(--success);
+}
+
+.correct-text {
+    color: var(--success);
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.bank-explanation {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0.8rem;
+}
+
+.bank-explanation strong {
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.bank-explanation p {
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
 /* Utility */
 .hidden {
     display: none;
