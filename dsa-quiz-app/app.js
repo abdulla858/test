@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const circlePath = document.getElementById('score-circle-path');
     const restartBtn = document.getElementById('restart-btn');
     const homeBtn = document.getElementById('home-btn');
+    const browseAllBtn = document.getElementById('browse-all-btn');
+    const studyBankSection = document.getElementById('study-bank-section');
+    const bankContainer = document.getElementById('bank-container');
+    const bankBackBtn = document.getElementById('bank-back-btn');
     const confettiCanvas = document.getElementById('confetti-canvas');
 
     // State
@@ -59,7 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
             select_questions: "Select Number of Questions",
             start_quiz: "Start Quiz",
             cancel: "Cancel",
-            questions_label: "Questions:"
+            questions_label: "Questions:",
+            btn_browse_all: "📖 Questions Bank",
+            browse_all_title: "Questions Bank (All Topics)"
         },
         ar: {
             app_title: "أستاذ الخوارزميات",
@@ -88,7 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
             select_questions: "اختر عدد الأسئلة",
             start_quiz: "ابدأ الاختبار",
             cancel: "إلغاء",
-            questions_label: "الأسئلة:"
+            questions_label: "الأسئلة:",
+            btn_browse_all: "📖 بنك الأسئلة والشروحات",
+            browse_all_title: "بنك الأسئلة (جميع المواضيع)"
         }
     };
 
@@ -125,6 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (percentage >= 50) msgKey = 'score_good';
 
             resultMessage.textContent = translations[lang][msgKey];
+        } else if (!studyBankSection.classList.contains('hidden-section')) {
+            initBank(); // Re-render bank with new language
         }
     };
 
@@ -187,12 +197,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const switchSection = (section) => {
-        [landingSection, quizSection, resultSection].forEach(s => {
+        [landingSection, quizSection, resultSection, studyBankSection].forEach(s => {
             s.classList.add('hidden-section');
             s.classList.remove('active-section');
         });
         section.classList.remove('hidden-section');
         section.classList.add('active-section');
+        window.scrollTo(0, 0);
     };
 
     // Quiz Logic
@@ -399,6 +410,59 @@ document.addEventListener('DOMContentLoaded', () => {
     homeBtn.addEventListener('click', () => {
         initLanding();
     });
+
+    // Study Bank Logic
+    const initBank = () => {
+        bankContainer.innerHTML = '';
+        quizData.forEach(topic => {
+            const topicHeader = document.createElement('div');
+            topicHeader.className = 'bank-topic-header';
+            const title = (currentLang === 'ar' && topic.title_ar) ? topic.title_ar : topic.title;
+            topicHeader.innerHTML = `<h2>${topic.icon} ${title}</h2>`;
+            bankContainer.appendChild(topicHeader);
+
+            topic.questions.forEach((q, idx) => {
+                const qCard = document.createElement('div');
+                qCard.className = 'glass-card bank-q-card';
+
+                const qText = (currentLang === 'ar' && q.text_ar) ? q.text_ar : q.text;
+                const options = (currentLang === 'ar' && q.options_ar) ? q.options_ar : q.options;
+                const correctOption = options[q.correct];
+                const explanation = (currentLang === 'ar' && q.explanation_ar) ? q.explanation_ar : q.explanation;
+
+                qCard.innerHTML = `
+                    <div class="bank-q-num">#${idx + 1}</div>
+                    <div class="bank-q-text">${qText}</div>
+                    <div class="bank-answer">
+                        <strong>${currentLang === 'ar' ? 'الإجابة الصحيحة:' : 'Correct Answer:'}</strong>
+                        <span class="correct-text">${correctOption}</span>
+                    </div>
+                    <div class="bank-explanation">
+                        <strong>${currentLang === 'ar' ? 'التوضيح:' : 'Explanation:'}</strong>
+                        <p>${explanation}</p>
+                    </div>
+                `;
+                bankContainer.appendChild(qCard);
+            });
+        });
+        switchSection(studyBankSection);
+    };
+
+    browseAllBtn.addEventListener('click', initBank);
+    bankBackBtn.addEventListener('click', () => switchSection(landingSection));
+
+    // Fix for result buttons
+    restartBtn.addEventListener('click', () => {
+        if (currentTopic && currentTopic.id === 'random') {
+            startRandomQuiz(currentQuestions.length);
+        } else if (currentTopic) {
+            startQuiz(currentTopic);
+        } else {
+            initLanding();
+        }
+    });
+
+    homeBtn.addEventListener('click', () => initLanding());
 
     backBtn.addEventListener('click', () => {
         if (confirm(translations[currentLang].confirm_exit)) {
