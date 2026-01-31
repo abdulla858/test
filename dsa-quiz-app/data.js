@@ -2101,14 +2101,21 @@ const quizData = [
                 id: "tr-39",
                 text: "Top View of a Binary Tree requires:",
                 text_ar: "العرض العلوي (Top View) لشجرة ثنائية يتطلب:",
+                options: ["Level Order and Horizontal Distance", "Pre-order only", "In-order only", "Post-order only"],
+                options_ar: ["ترتيب المستوى والمسافة الأفقية", "الترتيب المسبق فقط", "الترتيب البيني فقط", "الترتيب البعدي فقط"],
+                correct: 0,
+                explanation: "Top view is the set of nodes visible when the tree is viewed from the top, calculated using horizontal distances.",
+                explanation_ar: "العرض العلوي هو مجموعة العقد المرئية عند النظر للشجرة من الأعلى، ويحسب باستخدام المسافات الأفقية."
+            },
+            {
                 id: "tr-40",
                 text: "ZigZag traversal uses:",
                 text_ar: "اجتياز ZigZag يستخدم:",
                 options: ["Two stacks or Deque", "One queue", "Recursion only", "Array"],
                 options_ar: ["مكدسين أو Deque", "طابور واحد", "العودية فقط", "مصفوفة"],
                 correct: 0,
-                explanation: "You need to alternate direction level by level.",
-                explanation_ar: "تحتاج إلى تبديل الاتجاه مستوى تلو الآخر."
+                explanation: "You need to alternate direction level by level, which is efficiently done using two stacks.",
+                explanation_ar: "تحتاج إلى تبديل الاتجاه مستوى تلو الآخر، وهو ما يتم بكفاءة باستخدام مكدسين."
             },
             {
                 id: "tr-tf-1",
