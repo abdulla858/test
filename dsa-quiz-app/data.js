@@ -2868,5 +2868,315 @@ const quizData = [
                 explanation_ar: "يجب عليه التحقق من حالة الملفات في دليل العمل."
             }
         ]
+    },
+    {
+        id: "code-analysis",
+        title: "Code Analysis",
+        title_ar: "تحليل الأكواد البرمجية",
+        description: "Analyze code snippets to determine time complexity and behavior.",
+        description_ar: "حلل مقاطع الأكواد لتحديد التعقيد الزمني والسلوك.",
+        icon: "💻",
+        questions: [
+            {
+                id: "ca-1",
+                text: "What is the time complexity of this code?\n<pre><code>for(var i=1; i<n; i*=k) {\n  console.log(i);\n}</code></pre>",
+                text_ar: "ما هو التعقيد الزمني لهذا الكود؟\n<pre><code>for(var i=1; i<n; i*=k) {\n  console.log(i);\n}</code></pre>",
+                options: ["O(n)", "O(log n)", "O(log_k n)", "O(k)"],
+                options_ar: ["O(n)", "O(log n)", "O(log_k n)", "O(k)"],
+                correct: 2,
+                explanation: "i is multiplied by k each iteration, so the loop runs log_k(n) times.",
+                explanation_ar: "يتم ضرب i في k في كل تكرار، لذا تعمل الحلقة log_k(n) مرة."
+            },
+            {
+                id: "ca-2",
+                text: "What does this code print?\n<pre><code>int x = 5;\nfor(int i=0; i<3; i++) {\n  x = x * 2;\n}\nprint(x);</code></pre>",
+                text_ar: "ماذا يطبع هذا الكود؟\n<pre><code>int x = 5;\nfor(int i=0; i<3; i++) {\n  x = x * 2;\n}\nprint(x);</code></pre>",
+                options: ["15", "30", "40", "10"],
+                options_ar: ["15", "30", "40", "10"],
+                correct: 2,
+                explanation: "x starts at 5, then: 5*2=10, 10*2=20, 20*2=40",
+                explanation_ar: "x يبدأ من 5، ثم: 5*2=10، 10*2=20، 20*2=40"
+            },
+            {
+                id: "ca-3",
+                text: "Time complexity of this nested loop?\n<pre><code>for(i=0; i<n; i++) {\n  for(j=0; j<i; j++) {\n    sum++;\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني لهذه الحلقة المتداخلة؟\n<pre><code>for(i=0; i<n; i++) {\n  for(j=0; j<i; j++) {\n    sum++;\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n log n)", "O(n²)", "O(2^n)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n²)", "O(2^n)"],
+                correct: 2,
+                explanation: "Inner loop runs 0+1+2+...+(n-1) = n(n-1)/2 times, which is O(n²).",
+                explanation_ar: "الحلقة الداخلية تعمل 0+1+2+...+(n-1) = n(n-1)/2 مرة، وهو O(n²)."
+            },
+            {
+                id: "ca-4",
+                text: "What is the output?\n<pre><code>int a = 10, b = 20;\na = a + b;\nb = a - b;\na = a - b;\nprint(a + \" \" + b);</code></pre>",
+                text_ar: "ما هو الناتج؟\n<pre><code>int a = 10, b = 20;\na = a + b;\nb = a - b;\na = a - b;\nprint(a + \" \" + b);</code></pre>",
+                options: ["10 20", "20 10", "30 10", "30 20"],
+                options_ar: ["10 20", "20 10", "30 10", "30 20"],
+                correct: 1,
+                explanation: "This is a swap without temp variable: a=30, b=10, a=20. Final: a=20, b=10",
+                explanation_ar: "هذا تبديل بدون متغير مؤقت: a=30، b=10، a=20. النهائي: a=20، b=10"
+            },
+            {
+                id: "ca-5",
+                text: "Time complexity?\n<pre><code>for(i=n; i>0; i=i/2) {\n  print(i);\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>for(i=n; i>0; i=i/2) {\n  print(i);\n}</code></pre>",
+                options: ["O(n)", "O(log n)", "O(n log n)", "O(√n)"],
+                options_ar: ["O(n)", "O(log n)", "O(n log n)", "O(√n)"],
+                correct: 1,
+                explanation: "i is halved each time, so it takes log₂(n) iterations.",
+                explanation_ar: "يتم تقسيم i على 2 في كل مرة، لذا يستغرق log₂(n) تكرار."
+            },
+            {
+                id: "ca-6",
+                text: "What does this recursive function return for fib(5)?\n<pre><code>int fib(int n) {\n  if(n <= 1) return n;\n  return fib(n-1) + fib(n-2);\n}</code></pre>",
+                text_ar: "ماذا ترجع هذه الدالة العودية لـ fib(5)؟\n<pre><code>int fib(int n) {\n  if(n <= 1) return n;\n  return fib(n-1) + fib(n-2);\n}</code></pre>",
+                options: ["3", "5", "8", "13"],
+                options_ar: ["3", "5", "8", "13"],
+                correct: 1,
+                explanation: "Fibonacci sequence: 0,1,1,2,3,5. fib(5) = 5",
+                explanation_ar: "متتالية فيبوناتشي: 0،1،1،2،3،5. fib(5) = 5"
+            },
+            {
+                id: "ca-7",
+                text: "Time complexity of this code?\n<pre><code>for(i=1; i<=n; i++) {\n  for(j=1; j<=n; j*=2) {\n    print(i,j);\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني لهذا الكود؟\n<pre><code>for(i=1; i<=n; i++) {\n  for(j=1; j<=n; j*=2) {\n    print(i,j);\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+                correct: 1,
+                explanation: "Outer loop runs n times, inner loop runs log(n) times. Total: O(n log n)",
+                explanation_ar: "الحلقة الخارجية تعمل n مرة، الداخلية log(n) مرة. الإجمالي: O(n log n)"
+            },
+            {
+                id: "ca-8",
+                text: "What is printed?\n<pre><code>int count = 0;\nfor(int i=0; i<5; i++) {\n  if(i % 2 == 0) count++;\n}\nprint(count);</code></pre>",
+                text_ar: "ماذا يُطبع؟\n<pre><code>int count = 0;\nfor(int i=0; i<5; i++) {\n  if(i % 2 == 0) count++;\n}\nprint(count);</code></pre>",
+                options: ["2", "3", "4", "5"],
+                options_ar: ["2", "3", "4", "5"],
+                correct: 1,
+                explanation: "Even numbers from 0 to 4 are: 0, 2, 4. Count = 3",
+                explanation_ar: "الأعداد الزوجية من 0 إلى 4 هي: 0، 2، 4. العدد = 3"
+            },
+            {
+                id: "ca-9",
+                text: "Time complexity?\n<pre><code>for(i=0; i<n; i++) {\n  for(j=0; j<n; j++) {\n    for(k=0; k<n; k++) {\n      sum++;\n    }\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>for(i=0; i<n; i++) {\n  for(j=0; j<n; j++) {\n    for(k=0; k<n; k++) {\n      sum++;\n    }\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n²)", "O(n³)", "O(3n)"],
+                options_ar: ["O(n)", "O(n²)", "O(n³)", "O(3n)"],
+                correct: 2,
+                explanation: "Three nested loops each running n times: n × n × n = O(n³)",
+                explanation_ar: "ثلاث حلقات متداخلة كل منها تعمل n مرة: n × n × n = O(n³)"
+            },
+            {
+                id: "ca-10",
+                text: "What does this return for mystery(16)?\n<pre><code>int mystery(int n) {\n  if(n == 1) return 0;\n  return 1 + mystery(n/2);\n}</code></pre>",
+                text_ar: "ماذا ترجع هذه الدالة لـ mystery(16)؟\n<pre><code>int mystery(int n) {\n  if(n == 1) return 0;\n  return 1 + mystery(n/2);\n}</code></pre>",
+                options: ["3", "4", "5", "16"],
+                options_ar: ["3", "4", "5", "16"],
+                correct: 1,
+                explanation: "Counts divisions by 2 until reaching 1: 16→8→4→2→1 = 4 steps",
+                explanation_ar: "يحسب عدد القسمة على 2 حتى الوصول لـ 1: 16→8→4→2→1 = 4 خطوات"
+            },
+            {
+                id: "ca-11",
+                text: "Time complexity?\n<pre><code>for(i=1; i<n; i=i*3) {\n  for(j=0; j<n; j++) {\n    print(i,j);\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>for(i=1; i<n; i=i*3) {\n  for(j=0; j<n; j++) {\n    print(i,j);\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n log n)", "O(n log₃ n)", "O(n²)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n log₃ n)", "O(n²)"],
+                correct: 2,
+                explanation: "Outer loop runs log₃(n) times, inner runs n times: O(n log₃ n)",
+                explanation_ar: "الحلقة الخارجية تعمل log₃(n) مرة، الداخلية n مرة: O(n log₃ n)"
+            },
+            {
+                id: "ca-12",
+                text: "What is the output?\n<pre><code>int x = 0;\nfor(int i=1; i<=4; i++) {\n  x += i;\n}\nprint(x);</code></pre>",
+                text_ar: "ما هو الناتج؟\n<pre><code>int x = 0;\nfor(int i=1; i<=4; i++) {\n  x += i;\n}\nprint(x);</code></pre>",
+                options: ["4", "10", "15", "20"],
+                options_ar: ["4", "10", "15", "20"],
+                correct: 1,
+                explanation: "Sum of 1+2+3+4 = 10",
+                explanation_ar: "مجموع 1+2+3+4 = 10"
+            },
+            {
+                id: "ca-13",
+                text: "Time complexity?\n<pre><code>while(n > 1) {\n  n = n / 2;\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>while(n > 1) {\n  n = n / 2;\n}</code></pre>",
+                options: ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+                options_ar: ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+                correct: 1,
+                explanation: "n is halved each iteration, taking log₂(n) steps.",
+                explanation_ar: "يتم تقسيم n على 2 في كل تكرار، مما يستغرق log₂(n) خطوة."
+            },
+            {
+                id: "ca-14",
+                text: "What does this print?\n<pre><code>for(int i=0; i<3; i++) {\n  for(int j=0; j<2; j++) {\n    print(\"*\");\n  }\n  print(\"\\n\");\n}</code></pre>",
+                text_ar: "ماذا يطبع هذا الكود؟\n<pre><code>for(int i=0; i<3; i++) {\n  for(int j=0; j<2; j++) {\n    print(\"*\");\n  }\n  print(\"\\n\");\n}</code></pre>",
+                options: ["5 stars", "6 stars in 3 rows", "6 stars in 2 rows", "3 stars"],
+                options_ar: ["5 نجوم", "6 نجوم في 3 صفوف", "6 نجوم في صفين", "3 نجوم"],
+                correct: 1,
+                explanation: "Prints 2 stars per row for 3 rows: **\\n**\\n**\\n",
+                explanation_ar: "يطبع نجمتين في كل صف لـ 3 صفوف: **\\n**\\n**\\n"
+            },
+            {
+                id: "ca-15",
+                text: "Time complexity of binary search?\n<pre><code>int binarySearch(arr[], n, x) {\n  int l=0, r=n-1;\n  while(l <= r) {\n    int m = l + (r-l)/2;\n    if(arr[m] == x) return m;\n    if(arr[m] < x) l = m+1;\n    else r = m-1;\n  }\n  return -1;\n}</code></pre>",
+                text_ar: "التعقيد الزمني للبحث الثنائي؟\n<pre><code>int binarySearch(arr[], n, x) {\n  int l=0, r=n-1;\n  while(l <= r) {\n    int m = l + (r-l)/2;\n    if(arr[m] == x) return m;\n    if(arr[m] < x) l = m+1;\n    else r = m-1;\n  }\n  return -1;\n}</code></pre>",
+                options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+                options_ar: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+                correct: 1,
+                explanation: "Search space is halved each iteration: O(log n)",
+                explanation_ar: "يتم تقسيم مساحة البحث إلى النصف في كل تكرار: O(log n)"
+            },
+            {
+                id: "ca-16",
+                text: "What is printed?\n<pre><code>int factorial(int n) {\n  if(n <= 1) return 1;\n  return n * factorial(n-1);\n}\nprint(factorial(4));</code></pre>",
+                text_ar: "ماذا يُطبع؟\n<pre><code>int factorial(int n) {\n  if(n <= 1) return 1;\n  return n * factorial(n-1);\n}\nprint(factorial(4));</code></pre>",
+                options: ["4", "10", "24", "120"],
+                options_ar: ["4", "10", "24", "120"],
+                correct: 2,
+                explanation: "4! = 4 × 3 × 2 × 1 = 24",
+                explanation_ar: "4! = 4 × 3 × 2 × 1 = 24"
+            },
+            {
+                id: "ca-17",
+                text: "Time complexity?\n<pre><code>for(i=0; i<n; i++) {\n  for(j=i; j<n; j++) {\n    sum++;\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>for(i=0; i<n; i++) {\n  for(j=i; j<n; j++) {\n    sum++;\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n log n)", "O(n²)", "O(2n)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n²)", "O(2n)"],
+                correct: 2,
+                explanation: "Inner loop runs n+(n-1)+(n-2)+...+1 = n(n+1)/2 times = O(n²)",
+                explanation_ar: "الحلقة الداخلية تعمل n+(n-1)+(n-2)+...+1 = n(n+1)/2 مرة = O(n²)"
+            },
+            {
+                id: "ca-18",
+                text: "What does this code do?\n<pre><code>int gcd(int a, int b) {\n  if(b == 0) return a;\n  return gcd(b, a % b);\n}</code></pre>",
+                text_ar: "ماذا يفعل هذا الكود؟\n<pre><code>int gcd(int a, int b) {\n  if(b == 0) return a;\n  return gcd(b, a % b);\n}</code></pre>",
+                options: ["Finds LCM", "Finds GCD (Euclidean algorithm)", "Finds sum", "Finds product"],
+                options_ar: ["يجد المضاعف المشترك الأصغر", "يجد القاسم المشترك الأكبر (خوارزمية إقليدس)", "يجد المجموع", "يجد الضرب"],
+                correct: 1,
+                explanation: "This is Euclidean algorithm for finding Greatest Common Divisor.",
+                explanation_ar: "هذه خوارزمية إقليدس لإيجاد القاسم المشترك الأكبر."
+            },
+            {
+                id: "ca-19",
+                text: "Time complexity?\n<pre><code>for(i=n; i>=1; i--) {\n  for(j=1; j<=i; j++) {\n    print(\"*\");\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>for(i=n; i>=1; i--) {\n  for(j=1; j<=i; j++) {\n    print(\"*\");\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+                correct: 2,
+                explanation: "Total iterations: n+(n-1)+(n-2)+...+1 = n(n+1)/2 = O(n²)",
+                explanation_ar: "إجمالي التكرارات: n+(n-1)+(n-2)+...+1 = n(n+1)/2 = O(n²)"
+            },
+            {
+                id: "ca-20",
+                text: "What is the output?\n<pre><code>int power(int x, int n) {\n  if(n == 0) return 1;\n  return x * power(x, n-1);\n}\nprint(power(2, 3));</code></pre>",
+                text_ar: "ما هو الناتج؟\n<pre><code>int power(int x, int n) {\n  if(n == 0) return 1;\n  return x * power(x, n-1);\n}\nprint(power(2, 3));</code></pre>",
+                options: ["6", "8", "9", "16"],
+                options_ar: ["6", "8", "9", "16"],
+                correct: 1,
+                explanation: "2³ = 2 × 2 × 2 = 8",
+                explanation_ar: "2³ = 2 × 2 × 2 = 8"
+            },
+            {
+                id: "ca-21",
+                text: "Time complexity?\n<pre><code>for(i=1; i<=n; i++) {\n  for(j=1; j*j<=n; j++) {\n    sum++;\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>for(i=1; i<=n; i++) {\n  for(j=1; j*j<=n; j++) {\n    sum++;\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n√n)", "O(n²)", "O(√n)"],
+                options_ar: ["O(n)", "O(n√n)", "O(n²)", "O(√n)"],
+                correct: 1,
+                explanation: "Outer loop: n times, inner loop: √n times. Total: O(n√n)",
+                explanation_ar: "الحلقة الخارجية: n مرة، الداخلية: √n مرة. الإجمالي: O(n√n)"
+            },
+            {
+                id: "ca-22",
+                text: "What does this print?\n<pre><code>int arr[] = {1,2,3,4,5};\nint sum = 0;\nfor(int i=0; i<5; i+=2) {\n  sum += arr[i];\n}\nprint(sum);</code></pre>",
+                text_ar: "ماذا يطبع هذا؟\n<pre><code>int arr[] = {1,2,3,4,5};\nint sum = 0;\nfor(int i=0; i<5; i+=2) {\n  sum += arr[i];\n}\nprint(sum);</code></pre>",
+                options: ["6", "9", "12", "15"],
+                options_ar: ["6", "9", "12", "15"],
+                correct: 1,
+                explanation: "Sums elements at indices 0,2,4: 1+3+5 = 9",
+                explanation_ar: "يجمع العناصر في الفهارس 0،2،4: 1+3+5 = 9"
+            },
+            {
+                id: "ca-23",
+                text: "Time complexity of this recursive function?\n<pre><code>void solve(int n) {\n  if(n <= 0) return;\n  solve(n-1);\n  solve(n-1);\n}</code></pre>",
+                text_ar: "التعقيد الزمني لهذه الدالة العودية؟\n<pre><code>void solve(int n) {\n  if(n <= 0) return;\n  solve(n-1);\n  solve(n-1);\n}</code></pre>",
+                options: ["O(n)", "O(n²)", "O(2ⁿ)", "O(log n)"],
+                options_ar: ["O(n)", "O(n²)", "O(2ⁿ)", "O(log n)"],
+                correct: 2,
+                explanation: "Each call makes 2 recursive calls, creating a binary tree of height n: O(2ⁿ)",
+                explanation_ar: "كل استدعاء يقوم باستدعاءين عوديين، مما ينشئ شجرة ثنائية بارتفاع n: O(2ⁿ)"
+            },
+            {
+                id: "ca-24",
+                text: "What is printed?\n<pre><code>int x = 5;\nwhile(x > 0) {\n  print(x);\n  x -= 2;\n}</code></pre>",
+                text_ar: "ماذا يُطبع؟\n<pre><code>int x = 5;\nwhile(x > 0) {\n  print(x);\n  x -= 2;\n}</code></pre>",
+                options: ["5 3 1", "5 4 3 2 1", "5 3", "5 2"],
+                options_ar: ["5 3 1", "5 4 3 2 1", "5 3", "5 2"],
+                correct: 0,
+                explanation: "Prints 5, then 3, then 1, then stops (x becomes -1)",
+                explanation_ar: "يطبع 5، ثم 3، ثم 1، ثم يتوقف (x تصبح -1)"
+            },
+            {
+                id: "ca-25",
+                text: "Time complexity?\n<pre><code>for(i=0; i<n; i++) {\n  j = i;\n  while(j > 0) {\n    j = j / 2;\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>for(i=0; i<n; i++) {\n  j = i;\n  while(j > 0) {\n    j = j / 2;\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+                correct: 1,
+                explanation: "Outer loop: n times, inner while: log(i) times on average. Total: O(n log n)",
+                explanation_ar: "الحلقة الخارجية: n مرة، while الداخلية: log(i) مرة في المتوسط. الإجمالي: O(n log n)"
+            },
+            {
+                id: "ca-26",
+                text: "What does this return for isPrime(7)?\n<pre><code>bool isPrime(int n) {\n  if(n <= 1) return false;\n  for(int i=2; i*i<=n; i++) {\n    if(n % i == 0) return false;\n  }\n  return true;\n}</code></pre>",
+                text_ar: "ماذا ترجع هذه الدالة لـ isPrime(7)؟\n<pre><code>bool isPrime(int n) {\n  if(n <= 1) return false;\n  for(int i=2; i*i<=n; i++) {\n    if(n % i == 0) return false;\n  }\n  return true;\n}</code></pre>",
+                options: ["true", "false", "0", "1"],
+                options_ar: ["true", "false", "0", "1"],
+                correct: 0,
+                explanation: "7 is prime (only divisible by 1 and 7), so returns true.",
+                explanation_ar: "7 عدد أولي (يقبل القسمة على 1 و 7 فقط)، لذا ترجع true."
+            },
+            {
+                id: "ca-27",
+                text: "Time complexity?\n<pre><code>int i = n;\nwhile(i > 0) {\n  i = i - 1;\n}</code></pre>",
+                text_ar: "التعقيد الزمني؟\n<pre><code>int i = n;\nwhile(i > 0) {\n  i = i - 1;\n}</code></pre>",
+                options: ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+                options_ar: ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+                correct: 2,
+                explanation: "Loop runs n times (from n down to 1): O(n)",
+                explanation_ar: "الحلقة تعمل n مرة (من n إلى 1): O(n)"
+            },
+            {
+                id: "ca-28",
+                text: "What is the output?\n<pre><code>int max(int a, int b) {\n  return (a > b) ? a : b;\n}\nprint(max(10, 20));</code></pre>",
+                text_ar: "ما هو الناتج؟\n<pre><code>int max(int a, int b) {\n  return (a > b) ? a : b;\n}\nprint(max(10, 20));</code></pre>",
+                options: ["10", "20", "30", "0"],
+                options_ar: ["10", "20", "30", "0"],
+                correct: 1,
+                explanation: "Returns the larger of two numbers: max(10,20) = 20",
+                explanation_ar: "ترجع الأكبر من رقمين: max(10,20) = 20"
+            },
+            {
+                id: "ca-29",
+                text: "Time complexity of merge sort?\n<pre><code>void mergeSort(arr[], l, r) {\n  if(l < r) {\n    int m = l + (r-l)/2;\n    mergeSort(arr, l, m);\n    mergeSort(arr, m+1, r);\n    merge(arr, l, m, r);\n  }\n}</code></pre>",
+                text_ar: "التعقيد الزمني لفرز الدمج؟\n<pre><code>void mergeSort(arr[], l, r) {\n  if(l < r) {\n    int m = l + (r-l)/2;\n    mergeSort(arr, l, m);\n    mergeSort(arr, m+1, r);\n    merge(arr, l, m, r);\n  }\n}</code></pre>",
+                options: ["O(n)", "O(n log n)", "O(n²)", "O(2ⁿ)"],
+                options_ar: ["O(n)", "O(n log n)", "O(n²)", "O(2ⁿ)"],
+                correct: 1,
+                explanation: "Divides array log(n) times, merges in O(n) each level: O(n log n)",
+                explanation_ar: "يقسم المصفوفة log(n) مرة، يدمج في O(n) لكل مستوى: O(n log n)"
+            },
+            {
+                id: "ca-30",
+                text: "What does this print?\n<pre><code>int count = 0;\nfor(int i=1; i<=100; i++) {\n  if(i % 10 == 0) count++;\n}\nprint(count);</code></pre>",
+                text_ar: "ماذا يطبع هذا؟\n<pre><code>int count = 0;\nfor(int i=1; i<=100; i++) {\n  if(i % 10 == 0) count++;\n}\nprint(count);</code></pre>",
+                options: ["9", "10", "11", "100"],
+                options_ar: ["9", "10", "11", "100"],
+                correct: 1,
+                explanation: "Numbers divisible by 10 from 1-100: 10,20,30,...,100 = 10 numbers",
+                explanation_ar: "الأعداد القابلة للقسمة على 10 من 1-100: 10،20،30،...،100 = 10 أعداد"
+            }
+        ]
     }
 ];
