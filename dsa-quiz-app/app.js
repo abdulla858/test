@@ -430,9 +430,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 const correctOption = options[q.correct];
                 const explanation = (currentLang === 'ar' && q.explanation_ar) ? q.explanation_ar : q.explanation;
 
+                let optionsHtml = '<ul class="bank-options-list">';
+                options.forEach((opt, oIdx) => {
+                    const isCorrect = oIdx === q.correct;
+                    optionsHtml += `<li class="${isCorrect ? 'correct-option' : ''}">${opt} ${isCorrect ? '✅' : ''}</li>`;
+                });
+                optionsHtml += '</ul>';
+
                 qCard.innerHTML = `
                     <div class="bank-q-num">#${idx + 1}</div>
                     <div class="bank-q-text">${qText}</div>
+                    <div class="bank-options-container">
+                        <strong>${currentLang === 'ar' ? 'الخيارات:' : 'Options:'}</strong>
+                        ${optionsHtml}
+                    </div>
                     <div class="bank-answer">
                         <strong>${currentLang === 'ar' ? 'الإجابة الصحيحة:' : 'Correct Answer:'}</strong>
                         <span class="correct-text">${correctOption}</span>
