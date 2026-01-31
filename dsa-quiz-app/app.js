@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultMessage = document.getElementById('result-message');
     const circlePath = document.getElementById('score-circle-path');
     const restartBtn = document.getElementById('restart-btn');
+    const homeBtn = document.getElementById('home-btn');
     const confettiCanvas = document.getElementById('confetti-canvas');
 
     // State
@@ -39,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn_next: "Next Question",
             quiz_completed: "Quiz Completed!",
             result_msg: "Great job!",
-            btn_restart: "Try Another Topic",
+            btn_restart: "Restart Quiz",
+            btn_home: "Back to Home",
             footer_resources: "Study Resources:",
             loading: "Loading question...",
             correct: "Correct!",
@@ -67,7 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn_next: "السؤال التالي",
             quiz_completed: "اكتمل الاختبار!",
             result_msg: "عمل رائع!",
-            btn_restart: "جرب موضوعاً آخر",
+            btn_restart: "إعادة الاختبار",
+            btn_home: "العودة للرئيسية",
             footer_resources: "مصادر الدراسة:",
             loading: "جاري تحميل السؤال...",
             correct: "صحيح!",
@@ -383,6 +386,19 @@ document.addEventListener('DOMContentLoaded', () => {
         resultMessage.textContent = translations[currentLang][msgKey];
         if (percentage === 100) triggerConfetti();
     };
+
+    restartBtn.addEventListener('click', () => {
+        if (currentTopic.id === 'random') {
+            // For random quiz, we need to know how many questions were there
+            startRandomQuiz(currentQuestions.length);
+        } else {
+            startQuiz(currentTopic);
+        }
+    });
+
+    homeBtn.addEventListener('click', () => {
+        initLanding();
+    });
 
     backBtn.addEventListener('click', () => {
         if (confirm(translations[currentLang].confirm_exit)) {

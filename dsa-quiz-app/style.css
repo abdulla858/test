@@ -309,6 +309,7 @@ body {
     outline: none;
     margin-bottom: 1rem;
     -webkit-appearance: none;
+    appearance: none;
 }
 
 .question-selector input[type="range"]::-webkit-slider-thumb {
@@ -530,6 +531,14 @@ body {
     text-align: center;
     padding: 4rem 2rem;
     animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.result-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .score-circle {
