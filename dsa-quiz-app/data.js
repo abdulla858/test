@@ -2242,8 +2242,8 @@ const quizData = [
             },
             {
                 id: "sr-11",
-                text: "The recurence relation for Binary Search is:",
-                text_ar: "علاقة التكرار (Recurrence notation) للبحث الثنائي هي:",
+                text: "The recurrence relation for Binary Search is:",
+                text_ar: "علاقة التكرار (Recurrence) للبحث الثنائي هي:",
                 options: ["T(n) = T(n-1) + 1", "T(n) = 2T(n/2) + 1", "T(n) = T(n/2) + 1", "T(n) = T(n/3) + 1"],
                 options_ar: ["T(n) = T(n-1) + 1", "T(n) = 2T(n/2) + 1", "T(n) = T(n/2) + 1", "T(n) = T(n/3) + 1"],
                 correct: 2,
@@ -2272,8 +2272,8 @@ const quizData = [
             },
             {
                 id: "sr-14",
-                text: "To find the first occurrence of a number in a sorted array with duplicates, you using Binary Search?",
-                text_ar: "للعثور على أول ظهور لرقم في مصفوفة مرتبة تحتوي على تكرارات، باستخدام البحث الثنائي؟",
+                text: "To find the first occurrence of a number in a sorted array with duplicates using Binary Search:",
+                text_ar: "للعثور على أول ظهور لرقم في مصفوفة مرتبة تحتوي على تكرارات باستخدام البحث الثنائي:",
                 options: ["Stop at first match", "If match, move left", "If match, move right", "Use Linear Search"],
                 options_ar: ["التوقف عند أول تطابق", "إذا تطابق، تحرك يساراً", "إذا تطابق، تحرك يميناً", "استخدام البحث الخطي"],
                 correct: 1,
@@ -2494,7 +2494,7 @@ const quizData = [
                 id: "sr-36",
                 text: "Finding the majority element (appears > n/2 times) can be done in O(n) using:",
                 text_ar: "إيجاد عنصر الأغلبية (يظهر أكثر من n/2 مرة) يمكن القيام به في O(n) باستخدام:",
-                options: ["Lineary Search", "Moore's Voting Algo", "Binary Search", "Sorting"],
+                options: ["Linear Search", "Moore's Voting Algo", "Binary Search", "Sorting"],
                 options_ar: ["البحث الخطي", "خوارزمية مور للتصويت (Moore's Voting)", "البحث الثنائي", "الفرز"],
                 correct: 1,
                 explanation: "Cancel out different elements to leave the majority.",
@@ -3395,10 +3395,10 @@ const quizData = [
                 text: "The expression +AB is called:",
                 text_ar: "التعبير +AB يسمى تدوين:",
                 options: ["Infix", "Postfix", "Prefix", "None of the above"],
-                options_ar: ["Infix", "Postfix", "Prefix", "لا شيء مما سبق"],
+                options_ar: ["إدخالي (Infix)", "بعدي (Postfix)", "قبلي (Prefix)", "لا شيء مما سبق"],
                 correct: 2,
-                explanation: "Prefix notation (Polish Notation) places operators before operands.",
-                explanation_ar: "تدوين الـ Prefix يضع العمليات قبل المعاملات."
+                explanation: "+AB is Prefix (Polish Notation) because the operator comes before the operands.",
+                explanation_ar: "تدوين الـ Prefix يضع العمليات قبل المعاملات (+AB)."
             },
             {
                 id: "sa-9",
@@ -3454,8 +3454,8 @@ const quizData = [
                 id: "sa-14",
                 text: "Prefix form of: (A-B/C)*(D*E-F)",
                 text_ar: "شكل الـ Prefix لـ: (A-B/C)*(D*E-F)",
-                options: ["*-A/BC-DE F", "*-/ABC-*DEF", "*-A/BC-*DEF", "None"],
-                options_ar: ["*-A/BC-DE F", "*-/ABC-*DEF", "*-A/BC-*DEF", "لا شيء"],
+                options: ["*-A/BC-DEF", "*-/ABC-*DEF", "*-A/BC-*DEF", "None"],
+                options_ar: ["*-A/BC-DEF", "*-/ABC-*DEF", "*-A/BC-*DEF", "لا شيء"],
                 correct: 2,
                 explanation: "After step-by-step conversion, the prefix is *-A/BC-*DEF.",
                 explanation_ar: "بعد التحويل خطوة بخطوة، يكون الـ prefix هو *-A/BC-*DEF."
