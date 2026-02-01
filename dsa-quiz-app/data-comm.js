@@ -506,6 +506,506 @@ const quizData = [
                 correct: 1,
                 explanation: "'A/An' are used for non-specific nouns (indefinite articles).",
                 explanation_ar: "'A/An' تستخدم للأسماء غير المحددة (أدوات التنكير)."
+            },
+            {
+                id: "comm-51",
+                text: "Another thing that you have to avoid is adding to OHP’s with a ________ during a talk.",
+                text_ar: "شيء آخر يجب تجنبه هو الإضافة إلى شرائح OHP باستخدام ________ أثناء الحديث.",
+                options: ["Chalk", "Pencil", "Pen", "Marker"],
+                options_ar: ["طبشور", "قلم رصاص", "قلم حبر", "قلم تخطيط (Marker)"],
+                correct: 3,
+                explanation: "Using a marker during the talk on the transparency can be messy and distracting.",
+                explanation_ar: "استخدام قلم التخطيط أثناء الحديث على الشفافية قد يكون فوضوياً ومشتتاً."
+            },
+            {
+                id: "comm-52",
+                text: "A positive statement (in a question tag) takes a ___________tag.",
+                text_ar: "الجملة المثبتة (في السؤال المذيل) تأخذ وسم ___________ .",
+                options: ["Negative", "Positive", "Question", "Answer"],
+                options_ar: ["منفياً (Negative)", "مثبتاً", "سؤالاً", "جواباً"],
+                correct: 0,
+                explanation: "Question tags follow the opposite polarity of the main statement (Positive -> Negative).",
+                explanation_ar: "الأسئلة المذيلة تتبع قطبية عكسية للجملة الرئيسية (مثبت -> منفي)."
+            },
+            {
+                id: "comm-53",
+                text: "Hearing is only an important component of ________.",
+                text_ar: "السمع هو مجرد مكون مهم للـ ________ .",
+                options: ["Hearing", "Listening", "Talking", "Speaking"],
+                options_ar: ["السمع", "الاستماع (Listening)", "التحدث", "الكلام"],
+                correct: 1,
+                explanation: "Hearing is the physical act, while listening is the psychological process involving hearing.",
+                explanation_ar: "السمع هو العمل البدني، بينما الاستماع هو العملية النفسية التي تشمل السمع."
+            },
+            {
+                id: "comm-54",
+                text: "In _____ Listening the main intention is to seek certain information which will be appreciated.",
+                text_ar: "في الاستماع _____ يكون القصد الرئيسي هو البحث عن معلومات معينة سيتم تقديرها.",
+                options: ["Empathetic", "Appreciative", "Evaluative", "Dialogic"],
+                options_ar: ["التعاطفي", "التقديري (Appreciative)", "التقييمي", "الحواري"],
+                correct: 1,
+                explanation: "Appreciative listening is used for enjoyment or specialized appreciation.",
+                explanation_ar: "الاستماع التقديري يستخدم للاستمتاع أو تقدير متخصص."
+            },
+            {
+                id: "comm-55",
+                text: "_________ Is an aggressive behavior and will most likely bring a negative response from the speaker.",
+                text_ar: "الـ _________ هو سلوك عدواني وسيؤدي على الأرجح إلى رد فعل سبي من المتحدث.",
+                options: ["Interrupting", "Yawning", "Slapping", "Dancing"],
+                options_ar: ["المقاطعة (Interrupting)", "التثاؤب", "الصفع", "الرقص"],
+                correct: 0,
+                explanation: "Interrupting disrupts the flow and is perceived as disrespectful/aggressive.",
+                explanation_ar: "المقاطعة تعيق التدفق وتعتبر غير محترمة أو عدوانية."
+            },
+            {
+                id: "comm-56",
+                text: "It is important to choose the right environment because it will help the listener focus & avoid:",
+                text_ar: "من المهم اختيار البيئة المناسبة لأنها ستساعد المستمع على التركيز وتجنب:",
+                options: ["Attrition", "Distractions", "Disturbances", "Noise"],
+                options_ar: ["التآكل", "الإلهاءات (Distractions)", "الاضطرابات", "الضوضاء"],
+                correct: 1,
+                explanation: "A good environment minimizes mental and physical distractions.",
+                explanation_ar: "البيئة الجيدة تقلل من المشتتات الذهنية والمادية."
+            },
+            {
+                id: "comm-57",
+                text: "Semantic markers are the links between two _________.",
+                text_ar: "العلامات الدلالية (Semantic markers) هي الروابط بين _________ .",
+                options: ["Words", "Phrases", "Clauses", "Sentences"],
+                options_ar: ["كلمات", "عبارات", "جمل فرعية", "جمل (Sentences)"],
+                correct: 3,
+                explanation: "Semantic markers link sentences together to maintain logical flow.",
+                explanation_ar: "العلامات الدلالية تربط الجمل معاً للحفاظ على التدفق المنطقي."
+            },
+            {
+                id: "comm-58",
+                text: "__________ Customer not only returns to your organization for a second time but also tells about his satisfaction others.",
+                text_ar: "العميل الـ _________ لا يعود لمؤسستك مرة ثانية فحسب، بل يخبر الآخرين عن رضاه.",
+                options: ["Unsatisfied", "Impatient", "Satisfied", "Patient"],
+                options_ar: ["غير الراضي", "غير الصبور", "الراضي (Satisfied)", "الصبور"],
+                correct: 2,
+                explanation: "Customer satisfaction is key to word-of-mouth marketing and retention.",
+                explanation_ar: "رضا العملاء هو المفتاح للتسويق عبر التوصية الشفهية والاحتفاظ بهم."
+            },
+            {
+                id: "comm-59",
+                text: "Always ____ the customer for calling.",
+                text_ar: "دائماً ____ العميل على الاتصال.",
+                options: ["Slap", "Reprimand", "Thank", "Never thank"],
+                options_ar: ["اصفع", "وبخ", "اشكر (Thank)", "لا تشكر أبداً"],
+                correct: 2,
+                explanation: "Courtesy requires thanking customers for their engagement.",
+                explanation_ar: "اللباقة تقتضي شكر العملاء على تواصلهم."
+            },
+            {
+                id: "comm-60",
+                text: "The technique of ____ should be mastered to handle displeased customers.",
+                text_ar: "يجب إتقان تقنية ____ للتعامل مع العملاء غير الراضين.",
+                options: ["BLAST", "BLSAT", "BALST", "None"],
+                options_ar: ["BLAST", "BLSAT", "BALST", "لا شيء"],
+                correct: 0,
+                explanation: "BLAST (Believe, Listen, Apologize, Satisfy, Thank) is a standard service recovery model.",
+                explanation_ar: "تقنية BLAST (صدق، استمع، اعتذر، ارضِ، اشكر) هي نموذج قياسي لمعالجة الشكاوى."
+            },
+            {
+                id: "comm-61",
+                text: "In __________ verb the action passes from the subject to an object.",
+                text_ar: "في الفعل __________ ينتقل الحدث من الفاعل إلى المفعول به.",
+                options: ["Transitive", "Intransitive", "Modal", "Main"],
+                options_ar: ["المتعدي (Transitive)", "اللازم", "الناقص", "الرئيسي"],
+                correct: 0,
+                explanation: "Transitive verbs require an object to complete their meaning.",
+                explanation_ar: "الأفعال المتعدية تحتاج إلى مفعول به لإتمام معناها."
+            },
+            {
+                id: "comm-62",
+                text: "_________ refers to the time of action.",
+                text_ar: "الـ _________ يشير إلى زمن وقوع الحدث.",
+                options: ["Tense", "Transitive", "Intransitive", "Main verb"],
+                options_ar: ["الزمن (Tense)", "المتعدي", "اللازم", "الفعل الرئيسي"],
+                correct: 0,
+                explanation: "Tense in grammar indicates the time at which an action takes place.",
+                explanation_ar: "الزمن في القواعد يشير إلى الوقت الذي يقع فيه الحدث."
+            },
+            {
+                id: "comm-63",
+                text: "Reading comprehension means understanding a ________ text.",
+                text_ar: "استيعاب المقروء يعني فهم النص ________ .",
+                options: ["Oral", "Written", "Usual", "Audio"],
+                options_ar: ["الشفهي", "المكتوب (Written)", "العادي", "الصوتي"],
+                correct: 1,
+                explanation: "Reading comprehension specifically involves interpreting written information.",
+                explanation_ar: "استيعاب المقروء يتضمن خصيصاً تفسير المعلومات المكتوبة."
+            },
+            {
+                id: "comm-64",
+                text: "Reading is a __________________ process.",
+                text_ar: "القراءة هي عملية __________________ .",
+                options: ["Encoding", "Listening", "Decoding", "Talking"],
+                options_ar: ["ترميز (Encoding)", "استماع", "فك تشفير (Decoding)", "تحدث"],
+                correct: 2,
+                explanation: "Reading involves decoding written symbols into meaning.",
+                explanation_ar: "القراءة تتضمن فك تشفير الرموز المكتوبة إلى معنى."
+            },
+            {
+                id: "comm-65",
+                text: "While making a slide, the number of words should be limited to a maximum of _______ per slide.",
+                text_ar: "عند إنشاء شريحة، يجب ألا يتجاوز عدد الكلمات حداً أقصى قدره _______ لكل شريحة.",
+                options: ["8", "9", "10", "11"],
+                options_ar: ["8", "9", "10", "11"],
+                correct: 2,
+                explanation: "A general rule for slides is to keep text minimal, often cited as 10 words or less for clarity.",
+                explanation_ar: "قاعدة عامة للشرائح هي تقليل النص قدر الإمكان، وغالباً ما يُنصح بـ 10 كلمات أو أقل للوضوح."
+            },
+            {
+                id: "comm-66",
+                text: "A group of related words that contain both a subject and predicate and that functions as part of a sentence is a:",
+                text_ar: "مجموعة من الكلمات المرتبطة التي تحتوي على فاعل وخبر وتعمل كجزء من جملة تسمى:",
+                options: ["Sentence", "Phrase", "Clause", "Compound"],
+                options_ar: ["جملة", "شبه جملة", "بند/جملة صغرى (Clause)", "مركب"],
+                correct: 2,
+                explanation: "A clause is a unit of grammar that contains at least a subject and a verb.",
+                explanation_ar: "الـ Clause هي وحدة قواعد تحتوي على الأقل على فاعل وفعل."
+            },
+            {
+                id: "comm-67",
+                text: "When we read shorter texts for specific detailed information slowly and with concentration, it is called ________ reading.",
+                text_ar: "عندما نقرأ نصوصاً قصيرة للحصول على معلومات مفصلة ومحددة ببطء وتركيز، يسمى ذلك قراءة ________ .",
+                options: ["Intensive", "Extensive", "Detailed", "Short"],
+                options_ar: ["مكثفة (Intensive)", "واسعة", "مفصلة", "قصيرة"],
+                correct: 0,
+                explanation: "Intensive reading involves close, careful reading for detailed understanding.",
+                explanation_ar: "القراءة المكثفة تتضمن قراءة دقيقة وبعناية للفهم التفصيلي."
+            },
+            {
+                id: "comm-68",
+                text: "Most of our day-to-day reading is done _________.",
+                text_ar: "معظم قراءتنا اليومية تتم _________ .",
+                options: ["Loudly", "Extensively", "Intensively", "Silently"],
+                options_ar: ["بصوت عالٍ", "بشكل موسع", "بشكل مكثف", "صمتاً (Silently)"],
+                correct: 3,
+                explanation: "Most adults read silently in their day-to-day lives.",
+                explanation_ar: "معظم البالغين يقرؤون بصمت في حياتهم اليومية."
+            },
+            {
+                id: "comm-69",
+                text: "________ is to relate the content to previous and future learning of the subject.",
+                text_ar: "الـ ________ هو ربط المحتوى بالتعلم السابق والمستقبلي للمادة.",
+                options: ["Review", "Reading", "Recalling", "All"],
+                options_ar: ["المراجعة (Review)", "القراءة", "الاستدعاء", "الكل"],
+                correct: 0,
+                explanation: "Reviewing involves integrating new information with existing knowledge structures.",
+                explanation_ar: "المراجعة تتضمن دمج المعلومات الجديدة مع هياكل المعرفة الحالية."
+            },
+            {
+                id: "comm-70",
+                text: "__________ is checking whether we have followed the earlier stages promptly and efficiently.",
+                text_ar: "الـ __________ هو التحقق مما إذا كنا قد اتبعنا المراحل السابقة بسرعة وكفاءة.",
+                options: ["Review", "Reading", "Recalling", "All"],
+                options_ar: ["المراجعة (Review)", "القراءة", "الاستدعاء", "الكل"],
+                correct: 0,
+                explanation: "In study strategies like SQ3R, the final step is reviewing to verify understanding.",
+                explanation_ar: "في استراتيجيات الدراسة مثل SQ3R، الخطوة الأخيرة هي المراجعة للتحقق من الفهم."
+            },
+            {
+                id: "comm-71",
+                text: "Different types of letters used for printing are called _________.",
+                text_ar: "أنواع الحروف المختلفة المستخدمة في الطباعة تسمى _________ .",
+                options: ["Fonts", "Fronts", "Both", "None"],
+                options_ar: ["خطوط (Fonts)", "واجهات", "كلاهما", "لا شيء"],
+                correct: 0,
+                explanation: "Fonts refer to the specific style and design of text characters.",
+                explanation_ar: "الخطوط تشير إلى النمط والتصميم المحدد لحروف النص."
+            },
+            {
+                id: "comm-72",
+                text: "_________ is a technique that involves changing a text matter so that it is similar to the main source.",
+                text_ar: "_________ هي تقنية تتطلب تغيير مادة النص بحيث تكون مشابهة للمصدر الرئيسي (بأسلوبك الخاص).",
+                options: ["Note-taking", "Paraphrasing", "Summarizing", "Precis writing"],
+                options_ar: ["تدوين الملاحظات", "إعادة الصياغة (Paraphrasing)", "التلخيص", "كتابة الموجز"],
+                correct: 1,
+                explanation: "Paraphrasing is rewriting someone else's ideas in your own words.",
+                explanation_ar: "إعادة الصياغة هي إعادة كتابة أفكار شخص آخر بكلماتك الخاصة."
+            },
+            {
+                id: "comm-73",
+                text: "Effective paraphrasing avoids the risk of _________.",
+                text_ar: "إعادة الصياغة الفعالة تتجنب خطر _________ .",
+                options: ["Changing", "Noting", "Copying", "Plagiarism"],
+                options_ar: ["التغيير", "التدوين", "النسخ", "السرقة الأدبية (Plagiarism)"],
+                correct: 3,
+                explanation: "Properly paraphrasing and citing sources prevents plagiarism.",
+                explanation_ar: "إعادة الصياغة الصحيحة وذكر المصادر تمنع السرقة الأدبية."
+            },
+            {
+                id: "comm-74",
+                text: "________ means linking words and phrases together so that the whole text is clear and readable.",
+                text_ar: "________ تعني ربط الكلمات والعبارات معاً بحيث يكون النص كاملاً واضحاً وسلساً.",
+                options: ["Cohesion", "Joining", "Conjunctions", "Junctions"],
+                options_ar: ["التماسك (Cohesion)", "الانضمام", "روابط العطف", "التقاطعات"],
+                correct: 0,
+                explanation: "Cohesion refers to the linguistic elements that link parts of a text.",
+                explanation_ar: "التماسك يشير إلى العناصر اللغوية التي تربط أجزاء النص."
+            },
+            {
+                id: "comm-75",
+                text: "In the structure of a business letter, what comes first?",
+                text_ar: "في هيكل الرسالة التجارية، ماذا يأتي أولاً؟",
+                options: ["Reference", "Date", "Salutation", "Heading"],
+                options_ar: ["المرجع", "التاريخ", "التحية", "العنوان الرأسي (Heading)"],
+                correct: 3,
+                explanation: "The heading (letterhead or sender's address) is typically the first element.",
+                explanation_ar: "الترويسة أو عنوان المرسل هو المكون الأول عادةً."
+            },
+            {
+                id: "comm-76",
+                text: "In the writing of an apology letter, concentrate on:",
+                text_ar: "عند كتابة رسالة اعتذار، يجب التركيز على:",
+                options: ["Problem", "Compensation", "Rectification of problem", "Words"],
+                options_ar: ["المشكلة", "التعويض", "تصحيح المشكلة (Rectification)", "الكلمات"],
+                correct: 2,
+                explanation: "A good apology focuses on how the situation will be corrected.",
+                explanation_ar: "الاعتذار الجيد يركز على كيفية تصحيح الموقف."
+            },
+            {
+                id: "comm-77",
+                text: "The ________ is the vital part of the letter which is as good as wishing the person.",
+                text_ar: "الـ ________ هو جزء حيوي من الرسالة ويعتبر بمثابة تمني الخير للشخص.",
+                options: ["Salutation", "Enclosure", "Subject", "Reference"],
+                options_ar: ["التحية (Salutation)", "المرفقات", "الموضوع", "المرجع"],
+                correct: 0,
+                explanation: "The salutation is the formal greeting at the beginning of a letter.",
+                explanation_ar: "التحية هي الترحيب الرسمي في بداية الرسالة."
+            },
+            {
+                id: "comm-78",
+                text: "People cannot interact with each other without ________.",
+                text_ar: "لا يمكن للناس التفاعل مع بعضهم البعض بدون ________ .",
+                options: ["Communication", "Transport", "Voice", "Loudspeaker"],
+                options_ar: ["الاتصال (Communication)", "النقل", "الصوت", "مكبر الصوت"],
+                correct: 0,
+                explanation: "Communication is the fundamental basis for all human interaction.",
+                explanation_ar: "الاتصال هو الأساس الجوهري لكل التفاعلات البشرية."
+            },
+            {
+                id: "comm-79",
+                text: "The language of a report should be ________.",
+                text_ar: "يجب أن تكون لغة التقرير ________ .",
+                options: ["Formality", "Formal", "Casual", "Loose"],
+                options_ar: ["رسمية (اسم)", "رسمية (Formal)", "غير رسمية", "فضفاضة"],
+                correct: 1,
+                explanation: "Business and technical reports require formal language for professionalism.",
+                explanation_ar: "التقارير التجارية والفنية تتطلب لغة رسمية لضمان المهنية."
+            },
+            {
+                id: "comm-80",
+                text: "A circular or notice may be issued only by an _____ designated for the purpose.",
+                text_ar: "لا يجوز إصدار تعميم أو إشعار إلا من قبل _____ مخصص لهذا الغرض.",
+                options: ["Peon", "Clerk", "Typist", "Officer"],
+                options_ar: ["مراسل", "كاتب", "عامل طباعة", "مسؤول (Officer)"],
+                correct: 3,
+                explanation: "Official notices must be signed by authorized officers.",
+                explanation_ar: "يجب توقيع الإشعارات الرسمية من قبل المسؤولين المخولين."
+            },
+            {
+                id: "comm-81",
+                text: "Which semantic markers are used to indicate the development of ideas or to list them?",
+                text_ar: "أي العلامات الدلالية تستخدم للإشارة إلى تطور الأفكار أو سردها؟",
+                options: ["Primarily, Secondly, Finally", "Primarily, Secondly, Consequently", "Firstly, Thirdly, Finally", "Primarily, Finally, Consequently"],
+                options_ar: ["أولاً، ثانياً، أخيراً", "أولاً، ثانياً، بالتالي", "أولاً، ثالثاً، أخيراً", "أولاً، أخيراً، بالتالي"],
+                correct: 0,
+                explanation: "Sequential markers like 'Primarily', 'Secondly', and 'Finally' order ideas.",
+                explanation_ar: "الروابط التسلسلية مثل 'أولاً' و'ثانياً' و'أخيراً' ترتب الأفكار."
+            },
+            {
+                id: "comm-82",
+                text: "Difference in values and perceptions is a ________ barrier; a tendency to judge views is a _________ barrier.",
+                text_ar: "الاختلاف في القيم والتصورات هو عائق ________؛ والميل للحكم على الآراء هو عائق _________ .",
+                options: ["Channel, Environment", "Semantic, Cultural", "Cultural, Behavioral", "Environmental, Channel"],
+                options_ar: ["القناة، البيئة", "دلالي، ثقافي", "ثقافي، سلوكي", "بيئي، القناة"],
+                correct: 2,
+                explanation: "Values/perceptions are tied to culture, while judging is a behavioral/psychological trait.",
+                explanation_ar: "القيم والتصورات مرتبطة بالثقافة، بينما الحكم على الآراء هو سمة سلوكية أو نفسية."
+            },
+            {
+                id: "comm-83",
+                text: "Use of foreign language is a ________ barrier; multiple meanings are ________ barriers; lack of coordination is ________ barrier.",
+                text_ar: "استخدام لغة أجنبية هو عائق ________؛ تعدد المعاني هو عائق ________؛ نقص التنسيق هو عائق ________ .",
+                options: ["Semantic, Cultural, Individual", "Noise, Physical, Individual", "Cultural, Semantic, Organizational", "Channel, Cultural, Semantic"],
+                options_ar: ["دلالي، ثقافي، فردي", "ضوضاء، مادي، فردي", "ثقافي، دلالي، تنظيمي", "قناة، ثقافي، دلالي"],
+                correct: 2,
+                explanation: "Linguistic issues relate to semantics/culture, while coordination is organizational.",
+                explanation_ar: "القضايا اللغوية تتعلق بالدلالات أو الثقافة، بينما التنسيق هو أمر تنظيمي."
+            },
+            {
+                id: "comm-84",
+                text: "A noun may be defined as the name of a ___________, ___________ or __________.",
+                text_ar: "يمكن تعريف الاسم بأنه اسم لـ ___________، ___________ أو __________ .",
+                options: ["Building, City, Town", "Person, Place, Thing", "Fruit, City, Cat", "Animal, City, Fruit"],
+                options_ar: ["مبنى، مدينة، بلدة", "شخص، مكان، شيء", "فاكهة، مدينة، قطة", "حيوان، مدينة، فاكهة"],
+                correct: 1,
+                explanation: "The standard definition of a noun covers people, places, and objects.",
+                explanation_ar: "التعريف القياسي للاسم يشمل الأشخاص والأماكن والأشياء."
+            },
+            {
+                id: "comm-85",
+                text: "Right environment helps focus and avoid __________; being too __________ involved makes you hear what you want.",
+                text_ar: "البيئة المناسبة تساعد على التركيز وتجنب __________؛ الانخراط _________ الزائد يجعلك تسمع ما تريد.",
+                options: ["Attractions, Emotionally", "Distractions, Physically", "Distractions, Emotionally", "Attractions, Physically"],
+                options_ar: ["عناصر الجذب، عاطفياً", "المشتتات، جسدياً", "المشتتات، عاطفياً", "عناصر الجذب، جسدياً"],
+                correct: 2,
+                explanation: "Good environment stops distractions; emotional bias affects objective listening.",
+                explanation_ar: "البيئة الجيدة تمنع المشتتات؛ والانحياز العاطفي يؤثر على الاستماع الموضوعي."
+            },
+            {
+                id: "comm-86",
+                text: "First defense with a difficult customer is _________; a dissatisfied customer needs __________ hearing.",
+                text_ar: "الدفاع الأول مع العميل الصعب هو _________؛ والعميل غير الراضي يحتاج إلى استماع __________ .",
+                options: ["Anger, Impatient", "Listening, Patient", "Reading, Doctor", "Patient, Listening"],
+                options_ar: ["الغضب، غير صبور", "الاستماع، صبور", "القراءة، طبيب", "الصبر، الاستماع"],
+                correct: 1,
+                explanation: "Active, patient listening de-escalates conflict with unhappy customers.",
+                explanation_ar: "الاستماع النشط والصبور يخفف من حدة النزاع مع العملاء غير الراضين."
+            },
+            {
+                id: "comm-87",
+                text: "Articles in English are classified as ________ and ________.",
+                text_ar: "أدوات التعريف والتنكير في الإنجليزية تصنف إلى ________ و ________ .",
+                options: ["Specific, Concrete", "Concrete, Definite", "Definite, Indefinite", "Indefinite, Specific"],
+                options_ar: ["محددة، ملموسة", "ملموسة، معرفة", "معرفة، نكرة", "نكرة، محددة"],
+                correct: 2,
+                explanation: "'The' is definite, while 'A' and 'An' are indefinite.",
+                explanation_ar: "'The' هي أداة تعريف، بينما 'A' و 'An' أدوات تنكير."
+            },
+            {
+                id: "comm-88",
+                text: "Which of these is required as a skill while reading?",
+                text_ar: "أي من هذه المهارات مطلوبة أثناء القراءة؟",
+                options: ["Ability to interpret", "Knowledge", "Reason for reading", "All of the Above"],
+                options_ar: ["القدرة على التفسير", "المعرفة", "سبب القراءة", "كل ما سبق"],
+                correct: 3,
+                explanation: "Effective reading requires interpretation, context, and purpose.",
+                explanation_ar: "القراءة الفعالة تتطلب التفسير والسياق والهدف."
+            },
+            {
+                id: "comm-89",
+                text: "The plural of 'hero' is:",
+                text_ar: "جمع كلمة 'hero' هو:",
+                options: ["Heros", "Heroes", "Actor", "None"],
+                options_ar: ["Heros", "Heroes", "Actor", "لا شيء"],
+                correct: 1,
+                explanation: "Words ending in 'o' usually take 'es' for plural (e.g., heroes, potatoes).",
+                explanation_ar: "الكلمات التي تنتهي بـ 'o' غالباً ما تأخذ 'es' في الجمع."
+            },
+            {
+                id: "comm-90",
+                text: "1. ________ is used before 'university' 2. ________ is used before 'hour'.",
+                text_ar: "1. ________ تستخدم قبل 'university' 2. ________ تستخدم قبل 'hour'.",
+                options: ["An, A", "A, An", "The, A", "An, The"],
+                options_ar: ["An, A", "A, An", "The, A", "An, The"],
+                correct: 1,
+                explanation: "'University' starts with a consonant sound (yu), 'hour' starts with a vowel sound (ou).",
+                explanation_ar: "تبدأ 'University' بصوت ساكن (يو)، بينما تبدأ 'hour' بصوت متحرك (آو)."
+            },
+            {
+                id: "comm-91",
+                text: "1. ________ of these belong to the landed gentry. 2. ________ of the boys could get the prize.",
+                text_ar: "1. ________ من هؤلاء ينتمون إلى الطبقة الراقية. 2. ________ من الأولاد يمكنهم الحصول على الجائزة.",
+                options: ["Each, every", "Each, either", "Every, each", "Either, each"],
+                options_ar: ["كل، كل واحد", "كل، أي واحد (Each, either)", "كل واحد، كل", "أي واحد، كل"],
+                correct: 1,
+                explanation: "Each refers to members of a group individually; either refers to one of two.",
+                explanation_ar: "تستخدم Each للإشارة لأفراد المجموعة بشكل فردي؛ وEither لأحد الاثنين."
+            },
+            {
+                id: "comm-92",
+                text: "_________ you can take a horse to the pond, __________ can make it drink.",
+                text_ar: "_________ يمكنك اصطحاب الحصان إلى البركة، ________ يمكنك إجباره على الشرب.",
+                options: ["Neither, either", "Neither, or", "Either, or", "Either, nor"],
+                options_ar: ["لا هذا، ولا ذاك", "لا أحد، أو", "إما، أو (Either, or)", "إما، ولا"],
+                correct: 2,
+                explanation: "The proverb uses 'Either... or' (or as a variation of the horse idiom). Correct answer in this context is likely 'either/but' but given options, C is the structural fit.",
+                explanation_ar: "المثل يستخدم 'إما... أو' (أو كصيغة تركيبية). الخيار الثالث هو الأنسب للقواعد."
+            },
+            {
+                id: "comm-93",
+                text: "Prior to note-taking there is the aspect of _________ or _________.",
+                text_ar: "قبل تدوين الملاحظات، هناك جانب _________ أو _________ .",
+                options: ["Listening, Writing", "Writing, Speaking", "Speaking, Reading", "Reading, Listening"],
+                options_ar: ["الاستماع، الكتابة", "الكتابة، التحدث", "التحدث، القراءة", "القراءة، الاستماع"],
+                correct: 3,
+                explanation: "You must read or listen to source material before taking notes on it.",
+                explanation_ar: "يجب عليك قراءة أو الاستماع للمادة المصدر قبل تدوين ملاحظات عنها."
+            },
+            {
+                id: "comm-94",
+                text: "An effective strategy for note-taking includes an ________ and ________ approach.",
+                text_ar: "الاستراتيجية الفعالة لتدوين الملاحظات تتضمن نهجاً ________ و ________ .",
+                options: ["Inefficient, systematic", "Inefficient, unsystematic", "Efficient, unsystematic", "Efficient, systematic"],
+                options_ar: ["غير كفء، منظم", "غير كفء، عشوائي", "كفء، عشوائي", "كفء، منظم (Efficient, systematic)"],
+                correct: 3,
+                explanation: "Success in note-taking requires organization and efficiency.",
+                explanation_ar: "النجاح في تدوين الملاحظات يتطلب التنظيم والكفاءة."
+            },
+            {
+                id: "comm-95",
+                text: "In making notes, _________ and _________ are of utmost importance.",
+                text_ar: "عند تدوين الملاحظات، يعد _________ و _________ في غاية الأهمية.",
+                options: ["Clarity, Organization", "Mistiness, Organization", "Mistiness, Unclarity", "Foggy, Organization"],
+                options_ar: ["الوضوح، التنظيم (Clarity, Organization)", "الغموض، التنظيم", "الغموض، عدم الوضوح", "الضبابية، التنظيم"],
+                correct: 0,
+                explanation: "Notes must be clear and organized to be useful for future reference.",
+                explanation_ar: "يجب أن تكون الملاحظات واضحة ومنظمة لتكون مفيدة للرجوع إليها مستقبلاً."
+            },
+            {
+                id: "comm-96",
+                text: "Usually, the business letter is drafted in two styles:",
+                text_ar: "عادةً ما يتم صياغة الرسائل التجارية بأسلوبين:",
+                options: ["Blocked, Unblocked", "Unblocked, Semi-blocked", "Blocked, Semi-blocked", "None"],
+                options_ar: ["الكتلة، غير الكتلة", "غير الكتلة، شبه الكتلة", "الكتلة، وشبه الكتلة (Blocked, Semi-blocked)", "لا شيء"],
+                correct: 2,
+                explanation: "Blocked (all start left) and Semi-blocked (indented) are common formats.",
+                explanation_ar: "أسلوب الكتلة (الكل يبدأ من اليسار) وشبه الكتلة (إزاحة في السطر الأول) هما النمطان الشائعان."
+            },
+            {
+                id: "comm-97",
+                text: "A resume must include:",
+                text_ar: "يجب أن تتضمن السيرة الذاتية:",
+                options: ["Your Skills", "Your Aims/Goals", "Your Projects/Research", "All of the Above"],
+                options_ar: ["مهاراتك", "أهدافك", "مشاريعك/أبحاثك", "كل ما سبق"],
+                correct: 3,
+                explanation: "A comprehensive resume covers skills, objectives, and experience.",
+                explanation_ar: "السيرة الذاتية الشاملة تغطي المهارات والأهداف والخبرات."
+            },
+            {
+                id: "comm-98",
+                text: "The main parts of an agenda are ________ and _________.",
+                text_ar: "الأجزاء الرئيسية لجدول الأعمال هي ________ و _________ .",
+                options: ["Heading", "Body", "Both", "None"],
+                options_ar: ["العنوان", "المتن/المحتوى", "كلاهما", "لا شيء"],
+                correct: 2,
+                explanation: "An agenda requires a heading (meeting details) and a body (items to discuss).",
+                explanation_ar: "جدول الأعمال يتطلب عنواناً (تفاصيل الاجتماع) ومتناً (النقاط المقرر نقاشها)."
+            },
+            {
+                id: "comm-99",
+                text: "Reading for information may be both _______ and ________.",
+                text_ar: "القراءة من أجل المعلومات قد تكون ________ و ________ .",
+                options: ["Internal, External", "Internal, Outer", "Inside, External", "Inner, Outer"],
+                options_ar: ["داخلية، خارجية (Internal, External)", "داخلي، خارجي (بمعنى مغاير)", "داخل، خارجي", "باطني، خارجي"],
+                correct: 0,
+                explanation: "One might seek information for internal use (self-improvement) or external purposes.",
+                explanation_ar: "قد يبحث المرء عن معلومات لاستخدامه الداخلي (تطوير الذات) أو لأغراض خارجية."
+            },
+            {
+                id: "comm-100",
+                text: "Professional reading is done to continue ________ and ________ to develop thinking skills.",
+                text_ar: "القراءة المهنية تتم للاستمرار في ________ و ________ لتطوير مهارات التفكير.",
+                options: ["Learning, Studying", "Learning, Speaking", "Reading, Speaking", "Speaking, Listening"],
+                options_ar: ["التعلم، الدراسة (Learning, Studying)", "التعلم، التحدث", "القراءة، التحدث", "التحدث، الاستماع"],
+                correct: 0,
+                explanation: "Lifelong learning and continuous study are key to professional growth.",
+                explanation_ar: "التعلم مدى الحياة والدراسة المستمرة هما مفتاح النمو المهني."
             }
         ]
     }
