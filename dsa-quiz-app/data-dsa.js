@@ -3548,215 +3548,7 @@ const quizData = [
                 explanation_ar: "تم تطوير هذه الخوارزمية بواسطة إيدجر ديكسترا، وهي تستخدم مكدساً لأولويات العمليات."
             }
         ]
-    },
-    {
-        id: "comm-skills",
-        title: "Communication Skills",
-        title_ar: "مهارات الاتصال",
-        description: "Test your knowledge on soft skills, feedback, and communication barriers.",
-        description_ar: "اختبر معرفتك في المهارات الناعمة، التغذية الراجعة، وعوائق الاتصال.",
-        icon: "🗣️",
-        questions: [
-            {
-                id: "comm-1",
-                text: "Communication is a non-stop ____________.",
-                text_ar: "الاتصال هو ____________ غير متوقف.",
-                options: ["Paper", "Process", "Programme", "Plan"],
-                options_ar: ["ورقة", "عملية", "برنامج", "خطة"],
-                correct: 1,
-                explanation: "Communication is considered a continuous process of exchanging information.",
-                explanation_ar: "يعتبر الاتصال عملية مستمرة لتبادل المعلومات."
-            },
-            {
-                id: "comm-2",
-                text: "Communication is a part of ________ skills.",
-                text_ar: "الاتصال هو جزء من المهارات ________ .",
-                options: ["Soft", "Hard", "Rough", "Short"],
-                options_ar: ["الناعمة (Soft)", "الصلبة", "الخشنة", "القصيرة"],
-                correct: 0,
-                explanation: "Communication is a key component of soft skills, which are personal attributes for effective interaction.",
-                explanation_ar: "الاتصال هو مكون رئيسي للمهارات الناعمة، وهي سمات شخصية للتفاعل الفعال."
-            },
-            {
-                id: "comm-3",
-                text: "The _______________ is the person who transmits the message.",
-                text_ar: "الـ ____________ هو الشخص الذي يرسل الرسالة.",
-                options: ["Receiver", "Driver", "Sender", "Cleaner"],
-                options_ar: ["المستقبل", "السائق", "المرسل", "المنظف"],
-                correct: 2,
-                explanation: "The sender is the individual who initiates and transmits the message.",
-                explanation_ar: "المرسل هو الفرد الذي يبدأ وينقل الرسالة."
-            },
-            {
-                id: "comm-4",
-                text: "_____________ is the person who notices and decodes and attaches some meaning to a message.",
-                text_ar: "الـ _____________ هو الشخص الذي يلاحظ ويفك تشفير الرسالة ويعطيها معنى.",
-                options: ["Receiver", "Driver", "Sender", "Cleaner"],
-                options_ar: ["المستقبل", "السائق", "المرسل", "المنظف"],
-                correct: 0,
-                explanation: "The receiver is the one who receives, decodes, and interprets the message.",
-                explanation_ar: "المستقبل هو الشخص الذي يستلم الرسالة ويفك تشفيرها ويفسرها."
-            },
-            {
-                id: "comm-5",
-                text: "Message is any signal that triggers the response of a _________",
-                text_ar: "الرسالة هي أي إشارة تثير استجابة الـ _________",
-                options: ["Receiver", "Driver", "Sender", "Cleaner"],
-                options_ar: ["المستقبل", "السائق", "المرسل", "المنظف"],
-                correct: 0,
-                explanation: "A message is intended to elicit a response from the receiver.",
-                explanation_ar: "الرسالة تهدف إلى إثارة استجابة من المستقبل."
-            },
-            {
-                id: "comm-6",
-                text: "The response to a sender's message is called _________.",
-                text_ar: "الاستجابة لرسالة المرسل تسمى _________.",
-                options: ["Food bank", "Feedback", "Food", "Back"],
-                options_ar: ["بنك طعام", "تغذية راجعة (Feedback)", "طعام", "عودة"],
-                correct: 1,
-                explanation: "Feedback is the response provided by the receiver to the sender's message.",
-                explanation_ar: "التغذية الراجعة هي الاستجابة التي يقدمها المستقبل لرسالة المرسل."
-            },
-            {
-                id: "comm-7",
-                text: "___________ context refers to the relationship between the sender and the receiver.",
-                text_ar: "السياق ___________ يشير إلى العلاقة بين المرسل والمستقبل.",
-                options: ["Social", "Physical", "Cultural", "Chronological"],
-                options_ar: ["الاجتماعي", "المادي", "الثقافي", "الزمني"],
-                correct: 0,
-                explanation: "Social context involves the personal and professional relationships between communicators.",
-                explanation_ar: "السياق الاجتماعي يتضمن العلاقات الشخصية والمهنية بين المتواصلين."
-            },
-            {
-                id: "comm-8",
-                text: "___________ context refers to the similarity of backgrounds between the sender and the receiver.",
-                text_ar: "السياق ___________ يشير إلى تشابه الخلفيات بين المرسل والمستقبل.",
-                options: ["Physical", "Social", "Chronological", "Cultural"],
-                options_ar: ["المادي", "الاجتماعي", "الزمني", "الثقافي"],
-                correct: 3,
-                explanation: "Cultural context relates to the shared background, values, and practices of the individuals.",
-                explanation_ar: "السياق الثقافي يتعلق بالخلفية والقيم والممارسات المشتركة للأفراد."
-            },
-            {
-                id: "comm-9",
-                text: "_________ refers to all these factors that disrupt the communication.",
-                text_ar: "الـ _________ يشير إلى كل العوامل التي تعيق الاتصال.",
-                options: ["Nonsense", "Noise", "Nowhere", "Nobody"],
-                options_ar: ["الهراء", "الضوضاء (Noise)", "لا مكان", "لا أحد"],
-                correct: 1,
-                explanation: "Noise is anything that interferes with the transmission or reception of a message.",
-                explanation_ar: "الضوضاء هي أي شيء يتداخل مع إرسال أو استقبال الرسالة."
-            },
-            {
-                id: "comm-10",
-                text: "Environmental barriers are the same as ___________ noise.",
-                text_ar: "العوائق البيئية هي نفسها الضوضاء ___________.",
-                options: ["Physiological", "Psychological", "Physical", "Sociological"],
-                options_ar: ["الفسيولوجية", "النفسية", "المادية (الفيزيائية)", "الاجتماعية"],
-                correct: 2,
-                explanation: "Physical noise refers to environmental interference like loud music or poor lighting.",
-                explanation_ar: "الضوضاء المادية تشير إلى التداخل البيئي مثل الموسيقى الصاخبة أو الإضاءة السيئة."
-            },
-            {
-                id: "comm-11",
-                text: "Our dress code is an example of _____________ communication.",
-                text_ar: "قواعد اللباس الخاصة بنا هي مثال على الاتصال _____________.",
-                options: ["Verbal", "Nonverbal", "Written", "Spoken"],
-                options_ar: ["اللفظي", "غير اللفظي", "الكتابي", "المحكي"],
-                correct: 1,
-                explanation: "Nonverbal communication includes appearance, clothing, and body language.",
-                explanation_ar: "الاتصال غير اللفظي يشمل المظهر والملابس ولغة الجسد."
-            },
-            {
-                id: "comm-12",
-                text: "Communication strengthens _________ & __________ relationship is an organization.",
-                text_ar: "الاتصال يقوي العلاقة بين _________ و _________ في المؤسسة.",
-                options: ["Employer-Father", "Employer-Employee", "Mother-Employer", "Mother-Child"],
-                options_ar: ["صاحب العمل والأب", "صاحب العمل والموظف", "الأم وصاحب العمل", "الأم والطفل"],
-                correct: 1,
-                explanation: "Effective communication is vital for maintaining a healthy employer-employee dynamic.",
-                explanation_ar: "الاتصال الفعال حيوي للحفاظ على ديناميكية صحية بين صاحب العمل والموظف."
-            },
-            {
-                id: "comm-13",
-                text: "_______________ communication includes tone of voice body language, facial expressions etc.",
-                text_ar: "الاتصال ____________ يتضمن نبرة الصوت، لغة الجسد، تعبيرات الوجه إلخ.",
-                options: ["Nonverbal", "verbal", "letter", "notice"],
-                options_ar: ["غير اللفظي", "اللفظي", "الرسائل", "الملاحظات"],
-                correct: 0,
-                explanation: "Nonverbal cues like tone and facial expressions often convey more meaning than words alone.",
-                explanation_ar: "الإشارات غير اللفظية مثل النبرة وتعبيرات الوجه غالباً ما تنقل معنى أكبر من الكلمات وحدها."
-            },
-            {
-                id: "comm-14",
-                text: "When there is similarity of background between the sender and the receives such as age, language nationality, religion, gender then this is called _____________ context.",
-                text_ar: "عندما يكون هناك تشابه في الخلفية بين المرسل والمستقبل مثل العمر واللغة والجنسية والدين والنوع، فإن هذا يسمى السياق _____________.",
-                options: ["Social", "Cultural", "Physical", "Dynamic"],
-                options_ar: ["الاجتماعي", "الثقافي", "المادي", "الديناميكي"],
-                correct: 1,
-                explanation: "Similarity in identity markers like nationality and religion falls under cultural context.",
-                explanation_ar: "التشابه في محددات الهوية مثل الجنسية والدين يندرج تحت السياق الثقافي."
-            },
-            {
-                id: "comm-15",
-                text: "Letter, e-mail telephone are examples of __________.",
-                text_ar: "الرسالة، البريد الإلكتروني، الهاتف هي أمثلة على _________.",
-                options: ["Message", "Feedback", "Channel", "Encoding"],
-                options_ar: ["الرسالة", "التغذية الراجعة", "القناة (Channel)", "الترميز"],
-                correct: 2,
-                explanation: "The channel is the medium used to convey the message from sender to receiver.",
-                explanation_ar: "القناة هي الوسيلة المستخدمة لنقل الرسالة من المرسل إلى المستقبل."
-            },
-            {
-                id: "comm-16",
-                text: "Understanding __________different parts of speech forms the base of leaning grammar.",
-                text_ar: "فهم __________ أجزاء مختلفة من الكلام يشكل أساس تعلم القواعد.",
-                options: ["Five", "Eight", "Six", "Seven"],
-                options_ar: ["خمسة", "ثمانية", "ستة", "سبعة"],
-                correct: 1,
-                explanation: "There are traditionally eight parts of speech in English grammar (noun, verb, etc.).",
-                explanation_ar: "هناك تقليدياً ثمانية أجزاء للكلام في قواعد اللغة الإنجليزية (اسم، فعل، إلخ)."
-            },
-            {
-                id: "comm-17",
-                text: "It is of paramount importance that one need to construct a __________sentence in the day to day affairs.",
-                text_ar: "من الأهمية العظمى أن يحتاج الفرد إلى بناء جملة __________ في الشؤون اليومية.",
-                options: ["Wrong", "Correct", "Incorrect", "Night"],
-                options_ar: ["خاطئة", "صحيحة", "غير صحيحة", "ليلية"],
-                correct: 1,
-                explanation: "Clear and correct sentence construction is essential for effective daily communication.",
-                explanation_ar: "بناء جملة واضحة وصحيحة أمر ضروري للتواصل اليومي الفعال."
-            },
-            {
-                id: "comm-18",
-                text: "A __________ is defined as the name of a person place or thing.",
-                text_ar: "الـ __________ هو اسم لشخص أو مكان أو شيء.",
-                options: ["Verb", "Noun", "Pronoun", "Adverb"],
-                options_ar: ["الفعل", "الاسم (Noun)", "الضمير", "الظرف"],
-                correct: 1,
-                explanation: "A noun is a word used to identify any of a class of people, places, or things.",
-                explanation_ar: "الاسم هو كلمة تستخدم لتحديد أي فئة من الناس أو الأماكن أو الأشياء."
-            },
-            {
-                id: "comm-19",
-                text: "According to hoben communication is the ________ interchange of thought or idea.",
-                text_ar: "وفقاً لهوبن (Hoben)، الاتصال هو التبادل ________ للأفكار.",
-                options: ["Visual", "Audio", "Verbal", "Written"],
-                options_ar: ["المرئي", "الصوتي", "اللفظي", "الكتابي"],
-                correct: 2,
-                explanation: "Hoben's definition emphasizes the verbal exchange of ideas.",
-                explanation_ar: "تعريف هوبن يؤكد على التبادل اللفظي للأفكار."
-            },
-            {
-                id: "comm-20",
-                text: "The person who transmits the message is called the _________ .",
-                text_ar: "الشخص الذي ينقل الرسالة يسمى _________ .",
-                options: ["Sender", "Gives", "Taker", "Receiver"],
-                options_ar: ["المرسل", "المعطي", "الآخذ", "المستقبل"],
-                correct: 0,
-                explanation: "The sender is the source of the communication process.",
-                explanation_ar: "المرسل هو مصدر عملية الاتصال."
-            }
-        ]
     }
 ];
+
+
