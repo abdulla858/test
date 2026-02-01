@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loading: "Loading question...",
             correct: "Correct!",
             incorrect: "Incorrect.",
-            score_perfect: "Perfect! You're a DSA Master! 🏆",
+            score_perfect: "Perfect! You've mastered this subject! 🏆",
             score_great: "Great job! You know your stuff. 🚀",
             score_good: "Good effort! Keep practicing. 📚",
             score_retry: "Don't give up! Review the concepts and try again. 💪",
@@ -65,13 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
             cancel: "Cancel",
             questions_label: "Questions:",
             btn_browse_all: "📖 Questions Bank",
-            browse_all_title: "Questions Bank (All Topics)",
+            browse_all_title: "Questions Bank",
             res_comm: "Communication Skills (Examveda)",
-            btn_portal: "🏠 Portal"
+            btn_portal: "🏠 Portal",
+            select_topics: "Select Parts to Include:",
+            select_all: "Select All"
         },
         ar: {
-            app_title: "أستاذ الخوارزميات",
-            hero_title: "أتقن هياكل البيانات",
+            app_title: "أستاذ المادة",
+            hero_title: "أتقن المواضيع",
             hero_subtitle: "اختر موضوعاً لاختبار معرفتك بأسئلة مختارة من أفضل المصادر.",
             btn_back: "← رجوع",
             btn_next: "السؤال التالي",
@@ -83,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loading: "جاري تحميل السؤال...",
             correct: "صحيح!",
             incorrect: "إجابة خاطئة.",
-            score_perfect: "ممتاز! أنت أستاذ في الخوارزميات! 🏆",
+            score_perfect: "ممتاز! لقد أتقنت هذه المادة! 🏆",
             score_great: "عمل رائع! أنت تعرف مجالك جيداً. 🚀",
             score_good: "جهد جيد! استمر في التدريب. 📚",
             score_retry: "لا تستسلم! راجع المفاهيم وحاول مرة أخرى. 💪",
@@ -98,9 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
             cancel: "إلغاء",
             questions_label: "الأسئلة:",
             btn_browse_all: "📖 بنك الأسئلة والشروحات",
-            browse_all_title: "بنك الأسئلة (جميع المواضيع)",
+            browse_all_title: "بنك الأسئلة",
             res_comm: "مهارات الاتصال (Examveda)",
-            btn_portal: "🏠 الرئيسية"
+            btn_portal: "🏠 الرئيسية",
+            select_topics: "اختر الأجزاء المطلوبة:",
+            select_all: "تحديد الكل"
         }
     };
 
@@ -118,9 +122,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update Static Text
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (translations[lang][key]) {
-                el.textContent = translations[lang][key];
+            let text = translations[lang][key];
+
+            // Override with subject-specific metadata if available
+            if (typeof subjectInfo !== 'undefined') {
+                if (key === 'app_title' && subjectInfo[lang === 'ar' ? 'app_title_ar' : 'app_title']) {
+                    text = subjectInfo[lang === 'ar' ? 'app_title_ar' : 'app_title'];
+                } else if (key === 'hero_title' && subjectInfo[lang === 'ar' ? 'hero_title_ar' : 'hero_title']) {
+                    text = subjectInfo[lang === 'ar' ? 'hero_title_ar' : 'hero_title'];
+                } else if (key === 'hero_subtitle' && subjectInfo[lang === 'ar' ? 'hero_subtitle_ar' : 'hero_subtitle']) {
+                    text = subjectInfo[lang === 'ar' ? 'hero_subtitle_ar' : 'hero_subtitle'];
+                }
             }
+
+            if (text) el.textContent = text;
         });
 
         // Re-render content if active
@@ -223,20 +238,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show Question Selector Modal
     const showQuestionSelector = () => {
-        // Calculate total questions
-        const totalQuestions = quizData.reduce((sum, topic) => sum + topic.questions.length, 0);
-
         // Create modal
         const modal = document.createElement('div');
         modal.className = 'modal-overlay';
         modal.innerHTML = `
             <div class="modal-content glass-card">
                 <h2 data-i18n="select_questions">${translations[currentLang].select_questions}</h2>
+                
                 <div class="question-selector">
                     <label for="question-count">${translations[currentLang].questions_label}</label>
-                    <input type="range" id="question-count" min="5" max="${Math.min(totalQuestions, 50)}" value="10" step="5">
+                    <input type="range" id="question-count" min="5" max="50" value="10" step="5">
                     <span id="question-count-display">10</span>
                 </div>
+
+                <div class="topics-selection-header" style="margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+                    <label data-i18n="select_topics" style="color: var(--text-muted); font-size: 0.9rem;">${translations[currentLang].select_topics}</label>
+                    <button class="text-btn" id="select-all-topics" style="padding: 0.2rem 0.5rem; font-size: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); cursor: pointer;" data-i18n="select_all">${translations[currentLang].select_all}</button>
+                </div>
+                
+                <div class="topics-selector-container" id="topics-list">
+                    ${quizData.map(topic => `
+                        <label class="topic-checkbox-item">
+                            <input type="checkbox" class="topic-cb" value="${topic.id}" checked>
+                            <span>${(currentLang === 'ar' && topic.title_ar) ? topic.title_ar : topic.title} (${topic.questions.length})</span>
+                        </label>
+                    `).join('')}
+                </div>
+
                 <div class="modal-actions">
                     <button class="secondary-btn" id="cancel-btn">${translations[currentLang].cancel}</button>
                     <button class="primary-btn" id="start-random-btn">${translations[currentLang].start_quiz}</button>
@@ -246,11 +274,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.body.appendChild(modal);
 
-        // Update display on slider change
         const slider = modal.querySelector('#question-count');
         const display = modal.querySelector('#question-count-display');
+        const topicsList = modal.querySelector('#topics-list');
+        const selectAllBtn = modal.querySelector('#select-all-topics');
+        const checkboxes = modal.querySelectorAll('.topic-cb');
+
+        // Update slider max based on selected topics
+        const updateSliderMax = () => {
+            const selectedIds = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
+            const totalAvailable = quizData
+                .filter(t => selectedIds.includes(t.id))
+                .reduce((sum, t) => sum + t.questions.length, 0);
+
+            const newMax = Math.max(5, Math.min(totalAvailable, 100)); // Cap at 100 for performance
+            slider.max = newMax;
+            if (parseInt(slider.value) > newMax) {
+                slider.value = newMax;
+                display.textContent = newMax;
+            }
+        };
+
         slider.addEventListener('input', (e) => {
             display.textContent = e.target.value;
+        });
+
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', updateSliderMax);
+        });
+
+        selectAllBtn.addEventListener('click', () => {
+            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+            checkboxes.forEach(cb => cb.checked = !allChecked);
+            updateSliderMax();
         });
 
         // Cancel button
@@ -261,8 +317,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start button
         modal.querySelector('#start-random-btn').addEventListener('click', () => {
             const count = parseInt(slider.value);
+            const selectedIds = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
+
+            if (selectedIds.length === 0) {
+                alert(currentLang === 'ar' ? "يرجى اختيار جزء واحد على الأقل" : "Please select at least one part");
+                return;
+            }
+
             document.body.removeChild(modal);
-            startRandomQuiz(count);
+            startRandomQuiz(count, selectedIds);
         });
 
         // Close on overlay click
@@ -271,16 +334,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.removeChild(modal);
             }
         });
+
+        updateSliderMax();
     };
 
     // Start Random Quiz
-    const startRandomQuiz = (questionCount) => {
-        // Collect all questions from all topics
+    const startRandomQuiz = (questionCount, selectedTopicIds = []) => {
+        // Collect questions from selected topics only
         const allQuestions = [];
         quizData.forEach(topic => {
-            topic.questions.forEach(q => {
-                allQuestions.push(q);
-            });
+            if (selectedTopicIds.length === 0 || selectedTopicIds.includes(topic.id)) {
+                topic.questions.forEach(q => {
+                    allQuestions.push(q);
+                });
+            }
         });
 
         // Shuffle and select
@@ -477,7 +544,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    homeBtn.addEventListener('click', () => initLanding());
+    homeBtn.addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
 
     backBtn.addEventListener('click', () => {
         if (confirm(translations[currentLang].confirm_exit)) {

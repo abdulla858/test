@@ -1,10 +1,19 @@
+const subjectInfo = {
+    app_title: "Comm Master",
+    app_title_ar: "أستاذ التواصل",
+    hero_title: "Master Communication Skills",
+    hero_title_ar: "أتقن مهارات الاتصال",
+    hero_subtitle: "Choose a part to begin your communication skills mastery.",
+    hero_subtitle_ar: "اختر جزءاً لتبدأ إتقان مهارات الاتصال."
+};
+
 const quizData = [
     {
-        id: "comm-skills",
-        title: "Communication Skills",
-        title_ar: "مهارات الاتصال",
-        description: "Full course questions on communication process, barriers, and English grammar.",
-        description_ar: "أسئلة المادة كاملة: عملية الاتصال، العوائق، وقواعد اللغة الإنجليزية.",
+        id: "comm-skills-1",
+        title: "Communication Skills (Part 1)",
+        title_ar: "مهارات الاتصال (الجزء الأول)",
+        description: "Questions 1-100: Basics, process, and grammar.",
+        description_ar: "الأسئلة 1-100: المفاهيم الأساسية، عملية الاتصال، والقواعد.",
         icon: "🗣️",
         questions: [
             {
@@ -1006,6 +1015,406 @@ const quizData = [
                 correct: 0,
                 explanation: "Lifelong learning and continuous study are key to professional growth.",
                 explanation_ar: "التعلم مدى الحياة والدراسة المستمرة هما مفتاح النمو المهني."
+            }
+        ]
+    },
+    {
+        id: "comm-skills-2",
+        title: "Communication Skills (Part 2)",
+        title_ar: "مهارات الاتصال (الجزء الثاني)",
+        description: "Questions 101-139: Advanced topics. Features composite questions (T=True, F=False) for multiple statements.",
+        description_ar: "الأسئلة 101-139: مواضيع متقدمة. تنبيه: تعتمد الأسئلة المركبة؛ حيث تقيم عدة جمل في آن واحد بنظام (T = صحيح، F = خاطئ).",
+        icon: "📖",
+        questions: [
+            {
+                id: "comm-101",
+                text: "When we read aloud our concentration is divided between ________ and _________.",
+                text_ar: "عندما نقرأ بصوت عالٍ، ينقسم تركيزنا بين ________ و _________.",
+                options: ["Listening, Hearing", "Hearing, Reading", "Reading, Speaking", "Speaking, Listening"],
+                options_ar: ["الاستماع والسمع", "السمع والقراءة", "القراءة والكلام (Reading, Speaking)", "الكلام والاستماع"],
+                correct: 2,
+                explanation: "Reading aloud requires simultaneous visual processing (reading) and vocal production (speaking).",
+                explanation_ar: "القراءة بصوت عالٍ تتطلب معالجة بصرية (قراءة) وإنتاجاً صوتياً (كلام) في وقت واحد."
+            },
+            {
+                id: "comm-102",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. If the tone of the voice and body language are negative the communication will pass.<br>2. Semantic barriers mean that different words may have different meaning in different cultures.<br>3. Correct choice of channel is one of the main barriers to communication.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. إذا كانت نبرة الصوت ولغة الجسد سلبية، سينجح الاتصال.<br>2. العوائق الدلالية تعني أن الكلمات المختلفة قد يكون لها معانٍ مختلفة في ثقافات مختلفة.<br>3. الاختيار الصحيح للقناة هو أحد العوائق الرئيسية للاتصال.",
+                options: ["TFT", "FTF", "FFF", "TTT"],
+                options_ar: ["TFT", "FTF", "FFF", "TTT"],
+                correct: 1,
+                explanation: "1 is False (negative cues block comm), 2 is True, 3 is False (incorrect choice is a barrier, correct choice is NOT).",
+                explanation_ar: "الجملة الأولى خاطئة (الإشارات السلبية تعيق الاتصال)، الثانية صحيحة، الثالثة خاطئة (الاختيار الخاطئ هو العائق، وليس الصحيح)."
+            },
+            {
+                id: "comm-103",
+                text: "Countable nouns are those nouns which:<br>1. Cannot be counted<br>2. Things that exist as separate and distinct individual units.",
+                text_ar: "الأسماء القابلة للعد هي:<br>1. التي لا يمكن عدها<br>2. الأشياء التي توجد كوحدات فردية منفصلة ومتميزة.",
+                options: ["TF", "FT", "FF", "TT"],
+                options_ar: ["TF", "FT", "FF", "TT"],
+                correct: 1,
+                explanation: "Countable nouns refer to individual items that can be counted.",
+                explanation_ar: "الأسماء القابلة للعد تشير إلى عناصر فردية يمكن عدها."
+            },
+            {
+                id: "comm-104",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. Tomato, boy, tree, man are plural<br>2. Tomatoes, boys, trees, and men are plural",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. Tomato, boy, tree, man هي جمع.<br>2. Tomatoes, boys, trees, men هي جمع.",
+                options: ["TF", "FT", "FF", "TT"],
+                options_ar: ["TF", "FT", "FF", "TT"],
+                correct: 1,
+                explanation: "The first list is singular; the second list is plural.",
+                explanation_ar: "القائمة الأولى مفرد؛ القائمة الثانية جمع."
+            },
+            {
+                id: "comm-105",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. When we read a novel, a comic strip, a magazine it is extensive reading<br>2. When we read an article in order to write a review on it you read it intensively",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. قراءة رواية أو مجلة هي قراءة موسعة (Extensive).<br>2. قراءة مقال لكتابة مراجعة عنه هي قراءة مكثفة (Intensive).",
+                options: ["TT", "FF", "TF", "FT"],
+                options_ar: ["TT", "FF", "TF", "FT"],
+                correct: 0,
+                explanation: "Reading for pleasure is extensive; reading for analysis is intensive.",
+                explanation_ar: "القراءة للمتعة موسعة؛ والقراءة للتحليل مكثفة."
+            },
+            {
+                id: "comm-106",
+                text: "T/F (Singular & Plural):<br>1. Tax – tax<br>2. Baby- babies",
+                text_ar: "صحيح/خاطئ (المفرد والجمع):<br>1. Tax جمعها tax.<br>2. Baby جمعها babies.",
+                options: ["TT", "FF", "TF", "FT"],
+                options_ar: ["TT", "FF", "TF", "FT"],
+                correct: 3,
+                explanation: "Plural of tax is taxes; plural of baby is babies.",
+                explanation_ar: "جمع tax هو taxes؛ وجمع baby هو babies."
+            },
+            {
+                id: "comm-107",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. Pay attention to the appearance of the speaker instead of the subject.<br>2. Jumping to conclusion at the beginning of the speech without waiting for the speaker to complete the communication he intends to pass is a quality of a good listener.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. انتبه لمظهر المتكلم بدلاً من الموضوع.<br>2. القفز إلى النتائج في بداية الحديث دون انتظار المتكلم هو من صفات المستمع الجيد.",
+                options: ["TT", "TF", "FF", "DT"],
+                options_ar: ["TT", "TF", "FF", "FT"],
+                correct: 2,
+                explanation: "Both are poor listening habits.",
+                explanation_ar: "كلاهما من عادات الاستماع السيئة."
+            },
+            {
+                id: "comm-108",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. By focusing too much on the facts, the listener may miss the message that the speaker is intending to convey.<br>2. When the listener is intercepting that means he / she is a good listener.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. بالتركيز الزائد على الحقائق، قد يفتقد المستمع الرسالة التي ينوي المتكلم إيصالها.<br>2. عندما يقاطع المستمع الحديث، فهذا يعني أنه مستمع جيد.",
+                options: ["TF", "TT", "FF", "FT"],
+                options_ar: ["TF", "TT", "FF", "FT"],
+                correct: 0,
+                explanation: "Focusing only on facts can lose the emotional context (T); intercepting/interrupting is bad (F).",
+                explanation_ar: "التركيز فقط على الحقائق قد يفقدنا السياق العاطفي (صحيح)؛ والمقاطعة أمر سيء (خاطئ)."
+            },
+            {
+                id: "comm-109",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. Your’s truly<br>2. Yours truly",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. كتابة Your’s truly.<br>2. كتابة Yours truly.",
+                options: ["FT", "TF", "TT", "FF"],
+                options_ar: ["FT", "TF", "TT", "FF"],
+                correct: 0,
+                explanation: "Possessive pronouns like 'Yours' do not take an apostrophe.",
+                explanation_ar: "ضمائر الملكية مثل 'Yours' لا تأخذ فاصلة عليا (Apostrophe)."
+            },
+            {
+                id: "comm-110",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. Plural of ‘I’ is ‘Me’.<br>2. Plural of ‘I’ is ‘We’.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. جمع ‘I’ هو ‘Me’.<br>2. جمع ‘I’ هو ‘We’.",
+                options: ["TF", "FT", "TT", "FF"],
+                options_ar: ["TF", "FT", "TT", "FF"],
+                correct: 1,
+                explanation: "'Me' is the objective case of 'I'; 'We' is the plural.",
+                explanation_ar: "‘Me’ هي حالة المفعول به لـ ‘I’؛ و‘We’ هي الجمع."
+            },
+            {
+                id: "comm-111",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. While writing business letters one should directly focus on the message to be told.<br>2. Use old fashioned stuffy phrases and long sentences.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. عند كتابة الرسائل التجارية يجب التركيز مباشرة على الرسالة.<br>2. استخدم عبارات قديمة وجمل طويلة.",
+                options: ["TT", "TF", "FF", "FT"],
+                options_ar: ["TT", "TF", "FF", "FT"],
+                correct: 1,
+                explanation: "Business writing should be direct and modern, not stuffy/long.",
+                explanation_ar: "الرسائل التجارية يجب أن تكون مباشرة وحديثة، وليست معقدة أو طويلة."
+            },
+            {
+                id: "comm-112",
+                text: "Points to be kept in mind while writing apology letters:<br>1. Take full responsibility of the problem caused<br>2. Be dramatic while apologizing",
+                text_ar: "نقاط يجب مراعاتها عند كتابة رسالة اعتذار:<br>1. تحمل المسؤولية الكاملة عن المشكلة.<br>2. كن درامياً أثناء الاعتذار.",
+                options: ["TF", "FT", "FF", "TT"],
+                options_ar: ["TF", "FT", "FF", "TT"],
+                correct: 0,
+                explanation: "Apologies should be responsible (T) but professional/sincere, not dramatic (F).",
+                explanation_ar: "الاعتذار يجب أن يكون مسؤولاً (صحيح) ومهنياً وصادقاً، لا درامياً (خاطئ)."
+            },
+            {
+                id: "comm-113",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. Paraphrasing aims to shorten the length of a text.<br>2. Paraphrasing changes the meaning of the text",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. إعادة الصياغة تهدف لتقصير النص.<br>2. إعادة الصياغة تغير معنى النص.",
+                options: ["TF", "FT", "FF", "TT"],
+                options_ar: ["TF", "FT", "FF", "TT"],
+                correct: 2,
+                explanation: "Summarizing shortens text; paraphrasing changes wording but keeps meaning and length similar.",
+                explanation_ar: "التلخيص هو ما يقصر النص؛ أما إعادة الصياغة فتغير الكلمات مع الحفاظ على المعنى والطول تقريباً."
+            },
+            {
+                id: "comm-114",
+                text: "In business letters, Which of the following statement is True(T) or False(F) are given below:<br>1. Signature is placed above the complimentary close<br>2. Salutation is written after the address",
+                text_ar: "في الرسائل التجارية:<br>1. يوضع التوقيع فوق خاتمة المجاملة.<br>2. تكتب التحية بعد العنوان.",
+                options: ["TT", "FF", "TF", "FT"],
+                options_ar: ["TT", "FF", "TF", "FT"],
+                correct: 3,
+                explanation: "1 is False (Signature is below close); 2 is True (Salutation follows internal address).",
+                explanation_ar: "الأولى خاطئة (التوقيع تحت الخاتمة)؛ الثانية صحيحة (التحية تتبع العنوان الداخلي)."
+            },
+            {
+                id: "comm-115",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. A text book is read only for the pleasure of reading it.<br>2. Reading is an encoding process of communication.<br>3. The intention of reading a medical report is to gain information.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. يُقرأ الكتاب المدرسي للمتعة فقط.<br>2. القراءة هي عملية ترميز (Encoding).<br>3. القصد من قراءة تقرير طبي هو الحصول على معلومات.",
+                options: ["TFT", "TTT", "FFF", "FTT"],
+                options_ar: ["TFT", "TTT", "FFF", "FTT"],
+                correct: 3,
+                explanation: "1 is False (for study); 2 is False (decoding); 3 is True.",
+                explanation_ar: "الأولى خاطئة (للدراسة)؛ الثانية خاطئة (فك تشفير)؛ الثالثة صحيحة."
+            },
+            {
+                id: "comm-116",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. When you invite any guest to a function you have to clearly write the time and Venue<br>2. It is bad business etiquette to write any acceptance or declination of an invitation.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. عند دعوة ضيف يجب تحديد الوقت والمكان.<br>2. من سوء الإتيكيت كتابة قبول أو رفض للدعوة.",
+                options: ["TF", "FT", "FF", "TT"],
+                options_ar: ["TF", "FT", "FF", "TT"],
+                correct: 0,
+                explanation: "Specifying details is essential (T); responding to invitations is good etiquette (F).",
+                explanation_ar: "تحديد التفاصيل ضروري (صحيح)؛ والرد على الدعوات من حسن الإتيكيت (خاطئ)."
+            },
+            {
+                id: "comm-117",
+                text: "In a job application:<br>1. Write the name of the person who you are addressing in the salutation.<br>2. Write the vacancy you are applying for in the subject.<br>3. After your signature there is no need to write your full name clearly.",
+                text_ar: "في طلب الوظيفة:<br>1. اكتب اسم الشخص الموجه إليه الخطاب في التحية.<br>2. اكتب الوظيفة المتقدم لها في الموضوع.<br>3. بعد التوقيع لا داعي لكتابة الاسم كاملاً.",
+                options: ["TFT", "FTF", "FFT", "TFF"],
+                options_ar: ["TFT", "FTF", "FFT", "TFF"],
+                correct: 3,
+                explanation: "1 is True; 2 is True (Source question might imply 2 is False or use a different layout, but usually both are True. Checked source: Answer is TFF, implying only 1 is true in their specific context or 3 is false).",
+                explanation_ar: "الأولى صحيحة؛ الثانية صحيحة عادةً؛ الثالثة خاطئة (يجب كتابة الاسم كاملاً)."
+            },
+            {
+                id: "comm-118",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. Abstract nouns cannot be seen, felt or heard<br>2. Common nouns identify the particular variety<br>3. Collective nouns take a plural verb",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. الأسماء المجردة لا يمكن رؤيتها أو لمسها.<br>2. الأسماء العامة تحدد النوع الخاص.<br>3. الأسماء الجماعية تأخذ فعلاً بصيغة الجمع.",
+                options: ["FFF", "TTT", "TFF", "FTF"],
+                options_ar: ["FFF", "TTT", "TFF", "FTF"],
+                correct: 2,
+                explanation: "1 is True; 2 is False (Proper nouns do); 3 is False (usually singular as a unit).",
+                explanation_ar: "الأولى صحيحة؛ الثانية خاطئة (أسماء العلم هي ما يحدد النوع الخاص)؛ الثالثة خاطئة (عادةً تعامل كمفرد)."
+            },
+            {
+                id: "comm-119",
+                text: "Arrange the steps in SQ3R technique:<br>1. Recall<br>2. Question<br>3. Survey<br>4. Reading<br>5. Review",
+                text_ar: "رتب خطوات تقنية SQ3R:<br>1. الاستدعاء<br>2. السؤال<br>3. الاستطلاع<br>4. القراءة<br>5. المراجعة",
+                options: ["3 – 4 – 1 – 2 – 5", "1 – 2 – 3 – 4 – 5", "5 – 1 – 2 – 3 – 4", "3 – 2 – 4 – 1 – 5"],
+                options_ar: ["3 – 4 – 1 – 2 – 5", "1 – 2 – 3 – 4 – 5", "5 – 1 – 2 – 3 – 4", "3 – 2 – 4 – 1 – 5"],
+                correct: 3,
+                explanation: "SQ3R: Survey, Question, Read, Recite(Recall), Review.",
+                explanation_ar: "ترتيب SQ3R هو: Survey, Question, Read, Recite, Review."
+            },
+            {
+                id: "comm-120",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. Professional reading is done when you need to continue learning and studying.<br>2. Action reading is done when you do not need to do something concrete.<br>3. A reader can understand a text only when s/he actively uses his/her mental abilities.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. القراءة المهنية تتم لمواصلة التعلم والدراسة.<br>2. قراءة العمل (Action reading) تتم عندما لا تحتاج لفعل شيء ملموس.<br>3. يمكن للقارئ الفهم فقط عند استخدام قدراته العقلية بنشاط.",
+                options: ["TTT", "FFF", "TFT", "FTF"],
+                options_ar: ["TTT", "FFF", "TFT", "FTF"],
+                correct: 2,
+                explanation: "1 is True; 2 is False (Action reading IS for concrete action); 3 is True.",
+                explanation_ar: "الأولى صحيحة؛ الثانية خاطئة (قراءة العمل هي لأجل فعل ملموس)؛ الثالثة صحيحة."
+            },
+            {
+                id: "comm-121",
+                text: "Which of the following statement is True(T) or False(F) are given below:<br>1. The resume should be official and not general.<br>2. Never give a brief about your experience in the covering letter.<br>3. You must always send original documents in a resume.",
+                text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. السيرة الذاتية يجب أن تكون رسمية وليست عامة.<br>2. لا تذكر نبذة عن خبرتك في الخطاب التعريفي.<br>3. يجب إرسال المستندات الأصلية في السيرة الذاتية.",
+                options: ["TTT", "FFF", "TFF", "FTT"],
+                options_ar: ["TTT", "FFF", "TFF", "FTT"],
+                correct: 2,
+                explanation: "1 is True; 2 is False (covering letter should highlight experience); 3 is False (send copies).",
+                explanation_ar: "الأولى صحيحة؛ الثانية خاطئة (الخطاب التعريفي يجب أن يبرز الخبرة)؛ الثالثة خاطئة (ترسل النسخ وليس الأصول)."
+            },
+            {
+                id: "comm-122",
+                text: "True(T) or False(F):<br>1. Press release is written in first person.<br>2. List jobs in reverse chronological order.<br>3. Heading of press release should be one sentence.",
+                text_ar: "صحيح (T) أو خاطئ (F):<br>1. البيان الصحفي يكتب بصيغة المتكلم (أنا).<br>2. تدرج الوظائف بترتيب زمني عكسي.<br>3. عنوان البيان الصحفي يجب أن يكون جملة واحدة.",
+                options: ["FTT", "TFT", "FFF", "TTT"],
+                options_ar: ["FTT", "TFT", "FFF", "TTT"],
+                correct: 0,
+                explanation: "1 is False (use third person for press releases); 2 & 3 are True.",
+                explanation_ar: "الأولى خاطئة (استخدم صيغة الغائب للبيانات الصحفية)؛ الثانية والثالثة صحيحة."
+            },
+            {
+                id: "comm-123",
+                text: "True(T) or False(F):<br>1. In press release heading should not be in capitals.<br>2. Heading should be long.<br>3. Put an exclamation at the end of heading.",
+                text_ar: "صحيح (T) أو خاطئ (F):<br>1. في البيان الصحفي لا يكتب العنوان بأحرف كبيرة.<br>2. العنوان يجب أن يكون طويلاً.<br>3. ضع علامة تعجب في نهاية العنوان.",
+                options: ["TTT", "FFF", "TFT", "FTF"],
+                options_ar: ["TTT", "FFF", "TFT", "FTF"],
+                correct: 1,
+                explanation: "All are generally False (Heads are often capped, should be short, and avoid exclamations).",
+                explanation_ar: "الكل خاطئ (العناوين غالباً كبيرة، قصيرة، وتجنب علامات التعجب)."
+            },
+            {
+                id: "comm-124",
+                text: "Writing a complaint:<br>1. Always be sarcastic or threatening<br>2. Write a long letter<br>3. Send original documents",
+                text_ar: "عند كتابة شكوى:<br>1. كن ساخراً أو مهدداً دائماً.<br>2. اكتب خطاباً طويلاً.<br>3. أرسل المستندات الأصلية.",
+                options: ["TTT", "FFF", "FTF", "TFT"],
+                options_ar: ["TTT", "FFF", "FTF", "TFT"],
+                correct: 1,
+                explanation: "All are bad practices in complaint writing.",
+                explanation_ar: "كلها ممارسات سيئة في كتابة الشكاوى."
+            },
+            {
+                id: "comm-125",
+                text: "True(T) or False(F):<br>1. Salutation is written with name if known.<br>2. Subject line states vacancy.<br>3. Sign and clear full name after.",
+                text_ar: "صحيح (T) أو خاطئ (F):<br>1. التحية تكتب بجانب الاسم إذا كان معروفاً.<br>2. سطر الموضوع يوضح الوظيفة.<br>3. التوقيع ثم الاسم كاملاً بوضوح.",
+                options: ["TTT", "FFF", "TFT", "TFF"],
+                options_ar: ["TTT", "FFF", "TFT", "TFF"],
+                correct: 0,
+                explanation: "These are standard professional letter practices.",
+                explanation_ar: "هذه ممارسات قياسية في الرسائل المهنية."
+            },
+            {
+                id: "comm-126",
+                text: "Improve listening skills:<br>1. Do not maintain eye contact<br>2. Be emotionally involved<br>3. Avoid distractions",
+                text_ar: "تحسين مهارات الاستماع:<br>1. لا تحافظ على التواصل البصري.<br>2. كن منخرطاً عاطفياً.<br>3. تجنب المشتتات.",
+                options: ["TTT", "FFT", "TFT", "FFF"],
+                options_ar: ["TTT", "FFT", "TFT", "FFF"],
+                correct: 1,
+                explanation: "Only 3 is True for good listening.",
+                explanation_ar: "الجملة الثالثة فقط هي الصحيحة للاستماع الجيد."
+            },
+            {
+                id: "comm-127",
+                text: "Semantic markers:<br>1. 'It is worth noting' indicates importance.<br>2. 'Primarily/Secondly' used for illustrations.<br>3. 'So/thus' express time relationship.",
+                text_ar: "العلامات الدلالية:<br>1. 'من الجدير بالذكر' تدل على الأهمية.<br>2. 'أولاً/ثانياً' تستخدم للتوضيح.<br>3. 'لذا/بالتالي' تعبر عن علاقة زمنية.",
+                options: ["TTT", "FFF", "FTF", "TFF"],
+                options_ar: ["TTT", "FFF", "FTF", "TFF"],
+                correct: 3,
+                explanation: "1 is True; 2 is for sequencing (False for illustrations); 3 is for consequence (False for time).",
+                explanation_ar: "الأولى صحيحة؛ الثانية للتسلسل وليس التوضيح؛ الثالثة للنتيجة وليست للزمن."
+            },
+            {
+                id: "comm-128",
+                text: "1. A __________ & __________ Listening satisfies short tempered customers.<br>2. We should always __________ the customer for calling.",
+                text_ar: "1. الاستماع ________ و ________ يرضي الزبون العصبي.<br>2. يجب دائماً ________ الجميل على الاتصال.",
+                options: ["Passive, impatient, slap", "Patient, active, thank", "Impatient, passive, thank", "Passive, active, thank"],
+                options_ar: ["سلبي، غير صبور، صفع", "صبور ونشط، شكر (Patient, active, thank)", "غير صبور، سلبي، شكر", "سلبي، نشط، شكر"],
+                correct: 1,
+                explanation: "Patience and gratitude are vital in customer service.",
+                explanation_ar: "الصبر والامتنان حيويان في خدمة العملاء."
+            },
+            {
+                id: "comm-129",
+                text: "True(T) or False(F):<br>1. Concentration requires practice.<br>2. Multi-tasks while listening is good.<br>3. Active listening helps concentration.",
+                text_ar: "صحيح (T) أو خاطئ (F):<br>1. التركيز يتطلب ممارسة.<br>2. تعدد المهام أثناء الاستماع جيد.<br>3. الاستماع النشط يساعد على التركيز.",
+                options: ["TFT", "FFF", "TTT", "FFT"],
+                options_ar: ["TFT", "FFF", "TTT", "FFT"],
+                correct: 0,
+                explanation: "1 is True; 2 is False (multi-tasking hinders listening); 3 is True.",
+                explanation_ar: "الأولى صحيحة؛ الثانية خاطئة (تعدد المهام يعيق الاستماع)؛ الثالثة صحيحة."
+            },
+            {
+                id: "comm-130",
+                text: "1. While listening, avoid __________.<br>2. Focus on __________ not delivery style.<br>3. Avoid _________ involvement.",
+                text_ar: "1. أثناء الاستماع، تجنب ________.<br>2. ركز على ________ وليس أسلوب الإلقاء.<br>3. تجنب الانخراط ________.",
+                options: ["Emotional, distractions, content", "Distractions, content, emotional", "Content, distractions, emotional", "Distracts, emotional, content"],
+                options_ar: ["العاطفي، المشتتات، المحتوى", "المشتتات، المحتوى، العاطفي (Distractions, content, emotional)", "المحتوى، المشتتات، العاطفي", "المشتتات، العاطفي، المحتوى"],
+                correct: 1,
+                explanation: "Avoid distractions, focus on content, remain objectively unemotional.",
+                explanation_ar: "تجنب المشتتات، ركز على المحتوى، وابحث عن الموضوعية بعيداً عن العاطفة."
+            },
+            {
+                id: "comm-131",
+                text: "Arrange the steps involved in listening:<br>1. Giving meaning<br>2. Reconstructing<br>3. Processing.",
+                text_ar: "رتب خطوات الاستماع:<br>1. إعطاء المعنى.<br>2. إعادة البناء.<br>3. معالجة البيانات.",
+                options: ["1 – 2 – 3", "2 – 3 – 1", "3 – 2 – 1", "2 – 1 – 3"],
+                options_ar: ["1 – 2 – 3", "2 – 3 – 1", "3 – 2 – 1", "2 – 1 – 3"],
+                correct: 1,
+                explanation: "Reconstruction, Processing, and Interpreting meanining are typical stages. (Source uses B: 2-3-1)",
+                explanation_ar: "إعادة البناء ثم المعالجة ثم إعطاء المعنى هي الخطوات المتبعة."
+            },
+            {
+                id: "comm-132",
+                text: "Receiving call:<br>1. Be prepared with pen/pad<br>2. Do not answer quickly<br>3. Do not give full attention.",
+                text_ar: "تلقي المكالمة:<br>1. كن مستعداً بقلم وورقة.<br>2. لا ترد بسرعة.<br>3. لا تعطِ كامل انتباهك.",
+                options: ["TTT", "FFF", "TFF", "FTT"],
+                options_ar: ["TTT", "FFF", "TFF", "FTT"],
+                correct: 2,
+                explanation: "Only 1 is correct professional advice.",
+                explanation_ar: "النصيحة الأولى فقط هي الصحيحة مهنياً."
+            },
+            {
+                id: "comm-133",
+                text: "Telephone conversation:<br>1. Do not answer promptly<br>2. Be alert<br>3. Be natural",
+                text_ar: "محادثة هاتفية:<br>1. لا ترد فوراً.<br>2. كن متيقظاً.<br>3. كن طبيعياً.",
+                options: ["TTT", "FFF", "TFF", "FTT"],
+                options_ar: ["TTT", "FFF", "TFF", "FTT"],
+                correct: 3,
+                explanation: "1 is False; 2 & 3 are True.",
+                explanation_ar: "الأولى خاطئة؛ الثانية والثالثة صحيحة."
+            },
+            {
+                id: "comm-134",
+                text: "Telephone communication:<br>1. Be expressive<br>2. Be distinct<br>3. Do not be pleasant",
+                text_ar: "الاتصال الهاتفي:<br>1. كن معبراً.<br>2. كن متميزاً (واضحاً).<br>3. لا تكن لبقاً.",
+                options: ["TTT", "TTF", "FFF", "FTT"],
+                options_ar: ["TTT", "TTF", "FFF", "FTT"],
+                correct: 1,
+                explanation: "Expressiveness and clarity are good; unpleasantness is bad.",
+                explanation_ar: "التعبير والوضوح أمران جيدان؛ بينما غلظة التعامل مرفوضة."
+            },
+            {
+                id: "comm-135",
+                text: "Telephone:<br>1. Leave caller on hold<br>2. Be courteous<br>3. Transfer always, do not handle yourself.",
+                text_ar: "الهاتف:<br>1. اترك المتصل في الانتظار.<br>2. كن لبقاً.<br>3. حول المكالمة دائماً ولا تتعامل معها بنفسك.",
+                options: ["TTF", "TTT", "FFF", "FTF"],
+                options_ar: ["TTF", "TTT", "FFF", "FTF"],
+                correct: 3,
+                explanation: "Courtesy is the only True statement (Source D: FTF).",
+                explanation_ar: "اللباقة هي الجملة الصحيحة الوحيدة هنا."
+            },
+            {
+                id: "comm-136",
+                text: "When you dial:<br>1. Ask 'who is this' first.<br>2. Do not give identity.<br>3. Speak directly without knowing person.",
+                text_ar: "عندما تطلب رقماً:<br>1. اسأل 'من معي' أولاً.<br>2. لا تذكر هويتك.<br>3. تكلم مباشرة دون معرفة الشخص.",
+                options: ["TFF", "TTT", "FFF", "FTF"],
+                options_ar: ["TFF", "TTT", "FFF", "FTF"],
+                correct: 2,
+                explanation: "All are poor telephone etiquette.",
+                explanation_ar: "كلها ممارسات سيئة في إتيكيت الهاتف."
+            },
+            {
+                id: "comm-137",
+                text: "OHP uses:<br>1. Eye contact with audience<br>2. Different access to presenter<br>3. Focus audience attention.",
+                text_ar: "استخدامات OHP:<br>1. التواصل البصري مع الجمهور.<br>2. وصول مختلف لمقدم العرض.<br>3. تركيز انتباه الجمهور.",
+                options: ["FTF", "TFT", "TTT", "FFF"],
+                options_ar: ["FTF", "TFT", "TTT", "FFF"],
+                correct: 2,
+                explanation: "OHP facilitates all these benefits in presentations.",
+                explanation_ar: "جهاز العرض العلوي يسهل كل هذه المزايا في العروض التقديمية."
+            },
+            {
+                id: "comm-138",
+                text: "True(T) or False(F):<br>1. Ask for identity before giving yours.<br>2. Never leave a caller on hold.<br>3. Use simple language, avoid slang.",
+                text_ar: "صحيح (T) أو خاطئ (F):<br>1. اطلب هوية الآخر قبل إعطاء هويتك.<br>2. لا تترك المتصل في الانتظار أبداً.<br>3. استخدم لغة بسيطة وتجنب العامية.",
+                options: ["TFT", "FTT", "TTT", "FFF"],
+                options_ar: ["TFT", "FTT", "TTT", "FFF"],
+                correct: 1,
+                explanation: "1 is False; 2 is True (Source says FTT implies 3 is true too, sometimes 2 is partially true if handled properly but here F-T-T).",
+                explanation_ar: "الأولى خاطئة؛ الثانية والثالثة صحيحة."
+            },
+            {
+                id: "comm-139",
+                text: "True(T) or False(F):<br>1. Dissolve unit + 2 projectors create fade in/out.<br>2. Slides are better in well-lit rooms.<br>3. Audiences consider slides as professional.",
+                text_ar: "صحيح (T) أو خاطئ (F):<br>1. وحدة التلاشي + جهازين عرض تنشئ تأثير التداخل.<br>2. الشرائح أفضل في الغرف المضاءة جيداً.<br>3. الجمهور يعتبر الشرائح مهنية.",
+                options: ["TFT", "FFF", "TTT", "FTF"],
+                options_ar: ["TFT", "FFF", "TTT", "FTF"],
+                correct: 0,
+                explanation: "1 is True; 2 is False (slides need darkness usually); 3 is True.",
+                explanation_ar: "الأولى صحيحة؛ الثانية خاطئة (الشرائح تحتاج للظلام)؛ الثالثة صحيحة."
             }
         ]
     }

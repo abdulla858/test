@@ -1,3 +1,12 @@
+const subjectInfo = {
+    app_title: "DSA Master",
+    app_title_ar: "أستاذ الخوارزميات",
+    hero_title: "Master Data Structures",
+    hero_title_ar: "أتقن هياكل البيانات",
+    hero_subtitle: "Select a topic to test your knowledge with curated questions from top resources.",
+    hero_subtitle_ar: "اختر موضوعاً لاختبار معرفتك بأسئلة مختارة من أفضل المصادر."
+};
+
 const quizData = [
     {
         id: "array",

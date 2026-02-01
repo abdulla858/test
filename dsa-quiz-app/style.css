@@ -364,6 +364,50 @@ body {
     max-width: 200px;
 }
 
+.topics-selector-container {
+    margin: 1.5rem 0;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: left;
+}
+
+body[dir="rtl"] .topics-selector-container {
+    text-align: right;
+}
+
+.topic-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.topic-checkbox-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.topic-checkbox-item input {
+    cursor: pointer;
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: var(--accent);
+}
+
+.topic-checkbox-item span {
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
 
 /* Quiz Interface */
 .hidden-section {
