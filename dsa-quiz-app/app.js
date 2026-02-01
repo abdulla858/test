@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
             questions_label: "Questions:",
             btn_browse_all: "📖 Questions Bank",
             browse_all_title: "Questions Bank (All Topics)",
-            res_comm: "Communication Skills (Examveda)"
+            res_comm: "Communication Skills (Examveda)",
+            btn_portal: "🏠 Portal"
         },
         ar: {
             app_title: "أستاذ الخوارزميات",
@@ -98,7 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
             questions_label: "الأسئلة:",
             btn_browse_all: "📖 بنك الأسئلة والشروحات",
             browse_all_title: "بنك الأسئلة (جميع المواضيع)",
-            res_comm: "مهارات الاتصال (Examveda)"
+            res_comm: "مهارات الاتصال (Examveda)",
+            btn_portal: "🏠 الرئيسية"
         }
     };
 
@@ -410,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     homeBtn.addEventListener('click', () => {
-        initLanding();
+        window.location.href = 'index.html';
     });
 
     // Study Bank Logic
