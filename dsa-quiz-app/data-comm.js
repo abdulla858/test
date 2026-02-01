@@ -4,7 +4,12 @@ const subjectInfo = {
     hero_title: "Master Communication Skills",
     hero_title_ar: "أتقن مهارات الاتصال",
     hero_subtitle: "Choose a part to begin your communication skills mastery.",
-    hero_subtitle_ar: "اختر جزءاً لتبدأ إتقان مهارات الاتصال."
+    hero_subtitle_ar: "اختر جزءاً لتبدأ إتقان مهارات الاتصال.",
+    resources: [
+        { name: "Comm Skills (Examveda)", name_ar: "مهارات الاتصال (Examveda)", url: "https://www.examveda.com/management/practice-mcq-question-on-communication-skills/" },
+        { name: "English Grammar (British Council)", name_ar: "قواعد الإنجليزية (British Council)", url: "https://learnenglish.britishcouncil.org/grammar" },
+        { name: "Soft Skills Guide", name_ar: "دليل المهارات الناعمة", url: "#" }
+    ]
 };
 
 const quizData = [

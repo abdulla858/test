@@ -138,6 +138,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (text) el.textContent = text;
         });
 
+        // Update Study Resources in Footer
+        const resourceContainer = document.querySelector('.footer-links');
+        if (resourceContainer && typeof subjectInfo !== 'undefined' && subjectInfo.resources) {
+            resourceContainer.innerHTML = '';
+            subjectInfo.resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = "_blank";
+                link.textContent = lang === 'ar' ? res.name_ar : res.name;
+                resourceContainer.appendChild(link);
+            });
+        }
+
         // Re-render content if active
         if (!landingSection.classList.contains('hidden-section')) {
             initLanding(); // Re-render grid for titles

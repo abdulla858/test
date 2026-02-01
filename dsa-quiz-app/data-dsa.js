@@ -4,7 +4,12 @@ const subjectInfo = {
     hero_title: "Master Data Structures",
     hero_title_ar: "أتقن هياكل البيانات",
     hero_subtitle: "Select a topic to test your knowledge with curated questions from top resources.",
-    hero_subtitle_ar: "اختر موضوعاً لاختبار معرفتك بأسئلة مختارة من أفضل المصادر."
+    hero_subtitle_ar: "اختر موضوعاً لاختبار معرفتك بأسئلة مختارة من أفضل المصادر.",
+    resources: [
+        { name: "Trees (Tutorialspoint)", name_ar: "الأشجار (Tutorialspoint)", url: "https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm" },
+        { name: "1000 DSA Questions", name_ar: "1000 سؤال في هياكل البيانات", url: "https://www.sanfoundry.com/1000-data-structure-questions-answers/" },
+        { name: "Time Complexity (GFG)", name_ar: "التعقيد الزمني (GFG)", url: "https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/" }
+    ]
 };
 
 const quizData = [
