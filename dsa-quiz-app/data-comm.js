@@ -1175,8 +1175,8 @@ const quizData = [
                 id: "comm-115",
                 text: "Which of the following statement is True(T) or False(F) are given below:<br>1. A text book is read only for the pleasure of reading it.<br>2. Reading is an encoding process of communication.<br>3. The intention of reading a medical report is to gain information.",
                 text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. يُقرأ الكتاب المدرسي للمتعة فقط.<br>2. القراءة هي عملية ترميز (Encoding).<br>3. القصد من قراءة تقرير طبي هو الحصول على معلومات.",
-                options: ["TFT", "TTT", "FFF", "FTT"],
-                options_ar: ["TFT", "TTT", "FFF", "FTT"],
+                options: ["TFT", "TTT", "FFF", "FTF"],
+                options_ar: ["TFT", "TTT", "FFF", "FTF"],
                 correct: 3,
                 explanation: "1 is False (for study); 2 is False (decoding); 3 is True.",
                 explanation_ar: "الأولى خاطئة (للدراسة)؛ الثانية خاطئة (فك تشفير)؛ الثالثة صحيحة."
