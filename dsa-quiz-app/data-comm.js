@@ -404,12 +404,12 @@ const quizData = [
             {
                 id: "comm-39",
                 text: "A__________indicates the action done by the subject.",
-                text_ar: "الـ __________ يشير إلى الفعل الذي قام به الفاعل.",
-                options: ["Adverb", "Verb", "Noun", "Pronoun"],
-                options_ar: ["الظرف", "الفعل (Verb)", "الاسم", "الضمير"],
+                text_ar: "الـ _________ يشير إلى الفعل الذي قام به الفاعل (حسب المصدر المعتمد).",
+                options: ["Verb", "Adverb", "Noun", "Pronoun"],
+                options_ar: ["الفعل", "الظرف (Adverb)", "الاسم", "الضمير"],
                 correct: 1,
-                explanation: "The verb is the core of the sentence's action.",
-                explanation_ar: "الفعل هو لب الحدث في الجملة."
+                explanation: "Based on the source: An adverb indicates the action done by the subject. (Note: In general grammar, verbs indicate action, but this matches the local exam key).",
+                explanation_ar: "حسب المصدر: الظرف (Adverb) هو ما يشير إلى الفعل الذي قام به الفاعل (ملاحظة: برمجياً نتبع مفتاح الإجابة الخاص بالاختبار)."
             },
             {
                 id: "comm-40",
