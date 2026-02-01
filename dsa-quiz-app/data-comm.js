@@ -405,9 +405,9 @@ const quizData = [
                 id: "comm-39",
                 text: "A__________indicates the action done by the subject.",
                 text_ar: "الـ __________ يشير إلى الفعل الذي قام به الفاعل.",
-                options: ["Verb", "Adverb", "Noun", "Pronoun"],
-                options_ar: ["الفعل (Verb)", "الظرف", "الاسم", "الضمير"],
-                correct: 0,
+                options: ["Adverb", "Verb", "Noun", "Pronoun"],
+                options_ar: ["الظرف", "الفعل (Verb)", "الاسم", "الضمير"],
+                correct: 1,
                 explanation: "The verb is the core of the sentence's action.",
                 explanation_ar: "الفعل هو لب الحدث في الجملة."
             },
@@ -526,10 +526,10 @@ const quizData = [
                 text: "Another thing that you have to avoid is adding to OHP’s with a ________ during a talk.",
                 text_ar: "شيء آخر يجب تجنبه هو الإضافة إلى شرائح OHP باستخدام ________ أثناء الحديث.",
                 options: ["Chalk", "Pencil", "Pen", "Marker"],
-                options_ar: ["طبشور", "قلم رصاص", "قلم حبر", "قلم تخطيط (Marker)"],
-                correct: 3,
-                explanation: "Using a marker during the talk on the transparency can be messy and distracting.",
-                explanation_ar: "استخدام قلم التخطيط أثناء الحديث على الشفافية قد يكون فوضوياً ومشتتاً."
+                options_ar: ["طبشور", "قلم رصاص", "قلم حبر (Pen)", "قلم تخطيط"],
+                correct: 2,
+                explanation: "Using a pen during the talk on the transparency is generally advised against compared to prepared slides, or specific instructions might favor 'Pen' as the answer in certain keys.",
+                explanation_ar: "استخدام القلم أثناء الحديث على الشفافية هو ما يجب تجنبه وفقاً للمفتاح المعتمد."
             },
             {
                 id: "comm-52",
@@ -706,10 +706,10 @@ const quizData = [
                 text: "________ is to relate the content to previous and future learning of the subject.",
                 text_ar: "الـ ________ هو ربط المحتوى بالتعلم السابق والمستقبلي للمادة.",
                 options: ["Review", "Reading", "Recalling", "All"],
-                options_ar: ["المراجعة (Review)", "القراءة", "الاستدعاء", "الكل"],
-                correct: 0,
-                explanation: "Reviewing involves integrating new information with existing knowledge structures.",
-                explanation_ar: "المراجعة تتضمن دمج المعلومات الجديدة مع هياكل المعرفة الحالية."
+                options_ar: ["المراجعة", "القراءة", "الاستدعاء (Recalling)", "الكل"],
+                correct: 2,
+                explanation: "Recalling involves bringing back information to relate it to other learning parts.",
+                explanation_ar: "الاستدعاء يتضمن استرجاع المعلومات لربطها بأجزاء التعلم الأخرى."
             },
             {
                 id: "comm-70",
