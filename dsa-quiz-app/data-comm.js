@@ -1175,11 +1175,11 @@ const quizData = [
                 id: "comm-115",
                 text: "Which of the following statement is True(T) or False(F) are given below:<br>1. A text book is read only for the pleasure of reading it.<br>2. Reading is an encoding process of communication.<br>3. The intention of reading a medical report is to gain information.",
                 text_ar: "أي من الجمل التالية صحيحة (T) أو خاطئة (F):<br>1. يُقرأ الكتاب المدرسي للمتعة فقط.<br>2. القراءة هي عملية ترميز (Encoding).<br>3. القصد من قراءة تقرير طبي هو الحصول على معلومات.",
-                options: ["TFT", "TTT", "FFF", "FTF"],
-                options_ar: ["TFT", "TTT", "FFF", "FTF"],
+                options: ["TFT", "TTT", "FFF", "FFT"],
+                options_ar: ["TFT", "TTT", "FFF", "FFT"],
                 correct: 3,
                 explanation: "1 is False (for study); 2 is False (decoding); 3 is True.",
-                explanation_ar: "الأولى خاطئة (للدراسة)؛ الثانية خاطئة (فك تشفير)؛ الثالثة صحيحة."
+                explanation_ar: "الأولى خاطئة؛ الثانية خاطئة؛ الثالثة صحيحة."
             },
             {
                 id: "comm-116",
@@ -1197,9 +1197,9 @@ const quizData = [
                 text_ar: "في طلب الوظيفة:<br>1. اكتب اسم الشخص الموجه إليه الخطاب في التحية.<br>2. اكتب الوظيفة المتقدم لها في الموضوع.<br>3. بعد التوقيع لا داعي لكتابة الاسم كاملاً.",
                 options: ["TFT", "FTF", "FFT", "TFF"],
                 options_ar: ["TFT", "FTF", "FFT", "TFF"],
-                correct: 3,
-                explanation: "1 is True; 2 is True (Source question might imply 2 is False or use a different layout, but usually both are True. Checked source: Answer is TFF, implying only 1 is true in their specific context or 3 is false).",
-                explanation_ar: "الأولى صحيحة؛ الثانية صحيحة عادةً؛ الثالثة خاطئة (يجب كتابة الاسم كاملاً)."
+                correct: 1,
+                explanation: "Based on the key: 1 is False (Do not write name), 2 is True (Write vacancy), 3 is False (Must write name).",
+                explanation_ar: "حسب مفتاح الحل: الأولى خاطئة، الثانية صحيحة، الثالثة خاطئة."
             },
             {
                 id: "comm-118",
@@ -1273,13 +1273,13 @@ const quizData = [
             },
             {
                 id: "comm-125",
-                text: "True(T) or False(F):<br>1. Salutation is written with name if known.<br>2. Subject line states vacancy.<br>3. Sign and clear full name after.",
-                text_ar: "صحيح (T) أو خاطئ (F):<br>1. التحية تكتب بجانب الاسم إذا كان معروفاً.<br>2. سطر الموضوع يوضح الوظيفة.<br>3. التوقيع ثم الاسم كاملاً بوضوح.",
-                options: ["TTT", "FFF", "TFT", "TFF"],
-                options_ar: ["TTT", "FFF", "TFT", "TFF"],
-                correct: 0,
-                explanation: "These are standard professional letter practices.",
-                explanation_ar: "هذه ممارسات قياسية في الرسائل المهنية."
+                text: "True(T) or False(F):<br>1. Salutation is written with name if known.<br>2. Subject line states vacancy.<br>3. After your signature there is no need to write your full name.",
+                text_ar: "صحيح (T) أو خاطئ (F):<br>1. التحية تكتب بجانب الاسم إذا كان معروفاً.<br>2. سطر الموضوع يوضح الوظيفة.<br>3. بعد التوقيع لا داعي لكتابة الاسم كاملاً.",
+                options: ["TFT", "FTF", "FFT", "TFF"],
+                options_ar: ["TFT", "FTF", "FFT", "TFF"],
+                correct: 1,
+                explanation: "Applying the rule: 1. Do not write name (F), 2. Write vacancy (T), 3. Compulsory full name (F as stated).",
+                explanation_ar: "حسب القواعد: الأولى خاطئة، الثانية صحيحة، الثالثة خاطئة."
             },
             {
                 id: "comm-126",
@@ -1293,13 +1293,13 @@ const quizData = [
             },
             {
                 id: "comm-127",
-                text: "Semantic markers:<br>1. 'It is worth noting' indicates importance.<br>2. 'Primarily/Secondly' used for illustrations.<br>3. 'So/thus' express time relationship.",
-                text_ar: "العلامات الدلالية:<br>1. 'من الجدير بالذكر' تدل على الأهمية.<br>2. 'أولاً/ثانياً' تستخدم للتوضيح.<br>3. 'لذا/بالتالي' تعبر عن علاقة زمنية.",
+                text: "Semantic markers:<br>1. 'It is worth noting' indicates importance.<br>2. 'Secondly' used for illustrations.<br>3. 'To express time relationship' we use words like link, kinship, blood tie.",
+                text_ar: "العلامات الدلالية:<br>1. 'من الجدير بالذكر' تدل على الأهمية.<br>2. 'أولاً/ثانياً' تستخدم للتوضيح (Illustrations).<br>3. 'للتعبير عن علاقة زمنية' نستخدم كلمات مثل link أو blood tie.",
                 options: ["TTT", "FFF", "FTF", "TFF"],
                 options_ar: ["TTT", "FFF", "FTF", "TFF"],
                 correct: 3,
-                explanation: "1 is True; 2 is for sequencing (False for illustrations); 3 is for consequence (False for time).",
-                explanation_ar: "الأولى صحيحة؛ الثانية للتسلسل وليس التوضيح؛ الثالثة للنتيجة وليست للزمن."
+                explanation: "1 is True; 2 is False (sequencing); 3 is False (link/kinship express relationship but not time relationship specifically).",
+                explanation_ar: "الأولى صحيحة؛ الثانية خاطئة؛ الثالثة خاطئة (الكلمات المذكورة تعبر عن صلات وليست علاقات زمنية)."
             },
             {
                 id: "comm-128",
@@ -1337,9 +1337,9 @@ const quizData = [
                 text_ar: "رتب خطوات الاستماع:<br>1. إعطاء المعنى.<br>2. إعادة البناء.<br>3. معالجة البيانات.",
                 options: ["1 – 2 – 3", "2 – 3 – 1", "3 – 2 – 1", "2 – 1 – 3"],
                 options_ar: ["1 – 2 – 3", "2 – 3 – 1", "3 – 2 – 1", "2 – 1 – 3"],
-                correct: 1,
-                explanation: "Reconstruction, Processing, and Interpreting meanining are typical stages. (Source uses B: 2-3-1)",
-                explanation_ar: "إعادة البناء ثم المعالجة ثم إعطاء المعنى هي الخطوات المتبعة."
+                correct: 2,
+                explanation: "The correct sequence based on the standard model: 1. Processing (3), 2. Reconstructing (2), 3. Giving meaning (1).",
+                explanation_ar: "التسلسل الصحيح هو: 1. معالجة البيانات (3)، 2. إعادة البناء (2)، 3. إعطاء المعنى (1)."
             },
             {
                 id: "comm-132",
