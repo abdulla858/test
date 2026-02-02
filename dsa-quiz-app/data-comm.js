@@ -2911,6 +2911,7 @@ const quizData = [
         description_ar: "عوائق الاتصال الشخصية، التنظيمية، وعوائق التواصل غير الرسمي (الإشاعات).",
         icon: "🚧",
         questions: [
+            // MCQs - Part 1 (Basic Concepts)
             {
                 id: "comm-l10-1",
                 text: "According to the slides, what is true about your communication style?",
@@ -2933,323 +2934,437 @@ const quizData = [
             },
             {
                 id: "comm-l10-3",
-                text: "\"Credibility\" in communication means:",
-                text_ar: "ماذا تعني \"المصداقية\" (Credibility) في التواصل؟",
-                options: ["Being able to speak for a long time.", "Using complex words.", "People believe and trust you.", "Having a high position in the organization."],
-                options_ar: ["القدرة على التحدث لفترة طويلة.", "استخدام كلمات معقدة.", "أن يصدقك الناس ويثقوا بك.", "امتلاك منصب رفيع في المؤسسة."],
-                correct: 2,
-                explanation: "Credibility refers to the trust and belief the audience has in the speaker.",
-                explanation_ar: "تشير المصداقية إلى الثقة والإيمان الذي يضعه الجمهور في المتحدث."
+                text: "The chance of a message being understood increases if it is:",
+                text_ar: "تزداد فرصة فهم الرسالة إذا كانت:",
+                options: ["Expressed clearly.", "Sent via the grapevine.", "Very long and detailed."],
+                options_ar: ["تم التعبير عنها بوضوح.", "تم إرسالها عبر الـ grapevine.", "طويلة جداً ومفصلة."],
+                correct: 0,
+                explanation: "Clarity in expression directly correlates with the receiver's understanding.",
+                explanation_ar: "الوضوح في التعبير يرتبط مباشرة بفهم المستقبل."
             },
             {
                 id: "comm-l10-4",
-                text: "Organizational barriers are affected by \"Culture,\" which is defined as:",
-                text_ar: "تتأثر العوائق التنظيمية بـ \"الثقافة\" (Culture)، والتي تُعرف بأنها:",
-                options: ["The number of employees in a company.", "The daily routine and the way we think and behave.", "The amount of money a company makes.", "The technology used in the office."],
-                options_ar: ["عدد الموظفين في الشركة.", "الروتين اليومي والطريقة التي نفكر ونتصرف بها.", "مقدار المال الذي تحققه الشركة.", "التكنولوجيا المستخدمة في المكتب."],
+                text: "What makes a communicator 'more confident'?",
+                text_ar: "ما الذي يجعل المتواصل 'أكثر ثقة'؟",
+                options: ["Information loading.", "Consistency.", "Using rumors."],
+                options_ar: ["تكدس المعلومات.", "الاتساق (Consistency).", "استخدام الشائعات."],
                 correct: 1,
-                explanation: "Organizational culture is the shared routine, thoughts, and behaviors within a group.",
-                explanation_ar: "الثقافة التنظيمية هي الروتين المشترك والأفكار والسلوكيات داخل مجموعة العمل."
+                explanation: "Consistency in communication builds confidence in the speaker.",
+                explanation_ar: "الاتساق في التواصل يبني الثقة لدى المتحدث."
             },
             {
                 id: "comm-l10-5",
-                text: "Information loading becomes a barrier when:",
-                text_ar: "يصبح تكدس المعلومات (Information loading) عائقاً عندما:",
-                options: ["The audience has no information.", "New information arrives before the audience can cope with current information.", "The information is too simple.", "The presenter uses too many images."],
-                options_ar: ["ليس لدى الجمهور أي معلومات.", "تصل معلومات جديدة قبل أن يتمكن الجمهور من استيعاب المعلومات الحالية.", "المعلومات بسيطة للغاية.", "استخدام العارض للكثير من الصور."],
+                text: "You cannot communicate effectively if people do not ______ you.",
+                text_ar: "لا يمكنك التواصل بفعالية إذا لم يكن الناس ______ بك.",
+                options: ["Like.", "Trust or believe (Credibility).", "Pay you."],
+                options_ar: ["يحبونك.", "يثقون بك أو يصدقونك (المصداقية).", "يدفعون لك."],
                 correct: 1,
-                explanation: "Overloading the audience with more info than they can process creates a barrier.",
-                explanation_ar: "تحميل الجمهور بمعلومات أكثر مما يمكنهم معالجته يخلق عائقاً للتواصل."
+                explanation: "Credibility and trust are foundational to effective communication.",
+                explanation_ar: "المصداقية والثقة هما أساس التواصل الفعال."
             },
             {
                 id: "comm-l10-6",
-                text: "The \"Grapevine\" barrier in communication produces:",
-                text_ar: "عائق \"Grapevine\" (التواصل غير الرسمي) في التواصل ينتج عنه:",
-                options: ["Formal reports.", "Accurate data.", "Rumors.", "Official policies."],
-                options_ar: ["تقارير رسمية.", "بيانات دقيقة.", "شائعات (Rumors).", "سياسات رسمية."],
+                text: "A good communicator always takes ______ into account.",
+                text_ar: "المتواصل الجيد يأخذ دائماً ______ في الاعتبار.",
+                options: ["Rumors.", "Only their own feelings.", "Timing."],
+                options_ar: ["الشائعات.", "مشاعرهم الخاصة فقط.", "التوقيت (Timing)."],
                 correct: 2,
-                explanation: "The grapevine is an informal channel that often spreads rumors and unofficial info.",
-                explanation_ar: "الـ Grapevine (شبكة الإشاعات) هي قناة غير رسمية غالباً ما تنشر الشائعات والمعلومات غير الرسمية."
+                explanation: "Choosing the right moment is essential for a successful message.",
+                explanation_ar: "اختيار اللحظة المناسبة أمر ضروري لنجاح الرسالة."
             },
             {
                 id: "comm-l10-7",
-                text: "A problem caused by careless mistakes in communication is called:",
-                text_ar: "المشكلة الناتجة عن أخطاء ناجمة عن عدم المبالاة في التواصل تسمى:",
-                options: ["Timing issue.", "Information loading.", "Response foul-up.", "Credibility gap."],
-                options_ar: ["مشكلة في التوقيت.", "زيادة المعلومات.", "فشل الاستجابة (Response foul-up).", "فجوة المصداقية."],
-                correct: 2,
-                explanation: "Response foul-up refers to communication failures due to lack of attention or careless errors.",
-                explanation_ar: "يشير فشل الاستجابة (Response foul-up) إلى إخفاقات التواصل بسبب قلة الانتباه أو الأخطاء غير المبالية."
+                text: "Organizational Barriers are affected by:",
+                text_ar: "تتأثر العوائق التنظيمية بـ:",
+                options: ["Personal hobbies.", "Culture, Channels, and Information loading.", "Your favorite color."],
+                options_ar: ["الهوايات الشخصية.", "الثقافة، القنوات، وتكدس المعلومات.", "لونك المفضل."],
+                correct: 1,
+                explanation: "Organizational structure and culture define these barriers.",
+                explanation_ar: "الهيكل التنظيمي والثقافة هما ما يحددان هذه العوائق."
             },
             {
                 id: "comm-l10-8",
-                text: "Which barrier is caused by ill-prepared or ill-timed questions?",
-                text_ar: "أي عائق ينتج عن أسئلة سيئة الإعداد أو سيئة التوقيت؟",
-                options: ["Style barriers.", "Question barriers.", "Grapevine barriers.", "Culture barriers."],
-                options_ar: ["عوائق الأسلوب.", "عوائق الأسئلة (Question barriers).", "عوائق الإشاعات.", "عوائق الثقافة."],
-                correct: 1,
-                explanation: "Poorly timed or prepared questions can disrupt the flow of communication.",
-                explanation_ar: "الأسئلة سيئة التوقيت أو الإعداد يمكن أن تعطل تدفق الاتصال."
+                text: "In an organization, 'Culture' refers to:",
+                text_ar: "في المؤسسة، تشير 'الثقافة' (Culture) إلى:",
+                options: ["Daily routine and the way we think/behave.", "The number of computers.", "The height of the building."],
+                options_ar: ["الروتين اليومي وطريقة تفكيرنا وتصرفنا.", "عدد أجهزة الكمبيوتر.", "ارتفاع المبنى."],
+                correct: 0,
+                explanation: "Culture defines the behavioral patterns in a workspace.",
+                explanation_ar: "تحدد الثقافة أنماط السلوك في مكان العمل."
             },
             {
                 id: "comm-l10-9",
-                text: "[True or False] Personal barriers are affected by your communication style.",
-                text_ar: "[صح أم خطأ] تتأثر العوائق الشخصية بأسلوب التواصل الخاص بك.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
-                correct: 0,
-                explanation: "Your individual style plays a significant role in creating or overcoming personal barriers.",
-                explanation_ar: "يلعب أسلوبك الفردي دوراً كبيراً في خلق أو التغلب على العوائق الشخصية."
+                text: "Which organizational factor can 'change everything we say'?",
+                text_ar: "أي عامل تنظيمي يمكن أن 'يغير كل شيء نقوله'؟",
+                options: ["Information loading.", "Body language.", "The grapevine."],
+                options_ar: ["تكدس المعلومات.", "لغة الجسد.", "الـ grapevine."],
+                correct: 1,
+                explanation: "Body language is powerful and can contradict verbal messages.",
+                explanation_ar: "لغة الجسد قوية ويمكن أن تناقض الرسائل اللفظية."
             },
             {
                 id: "comm-l10-10",
-                text: "[True or False] The clearer a message is expressed, the better its chance of being understood.",
-                text_ar: "[صح أم خطأ] كلما تم التعبير عن الرسالة بوضوح أكبر، زادت فرصة فهمها.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
-                correct: 0,
-                explanation: "Clarity is essential for ensuring the receiver decodes the message as intended.",
-                explanation_ar: "الوضوح أساسي لضمان قيام المستقبل بفك تشفير الرسالة كما هو مقصود."
+                text: "Information loading becomes a barrier when:",
+                text_ar: "يصبح تكدس المعلومات عائقاً عندما:",
+                options: ["There is no information.", "New info arrives before the audience can cope with the current info.", "Information is written in a clear font."],
+                options_ar: ["لا توجد معلومات.", "تصل معلومات جديدة قبل أن يتمكن الجمهور من استيعاب الحالية.", "تكون المعلومات مكتوبة بخط واضح."],
+                correct: 1,
+                explanation: "Overload prevents effective processing of the message.",
+                explanation_ar: "التكدس يمنع المعالجة الفعالة للرسالة."
             },
             {
                 id: "comm-l10-11",
-                text: "[True or False] Consistency in communication makes us feel less confident.",
-                text_ar: "[صح أم خطأ] التوافق (Consistency) في التواصل يجعلنا نشعر بثقة أقل.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
+                text: "Ill-prepared or ill-timed ______ create barriers.",
+                text_ar: "الـ ______ سيئة الإعداد أو سيئة التوقيت تخلق عوائق.",
+                options: ["Styles.", "Questions.", "Rumors."],
+                options_ar: ["الأساليب.", "الأسئلة (Questions).", "الشائعات."],
                 correct: 1,
-                explanation: "Consistency actually makes the communicator feel MORE confident.",
-                explanation_ar: "في الواقع، التوافق أو الاتساق يجعل المتواصل يشعر بمزيد من الثقة."
+                explanation: "Questions should be timed well to facilitate communication.",
+                explanation_ar: "يجب أن يكون توقيت الأسئلة جيداً لتسهيل التواصل."
             },
             {
                 id: "comm-l10-12",
-                text: "[True or False] You can communicate effectively even if people do not trust your credibility.",
-                text_ar: "[صح أم خطأ] يمكنك التواصل بفعالية حتى لو لم يثق الناس في مصداقيتك.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
+                text: "A 'Response foul-up' is a problem caused by:",
+                text_ar: "يُعد 'فشل الاستجابة' (Response foul-up) مشكلة ناتجة عن:",
+                options: ["Lack of time.", "Careless mistakes.", "High credibility."],
+                options_ar: ["نقص الوقت.", "أخطاء ناتجة عن عدم المبالاة.", "مصداقية عالية."],
                 correct: 1,
-                explanation: "Effective communication is nearly impossible without credibility and trust.",
-                explanation_ar: "التواصل الفعال شبه مستحيل بدون المصداقية والثقة."
+                explanation: "Careless errors disrupt the accuracy of the feedback.",
+                explanation_ar: "الأخطاء الناجمة عن الإهمال تعطل دقة التغذية الراجعة."
             },
             {
                 id: "comm-l10-13",
-                text: "[True or False] A good communicator does not need to take 'Timing' into account.",
-                text_ar: "[صح أم خطأ] المتواصل الجيد لا يحتاج إلى أخذ 'التوقيت' في الاعتبار.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
+                text: "The 'Grapevine' produces:",
+                text_ar: "ينتج عن الـ 'Grapevine':",
+                options: ["Official reports.", "Rumors.", "Clear policies."],
+                options_ar: ["تقارير رسمية.", "شائعات (Rumors).", "سياسات واضحة."],
                 correct: 1,
-                explanation: "Timing is critical; delivering a message at the wrong time can be a major barrier.",
-                explanation_ar: "التوقيت أمر بالغ الأهمية؛ فإيصال الرسالة في الوقت الخطأ يمكن أن يكون عائقاً كبيراً."
+                explanation: "The grapevine is an informal source that often carries rumors.",
+                explanation_ar: "الـ grapevine هو مصدر غير رسمي غالباً ما يحمل الشائعات."
             },
             {
                 id: "comm-l10-14",
-                text: "[True or False] You should always check if your 'target' audience is ready for your message.",
-                text_ar: "[صح أم خطأ] يجب عليك دائماً التحقق مما إذا كان جمهورك 'المستهدف' مستعداً لرسالتك.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
+                text: "Personal barriers are primarily about:",
+                text_ar: "تتعلق العوائق الشخصية أساساً بـ:",
+                options: ["The individual's style, credibility, and clarity.", "The company's hierarchy.", "Global warming."],
+                options_ar: ["أسلوب الفرد، مصداقيته، ووضوحه.", "هيكل الشركة التنظيمي.", "الاحتباس الحراري."],
                 correct: 0,
-                explanation: "Audience readiness is a key factor in successful message delivery.",
-                explanation_ar: "جاهزية الجمهور عامل أساسي في نجاح إيصال الرسالة."
+                explanation: "These barriers stay within the individual interacting.",
+                explanation_ar: "هذه العوائق تكمن في الشخص المتفاعل."
             },
             {
                 id: "comm-l10-15",
-                text: "[True or False] Body language has no power to influence those we target.",
-                text_ar: "[صح أم خطأ] لغة الجسد ليس لها قوة للتأثير على من نستهدفهم.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
+                text: "What should you check regarding your 'target' audience?",
+                text_ar: "ماذا يجب أن تتحقق منه بخصوص جمهورك 'المستهدف'؟",
+                options: ["Their clothing.", "If they are ready for your message.", "Their salary."],
+                options_ar: ["ملابسهم.", "ما إذا كانوا مستعدين لرسالتك.", "رواتبهم."],
                 correct: 1,
-                explanation: "Body language is extremely powerful and can change everything we say verbally.",
-                explanation_ar: "لغة الجسد قوية للغاية ويمكن أن تغير كل شيء نقوله لفظياً."
+                explanation: "Assessing readiness ensures the message is received.",
+                explanation_ar: "تقييم الجاهزية يضمن استقبال الرسالة."
             },
             {
                 id: "comm-l10-16",
-                text: "[True or False] Grapevine communication happens when information is passed from one person to another in conversation.",
-                text_ar: "[صح أم خطأ] يحدث تواصل الـ Grapevine عندما يتم نقل المعلومات من شخص لآخر في المحادثات.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
-                correct: 0,
-                explanation: "Informal passing of info through conversation is exactly what the grapevine is.",
-                explanation_ar: "النقل غير الرسمي للمعلومات عبر المحادثة هو بالضبط ما يعنيه الـ grapevine."
+                text: "Which of the following is an Organizational Barrier?",
+                text_ar: "أي مما يلي يُعد عائقاً تنظيمياً؟",
+                options: ["Your Style.", "Your Credibility.", "Information Loading."],
+                options_ar: ["أسلوبك.", "مصداقيتك.", "تكدس المعلومات (Information Loading)."],
+                correct: 2,
+                explanation: "Information loading is an obstacle within organization processes.",
+                explanation_ar: "تكدس المعلومات هو عقبة داخل العمليات التنظيمية."
             },
             {
                 id: "comm-l10-17",
-                text: "[True or False] Organizational barriers are only affected by the size of the building.",
-                text_ar: "[صح أم خطأ] العوائق التنظيمية تتأثر فقط بحجم المبنى.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
+                text: "Which of the following is a Personal Barrier?",
+                text_ar: "أي مما يلي يُعد عائقاً شخصياً؟",
+                options: ["Culture.", "Timing.", "Response foul-up."],
+                options_ar: ["الثقافة.", "التوقيت (Timing).", "فشل الاستجابة."],
                 correct: 1,
-                explanation: "Organizational barriers include culture, channels, information loading, etc., not just physical size.",
-                explanation_ar: "تشمل العوائق التنظيمية الثقافة والقنوات وتكدس المعلومات، وليس فقط الحجم المادي."
+                explanation: "Timing is a personal choice/skill that impacts effectiveness.",
+                explanation_ar: "التوقيت هو خيار/مهارة شخصية تؤثر على الفعالية."
             },
             {
                 id: "comm-l10-18",
-                text: "[True or False] 'Response foul-up' is a barrier caused by careless mistakes.",
-                text_ar: "[صح أم خطأ] 'فشل الاستجابة' هو عائق ناتج عن أخطاء ناتجة عن عدم المبالاة.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
-                correct: 0,
-                explanation: "Careless errors lead to breakdown in response, known as response foul-up.",
-                explanation_ar: "الأخطاء غير المبالية تؤدي إلى انهيار الاستجابة، المعروف باسم فشل الاستجابة."
-            },
-            {
-                id: "comm-l10-19",
-                text: "[True or False] Information loading is a basic need for any audience to be effective.",
-                text_ar: "[صح أم خطأ] تكدس المعلومات هو حاجة أساسية لأي جمهور ليكون فعالاً.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
-                correct: 1,
-                explanation: "Information loading is a barrier, not a need; too much info hinders effectiveness.",
-                explanation_ar: "تكدس المعلومات هو عائق وليس حاجة؛ فالمعلومات المفرطة تعيق الفعالية."
-            },
-            {
-                id: "comm-l10-31",
                 text: "The way information is passed from person to person in conversation is called:",
                 text_ar: "الطريقة التي تنتقل بها المعلومات من شخص لآخر في المحادثات تسمى:",
                 options: ["Formal channel", "The Grapevine", "Clarity"],
-                options_ar: ["القنوات الرسمية", "الـ Grapevine (الإشاعات)", "الوضوح"],
+                options_ar: ["القناة الرسمية", "الـ Grapevine", "الوضوح"],
                 correct: 1,
-                explanation: "Informal information sharing in an organization is known as the grapevine.",
-                explanation_ar: "مشاركة المعلومات غير الرسمية في المؤسسة تُعرف باسم الـ grapevine."
+                explanation: "Informal info-passing is known as the grapevine.",
+                explanation_ar: "نقل المعلومات غير الرسمي يُعرف باسم الـ grapevine."
             },
             {
-                id: "comm-l10-32",
+                id: "comm-l10-19",
                 text: "If a message is inconsistent, the communicator will feel:",
-                text_ar: "إذا كانت الرسالة غير متسقة (Inconsistent)، سيشعر المتواصل بـ:",
-                options: ["More confident", "Less confident", "More credible"],
-                options_ar: ["ثقة أكثر", "ثقة أقل", "مصداقية أكثر"],
+                text_ar: "إذا كانت الرسالة غير متسقة، سيشعر المتواصل بـ:",
+                options: ["More confident.", "Less confident.", "More credible."],
+                options_ar: ["ثقة أكثر.", "ثقة أقل.", "مصداقية أكثر."],
                 correct: 1,
-                explanation: "Inconsistency in a message leads to a lack of confidence in the speaker.",
-                explanation_ar: "يؤدي عدم الاتساق في الرسالة إلى شعور المتحدث بقلة الثقة."
+                explanation: "Inconsistency breeds doubt in both the speaker and receiver.",
+                explanation_ar: "عدم الاتساق يولد الشك لدى كل من المتحدث والمستقبل."
             },
             {
-                id: "comm-l10-33",
-                text: "What should you check regarding your 'target' audience?",
-                text_ar: "ماذا يجب أن تتحقق منه بخصوص جمهورك 'المستهدف'؟",
-                options: ["Their clothing", "If they are ready for your message", "Their salary"],
-                options_ar: ["ملابسهم", "ما إذا كانوا مستعدين لرسالتك", "رواتبهم"],
-                correct: 1,
-                explanation: "Audience readiness is crucial; if they aren't prepared, the message will fail.",
-                explanation_ar: "جاهزية الجمهور أمر بالغ الأهمية؛ فإذا لم يكونوا مستعدين، سيفشل التواصل."
-            },
-            {
-                id: "comm-l10-34",
-                text: "Organizational Barriers are affected by:",
-                text_ar: "تتأثر العوائق التنظيمية بـ:",
-                options: ["Culture, Channels, and Information loading", "Personal hobbies", "Your favorite color"],
-                options_ar: ["الثقافة، القنوات، وتكدس المعلومات", "الهوايات الشخصية", "لونك المفضل"],
+                id: "comm-l10-20",
+                text: "Rehearsing what you want to say is part of:",
+                text_ar: "التدرب على ما تريد قوله هو جزء من:",
+                options: ["Preparation and Presentation.", "The Grapevine.", "Culture."],
+                options_ar: ["التحضير والعرض.", "الـ Grapevine.", "الثقافة."],
                 correct: 0,
-                explanation: "Barriers at the organizational level stem from workplace culture, communication channels, and info overload.",
-                explanation_ar: "العوائق على المستوى التنظيمي تنبع من ثقافة العمل، قنوات التواصل، وتكدس المعلومات."
+                explanation: "Rehearsing is a key preparation step.",
+                explanation_ar: "التدرب هو خطوة أساسية في التحضير."
+            },
+
+            // True or False Questions
+            {
+                id: "comm-l10-21",
+                text: "[True or False] Each person has their own communication style.",
+                text_ar: "[صح أم خطأ] كل شخص لديه أسلوبه الخاص في التواصل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "The lecture states everyone possesses a unique style.",
+                explanation_ar: "تنص المحاضرة على أن كل شخص يمتلك أسلوباً فريداً."
             },
             {
-                id: "comm-l10-35",
+                id: "comm-l10-22",
                 text: "[True or False] There is such a thing as a neutral communication style.",
-                text_ar: "[صح أم خطأ] يوجد أسلوب تواصل محايد (Neutral).",
+                text_ar: "[صح أم خطأ] يوجد ما يسمى بأسلوب التواصل المحايد.",
                 options: ["True", "False"],
                 options_ar: ["صحيح", "خاطئ"],
                 correct: 1,
-                explanation: "The slides state that no neutral style exists; everyone has a specific communication style.",
-                explanation_ar: "تنص الشرائح على أنه لا يوجد أسلوب محايد؛ فكل شخص لديه أسلوب تواصل محدد."
+                explanation: "No neutral style exists according to slides.",
+                explanation_ar: "لا يوجد أسلوب محايد وفقاً للشرائح."
             },
             {
-                id: "comm-l10-36",
+                id: "comm-l10-23",
+                text: "[True or False] Rehearsing helps to remove confusion in communication.",
+                text_ar: "[صح أم خطأ] التدرب يساعد في إزالة الغموض في التواصل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Preparation leads to clearer messaging.",
+                explanation_ar: "التحضير يؤدي إلى رسائل أكثر وضوحاً."
+            },
+            {
+                id: "comm-l10-24",
+                text: "[True or False] The clearer a message is, the less chance it has of being understood.",
+                text_ar: "[صح أم خطأ] كلما زاد وضوح الرسالة، قلت فرصة فهمها.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Clarity increases the chance of understanding.",
+                explanation_ar: "الوضوح يزيد من فرص الفهم."
+            },
+            {
+                id: "comm-l10-25",
+                text: "[True or False] Consistency in communication makes us more confident.",
+                text_ar: "[صح أم خطأ] الاتساق في التواصل يجعلنا أكثر ثقة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Matching words with intent builds confidence.",
+                explanation_ar: "مطابقة الكلمات مع الغرض يبني الثقة."
+            },
+            {
+                id: "comm-l10-26",
+                text: "[True or False] Credibility means that people believe or trust you.",
+                text_ar: "[صح أم خطأ] المصداقية تعني أن يصدقك الناس أو يثقوا بك.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Trust is the core of credibility.",
+                explanation_ar: "الثقة هي جوهر المصداقية."
+            },
+            {
+                id: "comm-l10-27",
+                text: "[True or False] Effective communication is possible even if there is no trust.",
+                text_ar: "[صح أم خطأ] التواصل الفعال ممكن حتى في حال عدم وجود ثقة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Trust is essential for messages to be accepted.",
+                explanation_ar: "الثقة ضرورية لكي تقبل الرسائل."
+            },
+            {
+                id: "comm-l10-28",
+                text: "[True or False] You should always check if the audience is ready for your message.",
+                text_ar: "[صح أم خطأ] يجب عليك دائماً التحقق مما إذا كان الجمهور مستعداً لرسالتك.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Timing and readiness are key to success.",
+                explanation_ar: "التوقيت والجاهزية هما مفتاح النجاح."
+            },
+            {
+                id: "comm-l10-29",
+                text: "[True or False] Timing is not important for a good communicator.",
+                text_ar: "[صح أم خطأ] التوقيت غير مهم للمتواصل الجيد.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Timing is one of the critical personal barriers to master.",
+                explanation_ar: "التوقيت هو أحد العوائق الشخصية الحاسمة التي يجب إتقانها."
+            },
+            {
+                id: "comm-l10-30",
+                text: "[True or False] Organizational culture includes the way people behave and think.",
+                text_ar: "[صح أم خطأ] تشمل الثقافة التنظيمية طريقة تصرف وتفكير الناس.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Culture defines the 'human environment' of an organization.",
+                explanation_ar: "تحدد الثقافة 'البيئة البشرية' للمؤسسة."
+            },
+            {
+                id: "comm-l10-31",
+                text: "[True or False] Body language is an organizational barrier that can influence the target.",
+                text_ar: "[صح أم خطأ] لغة الجسد هي عائق تنظيمي يمكن أن يؤثر على المستهدف.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Physical presence and cues are part of organizational interactions.",
+                explanation_ar: "الحضور المادي والإشارات هي جزء من التفاعلات التنظيمية."
+            },
+            {
+                id: "comm-l10-32",
                 text: "[True or False] Body language cannot change what we say verbally.",
                 text_ar: "[صح أم خطأ] لغة الجسد لا يمكنها تغيير ما نقوله لفظياً.",
                 options: ["True", "False"],
                 options_ar: ["صحيح", "خاطئ"],
                 correct: 1,
-                explanation: "Body language is powerful and can completely alter or contradict verbal messages.",
-                explanation_ar: "لغة الجسد قوية ويمكنها تغيير الرسائل اللفظية تماماً أو مناقضتها."
+                explanation: "Non-verbal cues often carry more weight than verbal content.",
+                explanation_ar: "الإشارات غير اللفظية غالباً ما تحمل وزناً أكبر من المحتوي اللفظي."
             },
             {
-                id: "comm-l10-37",
+                id: "comm-l10-33",
+                text: "[True or False] Information loading is a basic need for an audience to be effective.",
+                text_ar: "[صح أم خطأ] تكدس المعلومات هو حاجة أساسية للجمهور ليكون فعالاً.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Overloading is a barrier, not a need.",
+                explanation_ar: "التكدس هو عائق وليس حاجة."
+            },
+            {
+                id: "comm-l10-34",
                 text: "[True or False] Audiences must cope with current info before new info arrives.",
                 text_ar: "[صح أم خطأ] يجب على الجمهور استيعاب المعلومات الحالية قبل وصول معلومات جديدة.",
                 options: ["True", "False"],
                 options_ar: ["صحيح", "خاطئ"],
                 correct: 0,
-                explanation: "Effective absorption requires processing current information before adding more.",
-                explanation_ar: "يتطلب الاستيعاب الفعال معالجة المعلومات الحالية قبل إضافة المزيد."
+                explanation: "Processing time is required to avoid overload.",
+                explanation_ar: "وقت المعالجة مطلوب لتجنب التكدس."
+            },
+            {
+                id: "comm-l10-35",
+                text: "[True or False] Ill-timed questions do not create communication barriers.",
+                text_ar: "[صح أم خطأ] الأسئلة في الوقت غير المناسب لا تخلق عوائق تواصل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Poorly timed questions disrupt the message flow.",
+                explanation_ar: "الأسئلة في الوقت غير المناسب تعيق تدفق الرسالة."
+            },
+            {
+                id: "comm-l10-36",
+                text: "[True or False] Response foul-up is caused by deliberate sabotage.",
+                text_ar: "[صح أم خطأ] فشل الاستجابة ناتج عن تخريب متعمد.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "It is usually caused by careless mistakes.",
+                explanation_ar: "عادة ما ينتج عن أخطاء غيرة مبالية."
+            },
+            {
+                id: "comm-l10-37",
+                text: "[True or False] The Grapevine is an informal way of passing information.",
+                text_ar: "[صح أم خطأ] الـ Grapevine هو وسيلة غير رسمية لنقل المعلومات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "It exists outside official formal channels.",
+                explanation_ar: "إنه موجود خارج القنوات الرسمية."
             },
             {
                 id: "comm-l10-38",
-                text: "[True or False] Response foul-up is caused by deliberate sabotage.",
-                text_ar: "[صح أم خطأ] فشل الاستجابة (Response foul-up) ناتج عن تخريب متعمد.",
+                text: "[True or False] Rumors are produced by formal organizational channels.",
+                text_ar: "[صح أم خطأ] الإشاعات تنتج عن القنوات التنظيمية الرسمية.",
                 options: ["True", "False"],
                 options_ar: ["صحيح", "خاطئ"],
                 correct: 1,
-                explanation: "Response foul-ups are caused by careless mistakes, not necessarily deliberate intent.",
-                explanation_ar: "ينتج فشل الاستجابة عن أخطاء ناجمة عن الإهمال، وليس بالضرورة عن نية متعمدة."
+                explanation: "Formal channels aim for accuracy, not rumors.",
+                explanation_ar: "القنوات الرسمية تهدف للدقة وليس الإشاعات."
             },
             {
                 id: "comm-l10-39",
-                text: "[True or False] Rumors are produced by formal organizational channels.",
-                text_ar: "[صح أم خطأ] الشائعات تنتج عن القنوات التنظيمية الرسمية.",
+                text: "[True or False] Personal barriers are affected by your individual style.",
+                text_ar: "[صح أم خطأ] العوائق الشخصية تتأثر بأسلوبك الفردي.",
                 options: ["True", "False"],
                 options_ar: ["صحيح", "خاطئ"],
-                correct: 1,
-                explanation: "Rumors are products of the informal 'grapevine', not formal channels.",
-                explanation_ar: "الشائعات هي نتاج الـ 'grapevine' غير الرسمي، وليس القنوات الرسمية."
+                correct: 0,
+                explanation: "Style is a key personal factor in interaction.",
+                explanation_ar: "الأسلوب هو عامل شخصي رئيسي في التفاعل."
             },
             {
                 id: "comm-l10-40",
-                text: "[True or False] Consistent communication decreases self-confidence.",
-                text_ar: "[صح أم خطأ] التواصل المتسق (Consistent) يقلل من الثقة بالنفس.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
-                correct: 1,
-                explanation: "Being consistent in your message increases your confidence.",
-                explanation_ar: "الاتساق في رسالتك يزيد من ثقتك بنفسك."
-            },
-            {
-                id: "comm-l10-41",
-                text: "[True or False] Preparation for communication includes rehearsing.",
-                text_ar: "[صح أم خطأ] التحضير للتواصل يشمل التدرب (Rehearsing).",
+                text: "[True or False] Careless mistakes lead to a barrier called 'Response foul-up'.",
+                text_ar: "[صح أم خطأ] الأخطاء غير المبالية تؤدي إلى عائق يسمى 'فشل الاستجابة'.",
                 options: ["True", "False"],
                 options_ar: ["صحيح", "خاطئ"],
                 correct: 0,
-                explanation: "Preparation involves practicing and rehearsing to ensure clarity.",
-                explanation_ar: "يشمل التحضير الممارسة والتدريب لضمان الوضوح."
+                explanation: "This matches the definition in the lecture.",
+                explanation_ar: "هذا يطابق التعريف الوارد في المحاضرة."
+            },
+
+            // Additional Summary/Consolidated Questions
+            {
+                id: "comm-l10-41",
+                text: "To remove any confusion in communication, you should: (MCQ Variation)",
+                text_ar: "لإزالة أي غموض في التواصل، يجب عليك (نسخة بديلة):",
+                options: ["Rehearse what you want to say.", "Speak as fast as possible.", "Avoid eye contact."],
+                options_ar: ["التدرب على ما تريد قوله.", "التحدث بأسرع ما يمكن.", "تجنب التواصل البصري."],
+                correct: 0,
+                explanation: "Preparation is the best cure for confusion.",
+                explanation_ar: "التحضير هو أفضل علاج للغموض."
             },
             {
                 id: "comm-l10-42",
-                text: "[True or False] Personal barriers are not affected by individual style.",
-                text_ar: "[صح أم خطأ] العوائق الشخصية لا تتأثر بالأسلوب الفردي.",
-                options: ["True", "False"],
-                options_ar: ["صحيح", "خاطئ"],
+                text: "'Credibility' in communication means: (Trust Factor)",
+                text_ar: "تعني 'المصداقية' في التواصل (عامل الثقة):",
+                options: ["Using big words.", "People believe and trust you.", "Speaking very slowly."],
+                options_ar: ["استخدام كلمات كبيرة.", "أن يصدقك الناس ويثقوا بك.", "التحدث ببطء شديد."],
                 correct: 1,
-                explanation: "Personal barriers are heavily influenced by an individual's specific style.",
-                explanation_ar: "تتأثر العوائق الشخصية بشدة بالأسلوب المحدد للفرد."
+                explanation: "Believability is the key to credibility.",
+                explanation_ar: "إمكانية التصديق هي مفتاح المصداقية."
             },
             {
                 id: "comm-l10-43",
-                text: "The chance of a message being understood increases if it is expressed:",
-                text_ar: "تزداد فرصة فهم الرسالة إذا تم التعبير عنها بـ:",
-                options: ["Clearly", "In a loud voice", "Quickly"],
-                options_ar: ["وضوح", "صوت عالٍ", "بسرعة"],
-                correct: 0,
-                explanation: "Clear expression is the primary factor in effective understanding.",
-                explanation_ar: "التعبير الواضح هو العامل الأساسي في الفهم الفعال."
+                text: "[True or False] Consistency in communication makes us feel less confident. (Wait, check logic)",
+                text_ar: "[صح أم خطأ] الاتساق في التواصل يجعلنا نشعر بثقة أقل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "It actually makes us MORE confident.",
+                explanation_ar: "في الواقع، يجعلنا أكثر ثقة."
             },
             {
                 id: "comm-l10-44",
-                text: "What makes a communicator 'more confident'?",
-                text_ar: "ما الذي يجعل المتواصل 'أكثر ثقة'؟",
-                options: ["Consistency", "Rumors", "Information loading"],
-                options_ar: ["الاتساق (Consistency)", "الشائعات", "تكدس المعلومات"],
+                text: "[True or False] A good communicator MUST take 'Timing' into account.",
+                text_ar: "[صح أم خطأ] المتواصل الجيد يجب أن يأخذ 'التوقيت' في الاعتبار.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
                 correct: 0,
-                explanation: "Consistency in message and delivery builds confidence in the speaker.",
-                explanation_ar: "الاتساق في الرسالة والأداء يبني الثقة لدى المتحدث."
+                explanation: "Choosing when to send a message is vital.",
+                explanation_ar: "اختيار موعد إرسال الرسالة أمر حيوي."
             },
             {
                 id: "comm-l10-45",
-                text: "In an organization, 'Culture' refers to:",
-                text_ar: "في المؤسسة، تشير 'الثقافة' (Culture) إلى:",
-                options: ["Daily routine and the way we think/behave", "The number of computers", "The building's architecture"],
-                options_ar: ["الروتين اليومي وطريقة تفكيرنا وتصرفنا", "عدد أجهزة الكمبيوتر", "هندسة المبنى"],
-                correct: 0,
-                explanation: "Culture defines the shared patterns of thought and behavior in a workplace.",
-                explanation_ar: "تحدد الثقافة الأنماط المشتركة للتفكير والسلوك في مكان العمل."
+                text: "[True or False] Organizational barriers are ONLY affected by the building size.",
+                text_ar: "[صح أم خطأ] العوائق التنظيمية تتأثر فقط بحجم المبنى.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Multiple factors like culture and loading apply.",
+                explanation_ar: "تطبق عوامل متعددة مثل الثقافة وتكدس المعلومات."
             }
         ]
     }
