@@ -3367,469 +3367,468 @@ const quizData = [
                 explanation_ar: "تطبق عوامل متعددة مثل الثقافة وتكدس المعلومات."
             }
         ]
-    }
     },
-{
-    id: "comm-l12",
+    {
+        id: "comm-l12",
         title: "Effective Communication (Lecture 12)",
-            title_ar: "التواصل الفعال (المحاضرة الثانية عشرة)",
-                description: "Listening, Reading, Writing strategies and Memory percentages.",
-                    description_ar: "استراتيجيات الاستماع، القراءة، الكتابة ونسب التذكر.",
-                        icon: "📚",
-                            questions: [
-                                // MCQs
-                                {
-                                    id: "comm-l12-1",
-                                    text: "According to the slides, people generally remember 10% of what they:",
-                                    text_ar: "وفقاً للشرائح، يتذكر الناس عموماً 10٪ مما يقومون بـ:",
-                                    options: ["Hear", "Read", "See"],
-                                    options_ar: ["سماعه", "قراءته", "رؤيته"],
-                                    correct: 1,
-                                    explanation: "Research shows that reading alone has the lowest retention rate at 10%.",
-                                    explanation_ar: "تظهر الأبحاث أن القراءة وحدها لديها أقل معدل استبقاء بنسبة 10٪."
-                                },
-                                {
-                                    id: "comm-l12-2",
-                                    text: "We tend to remember 20% of what we:",
-                                    text_ar: "نميل إلى تذكر 20٪ مما نقوم بـ:",
-                                    options: ["Hear", "See", "Say and write"],
-                                    options_ar: ["سماعه", "رؤيته", "قوله وكتابته"],
-                                    correct: 0,
-                                    explanation: "Retention increases to 20% when information is heard.",
-                                    explanation_ar: "تزداد نسبة التذكر إلى 20٪ عند سماع المعلومات."
-                                },
-                                {
-                                    id: "comm-l12-3",
-                                    text: "The percentage of information remembered from what we 'See' is:",
-                                    text_ar: "نسبة المعلومات التي يتم تذكرها مما نقوم بـ 'رؤيته' هي:",
-                                    options: ["10%", "20%", "30%"],
-                                    options_ar: ["10%", "20%", "30%"],
-                                    correct: 2,
-                                    explanation: "Visual information (seeing) is remembered better than hearing or reading alone, at 30%.",
-                                    explanation_ar: "المعلومات المرئية (الرؤية) يتم تذكرها بشكل أفضل من السمع أو القراءة وحدها، بنسبة 30٪."
-                                },
-                                {
-                                    id: "comm-l12-4",
-                                    text: "People remember 50% of what they:",
-                                    text_ar: "يتذكر الناس 50٪ مما يقومون بـ:",
-                                    options: ["Say as they do something.", "Hear and see.", "Read."],
-                                    options_ar: ["قوله أثناء فعل شيء ما.", "سماعه ورؤيته.", "قراءته."],
-                                    correct: 1,
-                                    explanation: "Combining hearing and seeing (audiovisual) results in 50% memory retention.",
-                                    explanation_ar: "الجمع بين السمع والرؤية (الوسائل السمعية والبصرية) يؤدي إلى تذكر بنسبة 50٪."
-                                },
-                                {
-                                    id: "comm-l12-5",
-                                    text: "We remember 70% of what we:",
-                                    text_ar: "نتذكر 70٪ مما نقوم بـ:",
-                                    options: ["Hear and see.", "Say and write.", "See."],
-                                    options_ar: ["سماعه ورؤيته.", "قوله وكتابته.", "رؤيته."],
-                                    correct: 1,
-                                    explanation: "Active involvement like saying and writing increases retention to 70%.",
-                                    explanation_ar: "المشاركة النشطة مثل القول والكتابة تزيد من نسبة التذكر إلى 70٪."
-                                },
-                                {
-                                    id: "comm-l12-6",
-                                    text: "The highest percentage of remembering (90%) occurs when people:",
-                                    text_ar: "تحدث أعلى نسبة تذكر (90٪) عندما يقوم الناس بـ:",
-                                    options: ["Read a book.", "Hear a lecture.", "Say as they do something."],
-                                    options_ar: ["قراءة كتاب.", "سماع محاضرة.", "قوله أثناء فعل شيء ما."],
-                                    correct: 2,
-                                    explanation: "The most effective learning (90% retention) happens when you say something while performing the action.",
-                                    explanation_ar: "التعلم الأكثر فعالية (استبقاء 90٪) يحدث عندما تقول شيئاً أثناء أداء الفعل."
-                                },
-                                {
-                                    id: "comm-l12-7",
-                                    text: "Which of the following is NOT a reason to communicate mentioned in the slides?",
-                                    text_ar: "أي مما يلي ليس سبباً للتواصل ذُكر في الشرائح؟",
-                                    options: ["To feel respected.", "To reduce boredom.", "To hide information from others."],
-                                    options_ar: ["للشعور بالاحترام.", "لتقليل الملل.", "لإخفاء المعلومات عن الآخرين."],
-                                    correct: 2,
-                                    explanation: "Communication is meant to share information, not hide it.",
-                                    explanation_ar: "التواصل يهدف إلى مشاركة المعلومات، وليس إخفاءها."
-                                },
-                                {
-                                    id: "comm-l12-8",
-                                    text: "Communication can be used to avoid something unpleasant, such as:",
-                                    text_ar: "يمكن استخدام التواصل لتجنب شيء غير سار، مثل:",
-                                    options: ["Excitement.", "Silence or confrontation.", "Respect."],
-                                    options_ar: ["الإثارة.", "الصمت أو المواجهة.", "الاحترام."],
-                                    correct: 1,
-                                    explanation: "Communication helps manage social situations to avoid awkward silences or conflicts.",
-                                    explanation_ar: "يساعد التواصل في إدارة المواقف الاجتماعية لتجنب الصمت المحرج أو الصراعات."
-                                },
-                                {
-                                    id: "comm-l12-9",
-                                    text: "The first rule of listening mentioned in the slides is:",
-                                    text_ar: "قاعدة الاستماع الأولى المذكورة في الشرائح هي:",
-                                    options: ["Stop talking.", "Start writing.", "Read the table of contents."],
-                                    options_ar: ["توقف عن الكلام.", "ابدأ الكتابة.", "اقرأ جدول المحتويات."],
-                                    correct: 0,
-                                    explanation: "The golden rule of listening is to stop talking so you can actually hear others.",
-                                    explanation_ar: "القاعدة الذهبية للاستماع هي التوقف عن الكلام حتى تتمكن من سماع الآخرين بالفعل."
-                                },
-                                {
-                                    id: "comm-l12-10",
-                                    text: "To be a good listener, you should delay _______ of what you have heard until you understand it.",
-                                    text_ar: "لتكون مستمعاً جيداً، يجب عليك تأجيل _______ لما سمعته حتى تفهمه.",
-                                    options: ["Listening.", "Evaluation.", "Recording."],
-                                    options_ar: ["الاستماع.", "التقييم (Evaluation).", "التسجيل."],
-                                    correct: 1,
-                                    explanation: "Delaying evaluation allows you to fully process the message without bias.",
-                                    explanation_ar: "يسمح تأجيل التقييم بمعالجة الرسالة بالكامل دون تحيز."
-                                },
-                                {
-                                    id: "comm-l12-11",
-                                    text: "'Knowing how deeply to read a document' includes:",
-                                    text_ar: "'معرفة مدى عمق قراءة المستند' تشمل:",
-                                    options: ["Only reading the title.", "Skimming, scanning, or studying.", "Memorizing every word."],
-                                    options_ar: ["قراءة العنوان فقط.", "القراءة السريعة (Skimming)، المسح (Scanning)، أو الدراسة.", "حفظ كل كلمة."],
-                                    correct: 1,
-                                    explanation: "Different documents require different reading depths: skimming for general, scanning for specific, or studying for detail.",
-                                    explanation_ar: "تتطلب المستندات المختلفة أعماقاً مختلفة للقراءة: المسح السريع للفكرة العامة، أو البحث عن تفاصيل محددة، أو الدراسة للتفاصيل."
-                                },
-                                {
-                                    id: "comm-l12-12",
-                                    text: "What should you use for reading magazines, books, and newspapers efficiently?",
-                                    text_ar: "ماذا يجب أن تستخدم لقراءة المجلات والكتب والصحف بكفاءة؟",
-                                    options: ["A dictionary.", "The table of contents.", "The back cover only."],
-                                    options_ar: ["قاموس.", "جدول المحتويات.", "الغلاف الخلفي فقط."],
-                                    correct: 1,
-                                    explanation: "Using the table of contents helps you locate relevant information quickly.",
-                                    explanation_ar: "يساعد استخدام جدول المحتويات في تحديد المعلومات ذات الصلة بسرعة."
-                                },
-                                {
-                                    id: "comm-l12-13",
-                                    text: "In writing, brainstorming, free writing, and clustering are known as:",
-                                    text_ar: "في الكتابة، تُعرف العصف الذهني، الكتابة الحرة، والتجميع (Clustering) بـ:",
-                                    options: ["Rules of listening.", "Techniques of writing.", "Reading strategies."],
-                                    options_ar: ["قواعد الاستماع.", "تقنيات الكتابة (Techniques of writing).", "استراتيجيات القراءة."],
-                                    correct: 1,
-                                    explanation: "These are pre-writing techniques used to generate and organize ideas.",
-                                    explanation_ar: "هذه تقنيات ما قبل الكتابة تستخدم لتوليد وتنظيم الأفكار."
-                                },
-                                {
-                                    id: "comm-l12-14",
-                                    text: "Why should you proof-read your writing 'Aloud'?",
-                                    text_ar: "لماذا يجب عليك مراجعة كتابتك بـ 'صوت عالٍ'؟",
-                                    options: ["To practice your speaking skills.", "Your ear will catch mistakes your eye misses.", "To make others hear you."],
-                                    options_ar: ["لممارسة مهارات التحدث.", "ستلتقط أذنك الأخطاء التي تفوتها عينك.", "ليسمعك الآخرون."],
-                                    correct: 1,
-                                    explanation: "Reading aloud engages another sense, making it easier to spot awkward phrasing or errors.",
-                                    explanation_ar: "القراءة بصوت عالٍ تشرك حاسة أخرى، مما يسهل اكتشاف الصياغة الركيكة أو الأخطاء."
-                                },
-                                {
-                                    id: "comm-l12-15",
-                                    text: "A golden rule in writing is: 'Always put yourself in the ______.'",
-                                    text_ar: "قاعدة ذهبية في الكتابة هي: 'ضع نفسك دائماً في ______.'",
-                                    options: ["Writer's office.", "Other person’s shoes.", "Library."],
-                                    options_ar: ["مكتب الكاتب.", "مكان الشخص الآخر (shoes).", "المكتبة."],
-                                    correct: 1,
-                                    explanation: "Empathizing with the reader ensures your message is clear and appropriate for them.",
-                                    explanation_ar: "التعاطف مع القارئ يضمن أن رسالتك واضحة ومناسبة له."
-                                },
-                                {
-                                    id: "comm-l12-16",
-                                    text: "When writing, grammar, punctuation, and spelling should be:",
-                                    text_ar: "عند الكتابة، يجب أن تكون القواعد وعلامات الترقيم والإملاء:",
-                                    options: ["Average.", "Ignored.", "Perfect."],
-                                    options_ar: ["متوسطة.", "متجاهلة.", "مثالية (Perfect)."],
-                                    correct: 2,
-                                    explanation: "Professional writing requires high accuracy in grammar and mechanics.",
-                                    explanation_ar: "تتطلب الكتابة المهنية دقة عالية في القواعد والميكانيكا."
-                                },
-                                {
-                                    id: "comm-l12-17",
-                                    text: "Which strategy involves looking for specific information in a text?",
-                                    text_ar: "أي استراتيجية تتضمن البحث عن معلومات محددة في النص؟",
-                                    options: ["Skimming.", "Scanning.", "Brainstorming."],
-                                    options_ar: ["القراءة السريعة (Skimming).", "المسح (Scanning).", "العصف الذهني."],
-                                    correct: 1,
-                                    explanation: "Scanning is used to find a particular name, date, or fact without reading everything.",
-                                    explanation_ar: "يُستخدم المسح (Scanning) للعثور على اسم أو تاريخ أو حقيقة معينة دون قراءة كل شيء."
-                                },
-                                {
-                                    id: "comm-l12-18",
-                                    text: "Communication to 'cause change of action' is one of our communication:",
-                                    text_ar: "التواصل لـ 'إحداث تغيير في الفعل' هو أحد _______ التواصل لدينا:",
-                                    options: ["Needs.", "Obstacles.", "Percentages."],
-                                    options_ar: ["احتياجاتنا (Needs).", "عقباتنا.", "نسبنا المئوية."],
-                                    correct: 0,
-                                    explanation: "One of the fundamental needs to communicate is to influence others' actions.",
-                                    explanation_ar: "أحد الاحتياجات الأساسية للتواصل هو التأثير على أفعال الآخرين."
-                                },
-                                {
-                                    id: "comm-l12-19",
-                                    text: "Reading a text quickly to get the 'general idea' is called:",
-                                    text_ar: "قراءة النص بسرعة للحصول على 'الفكرة العامة' تسمى:",
-                                    options: ["Skimming.", "Scanning.", "Proof-reading."],
-                                    options_ar: ["القراءة السريعة (Skimming).", "المسح (Scanning).", "المراجعة."],
-                                    correct: 0,
-                                    explanation: "Skimming is a technique to grasp the 'gist' or overview of a text quickly.",
-                                    explanation_ar: "القراءة السريعة (Skimming) هي تقنية لفهم 'الجوهر' أو النظرة العامة للنص بسرعة."
-                                },
-                                {
-                                    id: "comm-l12-20",
-                                    text: "According to the rules of listening, you should be _______ to the other person.",
-                                    text_ar: "وفقاً لقواعد الاستماع، يجب أن تكون _______ تجاه الشخص الآخر.",
-                                    options: ["Aggressive.", "Receptive.", "Silent forever."],
-                                    options_ar: ["عدوانياً.", "متقبلاً (Receptive).", "صامتاً للأبد."],
-                                    correct: 1,
-                                    explanation: "Being receptive means listening openly without immediate judgment.",
-                                    explanation_ar: "أن تكون متقبلاً يعني الاستماع بانفتاح دون إصدار أحكام فورية."
-                                },
+        title_ar: "التواصل الفعال (المحاضرة الثانية عشرة)",
+        description: "Listening, Reading, Writing strategies and Memory percentages.",
+        description_ar: "استراتيجيات الاستماع، القراءة، الكتابة ونسب التذكر.",
+        icon: "📚",
+        questions: [
+            // MCQs
+            {
+                id: "comm-l12-1",
+                text: "According to the slides, people generally remember 10% of what they:",
+                text_ar: "وفقاً للشرائح، يتذكر الناس عموماً 10٪ مما يقومون بـ:",
+                options: ["Hear", "Read", "See"],
+                options_ar: ["سماعه", "قراءته", "رؤيته"],
+                correct: 1,
+                explanation: "Research shows that reading alone has the lowest retention rate at 10%.",
+                explanation_ar: "تظهر الأبحاث أن القراءة وحدها لديها أقل معدل استبقاء بنسبة 10٪."
+            },
+            {
+                id: "comm-l12-2",
+                text: "We tend to remember 20% of what we:",
+                text_ar: "نميل إلى تذكر 20٪ مما نقوم بـ:",
+                options: ["Hear", "See", "Say and write"],
+                options_ar: ["سماعه", "رؤيته", "قوله وكتابته"],
+                correct: 0,
+                explanation: "Retention increases to 20% when information is heard.",
+                explanation_ar: "تزداد نسبة التذكر إلى 20٪ عند سماع المعلومات."
+            },
+            {
+                id: "comm-l12-3",
+                text: "The percentage of information remembered from what we 'See' is:",
+                text_ar: "نسبة المعلومات التي يتم تذكرها مما نقوم بـ 'رؤيته' هي:",
+                options: ["10%", "20%", "30%"],
+                options_ar: ["10%", "20%", "30%"],
+                correct: 2,
+                explanation: "Visual information (seeing) is remembered better than hearing or reading alone, at 30%.",
+                explanation_ar: "المعلومات المرئية (الرؤية) يتم تذكرها بشكل أفضل من السمع أو القراءة وحدها، بنسبة 30٪."
+            },
+            {
+                id: "comm-l12-4",
+                text: "People remember 50% of what they:",
+                text_ar: "يتذكر الناس 50٪ مما يقومون بـ:",
+                options: ["Say as they do something.", "Hear and see.", "Read."],
+                options_ar: ["قوله أثناء فعل شيء ما.", "سماعه ورؤيته.", "قراءته."],
+                correct: 1,
+                explanation: "Combining hearing and seeing (audiovisual) results in 50% memory retention.",
+                explanation_ar: "الجمع بين السمع والرؤية (الوسائل السمعية والبصرية) يؤدي إلى تذكر بنسبة 50٪."
+            },
+            {
+                id: "comm-l12-5",
+                text: "We remember 70% of what we:",
+                text_ar: "نتذكر 70٪ مما نقوم بـ:",
+                options: ["Hear and see.", "Say and write.", "See."],
+                options_ar: ["سماعه ورؤيته.", "قوله وكتابته.", "رؤيته."],
+                correct: 1,
+                explanation: "Active involvement like saying and writing increases retention to 70%.",
+                explanation_ar: "المشاركة النشطة مثل القول والكتابة تزيد من نسبة التذكر إلى 70٪."
+            },
+            {
+                id: "comm-l12-6",
+                text: "The highest percentage of remembering (90%) occurs when people:",
+                text_ar: "تحدث أعلى نسبة تذكر (90٪) عندما يقوم الناس بـ:",
+                options: ["Read a book.", "Hear a lecture.", "Say as they do something."],
+                options_ar: ["قراءة كتاب.", "سماع محاضرة.", "قوله أثناء فعل شيء ما."],
+                correct: 2,
+                explanation: "The most effective learning (90% retention) happens when you say something while performing the action.",
+                explanation_ar: "التعلم الأكثر فعالية (استبقاء 90٪) يحدث عندما تقول شيئاً أثناء أداء الفعل."
+            },
+            {
+                id: "comm-l12-7",
+                text: "Which of the following is NOT a reason to communicate mentioned in the slides?",
+                text_ar: "أي مما يلي ليس سبباً للتواصل ذُكر في الشرائح؟",
+                options: ["To feel respected.", "To reduce boredom.", "To hide information from others."],
+                options_ar: ["للشعور بالاحترام.", "لتقليل الملل.", "لإخفاء المعلومات عن الآخرين."],
+                correct: 2,
+                explanation: "Communication is meant to share information, not hide it.",
+                explanation_ar: "التواصل يهدف إلى مشاركة المعلومات، وليس إخفاءها."
+            },
+            {
+                id: "comm-l12-8",
+                text: "Communication can be used to avoid something unpleasant, such as:",
+                text_ar: "يمكن استخدام التواصل لتجنب شيء غير سار، مثل:",
+                options: ["Excitement.", "Silence or confrontation.", "Respect."],
+                options_ar: ["الإثارة.", "الصمت أو المواجهة.", "الاحترام."],
+                correct: 1,
+                explanation: "Communication helps manage social situations to avoid awkward silences or conflicts.",
+                explanation_ar: "يساعد التواصل في إدارة المواقف الاجتماعية لتجنب الصمت المحرج أو الصراعات."
+            },
+            {
+                id: "comm-l12-9",
+                text: "The first rule of listening mentioned in the slides is:",
+                text_ar: "قاعدة الاستماع الأولى المذكورة في الشرائح هي:",
+                options: ["Stop talking.", "Start writing.", "Read the table of contents."],
+                options_ar: ["توقف عن الكلام.", "ابدأ الكتابة.", "اقرأ جدول المحتويات."],
+                correct: 0,
+                explanation: "The golden rule of listening is to stop talking so you can actually hear others.",
+                explanation_ar: "القاعدة الذهبية للاستماع هي التوقف عن الكلام حتى تتمكن من سماع الآخرين بالفعل."
+            },
+            {
+                id: "comm-l12-10",
+                text: "To be a good listener, you should delay _______ of what you have heard until you understand it.",
+                text_ar: "لتكون مستمعاً جيداً، يجب عليك تأجيل _______ لما سمعته حتى تفهمه.",
+                options: ["Listening.", "Evaluation.", "Recording."],
+                options_ar: ["الاستماع.", "التقييم (Evaluation).", "التسجيل."],
+                correct: 1,
+                explanation: "Delaying evaluation allows you to fully process the message without bias.",
+                explanation_ar: "يسمح تأجيل التقييم بمعالجة الرسالة بالكامل دون تحيز."
+            },
+            {
+                id: "comm-l12-11",
+                text: "'Knowing how deeply to read a document' includes:",
+                text_ar: "'معرفة مدى عمق قراءة المستند' تشمل:",
+                options: ["Only reading the title.", "Skimming, scanning, or studying.", "Memorizing every word."],
+                options_ar: ["قراءة العنوان فقط.", "القراءة السريعة (Skimming)، المسح (Scanning)، أو الدراسة.", "حفظ كل كلمة."],
+                correct: 1,
+                explanation: "Different documents require different reading depths: skimming for general, scanning for specific, or studying for detail.",
+                explanation_ar: "تتطلب المستندات المختلفة أعماقاً مختلفة للقراءة: المسح السريع للفكرة العامة، أو البحث عن تفاصيل محددة، أو الدراسة للتفاصيل."
+            },
+            {
+                id: "comm-l12-12",
+                text: "What should you use for reading magazines, books, and newspapers efficiently?",
+                text_ar: "ماذا يجب أن تستخدم لقراءة المجلات والكتب والصحف بكفاءة؟",
+                options: ["A dictionary.", "The table of contents.", "The back cover only."],
+                options_ar: ["قاموس.", "جدول المحتويات.", "الغلاف الخلفي فقط."],
+                correct: 1,
+                explanation: "Using the table of contents helps you locate relevant information quickly.",
+                explanation_ar: "يساعد استخدام جدول المحتويات في تحديد المعلومات ذات الصلة بسرعة."
+            },
+            {
+                id: "comm-l12-13",
+                text: "In writing, brainstorming, free writing, and clustering are known as:",
+                text_ar: "في الكتابة، تُعرف العصف الذهني، الكتابة الحرة، والتجميع (Clustering) بـ:",
+                options: ["Rules of listening.", "Techniques of writing.", "Reading strategies."],
+                options_ar: ["قواعد الاستماع.", "تقنيات الكتابة (Techniques of writing).", "استراتيجيات القراءة."],
+                correct: 1,
+                explanation: "These are pre-writing techniques used to generate and organize ideas.",
+                explanation_ar: "هذه تقنيات ما قبل الكتابة تستخدم لتوليد وتنظيم الأفكار."
+            },
+            {
+                id: "comm-l12-14",
+                text: "Why should you proof-read your writing 'Aloud'?",
+                text_ar: "لماذا يجب عليك مراجعة كتابتك بـ 'صوت عالٍ'؟",
+                options: ["To practice your speaking skills.", "Your ear will catch mistakes your eye misses.", "To make others hear you."],
+                options_ar: ["لممارسة مهارات التحدث.", "ستلتقط أذنك الأخطاء التي تفوتها عينك.", "ليسمعك الآخرون."],
+                correct: 1,
+                explanation: "Reading aloud engages another sense, making it easier to spot awkward phrasing or errors.",
+                explanation_ar: "القراءة بصوت عالٍ تشرك حاسة أخرى، مما يسهل اكتشاف الصياغة الركيكة أو الأخطاء."
+            },
+            {
+                id: "comm-l12-15",
+                text: "A golden rule in writing is: 'Always put yourself in the ______.'",
+                text_ar: "قاعدة ذهبية في الكتابة هي: 'ضع نفسك دائماً في ______.'",
+                options: ["Writer's office.", "Other person’s shoes.", "Library."],
+                options_ar: ["مكتب الكاتب.", "مكان الشخص الآخر (shoes).", "المكتبة."],
+                correct: 1,
+                explanation: "Empathizing with the reader ensures your message is clear and appropriate for them.",
+                explanation_ar: "التعاطف مع القارئ يضمن أن رسالتك واضحة ومناسبة له."
+            },
+            {
+                id: "comm-l12-16",
+                text: "When writing, grammar, punctuation, and spelling should be:",
+                text_ar: "عند الكتابة، يجب أن تكون القواعد وعلامات الترقيم والإملاء:",
+                options: ["Average.", "Ignored.", "Perfect."],
+                options_ar: ["متوسطة.", "متجاهلة.", "مثالية (Perfect)."],
+                correct: 2,
+                explanation: "Professional writing requires high accuracy in grammar and mechanics.",
+                explanation_ar: "تتطلب الكتابة المهنية دقة عالية في القواعد والميكانيكا."
+            },
+            {
+                id: "comm-l12-17",
+                text: "Which strategy involves looking for specific information in a text?",
+                text_ar: "أي استراتيجية تتضمن البحث عن معلومات محددة في النص؟",
+                options: ["Skimming.", "Scanning.", "Brainstorming."],
+                options_ar: ["القراءة السريعة (Skimming).", "المسح (Scanning).", "العصف الذهني."],
+                correct: 1,
+                explanation: "Scanning is used to find a particular name, date, or fact without reading everything.",
+                explanation_ar: "يُستخدم المسح (Scanning) للعثور على اسم أو تاريخ أو حقيقة معينة دون قراءة كل شيء."
+            },
+            {
+                id: "comm-l12-18",
+                text: "Communication to 'cause change of action' is one of our communication:",
+                text_ar: "التواصل لـ 'إحداث تغيير في الفعل' هو أحد _______ التواصل لدينا:",
+                options: ["Needs.", "Obstacles.", "Percentages."],
+                options_ar: ["احتياجاتنا (Needs).", "عقباتنا.", "نسبنا المئوية."],
+                correct: 0,
+                explanation: "One of the fundamental needs to communicate is to influence others' actions.",
+                explanation_ar: "أحد الاحتياجات الأساسية للتواصل هو التأثير على أفعال الآخرين."
+            },
+            {
+                id: "comm-l12-19",
+                text: "Reading a text quickly to get the 'general idea' is called:",
+                text_ar: "قراءة النص بسرعة للحصول على 'الفكرة العامة' تسمى:",
+                options: ["Skimming.", "Scanning.", "Proof-reading."],
+                options_ar: ["القراءة السريعة (Skimming).", "المسح (Scanning).", "المراجعة."],
+                correct: 0,
+                explanation: "Skimming is a technique to grasp the 'gist' or overview of a text quickly.",
+                explanation_ar: "القراءة السريعة (Skimming) هي تقنية لفهم 'الجوهر' أو النظرة العامة للنص بسرعة."
+            },
+            {
+                id: "comm-l12-20",
+                text: "According to the rules of listening, you should be _______ to the other person.",
+                text_ar: "وفقاً لقواعد الاستماع، يجب أن تكون _______ تجاه الشخص الآخر.",
+                options: ["Aggressive.", "Receptive.", "Silent forever."],
+                options_ar: ["عدوانياً.", "متقبلاً (Receptive).", "صامتاً للأبد."],
+                correct: 1,
+                explanation: "Being receptive means listening openly without immediate judgment.",
+                explanation_ar: "أن تكون متقبلاً يعني الاستماع بانفتاح دون إصدار أحكام فورية."
+            },
 
-                                // True or False
-                                {
-                                    id: "comm-l12-21",
-                                    text: "[True or False] People remember 30% of what they read.",
-                                    text_ar: "[صح أم خطأ] يتذكر الناس 30٪ مما يقرؤونه.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "They remember 10% of what they read.",
-                                    explanation_ar: "هم يتذكرون 10٪ مما يقرؤونه."
-                                },
-                                {
-                                    id: "comm-l12-22",
-                                    text: "[True or False] We remember 50% of what we hear and see together.",
-                                    text_ar: "[صح أم خطأ] نتذكر 50٪ مما نسمعه ونراه معاً.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Combining audio and visual results in 50% retention.",
-                                    explanation_ar: "الجمع بين المسموع والمرئي يؤدي إلى تذكر بنسبة 50٪."
-                                },
-                                {
-                                    id: "comm-l12-23",
-                                    text: "[True or False] Saying and writing something helps us remember 70% of it.",
-                                    text_ar: "[صح أم خطأ] قول وكتابة شيء ما يساعدنا على تذكر 70٪ منه.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Active output (saying/writing) boosts memory to 70%.",
-                                    explanation_ar: "المخرجات النشطة (القول/الكتابة) تعزز الذاكرة إلى 70٪."
-                                },
-                                {
-                                    id: "comm-l12-24",
-                                    text: "[True or False] One reason we communicate is to create excitement and reduce boredom.",
-                                    text_ar: "[صح أم خطأ] أحد أسباب تواصلنا هو خلق الإثارة وتقليل الملل.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Communication serves psychological needs like reducing boredom.",
-                                    explanation_ar: "يخدم التواصل الاحتياجات النفسية مثل تقليل الملل."
-                                },
-                                {
-                                    id: "comm-l12-25",
-                                    text: "[True or False] Hearing and seeing is more effective for memory than saying and writing.",
-                                    text_ar: "[صح أم خطأ] السمع والرؤية أكثر فعالية للذاكرة من القول والكتابة.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "Saying and writing (70%) is more effective than hearing and seeing (50%).",
-                                    explanation_ar: "القول والكتابة (70٪) أكثر فعالية من السمع والرؤية (50٪)."
-                                },
-                                {
-                                    id: "comm-l12-26",
-                                    text: "[True or False] To listen effectively, you must listen openly to the other person.",
-                                    text_ar: "[صح أم خطأ] للاستماع بفعالية، يجب أن تستمع بانفتاح للشخص الآخر.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Listening openly is a core rule for understanding.",
-                                    explanation_ar: "الاستماع بانفتاح هو قاعدة أساسية للفهم."
-                                },
-                                {
-                                    id: "comm-l12-27",
-                                    text: "[True or False] You should evaluate what you hear immediately before the person finishes speaking.",
-                                    text_ar: "[صح أم خطأ] يجب عليك تقييم ما تسمعه فوراً قبل أن ينهي الشخص كلامه.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "Delay evaluation until the message is fully understood.",
-                                    explanation_ar: "أجل التقييم حتى يتم فهم الرسالة بالكامل."
-                                },
-                                {
-                                    id: "comm-l12-28",
-                                    text: "[True or False] 'Scanning' means reading every single word in detail.",
-                                    text_ar: "[صح أم خطأ] 'المسح' (Scanning) يعني قراءة كل كلمة بالتفصيل.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "Scanning means searching for specific info, not detailed reading.",
-                                    explanation_ar: "المسح يعني البحث عن معلومات محددة، وليس القراءة التفصيلية."
-                                },
-                                {
-                                    id: "comm-l12-29",
-                                    text: "[True or False] Using the table of contents is a rule for better reading.",
-                                    text_ar: "[صح أم خطأ] استخدام جدول المحتويات قاعدة للقراءة الأفضل.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "The table of contents provides structure and location of topics.",
-                                    explanation_ar: "يوفر جدول المحتويات هيكلية ومواقع المواضيع."
-                                },
-                                {
-                                    id: "comm-l12-30",
-                                    text: "[True or False] Brainstorming is the first technique mentioned for writing.",
-                                    text_ar: "[صح أم خطأ] العصف الذهني هو أول تقنية مذكورة للكتابة.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Brainstorming is a standard initial step in the writing process.",
-                                    explanation_ar: "العصف الذهني هو خطوة أولية قياسية في عملية الكتابة."
-                                },
-                                {
-                                    id: "comm-l12-31",
-                                    text: "[True or False] Proof-reading aloud helps in catching mistakes.",
-                                    text_ar: "[صح أم خطأ] المراجعة بصوت عالٍ تساعد في التقاط الأخطاء.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Auditory feedback helps identify errors that eyes might skip.",
-                                    explanation_ar: "تساعد التغذية الراجعة السمعية في تحديد الأخطاء التي قد تتجاوزها العين."
-                                },
-                                {
-                                    id: "comm-l12-32",
-                                    text: "[True or False] You should write everything you know, even if it is not necessary to be understood.",
-                                    text_ar: "[صح أم خطأ] يجب أن تكتب كل ما تعرفه، حتى لو لم يكن ضرورياً للفهم.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "Only include necessary information to keep the writing concise and clear.",
-                                    explanation_ar: "قم فقط بتضمين المعلومات الضرورية للحفاظ على الكتابة موجزة وواضحة."
-                                },
-                                {
-                                    id: "comm-l12-33",
-                                    text: "[True or False] Perfection in grammar and spelling is not important in professional writing.",
-                                    text_ar: "[صح أم خطأ] الكمال في القواعد والإملاء ليس مهماً في الكتابة المهنية.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "Accuracy is vital for maintaining professional credibility.",
-                                    explanation_ar: "الدقة حيوية للحفاظ على المصداقية المهنية."
-                                },
-                                {
-                                    id: "comm-l12-34",
-                                    text: "[True or False] 'Free writing' is a writing technique.",
-                                    text_ar: "[صح أم خطأ] 'الكتابة الحرة' هي تقنية كتابة.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Free writing helps generate ideas without self-censorship.",
-                                    explanation_ar: "تساعد الكتابة الحرة في توليد الأفكار دون رقابة ذاتية."
-                                },
-                                {
-                                    id: "comm-l12-35",
-                                    text: "[True or False] You should plan your time to allow for proofreading and correcting.",
-                                    text_ar: "[صح أم خطأ] يجب عليك تخطيط وقتك للسماح بالمراجعة والتصحيح.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Revision is an essential phase of any good writing project.",
-                                    explanation_ar: "المراجعة هي مرحلة أساسية في أي مشروع كتابي جيد."
-                                },
-                                {
-                                    id: "comm-l12-36",
-                                    text: "[True or False] People remember 90% of what they hear.",
-                                    text_ar: "[صح أم خطأ] يتذكر الناس 90٪ مما يسمعونه.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "People remember 20% of what they hear; 90% is for say/do.",
-                                    explanation_ar: "يتذكر الناس 20٪ مما يسمعونه؛ بينما 90٪ هي للقول مع الفعل."
-                                },
-                                {
-                                    id: "comm-l12-37",
-                                    text: "[True or False] Communication can be used to give or get information.",
-                                    text_ar: "[صح أم خطأ] يمكن استخدام التواصل لإعطاء أو الحصول على المعلومات.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Information exchange is a primary function of communication.",
-                                    explanation_ar: "تبادل المعلومات هو وظيفة أساسية للتواصل."
-                                },
-                                {
-                                    id: "comm-l12-38",
-                                    text: "[True or False] Listening 'openly' is a key strategy for effective communication.",
-                                    text_ar: "[صح أم خطأ] الاستماع 'بانفتاح' هو استراتيجية رئيسية للتواصل الفعال.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Openness fosters better understanding and trust.",
-                                    explanation_ar: "الانفتاح يعزز الفهم الأفضل والثقة."
-                                },
-                                {
-                                    id: "comm-l12-39",
-                                    text: "[True or False] Skimming is used when you need to study a document deeply.",
-                                    text_ar: "[صح أم خطأ] يتم استخدام القراءة السريعة (Skimming) عندما تحتاج لدراسة مستند بعمق.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "Skimming is for a general overview; 'studying' is for depth.",
-                                    explanation_ar: "القراءة السريعة هي لنظرة عامة؛ أما 'الدراسة' فهي للعمق."
-                                },
-                                {
-                                    id: "comm-l12-40",
-                                    text: "[True or False] Clustering is a technique used in the writing process.",
-                                    text_ar: "[صح أم خطأ] التجميع (Clustering) هو تقنية مستخدمة في عملية الكتابة.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Clustering is a visual way to organize ideas before writing.",
-                                    explanation_ar: "التجميع هو وسيلة مرئية لتنظيم الأفكار قبل الكتابة."
-                                },
-                                {
-                                    id: "comm-l12-41",
-                                    text: "[True or False] The 'eye' catches more mistakes than the 'ear' when proofreading aloud.",
-                                    text_ar: "[صح أم خطأ] تلتقط 'العين' أخطاء أكثر من 'الأذن' عند المراجعة بصوت عالٍ.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 1,
-                                    explanation: "The ear catches mistakes the eye misses when reading aloud.",
-                                    explanation_ar: "الأذن تلتقط الأخطاء التي تفوتها العين عند القراءة بصوت عالٍ."
-                                },
-                                {
-                                    id: "comm-l12-42",
-                                    text: "[True or False] Understanding 'needs' is the first part of why we communicate.",
-                                    text_ar: "[صح أم خطأ] فهم 'الاحتياجات' هو الجزء الأول من سبب تواصلنا.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Communication starts with fulfilling basic social and emotional needs.",
-                                    explanation_ar: "يبدأ التواصل بتلبية الاحتياجات الاجتماعية والعاطفية الأساسية."
-                                },
-                                {
-                                    id: "comm-l12-43",
-                                    text: "[True or False] Reading aloud while proofreading helps you find mistakes your eyes missed.",
-                                    text_ar: "[صح أم خطأ] القراءة بصوت عالٍ أثناء المراجعة تساعدك في العثور على الأخطاء التي فاتتك عيناك.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Dual-sensory feedback (visual + auditory) is superior for spotting errors.",
-                                    explanation_ar: "التغذية الراجعة ثنائية الحواس (بصرية + سمعية) متفوقة في اكتشاف الأخطاء."
-                                },
-                                {
-                                    id: "comm-l12-44",
-                                    text: "[True or False] 20% of memory comes from what we hear.",
-                                    text_ar: "[صح أم خطأ] 20٪ من الذاكرة تأتي مما نسمعه.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "This matches the auditory retention statistics from the slide.",
-                                    explanation_ar: "هذا يطابق إحصائيات الاستبقاء السمعي من الشريحة."
-                                },
-                                {
-                                    id: "comm-l12-45",
-                                    text: "[True or False] You should ask yourself 'Would I want to read this?' when writing a report.",
-                                    text_ar: "[صح أم خطأ] يجب أن تسأل نفسك 'هل أرغب في قراءة هذا؟' عند كتابة تقرير.",
-                                    options: ["True", "False"],
-                                    options_ar: ["صحيح", "خاطئ"],
-                                    correct: 0,
-                                    explanation: "Looking from the reader's perspective ensures quality and engagement.",
-                                    explanation_ar: "النظر من منظور القارئ يضمن الجودة والتفاعل."
-                                }
-                            ]
-}
+            // True or False
+            {
+                id: "comm-l12-21",
+                text: "[True or False] People remember 30% of what they read.",
+                text_ar: "[صح أم خطأ] يتذكر الناس 30٪ مما يقرؤونه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "They remember 10% of what they read.",
+                explanation_ar: "هم يتذكرون 10٪ مما يقرؤونه."
+            },
+            {
+                id: "comm-l12-22",
+                text: "[True or False] We remember 50% of what we hear and see together.",
+                text_ar: "[صح أم خطأ] نتذكر 50٪ مما نسمعه ونراه معاً.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Combining audio and visual results in 50% retention.",
+                explanation_ar: "الجمع بين المسموع والمرئي يؤدي إلى تذكر بنسبة 50٪."
+            },
+            {
+                id: "comm-l12-23",
+                text: "[True or False] Saying and writing something helps us remember 70% of it.",
+                text_ar: "[صح أم خطأ] قول وكتابة شيء ما يساعدنا على تذكر 70٪ منه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Active output (saying/writing) boosts memory to 70%.",
+                explanation_ar: "المخرجات النشطة (القول/الكتابة) تعزز الذاكرة إلى 70٪."
+            },
+            {
+                id: "comm-l12-24",
+                text: "[True or False] One reason we communicate is to create excitement and reduce boredom.",
+                text_ar: "[صح أم خطأ] أحد أسباب تواصلنا هو خلق الإثارة وتقليل الملل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Communication serves psychological needs like reducing boredom.",
+                explanation_ar: "يخدم التواصل الاحتياجات النفسية مثل تقليل الملل."
+            },
+            {
+                id: "comm-l12-25",
+                text: "[True or False] Hearing and seeing is more effective for memory than saying and writing.",
+                text_ar: "[صح أم خطأ] السمع والرؤية أكثر فعالية للذاكرة من القول والكتابة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Saying and writing (70%) is more effective than hearing and seeing (50%).",
+                explanation_ar: "القول والكتابة (70٪) أكثر فعالية من السمع والرؤية (50٪)."
+            },
+            {
+                id: "comm-l12-26",
+                text: "[True or False] To listen effectively, you must listen openly to the other person.",
+                text_ar: "[صح أم خطأ] للاستماع بفعالية، يجب أن تستمع بانفتاح للشخص الآخر.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Listening openly is a core rule for understanding.",
+                explanation_ar: "الاستماع بانفتاح هو قاعدة أساسية للفهم."
+            },
+            {
+                id: "comm-l12-27",
+                text: "[True or False] You should evaluate what you hear immediately before the person finishes speaking.",
+                text_ar: "[صح أم خطأ] يجب عليك تقييم ما تسمعه فوراً قبل أن ينهي الشخص كلامه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Delay evaluation until the message is fully understood.",
+                explanation_ar: "أجل التقييم حتى يتم فهم الرسالة بالكامل."
+            },
+            {
+                id: "comm-l12-28",
+                text: "[True or False] 'Scanning' means reading every single word in detail.",
+                text_ar: "[صح أم خطأ] 'المسح' (Scanning) يعني قراءة كل كلمة بالتفصيل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Scanning means searching for specific info, not detailed reading.",
+                explanation_ar: "المسح يعني البحث عن معلومات محددة، وليس القراءة التفصيلية."
+            },
+            {
+                id: "comm-l12-29",
+                text: "[True or False] Using the table of contents is a rule for better reading.",
+                text_ar: "[صح أم خطأ] استخدام جدول المحتويات قاعدة للقراءة الأفضل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "The table of contents provides structure and location of topics.",
+                explanation_ar: "يوفر جدول المحتويات هيكلية ومواقع المواضيع."
+            },
+            {
+                id: "comm-l12-30",
+                text: "[True or False] Brainstorming is the first technique mentioned for writing.",
+                text_ar: "[صح أم خطأ] العصف الذهني هو أول تقنية مذكورة للكتابة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Brainstorming is a standard initial step in the writing process.",
+                explanation_ar: "العصف الذهني هو خطوة أولية قياسية في عملية الكتابة."
+            },
+            {
+                id: "comm-l12-31",
+                text: "[True or False] Proof-reading aloud helps in catching mistakes.",
+                text_ar: "[صح أم خطأ] المراجعة بصوت عالٍ تساعد في التقاط الأخطاء.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Auditory feedback helps identify errors that eyes might skip.",
+                explanation_ar: "تساعد التغذية الراجعة السمعية في تحديد الأخطاء التي قد تتجاوزها العين."
+            },
+            {
+                id: "comm-l12-32",
+                text: "[True or False] You should write everything you know, even if it is not necessary to be understood.",
+                text_ar: "[صح أم خطأ] يجب أن تكتب كل ما تعرفه، حتى لو لم يكن ضرورياً للفهم.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Only include necessary information to keep the writing concise and clear.",
+                explanation_ar: "قم فقط بتضمين المعلومات الضرورية للحفاظ على الكتابة موجزة وواضحة."
+            },
+            {
+                id: "comm-l12-33",
+                text: "[True or False] Perfection in grammar and spelling is not important in professional writing.",
+                text_ar: "[صح أم خطأ] الكمال في القواعد والإملاء ليس مهماً في الكتابة المهنية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Accuracy is vital for maintaining professional credibility.",
+                explanation_ar: "الدقة حيوية للحفاظ على المصداقية المهنية."
+            },
+            {
+                id: "comm-l12-34",
+                text: "[True or False] 'Free writing' is a writing technique.",
+                text_ar: "[صح أم خطأ] 'الكتابة الحرة' هي تقنية كتابة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Free writing helps generate ideas without self-censorship.",
+                explanation_ar: "تساعد الكتابة الحرة في توليد الأفكار دون رقابة ذاتية."
+            },
+            {
+                id: "comm-l12-35",
+                text: "[True or False] You should plan your time to allow for proofreading and correcting.",
+                text_ar: "[صح أم خطأ] يجب عليك تخطيط وقتك للسماح بالمراجعة والتصحيح.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Revision is an essential phase of any good writing project.",
+                explanation_ar: "المراجعة هي مرحلة أساسية في أي مشروع كتابي جيد."
+            },
+            {
+                id: "comm-l12-36",
+                text: "[True or False] People remember 90% of what they hear.",
+                text_ar: "[صح أم خطأ] يتذكر الناس 90٪ مما يسمعونه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "People remember 20% of what they hear; 90% is for say/do.",
+                explanation_ar: "يتذكر الناس 20٪ مما يسمعونه؛ بينما 90٪ هي للقول مع الفعل."
+            },
+            {
+                id: "comm-l12-37",
+                text: "[True or False] Communication can be used to give or get information.",
+                text_ar: "[صح أم خطأ] يمكن استخدام التواصل لإعطاء أو الحصول على المعلومات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Information exchange is a primary function of communication.",
+                explanation_ar: "تبادل المعلومات هو وظيفة أساسية للتواصل."
+            },
+            {
+                id: "comm-l12-38",
+                text: "[True or False] Listening 'openly' is a key strategy for effective communication.",
+                text_ar: "[صح أم خطأ] الاستماع 'بانفتاح' هو استراتيجية رئيسية للتواصل الفعال.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Openness fosters better understanding and trust.",
+                explanation_ar: "الانفتاح يعزز الفهم الأفضل والثقة."
+            },
+            {
+                id: "comm-l12-39",
+                text: "[True or False] Skimming is used when you need to study a document deeply.",
+                text_ar: "[صح أم خطأ] يتم استخدام القراءة السريعة (Skimming) عندما تحتاج لدراسة مستند بعمق.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Skimming is for a general overview; 'studying' is for depth.",
+                explanation_ar: "القراءة السريعة هي لنظرة عامة؛ أما 'الدراسة' فهي للعمق."
+            },
+            {
+                id: "comm-l12-40",
+                text: "[True or False] Clustering is a technique used in the writing process.",
+                text_ar: "[صح أم خطأ] التجميع (Clustering) هو تقنية مستخدمة في عملية الكتابة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Clustering is a visual way to organize ideas before writing.",
+                explanation_ar: "التجميع هو وسيلة مرئية لتنظيم الأفكار قبل الكتابة."
+            },
+            {
+                id: "comm-l12-41",
+                text: "[True or False] The 'eye' catches more mistakes than the 'ear' when proofreading aloud.",
+                text_ar: "[صح أم خطأ] تلتقط 'العين' أخطاء أكثر من 'الأذن' عند المراجعة بصوت عالٍ.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "The ear catches mistakes the eye misses when reading aloud.",
+                explanation_ar: "الأذن تلتقط الأخطاء التي تفوتها العين عند القراءة بصوت عالٍ."
+            },
+            {
+                id: "comm-l12-42",
+                text: "[True or False] Understanding 'needs' is the first part of why we communicate.",
+                text_ar: "[صح أم خطأ] فهم 'الاحتياجات' هو الجزء الأول من سبب تواصلنا.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Communication starts with fulfilling basic social and emotional needs.",
+                explanation_ar: "يبدأ التواصل بتلبية الاحتياجات الاجتماعية والعاطفية الأساسية."
+            },
+            {
+                id: "comm-l12-43",
+                text: "[True or False] Reading aloud while proofreading helps you find mistakes your eyes missed.",
+                text_ar: "[صح أم خطأ] القراءة بصوت عالٍ أثناء المراجعة تساعدك في العثور على الأخطاء التي فاتتك عيناك.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Dual-sensory feedback (visual + auditory) is superior for spotting errors.",
+                explanation_ar: "التغذية الراجعة ثنائية الحواس (بصرية + سمعية) متفوقة في اكتشاف الأخطاء."
+            },
+            {
+                id: "comm-l12-44",
+                text: "[True or False] 20% of memory comes from what we hear.",
+                text_ar: "[صح أم خطأ] 20٪ من الذاكرة تأتي مما نسمعه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "This matches the auditory retention statistics from the slide.",
+                explanation_ar: "هذا يطابق إحصائيات الاستبقاء السمعي من الشريحة."
+            },
+            {
+                id: "comm-l12-45",
+                text: "[True or False] You should ask yourself 'Would I want to read this?' when writing a report.",
+                text_ar: "[صح أم خطأ] يجب أن تسأل نفسك 'هل أرغب في قراءة هذا؟' عند كتابة تقرير.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Looking from the reader's perspective ensures quality and engagement.",
+                explanation_ar: "النظر من منظور القارئ يضمن الجودة والتفاعل."
+            }
+        ]
+    }
 ];
