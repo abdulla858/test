@@ -1900,7 +1900,107 @@ const quizData = [
                 correct: 0,
                 explanation: "Public communication encompasses planned presentations to large or niche audiences.",
                 explanation_ar: "يشمل الاتصال العام العروض التقديمية المخطط لها للجماهير الكبيرة أو المحددة."
-            }
+            },
+            {
+                id: "comm-s3-19",
+                text: "Intrapersonal Communication is the way of communicating that we do with our ________.",
+                text_ar: "الاتصال الذاتي (Intrapersonal) هو طريقة التواصل التي نقوم بها مع ________.",
+                options: ["inner self", "close friends", "large audience", "colleagues"],
+                options_ar: ["ذاتنا الداخلية", "أصدقاء مقربين", "جمهور كبير", "زملاء"],
+                correct: 0,
+                explanation: "It takes place inside our heads, for instance solving any complex problem in your head.",
+                explanation_ar: "يحدث ذلك داخل رؤوسنا، على سبيل المثال حل أي مشكلة معقدة في عقلك."
+            },
+            {
+                id: "comm-s3-20",
+                text: "Which of the following is an example of Intrapersonal Communication?",
+                text_ar: "أي مما يلي يعد مثالاً على الاتصال الذاتي؟",
+                options: ["Analyzing your thought process", "Sending an email", "Talking to a neighbor", "Giving a presentation"],
+                options_ar: ["تحليل عملية تفكيرك", "إرسال بريد إلكتروني", "التحدث مع جار", "تقديم عرض تقديمي"],
+                correct: 0,
+                explanation: "Analyzing your thought process or belief happens inside your head.",
+                explanation_ar: "تحليل عملية تفكيرك أو معتقداتك يحدث داخل عقلك."
+            },
+            {
+                id: "comm-s3-21",
+                text: "Interpersonal Communication is the process of exchange of information between ________.",
+                text_ar: "الاتصال بين الأشخاص (Interpersonal) هو عملية تبادل المعلومات بين ________.",
+                options: ["two or more people", "one person and himself", "media and audience", "computers"],
+                options_ar: ["شخصين أو أكثر", "شخص واحد ونفسه", "الإعلام والجمهور", "أجهزة الكمبيوتر"],
+                correct: 0,
+                explanation: "It involves two or more people through verbal or non-verbal methods.",
+                explanation_ar: "يشمل شخصين أو أكثر من خلال طرق لفظية أو غير لفظية."
+            },
+            {
+                id: "comm-s3-22",
+                text: "Small group communication refers to interactions among ________ people who are connected through a common purpose.",
+                text_ar: "يشير الاتصال في المجموعات الصغيرة إلى التفاعلات بين ________ أشخاص مرتبطين بغرض مشترك.",
+                options: ["three or more", "exactly two", "less than two", "thousands of"],
+                options_ar: ["ثلاثة أو أكثر", "اثنين بالضبط", "أقل من اثنين", "الآلاف من"],
+                correct: 0,
+                explanation: "It refers to interactions among three or more people connected by a shared identity.",
+                explanation_ar: "يشير إلى التفاعلات بين ثلاثة أشخاص أو أكثر مرتبطين بهوية مشتركة."
+            },
+            {
+                id: "comm-s3-23",
+                text: "Which of the following is an example of a small group?",
+                text_ar: "أي مما يلي يعتبر مثالاً على مجموعة صغيرة؟",
+                options: ["Grievance committee", "A massive concert crowd", "A person thinking alone", "A television broadcast"],
+                options_ar: ["لجنة تظلمات", "حشد كبير في حفل موسيقي", "شخص يفكر بمفرده", "بث تلفزيوني"],
+                correct: 0,
+                explanation: "Groups involved in regular meetings such as a grievance committee are examples of small groups.",
+                explanation_ar: "المجموعات التي تشارك في اجتماعات منتظمة مثل لجنة التظلمات هي أمثلة على مجموعات صغيرة."
+            },
+            {
+                id: "comm-s3-24",
+                text: "Public Communication is also defined as ________.",
+                text_ar: "يعرف الاتصال العام أيضًا باسم ________.",
+                options: ["Public Speaking", "Private Chat", "Intrapersonal Dialogue", "Secret Whispering"],
+                options_ar: ["الخطابة العامة (Public Speaking)", "الدردشة الخاصة", "الحوار الذاتي", "الهمس السري"],
+                correct: 0,
+                explanation: "Public Communication can be defined as strategic communication to convey ideas to the masses.",
+                explanation_ar: "يمكن تعريف الاتصال العام بأنه اتصال استراتيجي لنقل الأفكار للجماهير."
+            },
+            {
+                id: "comm-s3-25",
+                text: "Mass communication is the process of creating and sending messages to ________ via verbal and written media.",
+                text_ar: "الاتصال الجماهيري هو عملية إنشاء وإرسال رسائل إلى ________ عبر الوسائط اللفظية والمكتوبة.",
+                options: ["large audiences", "a single person", "a small committee", "close family"],
+                options_ar: ["جماهير كبيرة", "شخص واحد", "لجنة صغيرة", "عائلة مقربة"],
+                correct: 0,
+                explanation: "It is an expansive field defined by reaching large audiences through media.",
+                explanation_ar: "هو مجال واسع يُعرف بالوصول إلى جماهير كبيرة من خلال وسائل الإعلام."
+            },
+            {
+                id: "comm-s3-26",
+                text: "Non-verbal communication refers to conveying information ________ the use of verbal language.",
+                text_ar: "يشير الاتصال غير اللفظي إلى نقل المعلومات ________ استخدام اللغة اللفظية.",
+                options: ["without", "with only", "exclusively through", "by maximizing"],
+                options_ar: ["بدون", "مع فقط", "حصرياً من خلال", "عن طريق تعظيم"],
+                correct: 0,
+                explanation: "It conveys needs, intentions, and attitudes without using verbal language.",
+                explanation_ar: "ينقل الاحتياجات والنوايا والمواقف دون استخدام اللغة اللفظية."
+            },
+            {
+                id: "comm-s3-27",
+                text: "Intrapersonal Communication takes place between two people.",
+                text_ar: "يحدث الاتصال الذاتي (Intrapersonal) بين شخصين.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 1,
+                explanation: "It takes place inside our heads (with our inner self).",
+                explanation_ar: "يحدث داخل رؤوسنا (مع ذاتنا الداخلية)."
+            },
+            {
+                id: "comm-s3-28",
+                text: "Mass communication considers not only the message but also the medium through which it is sent.",
+                text_ar: "الاتصال الجماهيري لا يأخذ في الاعتبار الرسالة فحسب، بل الوسيط الذي تُرسل من خلاله أيضًا.",
+                options: ["True", "False"],
+                options_ar: ["صح", "خطأ"],
+                correct: 0,
+                explanation: "It is an expansive field that considers how/why a message is created and the medium used.",
+                explanation_ar: "هو مجال واسع ينظر في كيفية/سبب إنشاء الرسالة والوسيط المستخدم."
+            },
         ]
     },
     {
@@ -2470,6 +2570,336 @@ const quizData = [
                 correct: 1,
                 explanation: "The first step is selecting a topic, not practicing delivery.",
                 explanation_ar: "الخطوة الأولى هي اختيار الموضوع، وليس التدرب على الإلقاء."
+            }
+        ]
+    },
+    {
+        id: "comm-lecture-9",
+        title: "Verbal & Non-Verbal (Lecture 9)",
+        title_ar: "الاتصال اللفظي وغير اللفظي (المحاضرة 9)",
+        description: "Focuses on Verbal vs. Non-verbal communication, body language, and dealing with challenging participants.",
+        description_ar: "يركز على الاتصال اللفظي وغير اللفظي، لغة الجسد، وكيفية التعامل مع المشاركين الصعبين.",
+        icon: "🗣️",
+        questions: [
+            {
+                id: "comm-l9-1",
+                text: "People are more likely to believe your _________ communication than your _________ communication.",
+                text_ar: "من المرجح أن يصدق الناس اتصالك _________ أكثر من اتصالك _________.",
+                options: ["Verbal / Non-verbal", "Written / Spoken", "Non-verbal / Verbal", "Intentional / Unintentional"],
+                options_ar: ["اللفظي / غير اللفظي", "المكتوب / المنطوق", "غير اللفظي / اللفظي", "المقصود / غير المقصود"],
+                correct: 2,
+                explanation: "People tend to trust non-verbal cues (body language) more than spoken words.",
+                explanation_ar: "يميل الناس للوثوق بالإشارات غير اللفظية (لغة الجسد) أكثر من الكلمات المنطوقة."
+            },
+            {
+                id: "comm-l9-2",
+                text: "Which of the following is an example of Body Language?",
+                text_ar: "أي مما يلي يعد مثالاً على لغة الجسد؟",
+                options: ["Facial expressions", "Gestures with arms or hands", "Eye contact", "All of the above"],
+                options_ar: ["تعبيرات الوجه", "إيماءات الذراعين أو اليدين", "التواصل البصري", "كل ما سبق"],
+                correct: 3,
+                explanation: "Body language includes facial expressions, gestures, eye contact, and even micro-movements.",
+                explanation_ar: "تشمل لغة الجسد تعبيرات الوجه، الإيماءات، التواصل البصري، وحتى الحركات الدقيقة."
+            },
+            {
+                id: "comm-l9-3",
+                text: "When you point in a direction while stating directions, you are using non-verbal communication to:",
+                text_ar: "عندما تشير إلى اتجاه أثناء ذكر الاتجاهات، فإنك تستخدم الاتصال غير اللفظي لـ:",
+                options: ["Repeat the verbal message", "Contradict the verbal message", "Substitute the verbal message", "Regulate the interaction"],
+                options_ar: ["تكرار الرسالة اللفظية (Repeating)", "تفنيد الرسالة اللفظية", "استبدال الرسالة اللفظية", "تنظيم التفاعل"],
+                correct: 0,
+                explanation: "Pointing repeats and reinforces the verbal directions provided.",
+                explanation_ar: "الإشارة تكرر وتعزز الاتجاهات اللفظية المقدمة."
+            },
+            {
+                id: "comm-l9-4",
+                text: "A nod that reinforces a positive message is an example of non-verbal communication _________ the verbal message.",
+                text_ar: "الإيماءة بالرأس التي تعزز رسالة إيجابية هي مثال على الاتصال غير اللفظي الـ _________ للرسالة اللفظية.",
+                options: ["Replacing", "Complementing", "Contradicting", "Ignoring"],
+                options_ar: ["المستبدل", "المكمل (Complementing)", "المناقض", "المتجاهل"],
+                correct: 1,
+                explanation: "Complementing adds reinforcement to the verbal content.",
+                explanation_ar: "التكملة تضيف تعزيزاً للمحتوى اللفظي."
+            },
+            {
+                id: "comm-l9-5",
+                text: "Non-verbal cues that convey when the other person should speak or not are used to:",
+                text_ar: "تُستخدم الإشارات غير اللفظية التي توضح متى يجب على الشخص الآخر التحدث أم لا لـ:",
+                options: ["Accent the message", "Repeat the message", "Regulate interactions", "Substitute the message"],
+                options_ar: ["التأكيد على الرسالة", "تكرار الرسالة", "تنظيم التفاعلات (Regulate)", "استبدال الرسالة"],
+                correct: 2,
+                explanation: "Regulation helps flow and timing in a conversation.",
+                explanation_ar: "التنظيم (Regulation) يساعد في تدفق وتوقيت المحادثة."
+            },
+            {
+                id: "comm-l9-6",
+                text: "Placing a finger to the lips to indicate the need for quiet is an example of:",
+                text_ar: "وضع الإصبع على الشفاه للإشارة إلى الحاجة إلى الهدوء هو مثال على:",
+                options: ["Accenting", "Substituting for the verbal message", "Complementing", "Verbal communication"],
+                options_ar: ["التأكيد", "استبدال الرسالة اللفظية (Substituting)", "التكملة", "الاتصال اللفظي"],
+                correct: 1,
+                explanation: "The gesture completely replaces the need to speak the word 'quiet'.",
+                explanation_ar: "الإيماءة تحل تماماً محل الحاجة لقول كلمة 'هدوء' لفظياً."
+            },
+            {
+                id: "comm-l9-7",
+                text: "Comparing the two, decoding _________ communication is more complicated.",
+                text_ar: "عند المقارنة بين الاثنين، فإن فك تشفير (Decoding) الاتصال _________ أكثر تعقيداً.",
+                options: ["Verbal", "Non-verbal", "Written", "Formal"],
+                options_ar: ["اللفظي", "غير اللفظي (Non-verbal)", "المكتوب", "الرسمي"],
+                correct: 1,
+                explanation: "Non-verbal communication is multi-faceted and subtle, making it harder to interpret.",
+                explanation_ar: "الاتصال غير اللفظي متعدد الأوجه ودقيق، مما يجعل تفسيره أصعب."
+            },
+            {
+                id: "comm-l9-8",
+                text: "Verbal communication requires _________ awareness because a person needs to think and analyze before speaking.",
+                text_ar: "يتطلب الاتصال اللفظي وعياً _________ لأن الشخص يحتاج للتفكير والتحليل قبل التحدث.",
+                options: ["Less", "More", "No", "Instant"],
+                options_ar: ["أقل", "أكثر (More)", "لا", "فورياً"],
+                correct: 1,
+                explanation: "Verbal communication is usually a conscious effort involving structured thought.",
+                explanation_ar: "الاتصال اللفظي عادة ما يكون جهداً واعياً يتضمن تفكيراً منظماً."
+            },
+            {
+                id: "comm-l9-9",
+                text: "How should a presenter deal with 'The Heckler' (the one who interrupts and tries to embarrass)?",
+                text_ar: "كيف يجب أن يتعامل المقدم مع 'المشاكس' (Heckler) الذي يقاطع ويحاول الإحراج؟",
+                options: ["Get angry and argue back", "Never get upset, express agreement on something, and throw fact errors to the group", "Ignore them and keep talking", "Stop the presentation and leave"],
+                options_ar: ["الغضب والرد بجدال", "عدم الغضب والاتفاق معه في شيء ما، وترك تصحيح أخطاء الحقائق للمجموعة", "تجاهله واستمرار الحديث", "إيقاف العرض والمغادرة"],
+                correct: 1,
+                explanation: "Staying calm and using group correction defuses the situation.",
+                explanation_ar: "البقاء هادئاً واستخدام تصحيح المجموعة يهدئ الموقف."
+            },
+            {
+                id: "comm-l9-10",
+                text: "What is the best way to handle 'The Talker' or 'Know-all' who is a chatterbox?",
+                text_ar: "ما هي أفضل طريقة للتعامل مع 'الثرثار' أو 'صاحب المعرفة المطلقة' الذي يتحدث كثيراً؟",
+                options: ["Tell them to shut up", "Wait until they take a breath, thank them, and move on", "Only let them speak at the end", "Assign them to a different room"],
+                options_ar: ["طلب الصمت منه", "الانتظار حتى يأخذ نفساً، ثم شكره والمتابعة", "السماح له بالتحدث فقط في النهاية", "نقله إلى غرفة أخرى"],
+                correct: 1,
+                explanation: "Acknowledge their input politely and regain control of the floor.",
+                explanation_ar: "اعترف بمساهمته بلباقة واستعد السيطرة على الحديث."
+            },
+            {
+                id: "comm-l9-11",
+                text: "'The Griper' is a participant who feels unfairly treated. How should you handle them?",
+                text_ar: "'المتذمر' (The Griper) هو مشارك يشعر بأنه عومل بظلم، كيف يجب أن تتعامل معه؟",
+                options: ["Apologize for everything", "Avoid eye contact with them", "Get them to be specific and use peer pressure by asking the group", "Agree with all their complaints"],
+                options_ar: ["الاعتذار عن كل شيء", "تجنب التواصل البصري معه", "جعله محدداً واستخدام ضغط الأقران بسؤال المجموعة", "الموافقة على كل شكواه"],
+                correct: 2,
+                explanation: "Specifics and group sentiment can help manage individual constant negativity.",
+                explanation_ar: "تحديد النقاط ومعرفة رأي المجموعة يساعد في إدارة السلبية المستمرة للفرد."
+            },
+            {
+                id: "comm-l9-12",
+                text: "If a group of participants are 'The Whisperers' (bored or sharing anecdotes), you should:",
+                text_ar: "إذا كانت هناك مجموعة من المشاركين 'الهامسين' (يشعرون بالملل أو يتشاركون الحكايات)، يجب عليك:",
+                options: ["Stop talking and wait for them to look up", "Yell at them for being disrespectful", "Throw something at them", "Ignore them and talk louder"],
+                options_ar: ["التوقف عن الكلام والانتظار حتى ينظروا إليك", "الصراخ عليهم لعدم احترامهم", "رمي شيء عليهم", "تجاهلهم والتحدث بصوت أعلى"],
+                correct: 0,
+                explanation: "Silence is a powerful non-verbal tool to regain attention.",
+                explanation_ar: "الصمت أداة غير لفظية قوية لاستعادة الانتباه."
+            },
+            {
+                id: "comm-l9-13",
+                text: "[True or False] Non-verbal communication can be used to accent a verbal message (e.g., tone of voice).",
+                text_ar: "[صح أم خطأ] يمكن استخدام الاتصال غير اللفظي للتأكيد على رسالة لفظية (مثل نبرة الصوت).",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Tone and emphasis are non-verbal accents that change or specify meaning.",
+                explanation_ar: "النبرة والتوكيد هي تأكيدات غير لفظية تغير المعنى أو تحدده."
+            },
+            {
+                id: "comm-l9-14",
+                text: "[True or False] Verbal communication involves more awareness because one must think before speaking.",
+                text_ar: "[صح أم خطأ] يتضمن الاتصال اللفظي وعياً أكبر لأنه يجب على المرء التفكير قبل التحدث.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Verbal messages are consciously constructed, unlike many non-verbal cues.",
+                explanation_ar: "يتم بناء الرسائل اللفظية بوعي، على عكس العديد من الإشارات غير اللفظية."
+            },
+            {
+                id: "comm-l9-15",
+                text: "Verbal communication is divided into which two types?",
+                text_ar: "ينقسم الاتصال اللفظي إلى أي نوعين؟",
+                options: ["Internal and External", "Oral and Written", "Formal and Informal", "Direct and Indirect"],
+                options_ar: ["داخلي وخارجي", "شفهي ومكتوب (Oral and Written)", "رسمي وغير رسمي", "مباشر وغير مباشر"],
+                correct: 1,
+                explanation: "Verbal communication includes both spoken (oral) and documented (written) forms.",
+                explanation_ar: "يشمل الاتصال اللفظي الأشكال المنطوقة (الشفهية) والمدونة (المكتوبة)."
+            },
+            {
+                id: "comm-l9-16",
+                text: "Which of these is an example of Oral communication?",
+                text_ar: "أي مما يلي يعد مثالاً على الاتصال الشفهي (Oral)؟",
+                options: ["Letters", "Memos", "Telephone talk and Interviews", "Reports"],
+                options_ar: ["الرسائل", "المذكرات", "المحادثات الهاتفية والمقابلات", "التقارير"],
+                correct: 2,
+                explanation: "Interviews and phone calls are primary examples of oral verbal communication.",
+                explanation_ar: "المقابلات والمكالمات الهاتفية هي أمثلة أساسية للاتصال اللفظي الشفهي."
+            },
+            {
+                id: "comm-l9-17",
+                text: "Which of these is an example of Written communication?",
+                text_ar: "أي مما يلي يعد مثالاً على الاتصال المكتوب؟",
+                options: ["Face-to-face talk", "Loudspeakers", "Letters and Memos", "Interviews"],
+                options_ar: ["الحديث وجهاً لوجه", "مكبرات الصوت", "الرسائل والمذكرات (Letters and Memos)", "المقابلات"],
+                correct: 2,
+                explanation: "Written communication involves documented words like memos and letters.",
+                explanation_ar: "يتضمن الاتصال المكتوب كلمات موثقة مثل المذكرات والرسائل."
+            },
+            {
+                id: "comm-l9-18",
+                text: "Which of the following is a way to improve verbal communication skills?",
+                text_ar: "أي مما يلي يعد طريقة لتحسين مهارات الاتصال اللفظي؟",
+                options: ["Read more", "Think about the words", "Prepare yourself", "All of the above"],
+                options_ar: ["القراءة أكثر", "التفكير في الكلمات", "تحضير نفسك", "كل ما سبق"],
+                correct: 3,
+                explanation: "Improving verbal skills involves reading, thinking, preparation, and listening.",
+                explanation_ar: "تحسين المهارات اللفظية يتضمن القراءة، التفكير، التحضير، والاستماع."
+            },
+            {
+                id: "comm-l9-19",
+                text: "According to the lecture, why might a participant be a 'Whisperer'?",
+                text_ar: "وفقاً للمحاضرة، لماذا قد يكون المشارك 'هامساً' (Whisperer)؟",
+                options: ["They are bored", "They sharing anecdotes triggered by the presentation", "They do not understand what is going on", "All of the above"],
+                options_ar: ["يشعرون بالملل", "يتشاركون حكايات أثارها العرض التقديمي", "لا يفهمون ما يحدث", "كل ما سبق"],
+                correct: 3,
+                explanation: "Whispering can result from boredom, confusion, or being triggered by specific content.",
+                explanation_ar: "يمكن أن ينتج الهمس عن الملل، أو الارتباك، أو بسبب محتوى معين أثار اهتمامهم الجانبي."
+            },
+            {
+                id: "comm-l9-20",
+                text: "The 'Talker' or 'Know-all' can sometimes be used effectively by the presenter as a:",
+                text_ar: "يمكن للمقدم أحياناً استخدام 'الثرثار' أو 'عارف كل شيء' بفعالية كـ:",
+                options: ["Opponent", "Co-presenter", "Security guard", "Judge"],
+                options_ar: ["خصم", "مقدم مشارك (Co-presenter)", "حارس أمن", "قاضٍ"],
+                correct: 1,
+                explanation: "Using their knowledge as a co-presenter can validate them and help the group.",
+                explanation_ar: "استخدام معرفتهم كمقدم مشارك يمكن أن يعزز قدرهم ويفيد المجموعة."
+            },
+            {
+                id: "comm-l9-21",
+                text: "Which participant is described as being 'insecure' and 'aggressive'?",
+                text_ar: "أي مشارك يوصف بأنه 'غير آمن' و 'عدواني'؟",
+                options: ["The Talker", "The Heckler", "The Whisperer", "The Griper"],
+                options_ar: ["الثرثار", "المشاكس (The Heckler)", "الهامس", "المتذمر"],
+                correct: 1,
+                explanation: "The Heckler often interrupts to embarrass because of their own insecurities.",
+                explanation_ar: "غالبًا ما يقاطع المشاكس (Heckler) للإحراج بسبب عدم شعوره بالأمان."
+            },
+            {
+                id: "comm-l9-22",
+                text: "The 'Griper' often uses the presenter as a _________ for their annoyances.",
+                text_ar: "غالباً ما يستخدم 'المتذمر' (The Griper) المقدم كـ _________ لمضايقاته.",
+                options: ["Leader", "Friend", "Scapegoat", "Inspiration"],
+                options_ar: ["قائد", "صديق", "كبش فداء (Scapegoat)", "إلهام"],
+                correct: 2,
+                explanation: "Gripers look for someone to blame for their complaints, often the presenter.",
+                explanation_ar: "يبحث المتذمرون عن شخص يلومونه على شكواهم، وغالباً ما يكون هذا الشخص هو المقدم."
+            },
+            {
+                id: "comm-l9-23",
+                text: "Verbal communication involves using _________ awareness than non-verbal communication.",
+                text_ar: "يتضمن الاتصال اللفظي استخدام وعي _________ من الاتصال غير اللفظي.",
+                options: ["More", "Less", "The same", "No"],
+                options_ar: ["أكثر (More)", "أقل", "نفس القدر من", "لا"],
+                correct: 0,
+                explanation: "Verbal communication requires conscious thought and analysis before speaking.",
+                explanation_ar: "يتطلب الاتصال اللفظي تفكيراً واعياً وتحليلاً قبل التحدث."
+            },
+            {
+                id: "comm-l9-24",
+                text: "Example of Verbal communication gadgets include:",
+                text_ar: "أمثلة على أدوات الاتصال اللفظي تشمل:",
+                options: ["Facial expressions", "Audio or video recordings and loudspeakers", "Hand movements", "Body posture"],
+                options_ar: ["تعبيرات الوجه", "تسجيلات الصوت والفيديو ومكبرات الصوت", "حركات اليد", "وضعية الجسد"],
+                correct: 1,
+                explanation: "Anything using words or voice (recorded or live) is verbal communication.",
+                explanation_ar: "أي شيء يستخدم الكلمات أو الصوت (سواء كان مسجلاً أو مباشراً) هو اتصال لفظي."
+            },
+            {
+                id: "comm-l9-25",
+                text: "[True or False] Reading more and thinking about the words are ways to enhance our messages.",
+                text_ar: "[صح أم خطأ] القراءة أكثر والتفكير في الكلمات هي طرق لتعزيز رسائلنا.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "These habits build vocabulary and clarity in verbal communication.",
+                explanation_ar: "هذه العادات تبني الثروة اللغوية والوضوح في الاتصال اللفظي."
+            },
+            {
+                id: "comm-l9-26",
+                text: "[True or False] Oral communication includes letters and memos.",
+                text_ar: "[صح أم خطأ] الاتصال الشفهي (Oral) يشمل الرسائل والمذكرات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Letters and memos are types of 'Written' verbal communication.",
+                explanation_ar: "الرسائل والمذكرات هي أنواع من الاتصال اللفظي 'المكتوب'."
+            },
+            {
+                id: "comm-l9-27",
+                text: "[True or False] Verbal communication requires multiple mediums to communicate.",
+                text_ar: "[صح أم خطأ] يتطلب الاتصال اللفظي وسائل متعددة للتواصل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Verbal communication requires a single medium, while non-verbal requires multiple.",
+                explanation_ar: "يتطلب الاتصال اللفظي وسيلة واحدة، بينما يتطلب غير اللفظي وسائل متعددة."
+            },
+            {
+                id: "comm-l9-28",
+                text: "[True or False] Non-verbal communication does not require thinking deeply while expressing views.",
+                text_ar: "[صح أم خطأ] الاتصال غير اللفظي لا يتطلب التفكير بعمق أثناء التعبير عن وجهات النظر.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Non-verbal communication is often more subconscious or intuitive than verbal.",
+                explanation_ar: "غالباً ما يكون الاتصال غير اللفظي غير واعٍ أو بديهياً أكثر من الاتصال اللفظي."
+            },
+            {
+                id: "comm-l9-29",
+                text: "[True or False] Swallowing or coughing can be parts of non-verbal body language.",
+                text_ar: "[صح أم خطأ] يمكن أن يكون البلع أو السعال أجزاءً من لغة الجسد غير اللفظية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "The lecture lists swallowing and coughing as forms of non-verbal cues.",
+                explanation_ar: "تدرج المحاضرة البلع والسعال كأشكال من الإشارات غير اللفظية."
+            },
+            {
+                id: "comm-l9-30",
+                text: "[True or False] One way to handle a 'Talker' is to jump in and ask the group to comment.",
+                text_ar: "[صح أم خطأ] إحدى طرق التعامل مع 'الثرثار' (Talker) هي المقاطعة وطلب تعليق المجموعة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Shifting the focus to the rest of the group stops the individual from dominating the talk.",
+                explanation_ar: "تحويل التركيز إلى بقية المجموعة يمنع الفرد من الهيمنة على الحديث."
+            },
+            {
+                id: "comm-l9-31",
+                text: "[True or False] The 'Heckler' gets satisfaction from needling the presenter.",
+                text_ar: "[صح أم خطأ] يحصل 'المشاكس' (Heckler) على الرضا من إزعاج/استفزاز (Needling) المقدم.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Hecklers find satisfaction in causing embarrassment or interruption.",
+                explanation_ar: "يجد المشاكسون الرضا في التسبب بالإحراج أو المقاطعة."
+            },
+            {
+                id: "comm-l9-32",
+                text: "[True or False] Non-verbal gestures communicate less information than the words that are spoken.",
+                text_ar: "[صح أم خطأ] تنقل الإيماءات غير اللفظية معلومات أقل من الكلمات التي يتم نطقها.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "The lecture states that non-verbal gestures communicate a great deal MORE than spoken words.",
+                explanation_ar: "تقول المحاضرة أن الإيماءات غير اللفظية تنقل معلومات بكمية كبيرة أكثر من الكلمات التي يتم نطقها."
             }
         ]
     }
