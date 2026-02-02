@@ -2142,5 +2142,335 @@ const quizData = [
                 explanation_ar: "يساعد التلخيص في ضمان الوضوح والإجماع قبل الانتقال للتصويت."
             }
         ]
+    },
+    {
+        id: "comm-presentations",
+        title: "Presentations (Slide 5)",
+        title_ar: "العروض التقديمية (سلايد 5)",
+        description: "Focuses on the fundamentals of effective presentations: preparation, delivery, and handling questions.",
+        description_ar: "يركز على أساسيات العروض التقديمية الفعالة: التحضير، الإلقاء، والتعامل مع الأسئلة بشكل احترافي.",
+        icon: "🎤",
+        questions: [
+            {
+                id: "comm-pres-1",
+                text: "A presentation is a means of communication that can be adapted to:",
+                text_ar: "العرض التقديمي هو وسيلة اتصال يمكن تكييفها مع:",
+                options: ["Only personal thoughts", "Various speaking situations like addressing a meeting or briefing a team", "Written reports only", "Silent reading"],
+                options_ar: ["الأفكار الشخصية فقط", "مواقف التحدث المختلفة مثل إلقاء كلمة في اجتماع أو إطلاع فريق", "التقارير المكتوبة فقط", "القراءة الصامتة"],
+                correct: 1,
+                explanation: "Presentations are versatile and used in many professional contexts.",
+                explanation_ar: "العروض التقديمية متعددة الاستخدامات وتستخدم في سياقات مهنية عديدة."
+            },
+            {
+                id: "comm-pres-2",
+                text: "To make an effective presentation, what are the two main things to do?",
+                text_ar: "لتقديم عرض تقديمي فعال، ما هما الشيئان الأساسيان اللذان يجب القيام بهما؟",
+                options: ["Wear expensive clothes and speak fast", "Prepare your material and practice your delivery", "Use only images and avoid text", "Read from a script and avoid eye contact"],
+                options_ar: ["ارتداء ملابس غالية والكلام بسرعة", "تحضير المادة والتدرب على الإلقاء", "استخدام الصور فقط وتجنب النصوص", "القراءة من ورقة وتجنب التواصل البصري"],
+                correct: 1,
+                explanation: "Both content preparation and delivery practice are critical for success.",
+                explanation_ar: "كلاً من تحضير المحتوى والتدريب على الإلقاء ضروريان للنجاح."
+            },
+            {
+                id: "comm-pres-3",
+                text: "The three sections for discussing a presentation are:",
+                text_ar: "الأقسام الثلاثة لمناقشة العرض التقديمي هي:",
+                options: ["Writing, Printing, and Reading", "Preparing, Delivering, and Handling Questions", "Recording, Editing, and Posting", "Listening, Summarizing, and Testing"],
+                options_ar: ["الكتابة، الطباعة، والقراءة", "التحضير، الإلقاء، والتعامل مع الأسئلة", "التسجيل، التحرير، والنشر", "الاستماع، التلخيص، والاختبار"],
+                correct: 1,
+                explanation: "An effective presentation cycle involves these three main stages.",
+                explanation_ar: "تتكون دورة العرض التقديمي الفعال من هذه المراحل الثلاث الرئيسية."
+            },
+            {
+                id: "comm-pres-4",
+                text: "When setting your objective, the main purpose of your talk could be to:",
+                text_ar: "عند تحديد هدفك، يمكن أن يكون الغرض الرئيسي من حديثك هو:",
+                options: ["Inform or persuade", "Motivate or change things", "Both A and B", "None of the above"],
+                options_ar: ["الإخبار أو الإقناع", "التحفيز أو تغيير الأشياء", "كلاهما (A و B)", "لا شيء مما سبق"],
+                correct: 2,
+                explanation: "Presentation objectives can range from sharing information to motivating action.",
+                explanation_ar: "يمكن أن تتراوح أهداف العرض التقديمي من مشاركة المعلومات إلى التحفيز على اتخاذ إجراء."
+            },
+            {
+                id: "comm-pres-5",
+                text: "Which of the following is a step in \"Preparing a Presentation\"?",
+                text_ar: "أي مما يلي يعد خطوة في \"تحضير العرض التقديمي\"؟",
+                options: ["Select a topic", "Understand your audience", "Develop a plan", "All of the above"],
+                options_ar: ["اختيار موضوع", "فهم جمهورك", "تطوير خطة", "كل ما سبق"],
+                correct: 3,
+                explanation: "Preparation involves selecting a topic, audience analysis, and strategic planning.",
+                explanation_ar: "يتضمن التحضير اختيار الموضوع، تحليل الجمهور، والتخطيط الاستراتيجي."
+            },
+            {
+                id: "comm-pres-6",
+                text: "If a question is irrelevant (off-subject), the presenter should:",
+                text_ar: "إذا كان السؤال غير ذي صلة (خارج الموضوع)، يجب على المقدم:",
+                options: ["Get angry at the questioner", "Politely offer to talk after the presentation or answer briefly", "Ignore the question completely", "Stop the presentation"],
+                options_ar: ["الغضب من السائل", "العرض بلباقة للتحدث بعد العرض أو الإجابة باختصار", "تجاهل السؤال تماماً", "إيقاف العرض التقديمي"],
+                correct: 1,
+                explanation: "Handling irrelevant questions politely maintains professionalism.",
+                explanation_ar: "التعامل مع الأسئلة غير المتعلقة بالموضوع بلباقة يحافظ على المهنية."
+            },
+            {
+                id: "comm-pres-7",
+                text: "If you are running out of time and a question requires a long answer, you should say:",
+                text_ar: "إذا بدأ الوقت ينفد وكان السؤال يتطلب إجابة طويلة، يجب أن تقول:",
+                options: ["\"I don't know the answer.\"", "\"Your question is too long.\"", "\"Perhaps we could deal with that later/after the presentation.\"", "\"Please leave the room.\""],
+                options_ar: ["\"لا أعرف الإجابة\"", "\"سؤالك طويل جداً\"", "\"ربما يمكننا التعامل مع ذلك لاحقاً/بعد العرض\"", "\"يرجى مغادرة الغرفة\""],
+                correct: 2,
+                explanation: "Managing time is key, and long answers can be deferred to private discussions.",
+                explanation_ar: "إدارة الوقت أمر أساسي، ويمكن تأجيل الإجابات الطويلة إلى نقاشات خاصة."
+            },
+            {
+                id: "comm-pres-8",
+                text: "If a member of the audience asks about a point you already explained, you should:",
+                text_ar: "إذا سأل أحد الجمهور عن نقطة سبق شرحها، يجب عليك:",
+                options: ["Politely ask if the rest of the audience found the point difficult", "Refuse to answer", "Tell them they weren't listening", "End the presentation immediately"],
+                options_ar: ["السؤال بلباقة عما إذا كان بقية الجمهور وجدوا النقطة صعبة", "رفض الإجابة", "إخبارهم بأنهم لم يكونوا يستمعون", "إنهاء العرض فوراً"],
+                correct: 0,
+                explanation: "If much of the audience is confused, re-explain; if only one, offer to meet later.",
+                explanation_ar: "إذا كان معظم الجمهور مشوشاً، أعِد الشرح؛ وإذا كان واحداً فقط، اعرض مقابلته لاحقاً."
+            },
+            {
+                id: "comm-pres-9",
+                text: "[True or False] A presentation is a means of communication adapted to various speaking situations.",
+                text_ar: "[صح أم خطأ] العرض التقديمي هو وسيلة اتصال مُكيفة لمواقف التحدث المختلفة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Presentations are designed for flexibility across different professional scenarios.",
+                explanation_ar: "صُممت العروض التقديمية لتمتاز بالمرونة عبر السيناريوهات المهنية المختلفة."
+            },
+            {
+                id: "comm-pres-10",
+                text: "[True or False] Preparing your material is more important than practicing your delivery.",
+                text_ar: "[صح أم خطأ] تحضير مادتك أكثر أهمية من التدرب على إلقائك.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Both preparation and practice are equally essential for an effective presentation.",
+                explanation_ar: "التحضير والتدريب كلاهما ضروريان بالتساوي لتقديم عرض فعال."
+            },
+            {
+                id: "comm-pres-11",
+                text: "[True or False] When preparing, the first step is to set the objective, even before selecting a topic.",
+                text_ar: "[صح أم خطأ] عند التحضير، الخطوة الأولى هي تحديد الهدف حتى قبل اختيار الموضوع.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "The correct sequence is selecting a topic, then setting the objective.",
+                explanation_ar: "التسلسل الصحيح هو اختيار الموضوع، ثم تحديد الهدف."
+            },
+            {
+                id: "comm-pres-12",
+                text: "[True or False] Understanding your audience is a key part of preparing a presentation.",
+                text_ar: "[صح أم خطأ] فهم جمهورك جزء أساسي من تحضير العرض التقديمي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Tailoring content to audience needs ensures better engagement and understanding.",
+                explanation_ar: "تكييف المحتوى بما يتناسب مع احتياجات الجمهور يضمن تفاعلاً وفهماً أفضل."
+            },
+            {
+                id: "comm-pres-13",
+                text: "[True or False] You should always answer every question immediately, even if it is irrelevant to the topic.",
+                text_ar: "[صح أم خطأ] يجب عليك دائماً الإجابة على كل سؤال على الفور، حتى لو لم يكن ذا صلة بالموضوع.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Irrelevant questions should be deferred or answered briefly to keep the presentation on track.",
+                explanation_ar: "يجب تأجيل الأسئلة غير ذات الصلة أو الإجابة عليها باختصار للحفاظ على مسار العرض."
+            },
+            {
+                id: "comm-pres-14",
+                text: "[True or False] If the majority of the audience understood a point, you can provide a brief answer to the person who didn't and offer to meet them later.",
+                text_ar: "[صح أم خطأ] إذا فهمت أغلبية الجمهور نقطة ما، يمكنك تقديم إجابة مختصرة للشخص الذي لم يفهمها وعرض مقابلته لاحقاً.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "This respects the time of the rest of the audience while still being helpful.",
+                explanation_ar: "هذا يحترم وقت بقية الجمهور مع بقائك مساعداً للسائل."
+            },
+            {
+                id: "comm-pres-15",
+                text: "[True or False] If you don't know the answer to a question, you should pretend that you do.",
+                text_ar: "[صح أم خطأ] إذا لم تكن تعرف إجابة سؤال ما، فيجب عليك التظاهر بأنك تعرفها.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "It's better to admit you don't know and offer to find out than to give false information.",
+                explanation_ar: "من الأفضل الاعتراف بعدم المعرفة والعرض للبحث عن الإجابة بدلاً من تقديم معلومات خاطئة."
+            },
+            {
+                id: "comm-pres-16",
+                text: "[True or False] Paraphrasing a difficult question in your own words can help clarify it before answering.",
+                text_ar: "[صح أم خطأ] إعادة صياغة سؤال صعب بكلماتك الخاصة يمكن أن تساعد في توضيحه قبل الإجابة عليه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "This ensures you understood the question correctly and gives you time to think.",
+                explanation_ar: "هذا يضمن فهمك للسؤال بشكل صحيح ويعطيك وقتاً للتفكير."
+            },
+            {
+                id: "comm-pres-17",
+                text: "[True or False] \"Motivating the audience\" can be a valid objective for a presentation.",
+                text_ar: "[صح أم خطأ] \"تحفيز الجمهور\" يمكن أن يكون هدفاً صحيحاً للعرض التقديمي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Motivation and inspiration are common and effective presentation goals.",
+                explanation_ar: "التحفيز والإلهام من أهداف العرض التقديمي الشائعة والفعالة."
+            },
+            {
+                id: "comm-pres-18",
+                text: "[True or False] Handling questions effectively is the final section of the presentation discussion.",
+                text_ar: "[صح أم خطأ] التعامل مع الأسئلة بفعالية هو القسم الأخير من مناقشة العرض التقديمي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Handling questions is naturally the final stage of the interaction.",
+                explanation_ar: "التعامل مع الأسئلة هو بطبيعة الحال المرحلة النهائية من التفاعل."
+            },
+            {
+                id: "comm-pres-19",
+                text: "What is the very FIRST step in preparing a presentation?",
+                text_ar: "ما هي الخطوة الأولى تماماً في التحضير للعرض التقديمي؟",
+                options: ["Select a topic", "Set your objective", "Understand your audience", "Develop a plan"],
+                options_ar: ["اختيار الموضوع", "تحديد الهدف", "فهم الجمهور", "تطوير الخطة"],
+                correct: 0,
+                explanation: "According to the slides, you must first select the topic before proceeding to other steps.",
+                explanation_ar: "وفقاً للسلايدات، يجب عليك أولاً اختيار الموضوع قبل الانتقال للخطوات الأخرى."
+            },
+            {
+                id: "comm-pres-20",
+                text: "If the purpose of your talk is to make the audience \"differentiate between the economy in Yemen and Iraq,\" this is an example of:",
+                text_ar: "إذا كان الغرض من حديثك هو جعل الجمهور \"يميز بين اقتصاد اليمن واقتصاد العراق\"، فهذا مثال على:",
+                options: ["Selecting a topic", "Setting an objective", "Practicing delivery", "Handling a difficult question"],
+                options_ar: ["اختيار موضوع", "تحديد هدف", "الممارسة على الإلقاء", "التعامل مع سؤال صعب"],
+                correct: 1,
+                explanation: "Defining what the audience should know or do after the talk is setting the objective.",
+                explanation_ar: "تحديد ما يجب على الجمهور معرفته أو فعله بعد الحديث هو بمثابة تحديد الهدف."
+            },
+            {
+                id: "comm-pres-21",
+                text: "Which of these is NOT an objective of a presentation mentioned in the slides?",
+                text_ar: "أي مما يلي ليس من أهداف العرض التقديمي المذكورة في السلايدات؟",
+                options: ["To inform", "To persuade", "To motivate or change things", "To entertain only"],
+                options_ar: ["للإخبار", "للإقناع", "للتحفيز أو تغيير الأشياء", "للترفيه فقط"],
+                correct: 3,
+                explanation: "Professional presentations focus on information, persuasion, motivation, or change.",
+                explanation_ar: "تركز العروض التقديمية المهنية على الإخبار، أو الإقناع، أو التحفيز، أو التغيير."
+            },
+            {
+                id: "comm-pres-22",
+                text: "If you don't know the answer to a question, the slides suggest you should:",
+                text_ar: "إذا لم تكن تعرف الإجابة على سؤال ما، تقترح السلايدات أنه يجب عليك:",
+                options: ["Guess the answer", "Admit it and offer to find out, or ask if anyone in the audience knows", "Ignore the question and move to the next slide", "Tell the questioner that their question is bad"],
+                options_ar: ["تخمين الإجابة", "الاعتراف بذلك والعرض بالبحث عن الإجابة، أو سؤال الجمهور عما إذا كان أحد يعرفها", "تجاهل السؤال والانتقال للسلايد التالي", "إخبار السائل بأن سؤاله سيء"],
+                correct: 1,
+                explanation: "Honesty and involving the audience or offering a follow-up are recommended strategies.",
+                explanation_ar: "الصدق وإشراك الجمهور أو العرض بالمتابعة هي استراتيجيات موصى بها."
+            },
+            {
+                id: "comm-pres-23",
+                text: "To gain time to think about a difficult question, you can:",
+                text_ar: "لكسب الوقت للتفكير في سؤال صعب، يمكنك:",
+                options: ["Take a long break", "Ask the audience to leave", "Paraphrase the question in your own words", "Start the presentation from the beginning"],
+                options_ar: ["أخذ قسط طويل من الراحة", "طلب مغادرة الجمهور", "إعادة صياغة السؤال بكلماتك الخاصة", "بدء العرض التقديمي من البداية"],
+                correct: 2,
+                explanation: "Paraphrasing clarifies the question and provides the speaker with thinking time.",
+                explanation_ar: "إعادة الصياغة توضح السؤال وتوفر للمتحدث وقتاً للتفكير."
+            },
+            {
+                id: "comm-pres-24",
+                text: "Which of these is NOT one of the three main sections of a presentation discussion?",
+                text_ar: "أي مما يلي ليس أحد الأقسام الثلاثة الرئيسية لمناقشة العرض التقديمي؟",
+                options: ["Preparing the presentation", "Delivering the presentation", "Handling questions effectively", "Writing a post-presentation report"],
+                options_ar: ["تحضير العرض التقديمي", "إلقاء العرض التقديمي", "التعامل مع الأسئلة بفعالية", "كتابة تقرير ما بعد العرض"],
+                correct: 3,
+                explanation: "The slides focus on Preparation, Delivery, and Questions.",
+                explanation_ar: "تركز السلايدات على التحضير، والإلقاء، والأسئلة."
+            },
+            {
+                id: "comm-pres-25",
+                text: "[True or False] If a question is impossible to answer in the time available, you should offer to discuss it after the presentation.",
+                text_ar: "[صح أم خطأ] إذا كان من المستحيل الإجابة على سؤال في الوقت المتاح، يجب عليك عرض مناقشته بعد العرض التقديمي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Deferred discussion respects everyone's time while still addressing the query.",
+                explanation_ar: "يؤدي تأجيل النقاش إلى احترام وقت الجميع مع معالجة الاستفسار."
+            },
+            {
+                id: "comm-pres-26",
+                text: "[True or False] You can ask the questioner to verify if your paraphrasing of their difficult question is correct.",
+                text_ar: "[صح أم خطأ] يمكنك أن تطلب من السائل التحقق مما إذا كانت إعادة صياغتك لسؤاله الصعب صحيحة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Checking for understanding prevents incorrect answers.",
+                explanation_ar: "التأكد من الفهم يمنع الإجابات غير الصحيحة."
+            },
+            {
+                id: "comm-pres-27",
+                text: "[True or False] If you don't know an answer, you can ask if any member of the audience has the information.",
+                text_ar: "[صح أم خطأ] إذا كنت لا تعرف إجابة، يمكنك سؤال ما إذا كان لدى أي عضو من الجمهور المعلومة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Involving the audience can be a helpful and collaborative way to handle gaps in knowledge.",
+                explanation_ar: "إشراك الجمهور يمكن أن يكون وسيلة مفيدة وتعاونية للتعامل مع الفجوات المعرفية."
+            },
+            {
+                id: "comm-pres-28",
+                text: "[True or False] Handling questions effectively is considered the first section of the presentation discussion.",
+                text_ar: "[صح أم خطأ] يعتبر التعامل مع الأسئلة بفعالية هو القسم الأول من مناقشة العرض التقديمي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "It is the third and final section described in the lecture.",
+                explanation_ar: "إنه القسم الثالث والأخير الموصوف في المحاضرة."
+            },
+            {
+                id: "comm-pres-29",
+                text: "[True or False] Developing a plan is the final step in the preparation stage mentioned.",
+                text_ar: "[صح أم خطأ] يعد تطوير خطة هو الخطوة الأخيرة في مرحلة التحضير المذكورة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "The steps are: Topic, Objective, Audience, and finally Plan.",
+                explanation_ar: "الخطوات هي: الموضوع، الهدف، الجمهور، وأخيراً الخطة."
+            },
+            {
+                id: "comm-pres-30",
+                text: "[True or False] If a question is \"off-subject,\" a good response is saying: \"That’s interesting, but I’d prefer not to answer that today.\"",
+                text_ar: "[صح أم خطأ] إذا كان السؤال \"خارج الموضوع\"، فإن الاستجابة الجيدة هي قول: \"هذا أمر مثير للاهتمام، لكني أفضل عدم الإجابة على ذلك اليوم\".",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Using polite phrases to stay on topic is a key skill.",
+                explanation_ar: "استخدام عبارات لبقة للبقاء في صلب الموضوع هو مهارة أساسية."
+            },
+            {
+                id: "comm-pres-31",
+                text: "[True or False] Developing a plan is a step that comes after understanding your audience.",
+                text_ar: "[صح أم خطأ] تطوير خطة هو خطوة تأتي بعد مرحلة فهم جمهورك.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "You must understand the audience first to build a relevant plan.",
+                explanation_ar: "يجب أن تفهم الجمهور أولاً لبناء خطة مناسبة."
+            },
+            {
+                id: "comm-pres-32",
+                text: "[True or False] Practicing your delivery is the very first step in the preparation stage.",
+                text_ar: "[صح أم خطأ] التدرب على إلقائك هو أول خطوة تماماً في مرحلة التحضير.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "The first step is selecting a topic, not practicing delivery.",
+                explanation_ar: "الخطوة الأولى هي اختيار الموضوع، وليس التدرب على الإلقاء."
+            }
+        ]
     }
 ];
