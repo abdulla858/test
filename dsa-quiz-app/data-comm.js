@@ -1422,5 +1422,725 @@ const quizData = [
                 explanation_ar: "الأولى صحيحة؛ الثانية خاطئة (الشرائح تحتاج للظلام)؛ الثالثة صحيحة."
             }
         ]
+    },
+    {
+        id: "comm-slides-1-2",
+        title: "Communication Skills (Slide 1&2)",
+        title_ar: "مهارات الاتصال (سلايد 1&2)",
+        description: "Comprehensive question bank covering the core of communication skills (Slides 1 & 2).",
+        description_ar: "بنك أسئلة شامل يغطي صلب مادة مهارات الاتصال (سلايد 1 و 2).",
+        icon: "📂",
+        questions: [
+            {
+                id: "comm-s12-1",
+                text: "According to the slides, Communication is much more than:",
+                text_ar: "بناءً على السلايدات، الاتصال هو أكثر بكثير من مجرد:",
+                options: ["Writing", "Speech", "Listening", "Body Language"],
+                options_ar: ["الكتابة", "الكلام", "الاستماع", "لغة الجسد"],
+                correct: 1,
+                explanation: "Communication encompasses more than just verbal speech; it involves various forms of interaction.",
+                explanation_ar: "يشمل الاتصال ما هو أكثر من مجرد الكلام اللفظي؛ فهو يتضمن أشكالاً مختلفة من التفاعل."
+            },
+            {
+                id: "comm-s12-2",
+                text: "Communication is defined as a process of passing information and understanding from one person to another, resulting in:",
+                text_ar: "يُعرّف الاتصال بأنه عملية نقل المعلومات والفهم من شخص لآخر، مما يؤدي إلى:",
+                options: ["Data storage", "Exchange of meaning", "Noise creation", "Physical movement"],
+                options_ar: ["تخزين البيانات", "تبادل المعنى", "خلق ضوضاء", "حركة بدنية"],
+                correct: 1,
+                explanation: "The ultimate goal of communication is the exchange and sharing of meaning.",
+                explanation_ar: "الهدف النهائي للاتصال هو تبادل وتشارك المعنى."
+            },
+            {
+                id: "comm-s12-3",
+                text: "What are \"Communication Skills\" as described in the lecture?",
+                text_ar: "ما هي \"مهارات الاتصال\" كما وصفت في المحاضرة؟",
+                options: ["The ability to talk fast", "Tools used to remove barriers to effective communication", "Natural talents that cannot be learned", "Writing formal letters only"],
+                options_ar: ["القدرة على الكلام بسرعة", "الأدوات المستخدمة لإزالة عوائق الاتصال الفعال", "مواهب طبيعية لا يمكن تعلمها", "كتابة الرسائل الرسمية فقط"],
+                correct: 1,
+                explanation: "Communication skills are the tools we use to overcome obstacles and ensure clear understanding.",
+                explanation_ar: "مهارات الاتصال هي الأدوات التي نستخدمها للتغلب على العقبات وضمان الفهم الواضح."
+            },
+            {
+                id: "comm-s12-4",
+                text: "The Communication Process is characterized as involving:",
+                text_ar: "تتميز عملية الاتصال بأنها تتضمن:",
+                options: ["A single stage only", "Two random steps", "Multiple parts and stages", "Only the sender's effort"],
+                options_ar: ["مرحلة واحدة فقط", "خطوتين عشوائيتين", "أجزاء ومراحل متعددة", "جهد المرسل فقط"],
+                correct: 2,
+                explanation: "Communication is a complex process with several interconnected stages.",
+                explanation_ar: "الاتصال عملية معقدة تتكون من عدة مراحل مترابطة."
+            },
+            {
+                id: "comm-s12-5",
+                text: "The person who originates the communication is known as the:",
+                text_ar: "الشخص الذي يبدأ الاتصال يُعرف بـ:",
+                options: ["Receiver", "Channel", "Source or Sender", "Context"],
+                options_ar: ["المستقبل", "القناة", "المصدر أو المرسل", "السياق"],
+                correct: 2,
+                explanation: "The sender (or source) is the individual who initiates the message.",
+                explanation_ar: "المرسل (أو المصدر) هو الفرد الذي يبدأ بإرسال الرسالة."
+            },
+            {
+                id: "comm-s12-6",
+                text: "Which stage involves preparing and transferring a message into a shareable format?",
+                text_ar: "أي مرحلة تتضمن إعداد ونقل الرسالة إلى تنسيق قابل للمشاركة؟",
+                options: ["Decoding", "Feedback", "Encoding", "Receiving"],
+                options_ar: ["فك التشفير", "التغذية الراجعة", "الترميز (Encoding)", "الاستقبال"],
+                correct: 2,
+                explanation: "Encoding is the process of translating thoughts into a format suitable for transmission.",
+                explanation_ar: "الترميز هو عملية ترجمة الأفكار إلى تنسيق مناسب للإرسال."
+            },
+            {
+                id: "comm-s12-7",
+                text: "\"Encoding\" requires information to be ___________ before being sent to the other party.",
+                text_ar: "يتطلب \"الترميز\" أن تكون المعلومات ___________ قبل إرسالها إلى الطرف الآخر.",
+                options: ["Deleted", "Prepared", "Ignored", "Stored"],
+                options_ar: ["محذوفة", "مُعدّة", "مُتجاهلة", "مُخزنة"],
+                correct: 1,
+                explanation: "Information must be systematically prepared through encoding before transmission.",
+                explanation_ar: "يجب إعداد المعلومات بشكل منهجي من خلال الترميز قبل إرسالها."
+            },
+            {
+                id: "comm-s12-8",
+                text: "The method or methods used to convey a message are referred to as:",
+                text_ar: "يُشار إلى الطريقة أو الطرق المستخدمة لنقل الرسالة بـ:",
+                options: ["The Message", "The Channel", "The Context", "The Feedback"],
+                options_ar: ["الرسالة", "القناة (Channel)", "السياق", "التغذية الراجعة"],
+                correct: 1,
+                explanation: "The channel is the medium through which the encoded message is sent.",
+                explanation_ar: "القناة هي الوسيلة التي يتم من خلالها إرسال الرسالة المرمزة."
+            },
+            {
+                id: "comm-s12-9",
+                text: "When you receive a message and try to understand it, this process is called:",
+                text_ar: "عندما تستلم رسالة وتحاول فهمها، تسمى هذه العملية:",
+                options: ["Encoding", "Decoding", "Directing", "Sending"],
+                options_ar: ["الترميز", "فك التشفير (Decoding)", "التوجيه", "الإرسال"],
+                correct: 1,
+                explanation: "Decoding is the receiver's process of interpreting the message.",
+                explanation_ar: "فك التشفير هو عملية المستقبل لتفسير وفهم الرسالة."
+            },
+            {
+                id: "comm-s12-10",
+                text: "Which of the following is NOT a skill required for successful decoding?",
+                text_ar: "أي مما يلي ليس مهارة مطلوبة لفك التشفير الناجح؟",
+                options: ["Active listening", "Ability to read and comprehend", "Asking clarifying questions", "Speaking loudly"],
+                options_ar: ["الاستماع النشط", "القدرة على القراءة والاستيعاب", "طرح أسئلة استيضاحية", "التحدث بصوت عالٍ"],
+                correct: 3,
+                explanation: "Decoding focus on reception and understanding, not loud speaking.",
+                explanation_ar: "يركز فك التشفير على الاستقبال والفهم، وليس التحدث بصوت عالٍ."
+            },
+            {
+                id: "comm-s12-11",
+                text: "When a sender thinks about the \"desired result\" on the part of the listener, they are focusing on the:",
+                text_ar: "عندما يفكر المرسل في \"النتيجة المرجوة\" من جانب المستمع، فإنه يركز على:",
+                options: ["Source", "Receiver", "Channel", "Encoding"],
+                options_ar: ["المصدر", "المستقبل", "القناة", "الترميز"],
+                correct: 1,
+                explanation: "Effective senders tailor their message based on the receiver's likely reaction.",
+                explanation_ar: "المرسلون الفعالون يصيغون رسائلهم بناءً على رد الفعل المحتمل للمستقبل."
+            },
+            {
+                id: "comm-s12-12",
+                text: "Which element is used to determine how successful the communication attempt was?",
+                text_ar: "أي عنصر يستخدم لتحديد مدى نجاح محاولة الاتصال؟",
+                options: ["The Sender", "Feedback", "Noise", "The Medium"],
+                options_ar: ["المرسل", "التغذية الراجعة (Feedback)", "الضوضاء", "الوسيط"],
+                correct: 1,
+                explanation: "Feedback confirms whether the message was received and understood as intended.",
+                explanation_ar: "تؤكد التغذية الراجعة ما إذا كانت الرسالة قد وصلت وفُهمت كما هو مقصود."
+            },
+            {
+                id: "comm-s12-13",
+                text: "In face-to-face communication, you can use ___________ to ensure understanding.",
+                text_ar: "في الاتصال وجهًا لوجه، يمكنك استخدام ___________ لضمان الفهم.",
+                options: ["Only words", "Body language and questions", "Written reports only", "Silence"],
+                options_ar: ["الكلمات فقط", "لغة الجسد والأسئلة", "التقارير المكتوبة فقط", "الصمت"],
+                correct: 1,
+                explanation: "Visual cues and interactive questions help clarify meaning in person.",
+                explanation_ar: "تساعد الإشارات المرئية والأسئلة التفاعلية في توضيح المعنى شخصياً."
+            },
+            {
+                id: "comm-s12-14",
+                text: "\"Context\" in communication refers to:",
+                text_ar: "يشير \"السياق\" في الاتصال إلى:",
+                options: ["The words used in the message", "The situation, environment, and relationship with the audience", "The electronic device used", "The speed of the speaker"],
+                options_ar: ["الكلمات المستخدمة في الرسالة", "الموقف والبيئة والعلاقة مع الجمهور", "الجهاز الإلكتروني المستخدم", "سرعة المتحدث"],
+                correct: 1,
+                explanation: "Context includes the external and relational factors surrounding the communication.",
+                explanation_ar: "يشمل السياق العوامل الخارجية والعلائقية المحيطة بعملية الاتصال."
+            },
+            {
+                id: "comm-s12-15",
+                text: "[True or False] Communication is limited strictly to verbal speech and nothing else.",
+                text_ar: "[صح أم خطأ] يقتصر الاتصال حصرياً على الكلام اللفظي ولا شيء غيره.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Communication includes non-verbal cues, body language, and written formats.",
+                explanation_ar: "يشمل الاتصال الإشارات غير اللفظية، ولغة الجسد، والتنسيقات المكتوبة."
+            },
+            {
+                id: "comm-s12-16",
+                text: "[True or False] Communication occurs when any behavior results in an exchange of meaning.",
+                text_ar: "[صح أم خطأ] يحدث الاتصال عندما يؤدي أي سلوك إلى تبادل في المعنى.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "If meaning is shared, communication has taken place.",
+                explanation_ar: "إذا تم تشارك المعنى، فقد حدث الاتصال."
+            },
+            {
+                id: "comm-s12-17",
+                text: "[True or False] Communication skills act as tools to eliminate obstacles that prevent clear understanding.",
+                text_ar: "[صح أم خطأ] تعمل مهارات الاتصال كأدوات لإزالة العقبات التي تمنع الفهم الواضح.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "These skills help bridge the gap between sender and receiver.",
+                explanation_ar: "تساعد هذه المهارات في ردم الفجوة بين المرسل والمستقبل."
+            },
+            {
+                id: "comm-s12-18",
+                text: "[True or False] The \"Source\" of the communication is the person who receives the information.",
+                text_ar: "[صح أم خطأ] \"مصدر\" الاتصال هو الشخص الذي يستلم المعلومات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "The source is the sender/originator, not the receiver.",
+                explanation_ar: "المصدر هو المرسل/المنشئ، وليس المستقبل."
+            },
+            {
+                id: "comm-s12-19",
+                text: "[True or False] There must be a \"Message\" for communication to have a purpose or cause.",
+                text_ar: "[صح أم خطأ] يجب أن تكون هناك \"رسالة\" لكي يكون للاتصال غرض أو سبب.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "The message is the core content being communicated.",
+                explanation_ar: "الرسالة هي المحتوى الجوهري الذي يتم نقله."
+            },
+            {
+                id: "comm-s12-20",
+                text: "[True or False] Information should be prepared (encoded) before it is sent to another party.",
+                text_ar: "[صح أم خطأ] يجب إعداد المعلومات (ترميزها) قبل إرسالها إلى طرف آخر.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Encoding is a vital preparatory step in the communication cycle.",
+                explanation_ar: "الترميز خطوة تحضيرية حيوية في دورة الاتصال."
+            },
+            {
+                id: "comm-s12-21",
+                text: "[True or False] The \"Channel\" is only restricted to electronic emails.",
+                text_ar: "[صح أم خطأ] تقتصر \"القناة\" فقط على رسائل البريد الإلكتروني.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Channels can be face-to-face, written, telephonic, or digital.",
+                explanation_ar: "يمكن أن تكون القنوات مواجهة لوجه، أو مكتوبة، أو هاتفية، أو رقمية."
+            },
+            {
+                id: "comm-s12-22",
+                text: "[True or False] Decoding happens at the beginning of the communication process before the message is sent.",
+                text_ar: "[صح أم خطأ] يحدث فك التشفير في بداية عملية الاتصال قبل إرسال الرسالة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Decoding is done by the receiver after the message is sent.",
+                explanation_ar: "فك التشفير يقوم به المستقبل بعد إرسال الرسالة."
+            },
+            {
+                id: "comm-s12-23",
+                text: "[True or False] Asking clarifying questions is a part of the decoding process.",
+                text_ar: "[صح أم خطأ] طرح أسئلة توضيحية هو جزء من عملية فك التشفير.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Questions help the receiver accurately interpret the sender's meaning.",
+                explanation_ar: "تساعد الأسئلة المستقبل في تفسير معنى المرسل بدقة."
+            },
+            {
+                id: "comm-s12-24",
+                text: "[True or False] A sender does not need to consider the desired result of the receiver.",
+                text_ar: "[صح أم خطأ] لا يحتاج المرسل إلى التفكير في النتيجة المرجوة من المستقبل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Considering the desired outcome is essential for effective communication.",
+                explanation_ar: "التفكير في النتيجة المرجوة أمر ضروري للاتصال الفعال."
+            },
+            {
+                id: "comm-s12-25",
+                text: "[True or False] Feedback is an essential part of the communication cycle to evaluate its success.",
+                text_ar: "[صح أم خطأ] التغذية الراجعة جزء أساسي من دورة الاتصال لتقييم نجاحها.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Without feedback, the sender won't know if the message was successful.",
+                explanation_ar: "بدون تغذية راجعة، لن يعرف المرسل ما إذا كانت الرسالة ناجحة أم لا."
+            },
+            {
+                id: "comm-s12-26",
+                text: "[True or False] Context only involves the environment the sender is in, regardless of the audience's environment.",
+                text_ar: "[صح أم خطأ] السياق يشمل فقط البيئة التي يتواجد فيها المرسل، بصرف النظر عن بيئة الجمهور.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Context involves the shared environment and relationship of all parties.",
+                explanation_ar: "يشمل السياق البيئة المشتركة والعلاقة بين جميع الأطراف."
+            },
+            {
+                id: "comm-s12-27",
+                text: "[True or False] Reading body language is a form of feedback in face-to-face interactions.",
+                text_ar: "[صح أم خطأ] قراءة لغة الجسد هي شكل من أشكال التغذية الراجعة في التفاعلات وجهاً لوجه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Non-verbal reactions provide immediate feedback to the speaker.",
+                explanation_ar: "توفر ردود الفعل غير اللفظية تغذية راجعة فورية للمتحدث."
+            },
+            {
+                id: "comm-s12-28",
+                text: "[True or False] Effective communication involves multiple stages rather than just a single action.",
+                text_ar: "[صح أم خطأ] يتضمن الاتصال الفعال مراحل متعددة بدلاً من مجرد إجراء واحد.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Communication is a process involving encoding, transmission, decoding, and feedback.",
+                explanation_ar: "الاتصال هو عملية تشمل الترميز والنقل وفك التشفير والتغذية الراجعة."
+            }
+        ]
+    },
+    {
+        id: "comm-slide-3",
+        title: "Communication Skills (Slide 3)",
+        title_ar: "مهارات الاتصال (سلايد 3)",
+        description: "Focuses on types of communication: Intrapersonal, Interpersonal, Small Group, Public, Mass, and Non-Verbal.",
+        description_ar: "يركز على أنواع الاتصال: الذاتي، الشخصي، المجموعات الصغيرة، العام، الجماهيري، وغير اللفظي.",
+        icon: "👥",
+        questions: [
+            {
+                id: "comm-s3-1",
+                text: "Which type of communication occurs exclusively within an individual's own mind, such as solving a problem or dreaming?",
+                text_ar: "أي نوع من الاتصال يحدث حصرياً داخل عقل الفرد نفسه، مثل حل مشكلة أو الحلم؟",
+                options: ["Interpersonal Communication", "Intrapersonal Communication", "Public Communication", "Mass Communication"],
+                options_ar: ["الاتصال الشخصي", "الاتصال الذاتي (Intrapersonal)", "الاتصال العام", "الاتصال الجماهيري"],
+                correct: 1,
+                explanation: "Intrapersonal communication refers to the internal dialogue and thought processes within oneself.",
+                explanation_ar: "الاتصال الذاتي يشير إلى الحوار الداخلي وعمليات التفكير داخل النفس."
+            },
+            {
+                id: "comm-s3-2",
+                text: "Interpersonal Communication is characterized by the exchange of information and ideas between:",
+                text_ar: "يتميز الاتصال الشخصي (Interpersonal) بتبادل المعلومات والأفكار بين:",
+                options: ["Only one person and their inner self", "Two or more people through verbal or non-verbal methods", "A speaker and a massive audience via television", "Members of a small committee only"],
+                options_ar: ["شخص واحد ونفسه فقط", "شخصين أو أكثر من خلال الأساليب اللفظية أو غير اللفظية", "متحدث وجمهور ضخم عبر التلفزيون", "أعضاء لجنة صغيرة فقط"],
+                correct: 1,
+                explanation: "Interpersonal communication occurs between two or more individuals using various channels.",
+                explanation_ar: "يحدث الاتصال الشخصي بين فردين أو أكثر باستخدام قنوات متنوعة."
+            },
+            {
+                id: "comm-s3-3",
+                text: "\"Small Group Communication\" typically involves interactions among how many people?",
+                text_ar: "عادةً ما يتضمن \"اتصال المجموعات الصغيرة\" تفاعلات بين كم عدد الأشخاص؟",
+                options: ["Exactly two people", "Three or more people connected by a common purpose", "Only people within the same family", "An unlimited number of people via social media"],
+                options_ar: ["شخصين بالضبط", "ثلاثة أشخاص أو أكثر يجمعهم هدف مشترك", "الأشخاص داخل نفس العائلة فقط", "عدد غير محدود من الأشخاص عبر وسائل التواصل الاجتماعي"],
+                correct: 1,
+                explanation: "Small group communication involves 3+ people who share a common goal or identity.",
+                explanation_ar: "يتضمن اتصال المجموعات الصغيرة 3 أشخاص أو أكثر يتشاركون هدفاً أو هوية واحدة."
+            },
+            {
+                id: "comm-s3-4",
+                text: "Shared identity, mutual influence, and regular meetings are key characteristics of:",
+                text_ar: "الهوية المشتركة والتأثير المتبادل والاجتماعات المنتظمة هي خصائص رئيسية لـ:",
+                options: ["Public Speaking", "Intrapersonal Communication", "Small Group Communication", "Mass Communication"],
+                options_ar: ["الخطابة العامة", "الاتصال الذاتي", "اتصال المجموعات الصغيرة", "الاتصال الجماهيري"],
+                correct: 2,
+                explanation: "These traits define the collaborative nature of small group interactions.",
+                explanation_ar: "تحدد هذه السمات الطبيعة التعاونية لتفاعلات المجموعات الصغيرة."
+            },
+            {
+                id: "comm-s3-5",
+                text: "Strategic communication used to convey ideas, programs, or presentations to the masses or niche audiences is called:",
+                text_ar: "الاتصال الاستراتيجي المستخدم لنقل الأفكار أو البرامج أو العروض التقديمية للجماهير أو فئات محددة يسمى:",
+                options: ["Intrapersonal Communication", "Private Communication", "Public Communication or Public Speaking", "Personal Communication"],
+                options_ar: ["الاتصال الذاتي", "الاتصال الخاص", "الاتصال العام أو الخطابة العامة", "الاتصال الشخصي"],
+                correct: 2,
+                explanation: "Public communication is designed to reach many people, often through a structured presentation.",
+                explanation_ar: "الاتصال العام مصمم للوصول إلى العديد من الأشخاص، غالباً من خلال عرض تقديمي منظم."
+            },
+            {
+                id: "comm-s3-6",
+                text: "Which field considers not only how and why a message is created but also the medium (like TV or Newspapers) used to send it?",
+                text_ar: "أي مجال يأخذ في الاعتبار ليس فقط كيف ولماذا نُشئت الرسالة، بل أيضاً الوسيط (مثل التلفزيون أو الصحف) المستخدم لإرسالها؟",
+                options: ["Small Group Communication", "Mass Communication", "Non-Verbal Communication", "Interpersonal Communication"],
+                options_ar: ["اتصال المجموعات الصغيرة", "الاتصال الجماهيري (Mass Communication)", "الاتصال غير اللفظي", "الاتصال الشخصي"],
+                correct: 1,
+                explanation: "Mass communication study involves the analysis of messages transmitted via media to large audiences.",
+                explanation_ar: "تتضمن دراسة الاتصال الجماهيري تحليل الرسائل المنقولة عبر وسائل الإعلام إلى جماهير كبيرة."
+            },
+            {
+                id: "comm-s3-7",
+                text: "\"Non-Verbal Communication\" is the process of conveying information about needs, intentions, and thoughts without using:",
+                text_ar: "\"الاتصال غير اللفظي\" هو عملية نقل معلومات حول الاحتياجات والنوايا والأفكار دون استخدام:",
+                options: ["Body language", "Verbal language", "Intentions", "Attitudes"],
+                options_ar: ["لغة الجسد", "اللغة اللفظية (Verbal)", "النوايا", "المواقف"],
+                correct: 1,
+                explanation: "Non-verbal communication relies on body language, tone, and facial expressions instead of words.",
+                explanation_ar: "يعتمد الاتصال غير اللفظي على لغة الجسد، والنبرة، وتعبيرات الوجه بدلاً من الكلمات."
+            },
+            {
+                id: "comm-s3-8",
+                text: "Which of the following is considered a medium for \"Mass Communication\"?",
+                text_ar: "أي مما يلي يعتبر وسيلة لـ \"الاتصال الجماهيري\"؟",
+                options: ["Personal thoughts", "One-on-one whispering", "Magazines and Newspapers", "Inner dreams"],
+                options_ar: ["الأفكار الشخصية", "الهمس لشخص واحد", "المجلات والصحف", "الأحلام الداخلية"],
+                correct: 2,
+                explanation: "Magazines and newspapers are examples of print media used in mass communication.",
+                explanation_ar: "المجلات والصحف هي أمثلة على الوسائل المطبوعة المستخدمة في الاتصال الجماهيري."
+            },
+            {
+                id: "comm-s3-9",
+                text: "[True or False] Thinking about what to have for dinner is an example of Interpersonal Communication.",
+                text_ar: "[صح أم خطأ] التفكير فيما ستتناوله على العشاء هو مثال على الاتصال الشخصي (Interpersonal).",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "It is an example of Intrapersonal communication since it happens within oneself.",
+                explanation_ar: "هذا مثال على الاتصال الذاتي (Intrapersonal) لأنه يحدث داخل النفس."
+            },
+            {
+                id: "comm-s3-10",
+                text: "[True or False] Interpersonal communication can be conducted through both verbal and non-verbal methods.",
+                text_ar: "[صح أم خطأ] يمكن إجراء الاتصال الشخصي من خلال كل من الأساليب اللفظية وغير اللفظية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Interpersonal interaction includes speech, as well as body language and tone.",
+                explanation_ar: "يشمل التفاعل الشخصي الكلام، بالإضافة إلى لغة الجسد ونبرة الصوت."
+            },
+            {
+                id: "comm-s3-11",
+                text: "[True or False] A personnel committee or an audit committee are examples of small group communication.",
+                text_ar: "[صح أم خطأ] لجنة الموظفين أو لجنة التدقيق هي أمثلة على اتصال المجموعات الصغيرة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Committees are specialized small groups working toward a common goal.",
+                explanation_ar: "اللجان هي مجموعات صغيرة متخصصة تعمل نحو هدف مشترك."
+            },
+            {
+                id: "comm-s3-12",
+                text: "[True or False] Public communication is primarily used for private, one-on-one conversations between friends.",
+                text_ar: "[صح أم خطأ] يُستخدم الاتصال العام في المقام الأول لإجراء محادثات خاصة وجهاً لوجه بين الأصدقاء.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Public communication is for speaking to an audience, not private one-on-one chats.",
+                explanation_ar: "الاتصال العام مخصص للتحدث أمام الجمهور، وليس للمحادثات الخاصة الفردية."
+            },
+            {
+                id: "comm-s3-13",
+                text: "[True or False] Mass communication involves analyzing messages sent to large audiences via verbal and written media.",
+                text_ar: "[صح أم خطأ] يتضمن الاتصال الجماهيري تحليل الرسائل المرسلة إلى جماهير كبيرة عبر وسائل الإعلام اللفظية والمكتوبة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Analyzing the creation and transmission of messages to the public is the core of mass communication study.",
+                explanation_ar: "تحليل إنشاء ونقل الرسائل إلى الجمهور هو جوهر دراسة الاتصال الجماهيري."
+            },
+            {
+                id: "comm-s3-14",
+                text: "[True or False] Non-verbal communication includes the way beings convey their attitudes and thoughts using only written words.",
+                text_ar: "[صح أم خطأ] يشمل الاتصال غير اللفظي الطريقة التي تنقل بها الكائنات مواقفها وأفكارها باستخدام الكلمات المكتوبة فقط.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Non-verbal communication explicitly excludes the use of verbal or written words.",
+                explanation_ar: "الاتصال غير اللفظي يستبعد صراحةً استخدام الكلمات اللفظية أو المكتوبة."
+            },
+            {
+                id: "comm-s3-15",
+                text: "[True or False] In small group communication, the members are connected through a shared identity and mutual influence.",
+                text_ar: "[صح أم خطأ] في اتصال المجموعات الصغيرة، يرتبط الأعضاء من خلال هوية مشتركة وتأثير متبادل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "This shared bond distinguishes a small group from a random collection of people.",
+                explanation_ar: "هذا الرابط المشترك هو ما يميز المجموعة الصغيرة عن مجرد مجموعة عشوائية من الناس."
+            },
+            {
+                id: "comm-s3-16",
+                text: "[True or False] Mass communication is a narrow field that only cares about the content of the message, regardless of the medium.",
+                text_ar: "[صح أم خطأ] الاتصال الجماهيري هو مجال ضيق يهتم فقط بمحتوى الرسالة، بغض النظر عن الوسيلة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Mass communication is a broad field that considers both the message content and the medium (TV, radio, etc.).",
+                explanation_ar: "الاتصال الجماهيري مجال واسع يأخذ في الاعتبار محتوى الرسالة والوسيلة (تلفزيون، راديو، إلخ)."
+            },
+            {
+                id: "comm-s3-17",
+                text: "[True or False] Intrapersonal communication involves analyzing your own thought processes or beliefs.",
+                text_ar: "[صح أم خطأ] يتضمن الاتصال الذاتي (Intrapersonal) تحليل عمليات التفكير أو المعتقدات الخاصة بك.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "It is the communication that happens within a person's individual mental space.",
+                explanation_ar: "هو الاتصال الذي يحدث داخل الفضاء الذهني الفردي للشخص."
+            },
+            {
+                id: "comm-s3-18",
+                text: "[True or False] Strategic communication to the public, such as propaganda or data presentations, falls under Public Communication.",
+                text_ar: "[صح أم خطأ] الاتصال الاستراتيجي للجمهور، مثل الدعاية أو عروض البيانات، يندرج تحت الاتصال العام.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Public communication encompasses planned presentations to large or niche audiences.",
+                explanation_ar: "يشمل الاتصال العام العروض التقديمية المخطط لها للجماهير الكبيرة أو المحددة."
+            }
+        ]
+    },
+    {
+        id: "comm-meetings",
+        title: "Effective Meetings (Slide 4)",
+        title_ar: "الاجتماعات الفعالة (سلايد 4)",
+        description: "Covers roles (Chairperson, Secretary, Members), purposes of meetings, formal vs. informal meetings, and agendas.",
+        description_ar: "يغطي أدوار (الرئيس، السكرتير، الأعضاء)، أغراض الاجتماعات، الاجتماعات الرسمية مقابل غير الرسمية، وجداول الأعمال.",
+        icon: "🤝",
+        questions: [
+            {
+                id: "comm-mt-1",
+                text: "Who is responsible for providing the policy and procedure for a meeting?",
+                text_ar: "من المسؤول عن توفير السياسة والإجراءات الخاصة بالاجتماع؟",
+                options: ["The Chairperson", "The Organization", "The Secretary", "The Members"],
+                options_ar: ["رئيس الجلسة", "المؤسسة (The Organization)", "السكرتير", "الأعضاء"],
+                correct: 1,
+                explanation: "The organization provides the framework, while the chairperson implements it.",
+                explanation_ar: "المؤسسة هي التي تضع الإطار العام، بينما يقوم رئيس الجلسة بتنفيذه."
+            },
+            {
+                id: "comm-mt-2",
+                text: "The responsibility for organizing and running the meeting according to standing orders lies with:",
+                text_ar: "تقع مسؤولية تنظيم وإدارة الاجتماع وفقاً للأوامر القائمة (Standing Orders) على عاتق:",
+                options: ["The Organization", "The Meeting's Executive", "Every member equally", "The audience"],
+                options_ar: ["المؤسسة", "اللجنة التنفيذية للاجتماع", "كل عضو بالتساوي", "الجمهور"],
+                correct: 1,
+                explanation: "The executive team (Chairperson/Secretary) is tasked with the practical running of the meeting.",
+                explanation_ar: "الفريق التنفيذي (الرئيس/السكرتير) مكلف بالإدارة العملية للاجتماع."
+            },
+            {
+                id: "comm-mt-3",
+                text: "What is required from \"Members\" during a meeting?",
+                text_ar: "ما هو المطلوب من \"الأعضاء\" خلال الاجتماع؟",
+                options: ["To just listen and stay silent", "To take part in decision-making and contribute expertise", "To write the final policy", "To only attend the opening session"],
+                options_ar: ["مجرد الاستماع والبقاء صامتين", "المشاركة في اتخاذ القرار والمساهمة بخبراتهم", "كتابة السياسة النهائية", "حضور الجلسة الافتتاحية فقط"],
+                correct: 1,
+                explanation: "Members should be active participants, adding value through their knowledge.",
+                explanation_ar: "يجب أن يكون الأعضاء مشاركين نشطين، يضيفون قيمة من خلال معرفتهم."
+            },
+            {
+                id: "comm-mt-4",
+                text: "Which of the following is NOT a purpose of a meeting mentioned in the slides?",
+                text_ar: "أي مما يلي ليس من أغراض الاجتماع المذكورة في السلايدات؟",
+                options: ["Provide and clarify information", "Encourage problem-solving", "Personal social networking only", "Give and receive feedback"],
+                options_ar: ["تقديم وتوضيح المعلومات", "تشجيع حل المشكلات", "التواصل الاجتماعي الشخصي فقط", "تقديم وتلقي التغذية الراجعة"],
+                correct: 2,
+                explanation: "While social networking may happen, it is not the primary formal purpose of a professional meeting.",
+                explanation_ar: "بينما قد يحدث تواصل اجتماعي، إلا أنه ليس الغرض الرسمي الأساسي للاجتماع المهني."
+            },
+            {
+                id: "comm-mt-5",
+                text: "Formal meetings are characterized by:",
+                text_ar: "تتميز الاجتماعات الرسمية بـ:",
+                options: ["Lack of any rules or regulations", "Having rules and procedures that provide a framework", "Excluding most members from participation", "Being highly disorganized"],
+                options_ar: ["نقص أي قواعد أو لوائح", "وجود قواعد وإجراءات توفر إطاراً للعمل", "استبعاد معظم الأعضاء من المشاركة", "كونها غير منظمة للغاية"],
+                correct: 1,
+                explanation: "Formality implies a structured approach with defined procedures.",
+                explanation_ar: "الرسمية تعني اتباع نهج منظم مع إجراءات محددة."
+            },
+            {
+                id: "comm-mt-6",
+                text: "The leader’s role in a formal meeting is to:",
+                text_ar: "دور القائد في الاجتماع الرسمي هو:",
+                options: ["Control the entire discussion without input", "Manage the meeting and the discussion", "Avoid any democratic procedures", "Only record the minutes"],
+                options_ar: ["التحكم في النقاش بالكامل دون مدخلات", "إدارة الاجتماع والنقاش", "تجنب أي إجراءات ديمقراطية", "تسجيل المحاضر فقط"],
+                correct: 1,
+                explanation: "The leader facilitates the flow of discussion and ensures the agenda is followed.",
+                explanation_ar: "يسهل القائد تدفق النقاش ويضمن اتباع جدول الأعمال."
+            },
+            {
+                id: "comm-mt-7",
+                text: "Informal meetings are primarily held to:",
+                text_ar: "تعقد الاجتماعات غير الرسمية في المقام الأول من أجل:",
+                options: ["Follow strict legal formalities", "Exchange information, solve problems, and set goals", "Avoid any type of group discussion", "Replace formal contracts"],
+                options_ar: ["اتباع الشكليات القانونية الصارمة", "تبادل المعلومات وحل المشكلات ووضع الأهداف", "تجنب أي نوع من النقاش الجماعي", "استبدال العقود الرسمية"],
+                correct: 1,
+                explanation: "Informal meetings focus on collaborative work and communication without rigid structure.",
+                explanation_ar: "تركيز الاجتماعات غير الرسمية يكون على العمل التعاوني والتواصل دون هيكل جامد."
+            },
+            {
+                id: "comm-mt-8",
+                text: "A \"Meeting Agenda\" is best described as:",
+                text_ar: "أفضل وصف لـ \"جدول أعمال الاجتماع\" هو:",
+                options: ["A list of all past meetings", "A schedule or list of items to be discussed", "A list of employees' salaries", "A summary of the meeting's results"],
+                options_ar: ["قائمة بجميع الاجتماعات السابقة", "جدول أو قائمة بالنقاط المقرر مناقشتها", "قائمة برواتب الموظفين", "ملخص لنتائج الاجتماع"],
+                correct: 1,
+                explanation: "The agenda is the roadmap for what will be covered during the meeting.",
+                explanation_ar: "جدول الأعمال هو خريطة الطريق لما سيتم تغطيته خلال الاجتماع."
+            },
+            {
+                id: "comm-mt-9",
+                text: "In a \"Regular Meeting Agenda\", what should be included at the beginning?",
+                text_ar: "في \"جدول أعمال الاجتماع الدوري\"، ماذا يجب أن يُدرج في البداية؟",
+                options: ["The final decisions", "The date, time, and place of the meeting", "The budget of the company", "The list of retired members"],
+                options_ar: ["القرارات النهائية", "التاريخ والوقت ومكان الاجتماع", "ميزانية الشركة", "قائمة الأعضاء المتقاعدين"],
+                correct: 1,
+                explanation: "Logistical details like date, time, and location are essential header information.",
+                explanation_ar: "التفاصيل اللوجستية مثل التاريخ والوقت والموقع هي معلومات ترويسة أساسية."
+            },
+            {
+                id: "comm-mt-10",
+                text: "During the meeting, the chairperson should deal with potential conflicts:",
+                text_ar: "خلال الاجتماع، يجب على رئيس الجلسة التعامل مع النزاعات المحتملة:",
+                options: ["After the meeting ends", "Only if someone gets angry", "Before they become serious", "By ignoring them completely"],
+                options_ar: ["بعد انتهاء الاجتماع", "فقط إذا غضب شخص ما", "قبل أن تصبح خطيرة", "من خلال تجاهلها تماماً"],
+                correct: 2,
+                explanation: "Early intervention prevents conflicts from disrupting the meeting's progress.",
+                explanation_ar: "التدخل المبكر يمنع النزاعات من تعطيل سير الاجتماع."
+            },
+            {
+                id: "comm-mt-11",
+                text: "If the business of the meeting cannot be completed, the leader should:",
+                text_ar: "إذا تعذر إكمال أعمال الاجتماع، يجب على القائد:",
+                options: ["Cancel the meeting results", "Adjourn the business to the next meeting", "Stay until midnight to finish", "Delete the remaining topics"],
+                options_ar: ["إلغاء نتائج الاجتماع", "تأجيل الأعمال إلى الاجتماع القادم", "البقاء حتى منتصف الليل للانتهاء", "حذف المواضيع المتبقية"],
+                correct: 1,
+                explanation: "Unfinished items are typically moved to the next scheduled meeting's agenda.",
+                explanation_ar: "عادةً ما يتم نقل البنود غير المنتهية إلى جدول أعمال الاجتماع المجدول التالي."
+            },
+            {
+                id: "comm-mt-12",
+                text: "[True or False] It is the chairperson's responsibility, not the organization's, to provide policies.",
+                text_ar: "[صح أم خطأ] مسؤولية توفير السياسات تقع على عاتق رئيس الجلسة، وليس المؤسسة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "The organization is responsible for the overall policy/framework.",
+                explanation_ar: "المؤسسة هي المسؤولة عن السياسة العامة/الإطار العملي."
+            },
+            {
+                id: "comm-mt-13",
+                text: "[True or False] Meetings can be used to provide training to members.",
+                text_ar: "[صح أم خطأ] يمكن استخدام الاجتماعات لتقديم التدريب للأعضاء.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Training and development are valid professional purposes for a meeting.",
+                explanation_ar: "التدريب والتطوير من الأغراض المهنية المشروعة للاجتماع."
+            },
+            {
+                id: "comm-mt-14",
+                text: "[True or False] Informal meetings are more structured and rigid than formal meetings.",
+                text_ar: "[صح أم خطأ] الاجتماعات غير الرسمية أكثر تنظيماً وجموداً من الاجتماعات الرسمية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Formal meetings have a more rigid structure; informal ones are flexible.",
+                explanation_ar: "الاجتماعات الرسمية لها هيكل أكثر جموداً؛ أما غير الرسمية فهي مرنة."
+            },
+            {
+                id: "comm-mt-15",
+                text: "[True or False] Formal meetings should be conducted in a democratic way.",
+                text_ar: "[صح أم خطأ] يجب إدارة الاجتماعات الرسمية بطريقة ديمقراطية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Democratic participation ensures all voices are heard within the formal structure.",
+                explanation_ar: "تضمن المشاركة الديمقراطية سماع جميع الأصوات داخل الإطار الرسمي."
+            },
+            {
+                id: "comm-mt-16",
+                text: "[True or False] Minutes of the meeting are the official written record of what happened during the meeting.",
+                text_ar: "[صح أم خطأ] محاضر الاجتماع هي السجل الكتابي الرسمي لما حدث خلال الاجتماع.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Minutes serve as the legal and historical record of decisions and discussions.",
+                explanation_ar: "تعمل المحاضر كجل قانوني وتاريخي للقرارات والنقاشات."
+            },
+            {
+                id: "comm-mt-17",
+                text: "[True or False] The chairperson must encourage everyone’s participation during the discussion.",
+                text_ar: "[صح أم خطأ] يجب على رئيس الجلسة تشجيع مشاركة الجميع أثناء النقاش.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Facilitating inclusive discussion is a primary duty of the chairperson.",
+                explanation_ar: "تسهيل النقاش الشامل هو أحد الواجبات الأساسية لرئيس الجلسة."
+            },
+            {
+                id: "comm-mt-18",
+                text: "[True or False] An effective meeting does not necessarily need a determined purpose.",
+                text_ar: "[صح أم خطأ] الاجتماع الفعال لا يحتاج بالضرورة إلى غرض محدد.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "A clear purpose is essential for any meeting to be effective and efficient.",
+                explanation_ar: "الغرض الواضح ضروري لأي اجتماع ليكون فعالاً وكفؤاً."
+            },
+            {
+                id: "comm-mt-19",
+                text: "[True or False] One of the final steps in a meeting is determining the date and place of the next meeting.",
+                text_ar: "[صح أم خطأ] إحدى الخطوات النهائية في الاجتماع هي تحديد تاريخ ومكان الاجتماع القادم.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Planning for the future ensures continuity and momentum.",
+                explanation_ar: "التخطيط للمستقبل يضمن الاستمرارية والزخم العملي."
+            },
+            {
+                id: "comm-mt-20",
+                text: "[True or False] A meeting agenda helps keep the discussion on track and manages time effectively.",
+                text_ar: "[صح أم خطأ] يساعد جدول أعمال الاجتماع في إبقاء النقاش في مساره الصحيح وإدارة الوقت بفعالية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "The agenda acts as a control mechanism for the meeting's scope and timing.",
+                explanation_ar: "يعمل جدول الأعمال كآلية تحكم لنطاق وتوقيت الاجتماع."
+            },
+            {
+                id: "comm-mt-21",
+                text: "[True or False] Members should only contribute to areas where they have expertise.",
+                text_ar: "[صح أم خطأ] يجب على الأعضاء المساهمة فقط في المجالات التي لديهم خبرة فيها.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Contributing based on expertise ensures high-quality input and valuable decisions.",
+                explanation_ar: "المساهمة بناءً على الخبرة تضمن مدخلات عالية الجودة وقرارات قيمة."
+            },
+            {
+                id: "comm-mt-22",
+                text: "[True or False] Preparation is the key to an effective meeting.",
+                text_ar: "[صح أم خطأ] التحضير هو المفتاح لاجتماع فعال.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Prior planning and review by all parties lead to better outcomes.",
+                explanation_ar: "التخطيط المسبق والمراجعة من قبل جميع الأطراف تؤدي إلى نتائج أفضل."
+            },
+            {
+                id: "comm-mt-23",
+                text: "[True or False] The chairperson should summarize all motions and amendments during the meeting.",
+                text_ar: "[صح أم خطأ] يجب على رئيس الجلسة تلخيص جميع الاقتراحات والتعديلات خلال الاجتماع.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Summarizing helps ensure clarity and consensus before moving to a vote.",
+                explanation_ar: "يساعد التلخيص في ضمان الوضوح والإجماع قبل الانتقال للتصويت."
+            }
+        ]
     }
 ];
