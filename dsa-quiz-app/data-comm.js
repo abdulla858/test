@@ -4041,5 +4041,769 @@ const quizData = [
                 explanation_ar: "النظر من منظور القارئ يضمن الجودة والتفاعل."
             }
         ]
+    },
+    {
+        id: "comm-midterms",
+        title: "Midterm Exams",
+        title_ar: "الأختبارات النصفية",
+        description: "Comprehensive questions from Midterm exam models (A, B, C) covering communication basics, verbal/non-verbal, and listening.",
+        description_ar: "أسئلة شاملة من نماذج الاختبارات النصفية (A، B، C) تغطي أساسيات الاتصال، الاتصال اللفظي وغير اللفظي، والاستماع.",
+        icon: "📝",
+        questions: [
+            // --- True or False Part ---
+            {
+                id: "comm-mid-tf-1",
+                text: "[True or False] Communication is the process of sending and receiving messages.",
+                text_ar: "[صح أم خطأ] الاتصال هو عملية إرسال واستقبال الرسائل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Communication is defined as the exchange of information between parties.",
+                explanation_ar: "يُعرف الاتصال بأنه تبادل المعلومات بين الأطراف."
+            },
+            {
+                id: "comm-mid-tf-2",
+                text: "[True or False] Nonverbal communication includes body language, eye contact, and facial expressions.",
+                text_ar: "[صح أم خطأ] يشمل الاتصال غير اللفظي لغة الجسد، والتواصل البصري، وتعبيرات الوجه.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Nonverbal cues are messages sent without spoken or written words.",
+                explanation_ar: "الإشارات غير اللفظية هي رسائل تُرسل بدون كلمات منطوقة أو مكتوبة."
+            },
+            {
+                id: "comm-mid-tf-3",
+                text: "[True or False] Listening and hearing mean the same thing.",
+                text_ar: "[صح أم خطأ] الاستماع والسمع يعنيان نفس الشيء.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Hearing is physical; listening is a cognitive, active process of interpreting sound.",
+                explanation_ar: "السمع هو عملية فيزيائية؛ أما الاستماع فهو عملية إدراكية نشطة لتفسير الصوت."
+            },
+            {
+                id: "comm-mid-tf-4",
+                text: "[True or False] Written communication is useful when you need a permanent record of information.",
+                text_ar: "[صح أم خطأ] الاتصال الكتابي مفيد عندما تحتاج إلى سجل دائم للمعلومات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Writing provides documentation and references for long-term use.",
+                explanation_ar: "توفر الكتابة التوثيق والمراجع للاستخدام على المدى الطويل."
+            },
+            {
+                id: "comm-mid-tf-5",
+                text: "[True or False] Feedback helps the sender know if the message was understood.",
+                text_ar: "[صح أم خطأ] التغذية الراجعة تساعد المرسل في معرفة ما إذا كانت الرسالة قد فُهمت.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Feedback closes the communication loop and confirms understanding.",
+                explanation_ar: "التغذية الراجعة تغلق حلقة الاتصال وتؤكد الفهم."
+            },
+            {
+                id: "comm-mid-tf-6",
+                text: "[True or False] Noise can be anything that interferes with the message.",
+                text_ar: "[صح أم خطأ] يمكن أن يكون الضجيج أي شيء يتداخل مع الرسالة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Noise (physical, semantic, or psychological) acts as a barrier to communication.",
+                explanation_ar: "الضجيج (سواء كان مادياً، دلالياً أو نفسياً) يعمل كحاجز للاتصال."
+            },
+            {
+                id: "comm-mid-tf-7",
+                text: "[True or False] Effective communication requires clarity and simplicity.",
+                text_ar: "[صح أم خطأ] يتطلب الاتصال الفعال الوضوح والبساطة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Clear and simple messages reduce the risk of misunderstanding.",
+                explanation_ar: "الرسائل الواضحة والبسيطة تقلل من مخاطر سوء الفهم."
+            },
+            {
+                id: "comm-mid-tf-8",
+                text: "[True or False] Communication skills are not important in teamwork.",
+                text_ar: "[صح أم خطأ] مهارات الاتصال ليست مهمة في العمل الجماعي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Teamwork relies heavily on clear communication for coordination.",
+                explanation_ar: "يعتمد العمل الجماعي بشكل كبير على الاتصال الواضح للتنسيق."
+            },
+            {
+                id: "comm-mid-tf-9",
+                text: "[True or False] Email is an example of formal communication.",
+                text_ar: "[صح أم خطأ] البريد الإلكتروني مثال على الاتصال الرسمي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "In professional settings, email is the primary channel for formal correspondence.",
+                explanation_ar: "في البيئات المهنية، يعتبر البريد الإلكتروني القناة الأساسية للمراسلات الرسمية."
+            },
+            {
+                id: "comm-mid-tf-10",
+                text: "[True or False] The communication process has only two elements: sender and receiver.",
+                text_ar: "[صح أم خطأ] عملية الاتصال تتكون من عنصرين فقط: المرسل والمستقبل.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "The process also includes the message, channel, encoding, decoding, feedback, and context.",
+                explanation_ar: "تتضمن العملية أيضاً الرسالة، القناة، الترميز، فك التشفير، التغذية الراجعة، والسياق."
+            },
+            {
+                id: "comm-mid-tf-11",
+                text: "[True or False] Communication happens only when we speak.",
+                text_ar: "[صح أم خطأ] يحدث الاتصال فقط عندما نتحدث.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Communication also happens through writing, body language, and silence.",
+                explanation_ar: "يحدث الاتصال أيضاً من خلال الكتابة ولغة الجسد وحتى الصمت."
+            },
+            {
+                id: "comm-mid-tf-12",
+                text: "[True or False] Tone of voice is part of verbal communication.",
+                text_ar: "[صح أم خطأ] نبرة الصوت تعتبر جزءاً من الاتصال اللفظي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Tone of voice is often considered para-verbal or associated with verbal delivery.",
+                explanation_ar: "تُعتبر نبرة الصوت جزءاً من الأداء اللفظي أو ما يُعرف بشبه اللفظي المصاحب للكلمات."
+            },
+            {
+                id: "comm-mid-tf-13",
+                text: "[True or False] Good communication improves relationships.",
+                text_ar: "[صح أم خطأ] الاتصال الجيد يحسن العلاقات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Clear and empathetic communication builds trust and understanding.",
+                explanation_ar: "الاتصال الواضح والمتعاطف يبني الثقة والتفاهم."
+            },
+            {
+                id: "comm-mid-tf-14",
+                text: "[True or False] The receiver is the person who interprets the message.",
+                text_ar: "[صح أم خطأ] المستقبل هو الشخص الذي يفسر الرسالة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Receiving involves decoding and interpreting the sender's message.",
+                explanation_ar: "يشمل الاستقبال فك تشفير وتفسير رسالة المرسل."
+            },
+            {
+                id: "comm-mid-tf-15",
+                text: "[True or False] Written communication is not useful for official records.",
+                text_ar: "[صح أم خطأ] الاتصال الكتابي ليس مفيداً للسجلات الرسمية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Written communication is essential for archiving and legal official records.",
+                explanation_ar: "الاتصال الكتابي ضروري للأرشفة والسجلات الرسمية القانونية."
+            },
+            {
+                id: "comm-mid-tf-16",
+                text: "[True or False] Body language can show a person's feelings.",
+                text_ar: "[صح أم خطأ] لغة الجسد يمكن أن تظهر مشاعر الشخص.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Nonverbal cues like posture and gestures are strong indicators of emotion.",
+                explanation_ar: "الإشارات غير اللفظية مثل الوقفة والإيماءات هي مؤشرات قوية للمشاعر."
+            },
+            {
+                id: "comm-mid-tf-17",
+                text: "[True or False] Effective communication includes giving and receiving feedback.",
+                text_ar: "[صح أم خطأ] يتضمن الاتصال الفعال تقديم وتلقي التغذية الراجعة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Feedback is crucial to ensure the communication objective was met.",
+                explanation_ar: "التغذية الراجعة ضرورية لضمان تحقيق هدف الاتصال."
+            },
+            {
+                id: "comm-mid-tf-18",
+                text: "[True or False] Using unclear words can cause misunderstanding.",
+                text_ar: "[صح أم خطأ] استخدام كلمات غير واضحة يمكن أن يسبب سوء فهم.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Semantic barriers result from ambiguous or technical language.",
+                explanation_ar: "تنتج الحواجز الدلالية عن اللغة الغامضة أو التقنية."
+            },
+            {
+                id: "comm-mid-tf-19",
+                text: "[True or False] Listening is an active process.",
+                text_ar: "[صح أم خطأ] الاستماع عملية نشطة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Active listening requires effort, concentration, and cognitive processing.",
+                explanation_ar: "الاستماع النشط يتطلب جهداً وتركيزاً ومعالجة ذهنية."
+            },
+            {
+                id: "comm-mid-tf-20",
+                text: "[True or False] Communication cannot be affected by culture.",
+                text_ar: "[صح أم خطأ] لا يمكن أن يتأثر الاتصال بالثقافة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Cultural norms significantly influence how messages are sent and interpreted.",
+                explanation_ar: "تؤثر المعايير الثقافية بشكل كبير على كيفية إرسال وتفسير الرسائل."
+            },
+            {
+                id: "comm-mid-tf-21",
+                text: "[True or False] Communication includes speaking, writing, and body language.",
+                text_ar: "[صح أم خطأ] يشمل الاتصال التحدث والكتابة ولغة الجسد.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "These are primary forms of verbal and nonverbal communication.",
+                explanation_ar: "هذه هي الأشكال الأساسية للاتصال اللفظي وغير اللفظي."
+            },
+            {
+                id: "comm-mid-tf-22",
+                text: "[True or False] Only the sender is responsible for effective communication.",
+                text_ar: "[صح أم خطأ] المرسل وحده هو المسؤول عن الاتصال الفعال.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Both sender and receiver share responsibility for ensuring understanding.",
+                explanation_ar: "يتشارك كل من المرسل والمستقبل المسؤولية عن ضمان الفهم."
+            },
+            {
+                id: "comm-mid-tf-23",
+                text: "[True or False] Clear pronunciation helps improve verbal communication.",
+                text_ar: "[صح أم خطأ] النطق الواضح يساعد على تحسين الاتصال اللفظي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Articulation prevents linguistic barriers during speech.",
+                explanation_ar: "الوضوح في النطق يمنع الحواجز اللغوية أثناء الكلام."
+            },
+            {
+                id: "comm-mid-tf-24",
+                text: "[True or False] Noise can be physical or psychological.",
+                text_ar: "[صح أم خطأ] يمكن أن يكون الضجيج مادياً أو نفسياً.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Physical noise is external; psychological noise consists of mental distractions.",
+                explanation_ar: "الضوضاء المادية خارجية؛ أما النفسية فتتمثل في المشتتات العقلية."
+            },
+            {
+                id: "comm-mid-tf-25",
+                text: "[True or False] Nonverbal messages never affect communication.",
+                text_ar: "[صح أم خطأ] الرسائل غير اللفظية لا تؤثر أبداً على الاتصال.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Nonverbal cues often carry more meaning than words themselves.",
+                explanation_ar: "غالباً ما تحمل الإشارات غير اللفظية معنى أكثر من الكلمات نفسها."
+            },
+            {
+                id: "comm-mid-tf-26",
+                text: "[True or False] Good communication helps reduce conflicts.",
+                text_ar: "[صح أم خطأ] الاتصال الجيد يساعد في تقليل الصراعات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Clarity and mutual feedback prevent the misunderstandings that lead to conflict.",
+                explanation_ar: "الوضوح والتغذية الراجعة المتبادلة تمنع سوء الفهم الذي يؤدي للصراع."
+            },
+            {
+                id: "comm-mid-tf-27",
+                text: "[True or False] Listening carefully is part of effective communication.",
+                text_ar: "[صح أم خطأ] الاستماع بعناية جزء من الاتصال الفعال.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Attentive listening is necessary for accurate decoding of messages.",
+                explanation_ar: "الاستماع اليقظ ضروري لفك تشفير الرسائل بدقة."
+            },
+            {
+                id: "comm-mid-tf-28",
+                text: "[True or False] Written communication is always informal.",
+                text_ar: "[صح أم خطأ] الاتصال الكتابي دائماً غير رسمي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Written communication can be highly formal (legal documents, business letters).",
+                explanation_ar: "يمكن أن يكون الاتصال الكتابي رسمياً للغاية (وثائق قانونية، رسائل تجارية)."
+            },
+            {
+                id: "comm-mid-tf-29",
+                text: "[True or False] The message must be encoded before it is sent.",
+                text_ar: "[صح أم خطأ] يجب ترميز الرسالة قبل إرسالها.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Encoding is the process of converting ideas into symbols or words.",
+                explanation_ar: "الترميز هو عملية تحويل الأفكار إلى رموز أو كلمات."
+            },
+            {
+                id: "comm-mid-tf-30",
+                text: "[True or False] A receiver gives feedback to show understanding.",
+                text_ar: "[صح أم خطأ] المستقبل يعطي تغذية راجعة لإظهار الفهم.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Feedback indicates whether the receiver's decoded meaning matches the sender's intent.",
+                explanation_ar: "توضح التغذية الراجعة ما إذا كان المعنى الذي فكه المستقبل يطابق نية المرسل."
+            },
+
+            // --- Multiple Choice Part ---
+            {
+                id: "comm-mid-mc-1",
+                text: "The main purpose of communication is to:",
+                text_ar: "الغرض الرئيسي من الاتصال هو:",
+                options: ["Confuse people", "Share information", "Waste time", "Avoid interaction"],
+                options_ar: ["إرباك الناس", "مشاركة المعلومات", "إضاعة الوقت", "تجنب التفاعل"],
+                correct: 1,
+                explanation: "Information sharing is the core driver of communication.",
+                explanation_ar: "مشاركة المعلومات هي المحرك الأساسي للاتصال."
+            },
+            {
+                id: "comm-mid-mc-2",
+                text: "The person who sends the message is called the:",
+                text_ar: "الشخص الذي يرسل الرسالة يسمى:",
+                options: ["Receiver", "Channel", "Sender", "Feedback"],
+                options_ar: ["المستقبل", "القناة", "المرسل", "التغذية الراجعة"],
+                correct: 2,
+                explanation: "The sender is the source or originator of the message.",
+                explanation_ar: "المرسل هو مصدر أو منشئ الرسالة."
+            },
+            {
+                id: "comm-mid-mc-3",
+                text: "Which of the following is a verbal form of communication?",
+                text_ar: "أي مما يلي هو شكل من أشكال الاتصال اللفظي؟",
+                options: ["Speaking", "Gestures", "Posture", "Eye contact"],
+                options_ar: ["التحدث", "الإيماءات", "الوقفة", "التواصل البصري"],
+                correct: 0,
+                explanation: "Speech involves the use of spoken words (verbal).",
+                explanation_ar: "الكلام يتضمن استخدام الكلمات المنطوقة (لفظي)."
+            },
+            {
+                id: "comm-mid-mc-4",
+                text: "Active listening involves:",
+                text_ar: "يتضمن الاستماع النشط:",
+                options: ["Paying full attention", "Interrupting the speaker", "Looking around", "Ignoring the message"],
+                options_ar: ["إعطاء الاهتمام الكامل", "مقاطعة المتحدث", "النظر في الأرجاء", "تجاهل الرسالة"],
+                correct: 0,
+                explanation: "Full focus is required to accurately interpret the message.",
+                explanation_ar: "التركيز الكامل مطلوب لتفسير الرسالة بدقة."
+            },
+            {
+                id: "comm-mid-mc-5",
+                text: "A barrier to effective communication is:",
+                text_ar: "من عوائق الاتصال الفعال:",
+                options: ["Understanding", "Noise", "Clarity", "Feedback"],
+                options_ar: ["الفهم", "الضجيج", "الوضوح", "التغذية الراجعة"],
+                correct: 1,
+                explanation: "Noise disrupts the flow or clarity of the message.",
+                explanation_ar: "الضجيج يعطل تدفق أو وضوح الرسالة."
+            },
+            {
+                id: "comm-mid-mc-6",
+                text: "Nonverbal communication is also called:",
+                text_ar: "يسمى الاتصال غير اللفظي أيضاً بـ:",
+                options: ["Digital communication", "Body language", "Written communication", "Technical language"],
+                options_ar: ["الاتصال الرقمي", "لغة الجسد", "الاتصال الكتابي", "اللغة التقنية"],
+                correct: 1,
+                explanation: "Body language is a major component of non-verbal interactions.",
+                explanation_ar: "لغة الجسد هي مكون رئيسي للتفاعلات غير اللفظية."
+            },
+            {
+                id: "comm-mid-mc-7",
+                text: "Which is an example of written communication?",
+                text_ar: "أي مما يلي هو مثال على الاتصال الكتابي؟",
+                options: ["Email", "Phone call", "Meeting", "Speech"],
+                options_ar: ["البريد الإلكتروني", "مكالمة هاتفية", "اجتماع", "خطاب"],
+                correct: 0,
+                explanation: "Emails use text to convey information.",
+                explanation_ar: "البريد الإلكتروني يستخدم النصوص لنقل المعلومات."
+            },
+            {
+                id: "comm-mid-mc-8",
+                text: "Effective communication requires:",
+                text_ar: "يتطلب الاتصال الفعال:",
+                options: ["Using complicated words", "Clear and simple language", "Speaking loudly", "Talking fast"],
+                options_ar: ["استخدام كلمات معقدة", "لغة واضحة وبسيطة", "التحدث بصوت عالٍ", "الكلام بسرعة"],
+                correct: 1,
+                explanation: "Simplicity ensures the receiver can decode the message easily.",
+                explanation_ar: "البساطة تضمن قدرة المستقبل على فك تشفير الرسالة بسهولة."
+            },
+            {
+                id: "comm-mid-mc-9",
+                text: "The medium through which a message is sent is the:",
+                text_ar: "الوسيط الذي تُرسل من خلاله الرسالة هو:",
+                options: ["Noise", "Feedback", "Channel", "Context"],
+                options_ar: ["الضجيج", "التغذية الراجعة", "القناة", "السياق"],
+                correct: 2,
+                explanation: "The channel is the physical or technical pathway for the message.",
+                explanation_ar: "القناة هي المسار المادي أو التقني للرسالة."
+            },
+            {
+                id: "comm-mid-mc-10",
+                text: "Listening skills help people to:",
+                text_ar: "تساعد مهارات الاستماع الناس على:",
+                options: ["Understand the message", "Speak more", "Avoid communication", "End conversations"],
+                options_ar: ["فهم الرسالة", "التحدث أكثر", "تجنب الاتصال", "إنهاء المحادثات"],
+                correct: 0,
+                explanation: "Listening is key to accurate comprehension and interaction.",
+                explanation_ar: "الاستماع هو المفتاح للفهم الدقيق والتفاعل."
+            },
+            {
+                id: "comm-mid-mc-11",
+                text: "Eye contact means:",
+                text_ar: "التواصل البصري يعني:",
+                options: ["Looking at the person you are talking to", "Avoiding the speaker", "Looking at the ground", "Closing your eyes"],
+                options_ar: ["النظر إلى الشخص الذي تتحدث إليه", "تجنب المتحدث", "النظر إلى الأرض", "إغلاق عينيك"],
+                correct: 0,
+                explanation: "Eye contact builds connection and shows attention.",
+                explanation_ar: "التواصل البصري يبني الاتصال ويظهر الاهتمام."
+            },
+            {
+                id: "comm-mid-mc-12",
+                text: "Communication becomes effective when:",
+                text_ar: "يصبح الاتصال فعالاً عندما:",
+                options: ["Both sender and receiver understand the message", "The message is misunderstood", "The sender talks only", "The receiver stays silent"],
+                options_ar: ["يفهم كل من المرسل والمستقبل الرسالة", "تُفهم الرسالة بشكل خاطئ", "يتحدث المرسل فقط", "يبقى المستقبل صامتاً"],
+                correct: 0,
+                explanation: "Success is measured by mutual understanding.",
+                explanation_ar: "يُقاس النجاح بالفهم المتبادل."
+            },
+            {
+                id: "comm-mid-mc-13",
+                text: "Which of the following is a formal type of communication?",
+                text_ar: "أي مما يلي هو نوع رسمي من الاتصال؟",
+                options: ["Classroom lecture", "Chat with friends", "Family discussion", "Social media comments"],
+                options_ar: ["محاضرة صفية", "دردشة مع الأصدقاء", "نقاش عائلي", "تعليقات وسائل التواصل الاجتماعي"],
+                correct: 0,
+                explanation: "Lectures follow a structured, professional format.",
+                explanation_ar: "تتبع المحاضرات تنسيقاً مهنياً منظماً."
+            },
+            {
+                id: "comm-mid-mc-14",
+                text: "A message is encoded when the sender:",
+                text_ar: "يتم ترميز الرسالة عندما يقوم المرسل بـ:",
+                options: ["Writes or speaks it", "Ignores it", "Deletes it", "Forgets it"],
+                options_ar: ["كتابتها أو التحدث بها", "تجاهلها", "حذفها", "نسيانها"],
+                correct: 0,
+                explanation: "Encoding is transforming a thought into a communicable form.",
+                explanation_ar: "الترميز هو تحويل الفكرة إلى شكل قابل للاتصال."
+            },
+            {
+                id: "comm-mid-mc-15",
+                text: "A good communicator should:",
+                text_ar: "يجب على المتواصل الجيد أن:",
+                options: ["Interrupt others", "Show empathy", "Avoid feedback", "Use slang all the time"],
+                options_ar: ["يقاطع الآخرين", "يظهر التعاطف", "يتجنب التغذية الراجعة", "يستخدم لغة عامية طوال الوقت"],
+                correct: 1,
+                explanation: "Empathy helps tailor the message and build rapport.",
+                explanation_ar: "يساعد التعاطف في تكييف الرسالة وبناء علاقة جيدة."
+            },
+            {
+                id: "comm-mid-mc-16",
+                text: "Communication is best defined as:",
+                text_ar: "أفضل تعريف للاتصال هو:",
+                options: ["Telling jokes", "Sharing information and ideas", "Talking without listening", "Writing long messages"],
+                options_ar: ["إلقاء النكات", "مشاركة المعلومات والأفكار", "التحدث دون استماع", "كتابة رسائل طويلة"],
+                correct: 1,
+                explanation: "Exchange and sharing are fundamental to the definition.",
+                explanation_ar: "التبادل والمشاركة هما أساس التعريف."
+            },
+            {
+                id: "comm-mid-mc-17",
+                text: "The person who receives and understands the message is the:",
+                text_ar: "الشخص الذي يستقبل ويفهم الرسالة هو:",
+                options: ["Receiver", "Sender", "Channel", "Context"],
+                options_ar: ["المستقبل", "المرسل", "القناة", "السياق"],
+                correct: 0,
+                explanation: "The receiver is the target of the communication process.",
+                explanation_ar: "المستقبل هو هدف عملية الاتصال."
+            },
+            {
+                id: "comm-mid-mc-18",
+                text: "Which of the following is a nonverbal cue?",
+                text_ar: "أي مما يلي هو إشارة غير لفظية؟",
+                options: ["Writing", "Speaking", "Smiling", "Reading aloud"],
+                options_ar: ["الكتابة", "التحدث", "الابتسام", "القراءة بصوت عالٍ"],
+                correct: 2,
+                explanation: "Facial expressions like smiling communicate without words.",
+                explanation_ar: "تعبيرات الوجه مثل الابتسام تتواصل بدون كلمات."
+            },
+            {
+                id: "comm-mid-mc-19",
+                text: "A good listener should:",
+                text_ar: "يجب على المستمع الجيد أن:",
+                options: ["Interrupt the speaker", "Pay attention", "Check their phone", "Talk over the speaker"],
+                options_ar: ["يقاطع المتحدث", "ينتبه جيداً", "يتفحص هاتفه", "يتحدث فوق صوت المتحدث"],
+                correct: 1,
+                explanation: "Attention is the foundation of effective listening.",
+                explanation_ar: "الانتباه هو أساس الاستماع الفعال."
+            },
+            {
+                id: "comm-mid-mc-20",
+                text: "Which of the following is an example of formal communication?",
+                text_ar: "أي مما يلي هو مثال على الاتصال الرسمي؟",
+                options: ["Social media comments", "Talking to a friend", "Classroom presentation", "Feedback"],
+                options_ar: ["تعليقات وسائل التواصل الاجتماعي", "التحدث إلى صديق", "عرض تقديمي صفي", "التغذية الراجعة"],
+                correct: 2,
+                explanation: "Academic or professional presentations follow formal protocols.",
+                explanation_ar: "تتبع العروض التقديمية الأكاديمية أو المهنية بروتوكولات رسمية."
+            },
+            {
+                id: "comm-mid-mc-21",
+                text: "A common barrier to communication is:",
+                text_ar: "من العوائق الشائعة للاتصال:",
+                options: ["Clear language", "Noise", "Eye contact", "Understanding"],
+                options_ar: ["اللغة الواضحة", "الضجيج", "التواصل البصري", "الفهم"],
+                correct: 1,
+                explanation: "Noise creates interference that blocks the message.",
+                explanation_ar: "الضجيج يخلق تداخلاً يحجب الرسالة."
+            },
+            {
+                id: "comm-mid-mc-22",
+                text: "Facial expressions are part of:",
+                text_ar: "تعبيرات الوجه جزء من:",
+                options: ["Written communication", "Nonverbal communication", "Digital communication", "Mechanical communication"],
+                options_ar: ["الاتصال الكتابي", "الاتصال غير اللفظي", "الاتصال الرقمي", "الاتصال الميكانيكي"],
+                correct: 1,
+                explanation: "Faces convey data without needing verbal or written symbols.",
+                explanation_ar: "تنقل الوجوه البيانات دون الحاجة لرموز لفظية أو كتابية."
+            },
+            {
+                id: "comm-mid-mc-23",
+                text: "The method used to deliver a message is the:",
+                text_ar: "الطريقة المستخدمة لإيصال الرسالة هي:",
+                options: ["Noise", "Channel", "Feedback", "Receiver"],
+                options_ar: ["الضجيج", "القناة", "التغذية الراجعة", "المستقبل"],
+                correct: 1,
+                explanation: "The channel is 'how' the message travels.",
+                explanation_ar: "القناة هي 'كيفية' انتقال الرسالة."
+            },
+            {
+                id: "comm-mid-mc-24",
+                text: "Effective speakers should:",
+                text_ar: "يجب على المتحدثين الفعالين:",
+                options: ["Speak too fast", "Use confusing words", "Speak clearly", "Avoid pauses"],
+                options_ar: ["التحدث بسرعة كبيرة", "استخدام كلمات محيرة", "التحدث بوضوح", "تجنب الوقفات"],
+                correct: 2,
+                explanation: "Clarity ensures the audience understands the verbal content.",
+                explanation_ar: "الوضوح يضمن فهم الجمهور للمحتوى اللفظي."
+            },
+            {
+                id: "comm-mid-mc-25",
+                text: "Feedback allows the sender to:",
+                text_ar: "تسمح التغذية الراجعة للمرسل بـ:",
+                options: ["Ignore the message", "Start a new topic", "Know if the message was understood", "Change the channel"],
+                options_ar: ["تجاهل الرسالة", "بدء موضوع جديد", "معرفة ما إذا كانت الرسالة قد فُهمت", "تغيير القناة"],
+                correct: 2,
+                explanation: "Verification is the primary purpose of feedback.",
+                explanation_ar: "التحقق هو الغرض الأساسي من التغذية الراجعة."
+            },
+            {
+                id: "comm-mid-mc-26",
+                text: "Active listening requires:",
+                text_ar: "يتطلب الاستماع النشط:",
+                options: ["Being silent only", "Thinking about other things", "Asking questions when needed", "Avoiding eye contact"],
+                options_ar: ["الصمت فقط", "التفكير في أشياء أخرى", "طرح الأسئلة عند الحاجة", "تجنب التواصل البصري"],
+                correct: 2,
+                explanation: "Questions clarify understanding and show engagement.",
+                explanation_ar: "الأسئلة توضح الفهم وتظهر التفاعل."
+            },
+            {
+                id: "comm-mid-mc-27",
+                text: "Which of the following is a written form of communication?",
+                text_ar: "أي مما يلي هو شكل كتابي من أشكال الاتصال؟",
+                options: ["Voice message", "Meeting", "Email", "Phone call"],
+                options_ar: ["رسالة صوتية", "اجتماع", "بريد إلكتروني", "مكالمة هاتفية"],
+                correct: 2,
+                explanation: "Emails are textual documents.",
+                explanation_ar: "البريد الإلكتروني عبارة عن وثائق نصية."
+            },
+            {
+                id: "comm-mid-mc-28",
+                text: "Communication becomes ineffective when:",
+                text_ar: "يصبح الاتصال غير فعال عندما:",
+                options: ["The message is clear", "There is misunderstanding", "Feedback is given", "Both sides participate"],
+                options_ar: ["تكون الرسالة واضحة", "يحدث سوء فهم", "يتم تقديم تغذية راجعة", "يشارك الطرفان"],
+                correct: 1,
+                explanation: "Failure to transfer meaning results in ineffective communication.",
+                explanation_ar: "الفشل في نقل المعنى يؤدي إلى اتصال غير فعال."
+            },
+            {
+                id: "comm-mid-mc-29",
+                text: "Gesture means:",
+                text_ar: "الإيماءة تعني:",
+                options: ["Using hands or body to express meaning", "Speaking loudly", "Writing long paragraphs", "Sending electronic messages"],
+                options_ar: ["استخدام اليدين أو الجسم للتعبير عن المعنى", "التحدث بصوت عالٍ", "كتابة فقرات طويلة", "إرسال رسائل إلكترونية"],
+                correct: 0,
+                explanation: "Gestures are bodily motions used as nonverbal language.",
+                explanation_ar: "الإيماءات هي حركات جسدية تُستخدم كلغة غير لفظية."
+            },
+            {
+                id: "comm-mid-mc-30",
+                text: "One key feature of effective communication is:",
+                text_ar: "إحدى السمات الرئيسية للاتصال الفعال هي:",
+                options: ["Empathy", "Anger", "Avoiding others", "Repeating the same message without reason"],
+                options_ar: ["التعاطف", "الغضب", "تجنب الآخرين", "تكرار نفس الرسالة دون سبب"],
+                correct: 0,
+                explanation: "Empathy allows for better reception and encoding of messages.",
+                explanation_ar: "التعاطف يسمح باستقبال وترميز أفضل للرسائل."
+            },
+            {
+                id: "comm-mid-mc-31",
+                text: "The main element that carries meaning in communication is the:",
+                text_ar: "العنصر الأساسي الذي يحمل المعنى في الاتصال هو:",
+                options: ["Message", "Channel", "Receiver", "Noise"],
+                options_ar: ["الرسالة", "القناة", "المستقبل", "الضجيج"],
+                correct: 0,
+                explanation: "The message is the actual data or concept being shared.",
+                explanation_ar: "الرسالة هي البيانات أو المفهوم الفعلي الذي يتم مشاركته."
+            },
+            {
+                id: "comm-mid-mc-32",
+                text: "Which skill helps you understand others better?",
+                text_ar: "أي مهارة تساعدك على فهم الآخرين بشكل أفضل؟",
+                options: ["Speaking fast", "Listening", "Avoiding questions", "Shouting"],
+                options_ar: ["الكلام السريع", "الاستماع", "تجنب الأسئلة", "الصراخ"],
+                correct: 1,
+                explanation: "Listening is the receptive skill necessary for comprehension.",
+                explanation_ar: "الاستماع هو المهارة الاستيعابية الضرورية للفهم."
+            },
+            {
+                id: "comm-mid-mc-33",
+                text: "Body language includes:",
+                text_ar: "تشمل لغة الجسد:",
+                options: ["Emails", "Eye contact", "Phone calls", "Text messages"],
+                options_ar: ["رسائل البريد الإلكتروني", "التواصل البصري", "مكالمات هاتفية", "رسائل نصية"],
+                correct: 1,
+                explanation: "Visual non-verbal signals like gaze are part of body language.",
+                explanation_ar: "الإشارات المرئية غير اللفظية مثل النظرات هي جزء من لغة الجسد."
+            },
+            {
+                id: "comm-mid-mc-34",
+                text: "A major barrier to communication is:",
+                text_ar: "من العوائق الرئيسية للاتصال:",
+                options: ["Culture differences", "Clarity", "Politeness", "Eye contact"],
+                options_ar: ["الاختلافات الثقافية", "الوضوح", "اللباقة", "التواصل البصري"],
+                correct: 0,
+                explanation: "Varying norms can lead to misinterpretation of the same message.",
+                explanation_ar: "يمكن أن تؤدي المعايير المختلفة إلى تفسير خاطئ لنفس الرسالة."
+            },
+            {
+                id: "comm-mid-mc-35",
+                text: "Which of the following is a form of verbal communication?",
+                text_ar: "أي مما يلي هو شكل من أشكال الاتصال اللفظي؟",
+                options: ["Nodding", "Smiling", "Hand gestures", "Speaking"],
+                options_ar: ["إيماءة الرأس", "الابتسام", "إيماءات اليد", "التحدث"],
+                correct: 3,
+                explanation: "Speaking uses linguistic codes (words).",
+                explanation_ar: "التحدث يستخدم الرموز اللغوية (الكلمات)."
+            },
+            {
+                id: "comm-mid-mc-36",
+                text: "When the receiver responds to the sender, it is called:",
+                text_ar: "عندما يرد المستقبل على المرسل، يسمى ذلك:",
+                options: ["Encoding", "Feedback", "Message", "Channel"],
+                options_ar: ["الترميز", "التغذية الراجعة", "الرسالة", "القناة"],
+                correct: 1,
+                explanation: "The response is the feedback loop.",
+                explanation_ar: "الرد هو حلقة التغذية الراجعة."
+            },
+            {
+                id: "comm-mid-mc-37",
+                text: "Effective communication requires:",
+                text_ar: "يتطلب الاتصال الفعال:",
+                options: ["Using very difficult vocabulary", "Ignoring the listener", "Being brief and clear", "Speaking without pauses"],
+                options_ar: ["استخدام مفردات صعبة جداً", "تجاهل المستمع", "أن تكون موجزاً وواضحاً", "التحدث دون وقفات"],
+                correct: 2,
+                explanation: "Brevity and clarity prevent information overload and confusion.",
+                explanation_ar: "الإيجاز والوضوح يمنعان الإرهاق المعلوماتي والارتباك."
+            },
+            {
+                id: "comm-mid-mc-38",
+                text: "The environment where communication takes place is the:",
+                text_ar: "البيئة التي يحدث فيها الاتصال هي:",
+                options: ["Message", "Channel", "Context", "Feedback"],
+                options_ar: ["الرسالة", "القناة", "السياق", "التغذية الراجعة"],
+                correct: 2,
+                explanation: "Context provides the setting and background for the interaction.",
+                explanation_ar: "يوفر السياق المكان والخلفية للتفاعل."
+            },
+            {
+                id: "comm-mid-mc-39",
+                text: "Written communication should be:",
+                text_ar: "يجب أن يكون الاتصال الكتابي:",
+                options: ["Organized and correct", "Rushed and unclear", "Full of slang", "Context"],
+                options_ar: ["منظماً وصحيحاً", "متسرعاً وغير واضح", "مليئاً باللغة العامية", "سياقاً"],
+                correct: 0,
+                explanation: "Structure and accuracy are vital for effective text messages.",
+                explanation_ar: "التنظيم والدقة حيويان لرسائل نصية فعالة."
+            },
+            {
+                id: "comm-mid-mc-40",
+                text: "Tone of voice mainly affects:",
+                text_ar: "نبرة الصوت تؤثر بشكل أساسي على:",
+                options: ["Visual messages", "Spoken messages", "Written messages", "Electronic messages"],
+                options_ar: ["الرسائل المرئية", "الرسائل المنطوقة", "الرسائل المكتوبة", "الرسائل الإلكترونية"],
+                correct: 1,
+                explanation: "Tone adds emotional layers to audible words.",
+                explanation_ar: "تضيف النبرة طبقات عاطفية للكلمات المسموعة."
+            },
+            {
+                id: "comm-mid-mc-41",
+                text: "The person who creates and sends the message is the:",
+                text_ar: "الشخص الذي ينشئ ويرسل الرسالة هو:",
+                options: ["Sender", "Channel", "Receiver", "Context"],
+                options_ar: ["المرسل", "القناة", "المستقبل", "السياق"],
+                correct: 0,
+                explanation: "The sender initiates the communication cycle.",
+                explanation_ar: "يبدأ المرسل دورة الاتصال."
+            },
+            {
+                id: "comm-mid-mc-42",
+                text: "Which of the following helps in active listening?",
+                text_ar: "أي مما يلي يساعد في الاستماع النشط؟",
+                options: ["Gesture", "Giving full attention", "Talking loudly", "Changing the subject"],
+                options_ar: ["الإيماءة", "إعطاء الاهتمام الكامل", "التحدث بصوت عالٍ", "تغيير الموضوع"],
+                correct: 1,
+                explanation: "Undivided attention is the core of being 'active' in listening.",
+                explanation_ar: "الانتباه غير المجزأ هو جوهر كون المرء 'نشطاً' في الاستماع."
+            },
+            {
+                id: "comm-mid-mc-43",
+                text: "A hand movement used to express an idea is called a:",
+                text_ar: "تسمى حركة اليد المستخدمة للتعبير عن فكرة:",
+                options: ["Gesture", "Tone", "Paragraph", "Record"],
+                options_ar: ["إيماءة", "نبرة", "فقرة", "سجل"],
+                correct: 0,
+                explanation: "Gestures are specific nonverbal movements with meaning.",
+                explanation_ar: "الإيماءات هي حركات محددة غير لفظية ذات معنى."
+            },
+            {
+                id: "comm-mid-mc-44",
+                text: "When communication is two-way, it means:",
+                text_ar: "عندما يكون الاتصال ثنائي الاتجاه، فذلك يعني:",
+                options: ["Only the sender talks", "Both people share ideas", "Nobody asks questions", "The receiver stays silent"],
+                options_ar: ["المرسل فقط يتحدث", "كلا الشخصين يتشاركان الأفكار", "لا أحد يطرح أسئلة", "يبقى المستقبل صامتاً"],
+                correct: 1,
+                explanation: "Bidirectional flow involves exchange from both parties.",
+                explanation_ar: "التدفق ثنائي الاتجاه يتضمن التبادل من كلا الطرفين."
+            },
+            {
+                id: "comm-mid-mc-45",
+                text: "Digital communication includes:",
+                text_ar: "الاتصال الرقمي يشمل:",
+                options: ["Letters", "Face-to-face meetings", "Social media messages", "Handwritten notes"],
+                options_ar: ["الرسائل الورقية", "اللقاءات وجهاً لوجه", "رسائل وسائل التواصل الاجتماعي", "الملاحظات المكتوبة بخط اليد"],
+                correct: 2,
+                explanation: "Digital channels use electronic computing and the internet.",
+                explanation_ar: "تستخدم القنوات الرقمية الحوسبة الإلكترونية والإنترنت."
+            }
+        ]
     }
 ];
+
