@@ -2390,7 +2390,68 @@ const quizData = [
                 correct: 1,
                 explanation: "Ignoring conflict allows it to fester; it should be addressed professionally when it arises.",
                 explanation_ar: "تجاهل النزاع يسمح له بالتفاقم؛ ويجب التعامل معه بمهنية عند ظهوره."
+            },
+            {
+                id: "comm-mt-39",
+                text: "[True or False] Minutes of the meeting are the official written record of what happened during the meeting.",
+                text_ar: "[صح أم خطأ] محاضر الاجتماع هي السجل الكتابي الرسمي لما حدث خلال الاجتماع.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Minutes serve as the legal and historical record of decisions and discussions.",
+                explanation_ar: "تعمل المحاضر كجل قانوني وتاريخي للقرارات والنقاشات."
+            },
+            {
+                id: "comm-mt-40",
+                text: "[True or False] An effective meeting does not necessarily need a determined purpose.",
+                text_ar: "[صح أم خطأ] الاجتماع الفعال لا يحتاج بالضرورة إلى غرض محدد.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "A clear purpose is essential for any meeting to be effective and efficient.",
+                explanation_ar: "الغرض الواضح ضروري لأي اجتماع ليكون فعالاً وكفؤاً."
+            },
+            {
+                id: "comm-mt-41",
+                text: "[True or False] One of the final steps in a meeting is determining the date and place of the next meeting.",
+                text_ar: "[صح أم خطأ] إحدى الخطوات النهائية في الاجتماع هي تحديد تاريخ ومكان الاجتماع القادم.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Planning for the future ensures continuity and momentum.",
+                explanation_ar: "التخطيط للمستقبل يضمن الاستمرارية والزخم العملي."
+            },
+            {
+                id: "comm-mt-42",
+                text: "[True or False] A meeting agenda helps keep the discussion on track and manages time effectively.",
+                text_ar: "[صح أم خطأ] يساعد جدول أعمال الاجتماع في إبقاء النقاش في مساره الصحيح وإدارة الوقت بفعالية.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "The agenda acts as a control mechanism for the meeting's scope and timing.",
+                explanation_ar: "يعمل جدول الأعمال كآلية تحكم لنطاق وتوقيت الاجتماع."
+            },
+            {
+                id: "comm-mt-43",
+                text: "[True or False] Preparation is the key to an effective meeting.",
+                text_ar: "[صح أم خطأ] التحضير هو المفتاح لاجتماع فعال.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Prior planning and review by all parties lead to better outcomes.",
+                explanation_ar: "التخطيط المسبق والمراجعة من قبل جميع الأطراف تؤدي إلى نتائج أفضل."
+            },
+            {
+                id: "comm-mt-44",
+                text: "[True or False] The chairperson should summarize all motions and amendments during the meeting.",
+                text_ar: "[صح أم خطأ] يجب على رئيس الجلسة تلخيص جميع الاقتراحات والتعديلات خلال الاجتماع.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Summarizing helps ensure clarity and consensus before moving to a vote.",
+                explanation_ar: "يساعد التلخيص في ضمان الوضوح والإجماع قبل الانتقال للتصويت."
             }
+
         ]
     },
     {
