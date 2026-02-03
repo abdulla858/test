@@ -3111,6 +3111,168 @@ const quizData = [
                 correct: 1,
                 explanation: "The lecture states that non-verbal gestures communicate a great deal MORE than spoken words.",
                 explanation_ar: "تقول المحاضرة أن الإيماءات غير اللفظية تنقل معلومات بكمية كبيرة أكثر من الكلمات التي يتم نطقها."
+            },
+            // --- Additional Lecture 9 Questions (T/F) ---
+            {
+                id: "comm-l9-33",
+                text: "[True or False] Non-verbal communication includes tone of voice and body language.",
+                text_ar: "[صح أم خطأ] يشمل الاتصال غير اللفظي نبرة الصوت ولغة الجسد.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Non-verbal communication encompasses all messages sent without words, including paralanguage (tone) and kinesics (body language).",
+                explanation_ar: "يشمل الاتصال غير اللفظي جميع الرسائل المرسلة بدون كلمات، بما في ذلك أشباه اللغة (النبرة) وعلم حركات الجسد (لغة الجسد)."
+            },
+            {
+                id: "comm-l9-34",
+                text: "[True or False] People are more likely to believe your verbal communication than your non-verbal communication.",
+                text_ar: "[صح أم خطأ] من المرجح أن يصدق الناس اتصالك اللفظي أكثر من اتصالك غير اللفظي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "In case of conflict, non-verbal cues are usually seen as more honest and reliable than words.",
+                explanation_ar: "في حالة وجود تعارض، غالباً ما يُنظر إلى الإشارات غير اللفظية على أنها أكثر صدقاً وموثوقية من الكلمات."
+            },
+            {
+                id: "comm-l9-35",
+                text: "[True or False] Non-verbal communication can be used to regulate interactions.",
+                text_ar: "[صح أم خطأ] يمكن استخدام الاتصال غير اللفظي لتنظيم التفاعلات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Non-verbal cues like eye contact and pausing 'regulate' the flow of conversation.",
+                explanation_ar: "تنظم الإشارات غير اللفظية مثل التواصل البصري والوقفات تدفق المحادثة."
+            },
+            {
+                id: "comm-l9-36",
+                text: "[True or False] Verbal communication is defined as the exchange of information without the use of words.",
+                text_ar: "[صح أم خطأ] يُعرَّف الاتصال اللفظي بأنه تبادل المعلومات بدون استخدام الكلمات.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Verbal communication is specifically the use of words (written or spoken).",
+                explanation_ar: "الاتصال اللفظي هو تحديداً استخدام الكلمات (سواء كانت مكتوبة أو منطوقة)."
+            },
+            {
+                id: "comm-l9-37",
+                text: "[True or False] Eye contact is a form of verbal communication.",
+                text_ar: "[صح أم خطأ] التواصل البصري هو شكل من أشكال الاتصال اللفظي.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Eye contact is a non-verbal cue (kinesics).",
+                explanation_ar: "التواصل البصري هو إشارة غير لفظية (تندرج ضمن علم حركات الجسد)."
+            },
+            {
+                id: "comm-l9-38",
+                text: "[True or False] Effective verbal communication is easy to understand if we know the language.",
+                text_ar: "[صح أم خطأ] من السهل فهم الاتصال اللفظي الفعال إذا كنا نعرف اللغة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "Knowing the vocabulary and syntax makes verbal decoding much simpler compared to non-verbal.",
+                explanation_ar: "معرفة المفردات والقواعد تجعل فك التشفير اللفظي أبسط بكثير مقارنة بغير اللفظي."
+            },
+            {
+                id: "comm-l9-39",
+                text: "[True or False] Non-verbal cues indicate when the other person should speak or not.",
+                text_ar: "[صح أم خطأ] تشير الإشارات غير اللفظية إلى متى يجب على الطرف الآخر التحدث أم لا.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 0,
+                explanation: "This is the 'Regulating' function of non-verbal communication.",
+                explanation_ar: "هذه هي وظيفة 'التنظيم' للفعل غير اللفظي."
+            },
+            {
+                id: "comm-l9-40",
+                text: "[True or False] Pointing in a direction while stating directions is an example of 'accenting' the message.",
+                text_ar: "[صح أم خطأ] الإشارة إلى اتجاه معين أثناء ذكر الاتجاهات هي مثال على 'التأكيد' (Accenting) على الرسالة.",
+                options: ["True", "False"],
+                options_ar: ["صحيح", "خاطئ"],
+                correct: 1,
+                explanation: "Pointing is 'Repeating'. 'Accenting' is using tone or emphasis to highlight certain words.",
+                explanation_ar: "الإشارة تعتبر 'تكراراً' (Repeating). أما 'التأكيد' فهو استخدام النبرة للتركيز على كلمات معينة."
+            },
+            // --- Additional Lecture 9 Questions (MCQ) ---
+            {
+                id: "comm-l9-41",
+                text: "When non-verbal cues convey when a person should speak, this is called:",
+                text_ar: "عندما تنقل الإشارات غير اللفظية متى يجب على الشخص التحدث، يسمى هذا بـ:",
+                options: ["Repeating", "Substituting", "Regulating", "Accenting"],
+                options_ar: ["التكرار", "الاستبدال", "التنظيم (Regulating)", "التأكيد"],
+                correct: 2,
+                explanation: "Regulating involves managing the start and end of speaking turns.",
+                explanation_ar: "يشمل التنظيم إدارة بداية ونهاية أدوار التحدث."
+            },
+            {
+                id: "comm-l9-42",
+                text: "If a gesture like 'finger to lips' is used instead of speaking, it is:",
+                text_ar: "إذا تم استخدام إيماءة مثل 'وضع الإصبع على الشفاه' بدلاً من التحدث، فهي:",
+                options: ["Complementing", "Substituting", "Accenting", "Contradicting"],
+                options_ar: ["التكملة", "الاستبدال (Substituting)", "التأكيد", "التناقض"],
+                correct: 1,
+                explanation: "Substituting means the non-verbal cue completely replaces the verbal message.",
+                explanation_ar: "الاستبدال يعني أن الإشارة غير اللفظية تحل تماماً محل الرسالة اللفظية."
+            },
+            {
+                id: "comm-l9-43",
+                text: "Verbal communication uses:",
+                text_ar: "يستخدم الاتصال اللفظي:",
+                options: ["Facial expressions", "Words, voice, and sentences", "Gestures", "Eye movement"],
+                options_ar: ["تعبيرات الوجه", "الكلمات والصوت والجمل", "الإيماءات", "حركات العين"],
+                correct: 1,
+                explanation: "Verbal communication is centered around linguistic structures (words/sentences).",
+                explanation_ar: "يتمحور الاتصال اللفظي حول الهياكل اللغوية (الكلمات والجمل)."
+            },
+            {
+                id: "comm-l9-44",
+                text: "Which type of communication requires more 'awareness' and thinking?",
+                text_ar: "أي نوع من الاتصال يتطلب 'وعياً' وتفكيراً أكثر؟",
+                options: ["Non-verbal", "Verbal", "Physical", "Psychological"],
+                options_ar: ["غير لفظي", "لفظي (Verbal)", "مادي", "نفسي"],
+                correct: 1,
+                explanation: "Verbal communication requires conscious brain activity to form ideas into words.",
+                explanation_ar: "يتطلب الاتصال اللفظي نشاطاً عقلياً واعياً لتحويل الأفكار إلى كلمات."
+            },
+            {
+                id: "comm-l9-45",
+                text: "Which category requires 'Multiple Mediums' to communicate?",
+                text_ar: "أي فئة تتطلب 'وسائط متعددة' (Multiple Mediums) للتواصل؟",
+                options: ["Verbal Communication", "Non-verbal Communication", "Written Communication", "Formal Communication"],
+                options_ar: ["الاتصال اللفظي", "الاتصال غير اللفظي (Non-verbal)", "الاتصال المكتوب", "الاتصال الرسمي"],
+                correct: 1,
+                explanation: "Non-verbal communication uses various channels like eye contact, face, posture, and tone simultaneously.",
+                explanation_ar: "يستخدم الاتصال غير اللفظي قنوات متنوعة مثل التواصل البصري والوجه والوضعية والنبرة في وقت واحد."
+            },
+            {
+                id: "comm-l9-46",
+                text: "The main element that carries meaning in Verbal communication is:",
+                text_ar: "العنصر الأساسي الذي يحمل المعنى في الاتصال اللفظي هو:",
+                options: ["The Message/Words", "The Channel", "The Posture", "The Noise"],
+                options_ar: ["الرسالة/الكلمات", "القناة", "وضعية الجسد", "الضجيج"],
+                correct: 0,
+                explanation: "In verbal communication, meaning is primarily embedded in the language used.",
+                explanation_ar: "في الاتصال اللفظي، يتم تضمين المعنى بشكل أساسي في اللغة المستخدمة."
+            },
+            {
+                id: "comm-l9-47",
+                text: "An example of 'Repeating' in non-verbal communication is:",
+                text_ar: "مثال على 'التكرار' (Repeating) في الاتصال غير اللفظي هو:",
+                options: ["Nodding while saying yes", "Pointing while giving directions", "A and B", "Shaking head while saying no"],
+                options_ar: ["الإيماء بالرأس أثناء قول نعم", "الإشارة أثناء إعطاء الاتجاهات", "أ و ب", "هز الرأس أثناء قول لا"],
+                correct: 2,
+                explanation: "Repeating means the non-verbal cue signals the same message as the verbal words.",
+                explanation_ar: "التكرار يعني أن الإشارة غير اللفظية ترسل نفس رسالة الكلمات اللفظية."
+            },
+            {
+                id: "comm-l9-48",
+                text: "Non-verbal communication is used to 'Accent' a message, which means:",
+                text_ar: "يُستخدم الاتصال غير اللفظي لـ 'التأكيد' (Accent) على رسالة، مما يعني:",
+                options: ["Replace the message", "Indicate the actual meaning through tone/emphasis", "Stop the message", "Ignore the message"],
+                options_ar: ["استبدال الرسالة", "توضيح المعنى الحقيقي من خلال النبرة/التوكيد", "إيقاف الرسالة", "تجاهل الرسالة"],
+                correct: 1,
+                explanation: "Accenting highlights specific parts of the message to emphasize significance.",
+                explanation_ar: "التأكيد يسلط الضوء على أجزاء محددة من الرسالة لإبراز أهميتها."
             }
         ]
     },
